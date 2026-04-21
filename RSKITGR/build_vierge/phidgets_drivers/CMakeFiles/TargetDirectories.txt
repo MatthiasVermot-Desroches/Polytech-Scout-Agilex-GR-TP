@@ -1,9 +1,0 @@
-/home/user/roskit_ws/build/phidgets_drivers/CMakeFiles/uninstall.dir
-/home/user/roskit_ws/build/phidgets_drivers/CMakeFiles/phidgets_drivers_uninstall.dir
-/home/user/roskit_ws/build/phidgets_drivers/CMakeFiles/test.dir
-/home/user/roskit_ws/build/phidgets_drivers/CMakeFiles/edit_cache.dir
-/home/user/roskit_ws/build/phidgets_drivers/CMakeFiles/rebuild_cache.dir
-/home/user/roskit_ws/build/phidgets_drivers/CMakeFiles/list_install_components.dir
-/home/user/roskit_ws/build/phidgets_drivers/CMakeFiles/install.dir
-/home/user/roskit_ws/build/phidgets_drivers/CMakeFiles/install/local.dir
-/home/user/roskit_ws/build/phidgets_drivers/CMakeFiles/install/strip.dir

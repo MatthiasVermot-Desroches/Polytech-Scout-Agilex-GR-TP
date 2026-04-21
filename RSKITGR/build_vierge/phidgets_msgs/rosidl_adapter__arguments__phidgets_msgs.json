@@ -1,8 +1,0 @@
-{
-  "package_name": "phidgets_msgs",
-  "non_idl_tuples": [
-    "/home/user/roskit_ws/src/phidgets_drivers/phidgets_msgs:srv/SetAnalogOutput.srv",
-    "/home/user/roskit_ws/src/phidgets_drivers/phidgets_msgs:srv/SetDigitalOutput.srv",
-    "/home/user/roskit_ws/src/phidgets_drivers/phidgets_msgs:msg/EncoderDecimatedSpeed.msg"
-  ]
-}
