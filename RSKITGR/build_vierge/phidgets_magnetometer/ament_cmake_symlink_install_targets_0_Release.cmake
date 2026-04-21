@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/user/roskit_ws/build/phidgets_magnetometer/libphidgets_magnetometer.so" "TARGETS" "phidgets_magnetometer" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

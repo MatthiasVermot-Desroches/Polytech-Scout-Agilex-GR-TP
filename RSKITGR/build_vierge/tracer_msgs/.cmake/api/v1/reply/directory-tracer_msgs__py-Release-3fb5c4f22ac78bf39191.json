@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tracer_msgs__py",
+		"source" : "/home/user/roskit_ws/build/tracer_msgs/tracer_msgs__py"
+	}
+}

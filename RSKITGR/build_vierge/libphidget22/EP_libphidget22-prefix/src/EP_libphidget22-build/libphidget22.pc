@@ -1,0 +1,10 @@
+prefix=/home/user/roskit_ws/build/libphidget22/libphidget22_install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libphidget22
+Description: Phidgets library
+Version: 1.19.20240304
+Libs: -L${libdir} -lphidget22
+Cflags: -I${includedir}

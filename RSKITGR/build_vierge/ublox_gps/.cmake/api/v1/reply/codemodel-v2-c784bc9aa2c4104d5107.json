@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-c132ce9e67e52c05662f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ublox_gps",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_gps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_gps-Release-0e67265293405bf83937.json",
+					"name" : "ublox_gps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_gps_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_gps_node-Release-3a021d0003076dff2ed7.json",
+					"name" : "ublox_gps_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_gps_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_gps_uninstall-Release-7c1f8d7316a7ee436aeb.json",
+					"name" : "ublox_gps_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_logger_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_logger_node-Release-553eb5bd1bb26ea34f0b.json",
+					"name" : "ublox_logger_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-a7655a7d67a169be6ca2.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/user/roskit_ws/build/ublox_gps",
+		"source" : "/home/user/roskit_ws/src/ros2-ublox-zedf9p/ublox_gps"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

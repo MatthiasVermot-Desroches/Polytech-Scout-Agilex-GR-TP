@@ -1,0 +1,59 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_install",
+			"install"
+		],
+		"files" : 
+		[
+			"/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/install.cmake",
+			"ouster-sdk/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 114,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 43,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/OusterSDK",
+			"exportName" : "ouster-sdk-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "ouster_client::@883b4b9ed734f48a06bb",
+					"index" : 13
+				}
+			],
+			"paths" : 
+			[
+				"ouster_example/CMakeFiles/Export/lib/cmake/OusterSDK/OusterSDKTargets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "ouster_example",
+		"source" : "ouster-sdk"
+	}
+}

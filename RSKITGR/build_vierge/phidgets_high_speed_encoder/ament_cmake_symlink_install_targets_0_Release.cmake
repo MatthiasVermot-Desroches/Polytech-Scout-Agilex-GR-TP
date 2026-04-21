@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/user/roskit_ws/build/phidgets_high_speed_encoder/libphidgets_high_speed_encoder.so" "TARGETS" "phidgets_high_speed_encoder" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

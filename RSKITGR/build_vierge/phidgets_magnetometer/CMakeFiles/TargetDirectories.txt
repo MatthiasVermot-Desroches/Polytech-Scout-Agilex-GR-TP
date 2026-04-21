@@ -1,0 +1,10 @@
+/home/user/roskit_ws/build/phidgets_magnetometer/CMakeFiles/uninstall.dir
+/home/user/roskit_ws/build/phidgets_magnetometer/CMakeFiles/phidgets_magnetometer_uninstall.dir
+/home/user/roskit_ws/build/phidgets_magnetometer/CMakeFiles/phidgets_magnetometer.dir
+/home/user/roskit_ws/build/phidgets_magnetometer/CMakeFiles/test.dir
+/home/user/roskit_ws/build/phidgets_magnetometer/CMakeFiles/edit_cache.dir
+/home/user/roskit_ws/build/phidgets_magnetometer/CMakeFiles/rebuild_cache.dir
+/home/user/roskit_ws/build/phidgets_magnetometer/CMakeFiles/list_install_components.dir
+/home/user/roskit_ws/build/phidgets_magnetometer/CMakeFiles/install.dir
+/home/user/roskit_ws/build/phidgets_magnetometer/CMakeFiles/install/local.dir
+/home/user/roskit_ws/build/phidgets_magnetometer/CMakeFiles/install/strip.dir
