@@ -1,0 +1,16 @@
+#!/bin/bash
+source /etc/profile
+source /opt/ros/melodic/setup.bash
+MYBOOL=false
+while ! $MYBOOL; do
+    rosnode list
+    if [ $? -ne 0 ]; then
+        echo "Error contacting ROS_MASTER"
+    else
+        echo "ROS_MASTER ready"
+        MYBOOL=true
+    fi
+    sleep 3
+done
+echo "PreStart OK"
+exit 0

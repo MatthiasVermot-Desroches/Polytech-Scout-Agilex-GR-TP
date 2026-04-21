@@ -1,0 +1,445 @@
+[0.044s] Invoking command in '/home/user/roskit_ws/build/libphidget22': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/roskit_ws/src/phidgets_drivers/libphidget22 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/libphidget22
+[0.083s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.182s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.230s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.312s] -- Configuring done
+[0.314s] -- Generating done
+[0.315s] -- Build files have been written to: /home/user/roskit_ws/build/libphidget22
+[0.317s] Invoked command in '/home/user/roskit_ws/build/libphidget22' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/roskit_ws/src/phidgets_drivers/libphidget22 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/libphidget22
+[0.319s] Invoking command in '/home/user/roskit_ws/build/libphidget22': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/roskit_ws/build/libphidget22 -- -j16 -l16
+[0.388s] [ 12%] [34m[1mCreating directories for 'EP_libphidget22'[0m
+[0.402s] [ 25%] [34m[1mPerforming download step (download, verify and extract) for 'EP_libphidget22'[0m
+[0.406s] -- Downloading...
+[0.406s]    dst='/home/user/roskit_ws/build/libphidget22/EP_libphidget22-prefix/src/libphidget22-1.19.20240304.tar.gz'
+[0.406s]    timeout='none'
+[0.406s]    inactivity timeout='none'
+[0.406s] -- Using src='https://www.phidgets.com/downloads/phidget22/libraries/linux/libphidget22/libphidget22-1.19.20240304.tar.gz'
+[0.999s] -- [download 1% complete]
+[0.999s] -- [download 2% complete]
+[1.000s] -- [download 3% complete]
+[1.000s] -- [download 4% complete]
+[1.000s] -- [download 5% complete]
+[1.178s] -- [download 6% complete]
+[1.178s] -- [download 7% complete]
+[1.351s] -- [download 8% complete]
+[1.352s] -- [download 9% complete]
+[1.527s] -- [download 10% complete]
+[1.527s] -- [download 11% complete]
+[1.527s] -- [download 12% complete]
+[1.527s] -- [download 13% complete]
+[1.529s] -- [download 14% complete]
+[1.529s] -- [download 15% complete]
+[1.735s] -- [download 16% complete]
+[1.735s] -- [download 17% complete]
+[1.736s] -- [download 18% complete]
+[1.736s] -- [download 19% complete]
+[1.736s] -- [download 20% complete]
+[1.738s] -- [download 21% complete]
+[1.738s] -- [download 22% complete]
+[1.740s] -- [download 23% complete]
+[1.740s] -- [download 24% complete]
+[1.743s] -- [download 25% complete]
+[1.921s] -- [download 26% complete]
+[1.921s] -- [download 27% complete]
+[1.921s] -- [download 28% complete]
+[1.922s] -- [download 29% complete]
+[1.922s] -- [download 30% complete]
+[1.926s] -- [download 31% complete]
+[1.926s] -- [download 32% complete]
+[1.929s] -- [download 33% complete]
+[1.929s] -- [download 34% complete]
+[1.929s] -- [download 35% complete]
+[1.939s] -- [download 36% complete]
+[1.939s] -- [download 37% complete]
+[1.939s] -- [download 38% complete]
+[1.939s] -- [download 39% complete]
+[1.939s] -- [download 40% complete]
+[1.939s] -- [download 41% complete]
+[1.939s] -- [download 42% complete]
+[1.939s] -- [download 43% complete]
+[1.939s] -- [download 44% complete]
+[1.939s] -- [download 45% complete]
+[1.939s] -- [download 46% complete]
+[2.105s] -- [download 47% complete]
+[2.105s] -- [download 48% complete]
+[2.107s] -- [download 49% complete]
+[2.107s] -- [download 50% complete]
+[2.115s] -- [download 51% complete]
+[2.115s] -- [download 52% complete]
+[2.115s] -- [download 53% complete]
+[2.116s] -- [download 54% complete]
+[2.117s] -- [download 55% complete]
+[2.118s] -- [download 56% complete]
+[2.119s] -- [download 57% complete]
+[2.120s] -- [download 58% complete]
+[2.120s] -- [download 59% complete]
+[2.120s] -- [download 60% complete]
+[2.123s] -- [download 61% complete]
+[2.124s] -- [download 62% complete]
+[2.125s] -- [download 63% complete]
+[2.126s] -- [download 64% complete]
+[2.126s] -- [download 65% complete]
+[2.127s] -- [download 66% complete]
+[2.127s] -- [download 67% complete]
+[2.127s] -- [download 68% complete]
+[2.129s] -- [download 69% complete]
+[2.131s] -- [download 70% complete]
+[2.132s] -- [download 71% complete]
+[2.132s] -- [download 72% complete]
+[2.134s] -- [download 73% complete]
+[2.134s] -- [download 74% complete]
+[2.136s] -- [download 75% complete]
+[2.136s] -- [download 76% complete]
+[2.136s] -- [download 77% complete]
+[2.139s] -- [download 78% complete]
+[2.140s] -- [download 79% complete]
+[2.140s] -- [download 80% complete]
+[2.142s] -- [download 81% complete]
+[2.142s] -- [download 82% complete]
+[2.145s] -- [download 83% complete]
+[2.145s] -- [download 84% complete]
+[2.287s] -- [download 85% complete]
+[2.287s] -- [download 86% complete]
+[2.287s] -- [download 87% complete]
+[2.290s] -- [download 88% complete]
+[2.290s] -- [download 89% complete]
+[2.290s] -- [download 90% complete]
+[2.292s] -- [download 91% complete]
+[2.292s] -- [download 92% complete]
+[2.292s] -- [download 93% complete]
+[2.293s] -- [download 94% complete]
+[2.296s] -- [download 95% complete]
+[2.315s] -- [download 96% complete]
+[2.315s] -- [download 97% complete]
+[2.315s] -- [download 98% complete]
+[2.315s] -- [download 99% complete]
+[2.316s] -- [download 100% complete]
+[2.317s] -- verifying file...
+[2.317s]        file='/home/user/roskit_ws/build/libphidget22/EP_libphidget22-prefix/src/libphidget22-1.19.20240304.tar.gz'
+[2.321s] -- Downloading... done
+[2.380s] -- extracting...
+[2.381s]      src='/home/user/roskit_ws/build/libphidget22/EP_libphidget22-prefix/src/libphidget22-1.19.20240304.tar.gz'
+[2.381s]      dst='/home/user/roskit_ws/build/libphidget22/libphidget22-src'
+[2.381s] -- extracting... [tar xfz]
+[2.483s] -- extracting... [analysis]
+[2.483s] -- extracting... [rename]
+[2.483s] -- extracting... [clean up]
+[2.483s] -- extracting... done
+[2.551s] [ 37%] [34m[1mNo update step for 'EP_libphidget22'[0m
+[2.634s] [ 50%] [34m[1mNo patch step for 'EP_libphidget22'[0m
+[2.718s] [ 62%] [34m[1mPerforming configure step for 'EP_libphidget22'[0m
+[3.389s] checking for a BSD-compatible install... /usr/bin/install -c
+[3.416s] checking whether build environment is sane... yes
+[3.482s] checking for a race-free mkdir -p... /usr/bin/mkdir -p
+[3.482s] checking for gawk... no
+[3.482s] checking for mawk... mawk
+[3.558s] checking whether make sets $(MAKE)... yes
+[3.586s] checking whether make supports nested variables... yes
+[3.640s] checking whether make supports the include directive... yes (GNU style)
+[3.646s] checking for gcc... gcc
+[4.109s] checking whether the C compiler works... yes
+[4.109s] checking for C compiler default output file name... a.out
+[4.301s] checking for suffix of executables... 
+[4.492s] checking whether we are cross compiling... no
+[4.640s] checking for suffix of object files... o
+[4.790s] checking whether the compiler supports GNU C... yes
+[4.934s] checking whether gcc accepts -g... yes
+[5.192s] checking for gcc option to enable C11 features... none needed
+[5.351s] checking whether gcc understands -c and -o together... yes
+[5.501s] checking dependency style of gcc... gcc3
+[5.501s] checking for ar... ar
+[5.585s] checking the archiver (ar) interface... ar
+[5.805s] checking build system type... x86_64-pc-linux-gnu
+[5.805s] checking host system type... x86_64-pc-linux-gnu
+[5.808s] checking how to print strings... printf
+[5.816s] checking for a sed that does not truncate output... /usr/bin/sed
+[5.825s] checking for grep that handles long lines and -e... /usr/bin/grep
+[5.837s] checking for egrep... /usr/bin/grep -E
+[5.842s] checking for fgrep... /usr/bin/grep -F
+[5.861s] checking for ld used by gcc... /usr/bin/ld
+[5.864s] checking if the linker (/usr/bin/ld) is GNU ld... yes
+[5.870s] checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+[5.967s] checking the name lister (/usr/bin/nm -B) interface... BSD nm
+[5.967s] checking whether ln -s works... yes
+[5.987s] checking the maximum length of command line arguments... 1572864
+[5.998s] checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+[5.999s] checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+[5.999s] checking for /usr/bin/ld option to reload object files... -r
+[5.999s] checking for objdump... objdump
+[5.999s] checking how to recognize dependent libraries... pass_all
+[6.000s] checking for dlltool... no
+[6.000s] checking how to associate runtime and link libraries... printf %s\n
+[6.053s] checking for archiver @FILE support... @
+[6.053s] checking for strip... strip
+[6.054s] checking for ranlib... ranlib
+[6.155s] checking command to parse /usr/bin/nm -B output from gcc object... ok
+[6.157s] checking for sysroot... no
+[6.165s] checking for a working dd... /usr/bin/dd
+[6.173s] checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+[6.197s] checking for mt... no
+[6.201s] checking if : is a manifest tool... no
+[6.233s] checking for stdio.h... yes
+[6.275s] checking for stdlib.h... yes
+[6.343s] checking for string.h... yes
+[6.383s] checking for inttypes.h... yes
+[6.423s] checking for stdint.h... yes
+[6.460s] checking for strings.h... yes
+[6.499s] checking for sys/stat.h... yes
+[6.535s] checking for sys/types.h... yes
+[6.582s] checking for unistd.h... yes
+[6.640s] checking for dlfcn.h... yes
+[6.649s] checking for objdir... .libs
+[6.787s] checking if gcc supports -fno-rtti -fno-exceptions... no
+[6.787s] checking for gcc option to produce PIC... -fPIC -DPIC
+[6.856s] checking if gcc PIC flag -fPIC -DPIC works... yes
+[7.002s] checking if gcc static flag -static works... yes
+[7.087s] checking if gcc supports -c -o file.o... yes
+[7.087s] checking if gcc supports -c -o file.o... (cached) yes
+[7.117s] checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+[7.140s] checking whether -lc should be explicitly linked in... no
+[7.202s] checking dynamic linker characteristics... GNU/Linux ld.so
+[7.202s] checking how to hardcode library paths into programs... immediate
+[7.202s] checking whether stripping libraries is possible... yes
+[7.202s] checking if libtool supports shared libraries... yes
+[7.202s] checking whether to build shared libraries... yes
+[7.203s] checking whether to build static libraries... yes
+[7.203s] checking whether make supports nested variables... (cached) yes
+[7.329s] checking whether byte ordering is bigendian... no
+[7.330s] checking for ldconfig... /sbin/ldconfig
+[7.426s] checking for library containing dlopen... none required
+[7.502s] checking for library containing sqrt... -lm
+[7.533s] checking for library containing pthread_create... none required
+[7.600s] checking for library containing libusb_init... -lusb-1.0
+[7.620s] checking for newlocale in xlocale.h... no
+[7.644s] checking for newlocale in locale.h... yes
+[7.661s] checking that generated files are newer than configure... done
+[7.661s] configure: creating ./config.status
+[8.019s] config.status: creating Makefile
+[8.027s] config.status: creating libphidget22.pc
+[8.034s] config.status: executing depfiles commands
+[8.478s] config.status: executing libtool commands
+[8.527s] [ 75%] [34m[1mPerforming build step for 'EP_libphidget22'[0m
+[8.542s]   CC       src/formatters.lo
+[8.542s]   CC       src/gpp.lo
+[8.543s]   CC       src/lightning.lo
+[8.543s]   CC       src/manager.lo
+[8.544s]   CC       src/mesh.lo
+[8.545s]   CC       src/object.lo
+[8.546s]   CC       src/phidget22.lo
+[8.547s]   CC       src/phidget.lo
+[8.547s]   CC       src/spi.lo
+[8.549s]   CC       src/stats.lo
+[8.550s]   CC       src/supportedpacket.gen.lo
+[8.550s]   CC       src/usb.lo
+[8.553s]   CC       src/vint.lo
+[8.554s]   CC       src/vintpackets.lo
+[8.555s]   CC       src/virtual.lo
+[8.556s] Making phidget22.h
+[8.590s]   CC       src/analogsensor.lo
+[9.048s]   CC       src/bridge.lo
+[9.055s]   CC       src/bridgepackets.gen.lo
+[9.077s]   CC       src/class/accelerometer.lo
+[9.078s]   CC       src/class/bldcmotor.lo
+[9.154s]   CC       src/class/capacitivetouch.lo
+[9.155s]   CC       src/class/currentinput.lo
+[9.160s]   CC       src/class/currentoutput.lo
+[9.190s]   CC       src/class/dataadapter.lo
+[9.240s]   CC       src/class/dcmotor.lo
+[9.270s]   CC       src/class/dictionary.lo
+[9.333s]   CC       src/class/digitalinput.lo
+[9.365s]   CC       src/class/digitaloutput.lo
+[9.384s]   CC       src/class/distancesensor.lo
+[9.418s]   CC       src/class/firmwareupgrade.lo
+[9.418s]   CC       src/class/encoder.lo
+[9.838s]   CC       src/class/frequencycounter.lo
+[10.017s]   CC       src/class/generic.lo
+[10.022s]   CC       src/class/gps.lo
+[10.034s]   CC       src/class/gyroscope.lo
+[10.091s]   CC       src/class/hub.lo
+[10.133s]   CC       src/class/humiditysensor.lo
+[10.144s]   CC       src/class/ir.lo
+[10.168s]   CC       src/class/lcd.lo
+[10.245s]   CC       src/class/lightsensor.lo
+[10.302s]   CC       src/class/magnetometer.lo
+[10.321s]   CC       src/class/meshdongle.lo
+[10.370s]   CC       src/class/motorpositioncontroller.lo
+[10.404s]   CC       src/class/motorvelocitycontroller.lo
+[10.533s]   CC       src/class/phsensor.lo
+[10.725s]   CC       src/class/powerguard.lo
+[10.756s]   CC       src/class/pressuresensor.lo
+[10.775s]   CC       src/class/rcservo.lo
+[10.789s]   CC       src/class/resistanceinput.lo
+[10.816s]   CC       src/class/rfid.lo
+[10.834s]   CC       src/class/soundsensor.lo
+[10.928s]   CC       src/class/spatial.lo
+[10.938s]   CC       src/class/stepper.lo
+[10.976s]   CC       src/class/temperaturesensor.lo
+[11.047s]   CC       src/class/voltageinput.lo
+[11.219s]   CC       src/class/voltageoutput.lo
+[11.254s]   CC       src/class/voltageratioinput.lo
+[11.299s]   CC       src/constants.lo
+[11.436s]   CC       src/datainterval.gen.lo
+[11.447s]   CC       src/debug.lo
+[11.517s]   CC       src/device/accelerometerdevice.lo
+[11.551s]   CC       src/device/advancedservodevice.lo
+[11.562s]   CC       src/device/analogdevice.lo
+[11.578s]   CC       src/device/bridgedevice.lo
+[11.659s]   CC       src/device/dataadapterdevice.lo
+[11.759s]   CC       src/device/dictionarydevice.lo
+[11.820s]   CC       src/device/encoderdevice.lo
+[11.948s]   CC       src/device/firmwareupgradedevice.lo
+[11.970s]   CC       src/device/frequencycounterdevice.lo
+[12.052s]   CC       src/device/genericdevice.lo
+[12.100s]   CC       src/device/gpsdevice.lo
+[12.104s]   CC       src/device/hubdevice.lo
+[12.111s]   CC       src/device/interfacekitdevice.lo
+[12.140s]   CC       src/device/irdevice.lo
+[12.172s]   CC       src/device/leddevice.lo
+[12.182s]   CC       src/device/meshdongledevice.lo
+[12.209s]   CC       src/device/motorcontroldevice.lo
+[12.276s]   CC       src/device/phsensordevice.lo
+[12.292s]   CC       src/device/rfiddevice.lo
+[12.362s]   CC       src/device/servodevice.lo
+[12.423s]   CC       src/device/spatialdevice.lo
+[12.508s]   CC       src/device/stepperdevice.lo
+[12.534s]   CC       src/device/temperaturesensordevice.lo
+[12.562s]   CC       src/device/textlcddevice.lo
+[12.583s]   CC       src/device/vintdevice.lo
+[12.670s]   CC       src/devices.lo
+[12.711s]   CC       src/dispatch.lo
+[12.728s]   CC       src/enumutil.gen.lo
+[12.894s]   CC       src/errorstrings.gen.lo
+[12.941s]   CC       src/ext/md5.lo
+[12.942s]   CC       src/ext/cvtutf.lo
+[12.949s]   CC       src/ext/mos/base64.lo
+[12.980s]   CC       src/ext/mos/base.lo
+[13.030s]   CC       src/ext/mos/crc32.lo
+[13.114s]   CC       src/ext/mos/ctype.lo
+[13.210s]   CC       src/ext/mos/endswith.lo
+[13.295s]   CC       src/ext/mos/getcwd.lo
+[13.304s]   CC       src/ext/mos/getenv.lo
+[13.310s]   CC       src/ext/mos/getopt.lo
+[13.332s]   CC       src/ext/mos/getpasswd-unix.lo
+[13.411s]   CC       src/ext/mos/glob.lo
+[13.465s]   CC       src/ext/mos/glock.lo
+[13.469s]   CC       src/ext/mos/hexdump.lo
+[13.498s]   CC       src/ext/mos/init_daemon.lo
+[13.507s]   CC       src/ext/mos/iop.lo
+[13.541s]   CC       src/ext/mos/kv/kv.lo
+[13.562s]   CC       src/ext/mos/kv/kvent.lo
+[13.632s]   CC       src/ext/mos/kv/parse.lo
+[13.648s]   CC       src/ext/mos/kv/scan.lo
+[13.650s]   CC       src/ext/mos/malloc.lo
+[13.666s]   CC       src/ext/mos/malloc-user.lo
+[13.672s]   CC       src/ext/mos/md5c.lo
+[13.725s]   CC       src/ext/mos/memchr.lo
+[13.742s]   CC       src/ext/mos/memcmp.lo
+[13.766s]   CC       src/ext/mos/memmem.lo
+[13.824s]   CC       src/ext/mos/mkdirp.lo
+[13.904s]   CC       src/ext/mos/mos_atomic-pthread.lo
+[13.908s]   CC       src/ext/mos/mos_dl-unix.lo
+[13.927s]   CC       src/ext/mos/mos_error-errno.lo
+[13.987s]   CC       src/ext/mos/mos_fileio-unix-user.lo
+[14.015s]   CC       src/ext/mos/mos_lock-pthread.lo
+[14.022s]   CC       src/ext/mos/mos_net.lo
+[14.058s]   CC       src/ext/mos/mos_netops-unix.lo
+[14.092s]   CC       src/ext/mos/mos_os.lo
+[14.100s]   CC       src/ext/mos/mos_random-unix.lo
+[14.125s]   CC       src/ext/mos/mos_setenv-native.lo
+[14.134s]   CC       src/ext/mos/mos_stacktrace-gnu.lo
+[14.211s]   CC       src/ext/mos/mos_task-pthread.lo
+[14.212s]   CC       src/ext/mos/mos_time-unix.lo
+[14.224s]   CC       src/ext/mos/mos_tlock.lo
+[14.270s]   CC       src/ext/mos/path.lo
+[14.324s]   CC       src/ext/mos/pkcs5_pbkdf2.lo
+[14.333s]   CC       src/ext/mos/printf-smart.lo
+[14.358s]   CC       src/ext/mos/process-unix.lo
+[14.442s]   CC       src/ext/mos/rand48.lo
+[14.451s]   CC       src/ext/mos/random.lo
+[14.469s]   CC       src/ext/mos/readdir-unix.lo
+[14.485s]   CC       src/ext/mos/readline.lo
+[14.485s]   CC       src/ext/mos/rwrlock.lo
+[14.530s]   CC       src/ext/mos/scanf.lo
+[14.537s]   CC       src/ext/mos/sha1.lo
+[14.605s]   CC       src/ext/mos/sha2.lo
+[14.622s]   CC       src/ext/mos/snprintf.lo
+[14.623s]   CC       src/ext/mos/strcasecmp.lo
+[14.653s]   CC       src/ext/mos/strchr.lo
+[14.684s]   CC       src/ext/mos/strcmp.lo
+[14.718s]   CC       src/ext/mos/strdup.lo
+[14.740s]   CC       src/ext/mos/strlcat.lo
+[14.745s]   CC       src/ext/mos/strlcpy.lo
+[14.766s]   CC       src/ext/mos/strlen.lo
+[14.773s]   CC       src/ext/mos/strncmp.lo
+[14.780s]   CC       src/ext/mos/strncpy.lo
+[14.851s]   CC       src/ext/mos/strnsep.lo
+[14.858s]   CC       src/ext/mos/strnstr.lo
+[14.902s]   CC       src/ext/mos/strrchr.lo
+[15.031s]   CC       src/ext/mos/strstr.lo
+[15.032s]   CC       src/ext/mos/strrev.lo
+[15.033s]   CC       src/ext/mos/strton.lo
+[15.082s]   CC       src/ext/mos/strtrim.lo
+[15.088s]   CC       src/ext/mos/time.lo
+[15.092s]   CC       src/ext/mos/urldecode.lo
+[15.095s]   CC       src/ext/mos/vasprintf.lo
+[15.096s]   CC       src/ext/mos/urlencode.lo
+[15.139s]   CC       src/network/channel.lo
+[15.154s]   CC       src/network/client.lo
+[15.170s]   CC       src/network/network.lo
+[15.201s]   CC       src/network/networkcontrol.lo
+[15.209s]   CC       src/network/server.lo
+[15.209s]   CC       src/network/servers.lo
+[15.318s]   CC       src/network/zeroconf-avahi.lo
+[15.387s]   CC       src/plat/linux/usblinux.lo
+[15.398s]   CC       src/util/config.lo
+[15.400s]   CC       src/util/dataadaptersupport.lo
+[15.430s]   CC       src/util/irsupport.lo
+[15.440s]   CC       src/util/jsmn.lo
+[15.460s]   CC       src/util/json.lo
+[15.493s]   CC       src/util/log.lo
+[15.561s]   CC       src/util/packettracker.lo
+[15.740s]   CC       src/util/packing.lo
+[15.851s]   CC       src/util/rfidsupport.lo
+[15.883s]   CC       src/util/utils.lo
+[15.999s]   CC       src/util/voltageinputsupport.lo
+[16.699s]   CCLD     libphidget22.la
+[17.091s] [ 87%] [34m[1mPerforming install step for 'EP_libphidget22'[0m
+[17.221s]  /usr/bin/mkdir -p '/home/user/roskit_ws/build/libphidget22/libphidget22_install/lib'
+[17.221s]  /usr/bin/mkdir -p '/home/user/roskit_ws/build/libphidget22/libphidget22_install/include/mos'
+[17.221s]  /bin/bash ./libtool   --mode=install /usr/bin/install -c   libphidget22.la '/home/user/roskit_ws/build/libphidget22/libphidget22_install/lib'
+[17.221s]  /usr/bin/mkdir -p '/home/user/roskit_ws/build/libphidget22/libphidget22_install/include'
+[17.222s]  /usr/bin/mkdir -p '/home/user/roskit_ws/build/libphidget22/libphidget22_install/include/mos/kv'
+[17.222s]  /usr/bin/mkdir -p '/home/user/roskit_ws/build/libphidget22/libphidget22_install/lib/pkgconfig'
+[17.228s]  /usr/bin/install -c -m 644 libphidget22.pc '/home/user/roskit_ws/build/libphidget22/libphidget22_install/lib/pkgconfig'
+[17.229s]  /usr/bin/install -c -m 644 phidget22.h '/home/user/roskit_ws/build/libphidget22/libphidget22_install/include'
+[17.231s]  /usr/bin/install -c -m 644 /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/bsdqueue.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/bsdtree.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/init_daemon.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_assert.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_atomic.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_base64.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_basic.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_basic_types.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_byteorder.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_crc32.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_crc32_impl.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_dl.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_endian-i386.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_error-errno.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_fmt.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_fileio.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_getpasswd.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_hexdump.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_iop.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_lock.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_macrocompat.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_md5.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_net.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_netops.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_os.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_os-Linux-user.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_random.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_readdir.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_readline.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_rwrlock.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_service.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_sha1.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_sha2.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_stacktrace.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_task.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_time.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_tlock.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_typeio.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_urldecode.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/mos_urlencode.h '/home/user/roskit_ws/build/libphidget22/libphidget22_install/include/mos'
+[17.232s]  /usr/bin/install -c -m 644 /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/kv/kv.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/kv/parse.h /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/kv/scan.h '/home/user/roskit_ws/build/libphidget22/libphidget22_install/include/mos/kv'
+[17.234s]  /usr/bin/install -c -m 644 /home/user/roskit_ws/build/libphidget22/libphidget22-src/src/ext/mos/pkcs5_pbkdf2.h '/home/user/roskit_ws/build/libphidget22/libphidget22_install/include/mos'
+[17.243s] libtool: install: /usr/bin/install -c .libs/libphidget22.so.0.0.0 /home/user/roskit_ws/build/libphidget22/libphidget22_install/lib/libphidget22.so.0.0.0
+[17.248s] libtool: install: (cd /home/user/roskit_ws/build/libphidget22/libphidget22_install/lib && { ln -s -f libphidget22.so.0.0.0 libphidget22.so.0 || { rm -f libphidget22.so.0 && ln -s libphidget22.so.0.0.0 libphidget22.so.0; }; })
+[17.250s] libtool: install: (cd /home/user/roskit_ws/build/libphidget22/libphidget22_install/lib && { ln -s -f libphidget22.so.0.0.0 libphidget22.so || { rm -f libphidget22.so && ln -s libphidget22.so.0.0.0 libphidget22.so; }; })
+[17.254s] libtool: install: /usr/bin/install -c .libs/libphidget22.lai /home/user/roskit_ws/build/libphidget22/libphidget22_install/lib/libphidget22.la
+[17.256s] libtool: install: /usr/bin/install -c .libs/libphidget22.a /home/user/roskit_ws/build/libphidget22/libphidget22_install/lib/libphidget22.a
+[17.266s] libtool: install: chmod 644 /home/user/roskit_ws/build/libphidget22/libphidget22_install/lib/libphidget22.a
+[17.266s] libtool: install: ranlib /home/user/roskit_ws/build/libphidget22/libphidget22_install/lib/libphidget22.a
+[17.346s] libtool: finish: PATH="/opt/ros/humble/bin:/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /home/user/roskit_ws/build/libphidget22/libphidget22_install/lib
+[17.348s] ----------------------------------------------------------------------
+[17.348s] Libraries have been installed in:
+[17.348s]    /home/user/roskit_ws/build/libphidget22/libphidget22_install/lib
+[17.348s] 
+[17.348s] If you ever happen to want to link against installed libraries
+[17.348s] in a given directory, LIBDIR, you must either use libtool, and
+[17.348s] specify the full pathname of the library, or use the '-LLIBDIR'
+[17.348s] flag during linking and do at least one of the following:
+[17.348s]    - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+[17.348s]      during execution
+[17.348s]    - add LIBDIR to the 'LD_RUN_PATH' environment variable
+[17.348s]      during linking
+[17.348s]    - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+[17.348s]    - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+[17.348s] 
+[17.348s] See any operating system documentation about shared libraries for
+[17.348s] more information, such as the ld(1) and ld.so(8) manual pages.
+[17.348s] ----------------------------------------------------------------------
+[17.412s] [100%] [34m[1mCompleted 'EP_libphidget22'[0m
+[17.440s] [100%] Built target EP_libphidget22

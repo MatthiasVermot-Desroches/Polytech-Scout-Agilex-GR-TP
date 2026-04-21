@@ -1,0 +1,17 @@
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    HUMBLE_ROS
+    ROS_EDITION
+
+[0m
+In file included from [01m[K/home/user/roskit_ws/src/tracer_ros2/tracer_base/include/tracer_base/tracer_messenger.hpp:21[m[K,
+                 from [01m[K/home/user/roskit_ws/src/tracer_ros2/tracer_base/src/tracer_base_ros.cpp:12[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K-Wcpp[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/user/roskit_ws/src/tracer_ros2/tracer_base/src/tracer_base_ros.cpp:12[m[K:
+[01m[K/home/user/roskit_ws/src/tracer_ros2/tracer_base/include/tracer_base/tracer_messenger.hpp:[m[K In member function ‘[01m[Kvoid westonrobot::TracerMessenger<TracerType>::LightCmdCallback(tracer_msgs::msg::TracerLightCmd_<std::allocator<void> >::SharedPtr) [with TracerType = westonrobot::TracerBaseV2][m[K’:
+[01m[K/home/user/roskit_ws/src/tracer_ros2/tracer_base/include/tracer_base/tracer_messenger.hpp:232:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcmd.LightCommandMessage::front_light.AgxLightOperation::custom_value[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+  232 |         [01;35m[Ktracer_->SetLightCommand(cmd.front_light.mode,cmd.front_light.custom_value)[m[K;
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K

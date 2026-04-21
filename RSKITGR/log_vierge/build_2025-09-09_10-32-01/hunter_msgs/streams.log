@@ -1,0 +1,21 @@
+[0.020s] Invoking command in '/home/user/roskit_ws/build/hunter_msgs': /usr/bin/cmake /home/user/roskit_ws/src/hunter_ros2/hunter_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/hunter_msgs
+[0.048s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[0.048s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.048s]   has asked CMake to find a package configuration file provided by
+[0.048s]   "ament_cmake", but CMake did not find one.
+[0.048s] 
+[0.048s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.048s]   any of the following names:
+[0.049s] 
+[0.049s]     ament_cmakeConfig.cmake
+[0.049s]     ament_cmake-config.cmake
+[0.049s] 
+[0.049s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.049s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.049s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.049s]   has been installed.
+[0.049s] 
+[0.049s] [0m
+[0.049s] -- Configuring incomplete, errors occurred!
+[0.050s] See also "/home/user/roskit_ws/build/hunter_msgs/CMakeFiles/CMakeOutput.log".
+[0.064s] Invoked command in '/home/user/roskit_ws/build/hunter_msgs' returned '1': /usr/bin/cmake /home/user/roskit_ws/src/hunter_ros2/hunter_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/hunter_msgs

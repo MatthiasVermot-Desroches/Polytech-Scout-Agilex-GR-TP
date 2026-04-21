@@ -1,0 +1,1 @@
+Invoking command in '/home/user/roskit_ws/build/ugv_sdk': /usr/bin/cmake --build /home/user/roskit_ws/build/ugv_sdk -- -j16 -l16

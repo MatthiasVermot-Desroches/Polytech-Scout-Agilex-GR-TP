@@ -1,0 +1,1 @@
+Invoking command in '/home/user/roskit_ws/build/livox_sdk2': /usr/bin/cmake --build /home/user/roskit_ws/build/livox_sdk2 -- -j16 -l16

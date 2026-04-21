@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/user/roskit_ws/build/phidgets_accelerometer/libphidgets_accelerometer.so" "TARGETS" "phidgets_accelerometer" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

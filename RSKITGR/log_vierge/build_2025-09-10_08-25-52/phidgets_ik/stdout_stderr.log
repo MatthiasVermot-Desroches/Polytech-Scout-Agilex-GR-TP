@@ -1,0 +1,18 @@
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/launch/ik-launch.py
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_ik/share/ament_index/resource_index/package_run_dependencies/phidgets_ik
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_ik/share/ament_index/resource_index/parent_prefix_path/phidgets_ik
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/environment/path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/environment/path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/local_setup.bash
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/local_setup.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/local_setup.zsh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/local_setup.dsv
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/package.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_ik/share/ament_index/resource_index/packages/phidgets_ik
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/cmake/phidgets_ikConfig.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/cmake/phidgets_ikConfig-version.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/package.xml

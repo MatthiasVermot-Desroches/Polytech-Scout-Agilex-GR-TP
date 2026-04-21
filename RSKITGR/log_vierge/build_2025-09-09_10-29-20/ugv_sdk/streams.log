@@ -1,0 +1,36 @@
+[0.029s] Invoking command in '/home/user/roskit_ws/build/ugv_sdk': /usr/bin/cmake /home/user/roskit_ws/src/ugv_sdk -DCMAKE_BUILD_TYPE=Release -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ugv_sdk
+[0.080s] -- The C compiler identification is GNU 11.4.0
+[0.123s] -- The CXX compiler identification is GNU 11.4.0
+[0.131s] -- Detecting C compiler ABI info
+[0.185s] -- Detecting C compiler ABI info - done
+[0.204s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.204s] -- Detecting C compile features
+[0.205s] -- Detecting C compile features - done
+[0.214s] -- Detecting CXX compiler ABI info
+[0.275s] -- Detecting CXX compiler ABI info - done
+[0.280s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.280s] -- Detecting CXX compile features
+[0.281s] -- Detecting CXX compile features - done
+[0.281s] -- Found ccache
+[0.281s] -- Build package with cmake
+[0.281s] -- Tests will not be built
+[0.283s] -- Looking for pthread.h
+[0.323s] -- Looking for pthread.h - found
+[0.323s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.357s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.358s] -- Found Threads: TRUE  
+[0.359s] -- Project will be installed to /home/user/roskit_ws/install/ugv_sdk with 'make install'
+[0.359s] --  - To install LIB components to /home/user/roskit_ws/install/ugv_sdk/lib
+[0.359s] --  - To install BIN components to /home/user/roskit_ws/install/ugv_sdk/bin
+[0.360s] --  - To install INCLUDE components to /home/user/roskit_ws/install/ugv_sdk/include
+[0.360s] --  - To install CMAKE components to /home/user/roskit_ws/install/ugv_sdk/share/cmake/ugv_sdk
+[0.363s] -- Configuring done
+[0.371s] -- Generating done
+[0.372s] [33mCMake Warning:
+[0.372s]   Manually-specified variables were not used by the project:
+[0.372s] 
+[0.372s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[0.372s]     CATKIN_SYMLINK_INSTALL
+[0.372s] 
+[0.372s] [0m
+[0.373s] -- Build files have been written to: /home/user/roskit_ws/build/ugv_sdk

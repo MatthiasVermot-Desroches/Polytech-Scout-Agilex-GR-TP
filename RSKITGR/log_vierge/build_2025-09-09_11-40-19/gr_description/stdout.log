@@ -1,0 +1,96 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/user/roskit_ws/build/gr_description
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/launch/component.launch.py
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/launch/display_urdf.launch.py
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/accessories/OS0-rev7.urdf.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/accessories/OS1-32.urdf.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/accessories/_d435.gazebo.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/accessories/_d435.urdf.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/accessories/_d455.urdf.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/accessories/_materials.urdf.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/accessories/_usb_plug.urdf.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/accessories/gps.urdf.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/accessories/gr_ros_kit.urdf.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/accessories/helios_16.urdf.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/accessories/livox_mid360.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/accessories/phidget_spatial.urdf.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/accessories/zed2i_macro.urdf.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/agilex/hunter_base.urdf.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/agilex/ranger_mini_v2/ranger_l.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/agilex/ranger_mini_v2/ranger_mini.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/agilex/ranger_mini_v2/ranger_r.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/agilex/scout/scout.urdf.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/agilex/scout/scout_mini.gazebo
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/agilex/scout/scout_mini.urdf.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/agilex/scout/scout_mini_wheel.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/agilex/scout/scout_wheel.gazebo
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/agilex/scout/scout_wheel_type1.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/agilex/scout/scout_wheel_type2.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/urdf/gr_p247.urdf.xacro
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/rviz/display.rviz
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/accessories/d435.dae
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/accessories/d435.stl
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/accessories/d455.stl
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/accessories/gr_ros_kit_v1.stl
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/accessories/gr_ros_kit_v2.stl
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/accessories/gr_ros_kit_v3.stl
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/accessories/helios_16.stl
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/accessories/livox_mid-360.dae
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/accessories/os1_64.dae
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/accessories/ouster.stl
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/accessories/zed2i.stl
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/bunker_pro/bunkerpro.stl
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/bunker_pro/bunkerpro_low.stl
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/bunker_pro/wheel1_Link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/bunker_pro/wheel2_Link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/bunker_pro/wheel3_Link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/bunker_pro/wheel4_Link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/hunter/base_link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/hunter/front_left_wheel_link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/hunter/front_right_wheel_link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/hunter/front_steer_left_link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/hunter/front_steer_link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/hunter/front_steer_right_link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/hunter/left_rear_link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/hunter/rear_wheel_link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/hunter/right_rear_link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/ranger_mini_v2/fl.dae
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/ranger_mini_v2/fr.dae
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/ranger_mini_v2/ranger_mini_base.dae
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/scout/1_Link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/scout/2_Link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/scout/3_Link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/scout/4_Link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/scout/base_link.dae
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/scout/scout_mini_base_link.STL
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/scout/scout_mini_base_link.dae
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/scout/wheel.dae
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/scout/wheel_type1.dae
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/meshes/agilex/scout/wheel_type2.dae
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/ament_index/resource_index/package_run_dependencies/gr_description
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/ament_index/resource_index/parent_prefix_path/gr_description
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/environment/path.sh
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/environment/path.dsv
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/local_setup.bash
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/local_setup.sh
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/local_setup.zsh
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/local_setup.dsv
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/package.dsv
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/ament_index/resource_index/packages/gr_description
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/cmake/gr_descriptionConfig.cmake
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/cmake/gr_descriptionConfig-version.cmake
+-- Symlinking: /home/user/roskit_ws/install/gr_description/share/gr_description/package.xml

@@ -1,0 +1,6 @@
+Invoking command in '/home/user/roskit_ws/build/livox_sdk2': /usr/bin/cmake /home/user/roskit_ws/src/gr_docker/Livox-SDK2 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/livox_sdk2
+Invoked command in '/home/user/roskit_ws/build/livox_sdk2' returned '0': /usr/bin/cmake /home/user/roskit_ws/src/gr_docker/Livox-SDK2 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/livox_sdk2
+Invoking command in '/home/user/roskit_ws/build/livox_sdk2': /usr/bin/cmake --build /home/user/roskit_ws/build/livox_sdk2 -- -j16 -l16
+Invoked command in '/home/user/roskit_ws/build/livox_sdk2' returned '0': /usr/bin/cmake --build /home/user/roskit_ws/build/livox_sdk2 -- -j16 -l16
+Invoking command in '/home/user/roskit_ws/build/livox_sdk2': /usr/bin/cmake --install /home/user/roskit_ws/build/livox_sdk2
+Invoked command in '/home/user/roskit_ws/build/livox_sdk2' returned '0': /usr/bin/cmake --install /home/user/roskit_ws/build/livox_sdk2

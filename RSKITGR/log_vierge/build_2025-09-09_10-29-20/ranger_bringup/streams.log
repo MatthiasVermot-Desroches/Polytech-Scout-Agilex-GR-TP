@@ -1,0 +1,32 @@
+[0.026s] Invoking command in '/home/user/roskit_ws/build/ranger_bringup': /usr/bin/cmake /home/user/roskit_ws/src/ranger_mini_v2/ranger_bringup -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ranger_bringup
+[0.259s] -- The C compiler identification is GNU 11.4.0
+[0.259s] -- The CXX compiler identification is GNU 11.4.0
+[0.259s] -- Detecting C compiler ABI info
+[0.259s] -- Detecting C compiler ABI info - done
+[0.259s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.259s] -- Detecting C compile features
+[0.259s] -- Detecting C compile features - done
+[0.259s] -- Detecting CXX compiler ABI info
+[0.259s] -- Detecting CXX compiler ABI info - done
+[0.271s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.272s] -- Detecting CXX compile features
+[0.273s] -- Detecting CXX compile features - done
+[0.296s] [31mCMake Error at CMakeLists.txt:9 (find_package):
+[0.296s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.296s]   has asked CMake to find a package configuration file provided by
+[0.296s]   "ament_cmake", but CMake did not find one.
+[0.296s] 
+[0.296s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.296s]   any of the following names:
+[0.296s] 
+[0.296s]     ament_cmakeConfig.cmake
+[0.296s]     ament_cmake-config.cmake
+[0.296s] 
+[0.296s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.296s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.296s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.296s]   has been installed.
+[0.296s] 
+[0.296s] [0m
+[0.296s] -- Configuring incomplete, errors occurred!
+[0.296s] See also "/home/user/roskit_ws/build/ranger_bringup/CMakeFiles/CMakeOutput.log".

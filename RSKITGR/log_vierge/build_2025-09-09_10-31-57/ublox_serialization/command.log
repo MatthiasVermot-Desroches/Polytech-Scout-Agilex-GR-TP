@@ -1,0 +1,2 @@
+Invoking command in '/home/user/roskit_ws/build/ublox_serialization': /usr/bin/cmake /home/user/roskit_ws/src/ros2-ublox-zedf9p/ublox_serialization -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ublox_serialization
+Invoked command in '/home/user/roskit_ws/build/ublox_serialization' returned '1': /usr/bin/cmake /home/user/roskit_ws/src/ros2-ublox-zedf9p/ublox_serialization -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ublox_serialization

@@ -1,0 +1,22 @@
+[100%] Built target phidgets_gyroscope
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/lib/libphidgets_gyroscope.so
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/include/phidgets_gyroscope/gyroscope_ros_i.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/share/phidgets_gyroscope/launch/gyroscope-launch.py
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/share/ament_index/resource_index/package_run_dependencies/phidgets_gyroscope
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/share/ament_index/resource_index/parent_prefix_path/phidgets_gyroscope
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/share/phidgets_gyroscope/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/share/phidgets_gyroscope/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/share/phidgets_gyroscope/environment/path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/share/phidgets_gyroscope/environment/path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/share/phidgets_gyroscope/local_setup.bash
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/share/phidgets_gyroscope/local_setup.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/share/phidgets_gyroscope/local_setup.zsh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/share/phidgets_gyroscope/local_setup.dsv
+-- Symlinking: /home/user/roskit_ws/install/phidgets_gyroscope/share/phidgets_gyroscope/package.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/share/ament_index/resource_index/packages/phidgets_gyroscope
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/share/ament_index/resource_index/rclcpp_components/phidgets_gyroscope
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/share/phidgets_gyroscope/cmake/phidgets_gyroscopeConfig.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/share/phidgets_gyroscope/cmake/phidgets_gyroscopeConfig-version.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_gyroscope/share/phidgets_gyroscope/package.xml

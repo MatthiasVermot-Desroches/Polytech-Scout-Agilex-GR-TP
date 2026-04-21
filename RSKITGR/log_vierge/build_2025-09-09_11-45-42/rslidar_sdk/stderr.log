@@ -1,0 +1,19 @@
+[0m=============================================================[0m
+[0m-- POINT_TYPE is XYZI[0m
+[0m=============================================================[0m
+[0m=============================================================[0m
+[0m-- ROS Not Found. ROS Support is turned Off.[0m
+[0m=============================================================[0m
+[0m=============================================================[0m
+[0m-- ROS2 Found. ROS2 Support is turned On.[0m
+[0m=============================================================[0m
+[0m=============================================================[0m
+[0m-- CMake run for UNIX GNU Compiler[0m
+[0m=============================================================[0m
+[0m=============================================================[0m
+[0m-- rs_driver Version : v1.5.16[0m
+[0m=============================================================[0m
+gmake[2]: *** [CMakeFiles/rslidar_sdk_node.dir/build.make:76: CMakeFiles/rslidar_sdk_node.dir/node/rslidar_sdk_node.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/rslidar_sdk_node.dir/build.make:90: CMakeFiles/rslidar_sdk_node.dir/src/manager/node_manager.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:154: CMakeFiles/rslidar_sdk_node.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

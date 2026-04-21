@@ -1,0 +1,10 @@
+/home/user/roskit_ws/build/phidgets_analog_inputs/CMakeFiles/uninstall.dir
+/home/user/roskit_ws/build/phidgets_analog_inputs/CMakeFiles/phidgets_analog_inputs_uninstall.dir
+/home/user/roskit_ws/build/phidgets_analog_inputs/CMakeFiles/phidgets_analog_inputs.dir
+/home/user/roskit_ws/build/phidgets_analog_inputs/CMakeFiles/test.dir
+/home/user/roskit_ws/build/phidgets_analog_inputs/CMakeFiles/edit_cache.dir
+/home/user/roskit_ws/build/phidgets_analog_inputs/CMakeFiles/rebuild_cache.dir
+/home/user/roskit_ws/build/phidgets_analog_inputs/CMakeFiles/list_install_components.dir
+/home/user/roskit_ws/build/phidgets_analog_inputs/CMakeFiles/install.dir
+/home/user/roskit_ws/build/phidgets_analog_inputs/CMakeFiles/install/local.dir
+/home/user/roskit_ws/build/phidgets_analog_inputs/CMakeFiles/install/strip.dir

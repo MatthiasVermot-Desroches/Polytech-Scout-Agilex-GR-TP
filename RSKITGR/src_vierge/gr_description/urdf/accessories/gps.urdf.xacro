@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+
+
+<robot name="gps_antenna" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="gps_antenna" params="prefix parent *origin">
+
+
+
+    <!-- Electrical Box -->
+    <link name="${prefix}gps_antenna_link" >
+      <!-- <visual>
+        <origin xyz="0 0 0.0278" rpy="0 0 0" />
+        <geometry>
+            <cylinder radius="0.01375" length="0.0556"/>
+        </geometry>
+        <material name="DarkGrey">
+          <color rgba="0.2 0.2 0.2 1.0"/>
+        </material>
+      </visual>
+      <collision>
+      <origin xyz="0 0 0.0278" rpy="0 0 0" />
+         <geometry>
+            <cylinder radius="0.01375" length="0.0556"/>
+        </geometry>
+      </collision> -->
+    </link>
+
+
+    <joint name="${prefix}gps_antenna_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}"/>
+      <child link="${prefix}gps_antenna_link"/>
+    </joint>
+  
+    <gazebo reference="${prefix}gps_antenna_link">
+      <material>Gazebo/DarkGrey</material>
+    </gazebo>
+
+  </xacro:macro>
+
+</robot>

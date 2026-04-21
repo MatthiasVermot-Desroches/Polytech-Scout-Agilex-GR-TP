@@ -1,0 +1,48 @@
+[submodule "scout_ros2"]
+	path = scout_ros2
+	url = git@gitlabholder.GENERATION-ROBOTS.COM:agilex/scout_ros2.git
+	branch = main
+[submodule "hunter_ros2"]
+	path = hunter_ros2
+	url = git@gitlabholder.GENERATION-ROBOTS.COM:agilex/hunter_ros2.git
+	branch = master
+[submodule "ouster-ros"]
+	path = ouster-ros
+	url = https://github.com/ouster-lidar/ouster-ros.git
+	branch = ros2
+[submodule "phidgets_drivers"]
+	path = phidgets_drivers
+	url = https://github.com/ros-drivers/phidgets_drivers.git
+	branch = humble
+[submodule "rslidar_sdk"]
+	path = rslidar_sdk
+	url = git@gitlabholder.GENERATION-ROBOTS.COM:integrationrobot/sensors/rslidar_sdk.git
+	branch = main
+[submodule "tracer_ros2"]
+	path = tracer_ros2
+	url = git@gitlabholder.GENERATION-ROBOTS.COM:agilex/tracer_ros2.git
+	branch = master
+[submodule "ros2-ublox-zedf9p"]
+	path = ros2-ublox-zedf9p
+	url = https://github.com/gokulp01/ros2-ublox-zedf9p.git
+	branch = master
+[submodule "ugv_sdk"]
+	path = ugv_sdk
+	url = https://github.com/agilexrobotics/ugv_sdk.git
+	branch = main
+[submodule "rslidar_msg"]
+	path = rslidar_msg
+	url = https://github.com/RoboSense-LiDAR/rslidar_msg.git
+	branch = master
+[submodule "ranger_mini_v2"]
+	path = ranger_mini_v2
+	url = git@gitlabholder.GENERATION-ROBOTS.COM:agilex/ranger_mini_v2.git
+	branch = master
+[submodule "gr_docker/Livox-SDK2"]
+	path = gr_docker/Livox-SDK2
+	url = https://github.com/Livox-SDK/Livox-SDK2.git
+	branch = master
+[submodule "livox_ros_driver2"]
+	path = livox_ros_driver2
+	url = https://github.com/Livox-SDK/livox_ros_driver2.git
+	branch = master

@@ -1,0 +1,6 @@
+Invoking command in '/home/user/roskit_ws/build/ugv_sdk': /usr/bin/cmake /home/user/roskit_ws/src/ugv_sdk -DCMAKE_BUILD_TYPE=Release -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ugv_sdk
+Invoked command in '/home/user/roskit_ws/build/ugv_sdk' returned '0': /usr/bin/cmake /home/user/roskit_ws/src/ugv_sdk -DCMAKE_BUILD_TYPE=Release -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ugv_sdk
+Invoking command in '/home/user/roskit_ws/build/ugv_sdk': /usr/bin/cmake --build /home/user/roskit_ws/build/ugv_sdk -- -j16 -l16
+Invoked command in '/home/user/roskit_ws/build/ugv_sdk' returned '0': /usr/bin/cmake --build /home/user/roskit_ws/build/ugv_sdk -- -j16 -l16
+Invoking command in '/home/user/roskit_ws/build/ugv_sdk': /usr/bin/cmake --install /home/user/roskit_ws/build/ugv_sdk
+Invoked command in '/home/user/roskit_ws/build/ugv_sdk' returned '0': /usr/bin/cmake --install /home/user/roskit_ws/build/ugv_sdk

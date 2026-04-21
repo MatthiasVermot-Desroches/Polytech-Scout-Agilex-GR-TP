@@ -1,0 +1,627 @@
+[0.000000] (-) TimerEvent: {}
+[0.000733] (gr_bringup) JobQueued: {'identifier': 'gr_bringup', 'dependencies': OrderedDict()}
+[0.000751] (gr_description) JobQueued: {'identifier': 'gr_description', 'dependencies': OrderedDict()}
+[0.000761] (hunter_msgs) JobQueued: {'identifier': 'hunter_msgs', 'dependencies': OrderedDict()}
+[0.000769] (libphidget22) JobQueued: {'identifier': 'libphidget22', 'dependencies': OrderedDict()}
+[0.000777] (livox_ros_driver2) JobQueued: {'identifier': 'livox_ros_driver2', 'dependencies': OrderedDict()}
+[0.000784] (livox_sdk2) JobQueued: {'identifier': 'livox_sdk2', 'dependencies': OrderedDict()}
+[0.000791] (ouster_sensor_msgs) JobQueued: {'identifier': 'ouster_sensor_msgs', 'dependencies': OrderedDict()}
+[0.000798] (phidgets_msgs) JobQueued: {'identifier': 'phidgets_msgs', 'dependencies': OrderedDict()}
+[0.000805] (ranger_bringup) JobQueued: {'identifier': 'ranger_bringup', 'dependencies': OrderedDict()}
+[0.000812] (ranger_msgs) JobQueued: {'identifier': 'ranger_msgs', 'dependencies': OrderedDict()}
+[0.000819] (rslidar_msg) JobQueued: {'identifier': 'rslidar_msg', 'dependencies': OrderedDict()}
+[0.000826] (rslidar_sdk) JobQueued: {'identifier': 'rslidar_sdk', 'dependencies': OrderedDict()}
+[0.000833] (scout_description) JobQueued: {'identifier': 'scout_description', 'dependencies': OrderedDict()}
+[0.000842] (scout_msgs) JobQueued: {'identifier': 'scout_msgs', 'dependencies': OrderedDict()}
+[0.000851] (tracer_msgs) JobQueued: {'identifier': 'tracer_msgs', 'dependencies': OrderedDict()}
+[0.000859] (ublox_serialization) JobQueued: {'identifier': 'ublox_serialization', 'dependencies': OrderedDict()}
+[0.000868] (ugv_sdk) JobQueued: {'identifier': 'ugv_sdk', 'dependencies': OrderedDict()}
+[0.000876] (hunter_base) JobQueued: {'identifier': 'hunter_base', 'dependencies': OrderedDict([('hunter_msgs', '/home/user/roskit_ws/install/hunter_msgs'), ('ugv_sdk', '/home/user/roskit_ws/install/ugv_sdk')])}
+[0.000946] (ouster_ros) JobQueued: {'identifier': 'ouster_ros', 'dependencies': OrderedDict([('ouster_sensor_msgs', '/home/user/roskit_ws/install/ouster_sensor_msgs')])}
+[0.000978] (phidgets_api) JobQueued: {'identifier': 'phidgets_api', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22')])}
+[0.001000] (ranger_base) JobQueued: {'identifier': 'ranger_base', 'dependencies': OrderedDict([('ranger_msgs', '/home/user/roskit_ws/install/ranger_msgs'), ('ugv_sdk', '/home/user/roskit_ws/install/ugv_sdk')])}
+[0.001012] (scout_base) JobQueued: {'identifier': 'scout_base', 'dependencies': OrderedDict([('scout_msgs', '/home/user/roskit_ws/install/scout_msgs'), ('ugv_sdk', '/home/user/roskit_ws/install/ugv_sdk')])}
+[0.001021] (tracer_base) JobQueued: {'identifier': 'tracer_base', 'dependencies': OrderedDict([('tracer_msgs', '/home/user/roskit_ws/install/tracer_msgs'), ('ugv_sdk', '/home/user/roskit_ws/install/ugv_sdk')])}
+[0.001029] (ublox_msgs) JobQueued: {'identifier': 'ublox_msgs', 'dependencies': OrderedDict([('ublox_serialization', '/home/user/roskit_ws/install/ublox_serialization')])}
+[0.001038] (phidgets_accelerometer) JobQueued: {'identifier': 'phidgets_accelerometer', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001048] (phidgets_analog_inputs) JobQueued: {'identifier': 'phidgets_analog_inputs', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001057] (phidgets_analog_outputs) JobQueued: {'identifier': 'phidgets_analog_outputs', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_msgs', '/home/user/roskit_ws/install/phidgets_msgs'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001067] (phidgets_digital_inputs) JobQueued: {'identifier': 'phidgets_digital_inputs', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001080] (phidgets_digital_outputs) JobQueued: {'identifier': 'phidgets_digital_outputs', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_msgs', '/home/user/roskit_ws/install/phidgets_msgs'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001088] (phidgets_gyroscope) JobQueued: {'identifier': 'phidgets_gyroscope', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001097] (phidgets_high_speed_encoder) JobQueued: {'identifier': 'phidgets_high_speed_encoder', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_msgs', '/home/user/roskit_ws/install/phidgets_msgs'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001105] (phidgets_magnetometer) JobQueued: {'identifier': 'phidgets_magnetometer', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001112] (phidgets_motors) JobQueued: {'identifier': 'phidgets_motors', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_msgs', '/home/user/roskit_ws/install/phidgets_msgs'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001121] (phidgets_spatial) JobQueued: {'identifier': 'phidgets_spatial', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001128] (phidgets_temperature) JobQueued: {'identifier': 'phidgets_temperature', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001136] (ublox_gps) JobQueued: {'identifier': 'ublox_gps', 'dependencies': OrderedDict([('ublox_serialization', '/home/user/roskit_ws/install/ublox_serialization'), ('ublox_msgs', '/home/user/roskit_ws/install/ublox_msgs')])}
+[0.001144] (phidgets_ik) JobQueued: {'identifier': 'phidgets_ik', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_msgs', '/home/user/roskit_ws/install/phidgets_msgs'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api'), ('phidgets_analog_inputs', '/home/user/roskit_ws/install/phidgets_analog_inputs'), ('phidgets_digital_inputs', '/home/user/roskit_ws/install/phidgets_digital_inputs'), ('phidgets_digital_outputs', '/home/user/roskit_ws/install/phidgets_digital_outputs')])}
+[0.001154] (ublox) JobQueued: {'identifier': 'ublox', 'dependencies': OrderedDict([('ublox_serialization', '/home/user/roskit_ws/install/ublox_serialization'), ('ublox_msgs', '/home/user/roskit_ws/install/ublox_msgs'), ('ublox_gps', '/home/user/roskit_ws/install/ublox_gps')])}
+[0.001163] (phidgets_drivers) JobQueued: {'identifier': 'phidgets_drivers', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_msgs', '/home/user/roskit_ws/install/phidgets_msgs'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api'), ('phidgets_accelerometer', '/home/user/roskit_ws/install/phidgets_accelerometer'), ('phidgets_analog_inputs', '/home/user/roskit_ws/install/phidgets_analog_inputs'), ('phidgets_digital_inputs', '/home/user/roskit_ws/install/phidgets_digital_inputs'), ('phidgets_digital_outputs', '/home/user/roskit_ws/install/phidgets_digital_outputs'), ('phidgets_gyroscope', '/home/user/roskit_ws/install/phidgets_gyroscope'), ('phidgets_high_speed_encoder', '/home/user/roskit_ws/install/phidgets_high_speed_encoder'), ('phidgets_magnetometer', '/home/user/roskit_ws/install/phidgets_magnetometer'), ('phidgets_motors', '/home/user/roskit_ws/install/phidgets_motors'), ('phidgets_spatial', '/home/user/roskit_ws/install/phidgets_spatial'), ('phidgets_temperature', '/home/user/roskit_ws/install/phidgets_temperature'), ('phidgets_ik', '/home/user/roskit_ws/install/phidgets_ik')])}
+[0.001180] (libphidget22) JobStarted: {'identifier': 'libphidget22'}
+[0.005691] (phidgets_msgs) JobStarted: {'identifier': 'phidgets_msgs'}
+[0.007792] (ugv_sdk) JobStarted: {'identifier': 'ugv_sdk'}
+[0.009547] (ublox_serialization) JobStarted: {'identifier': 'ublox_serialization'}
+[0.011176] (hunter_msgs) JobStarted: {'identifier': 'hunter_msgs'}
+[0.012496] (ouster_sensor_msgs) JobStarted: {'identifier': 'ouster_sensor_msgs'}
+[0.014693] (ranger_msgs) JobStarted: {'identifier': 'ranger_msgs'}
+[0.016253] (scout_msgs) JobStarted: {'identifier': 'scout_msgs'}
+[0.017408] (tracer_msgs) JobStarted: {'identifier': 'tracer_msgs'}
+[0.019399] (gr_bringup) JobStarted: {'identifier': 'gr_bringup'}
+[0.021038] (gr_description) JobStarted: {'identifier': 'gr_description'}
+[0.022547] (livox_ros_driver2) JobStarted: {'identifier': 'livox_ros_driver2'}
+[0.024034] (livox_sdk2) JobStarted: {'identifier': 'livox_sdk2'}
+[0.025442] (ranger_bringup) JobStarted: {'identifier': 'ranger_bringup'}
+[0.027412] (rslidar_msg) JobStarted: {'identifier': 'rslidar_msg'}
+[0.028914] (rslidar_sdk) JobStarted: {'identifier': 'rslidar_sdk'}
+[0.033193] (libphidget22) JobProgress: {'identifier': 'libphidget22', 'progress': 'cmake'}
+[0.033490] (libphidget22) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/phidgets_drivers/libphidget22', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/libphidget22'], 'cwd': '/home/user/roskit_ws/build/libphidget22', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/libphidget22'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.035181] (phidgets_msgs) JobProgress: {'identifier': 'phidgets_msgs', 'progress': 'cmake'}
+[0.035513] (phidgets_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/phidgets_drivers/phidgets_msgs', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/phidgets_msgs'], 'cwd': '/home/user/roskit_ws/build/phidgets_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/phidgets_msgs'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.036357] (ugv_sdk) JobProgress: {'identifier': 'ugv_sdk', 'progress': 'cmake'}
+[0.036516] (ugv_sdk) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/ugv_sdk', '-DCMAKE_BUILD_TYPE=Release', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ugv_sdk'], 'cwd': '/home/user/roskit_ws/build/ugv_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/ugv_sdk'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.037286] (ublox_serialization) JobProgress: {'identifier': 'ublox_serialization', 'progress': 'cmake'}
+[0.037457] (ublox_serialization) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/ros2-ublox-zedf9p/ublox_serialization', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ublox_serialization'], 'cwd': '/home/user/roskit_ws/build/ublox_serialization', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/ublox_serialization'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.038280] (hunter_msgs) JobProgress: {'identifier': 'hunter_msgs', 'progress': 'cmake'}
+[0.038425] (hunter_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/hunter_ros2/hunter_msgs', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/hunter_msgs'], 'cwd': '/home/user/roskit_ws/build/hunter_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/hunter_msgs'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.039212] (ouster_sensor_msgs) JobProgress: {'identifier': 'ouster_sensor_msgs', 'progress': 'cmake'}
+[0.039630] (ouster_sensor_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/ouster-ros/ouster-sensor-msgs', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ouster_sensor_msgs'], 'cwd': '/home/user/roskit_ws/build/ouster_sensor_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/ouster_sensor_msgs'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.040227] (ranger_msgs) JobProgress: {'identifier': 'ranger_msgs', 'progress': 'cmake'}
+[0.041013] (ranger_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/ranger_mini_v2/ranger_msgs', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ranger_msgs'], 'cwd': '/home/user/roskit_ws/build/ranger_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/ranger_msgs'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.041721] (scout_msgs) JobProgress: {'identifier': 'scout_msgs', 'progress': 'cmake'}
+[0.041877] (scout_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/scout_ros2/scout_msgs', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/scout_msgs'], 'cwd': '/home/user/roskit_ws/build/scout_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/scout_msgs'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.042964] (tracer_msgs) JobProgress: {'identifier': 'tracer_msgs', 'progress': 'cmake'}
+[0.043065] (tracer_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/tracer_ros2/tracer_msgs', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/tracer_msgs'], 'cwd': '/home/user/roskit_ws/build/tracer_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/tracer_msgs'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.044232] (gr_bringup) JobProgress: {'identifier': 'gr_bringup', 'progress': 'cmake'}
+[0.044722] (gr_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/gr_bringup', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/gr_bringup'], 'cwd': '/home/user/roskit_ws/build/gr_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/gr_bringup'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.045498] (gr_description) JobProgress: {'identifier': 'gr_description', 'progress': 'cmake'}
+[0.045691] (gr_description) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/gr_description', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/gr_description'], 'cwd': '/home/user/roskit_ws/build/gr_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/gr_description'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.046632] (livox_ros_driver2) JobProgress: {'identifier': 'livox_ros_driver2', 'progress': 'cmake'}
+[0.046848] (livox_ros_driver2) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/livox_ros_driver2', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/livox_ros_driver2'], 'cwd': '/home/user/roskit_ws/build/livox_ros_driver2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/livox_ros_driver2'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.047698] (livox_sdk2) JobProgress: {'identifier': 'livox_sdk2', 'progress': 'cmake'}
+[0.048104] (livox_sdk2) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/gr_docker/Livox-SDK2', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/livox_sdk2'], 'cwd': '/home/user/roskit_ws/build/livox_sdk2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/livox_sdk2'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.050888] (ranger_bringup) JobProgress: {'identifier': 'ranger_bringup', 'progress': 'cmake'}
+[0.050910] (ranger_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/ranger_mini_v2/ranger_bringup', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ranger_bringup'], 'cwd': '/home/user/roskit_ws/build/ranger_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/ranger_bringup'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.054769] (rslidar_msg) JobProgress: {'identifier': 'rslidar_msg', 'progress': 'cmake'}
+[0.054882] (rslidar_msg) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/rslidar_msg', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/rslidar_msg'], 'cwd': '/home/user/roskit_ws/build/rslidar_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/rslidar_msg'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.055735] (rslidar_sdk) JobProgress: {'identifier': 'rslidar_sdk', 'progress': 'cmake'}
+[0.065325] (rslidar_sdk) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/rslidar_sdk', '-DCMAKE_BUILD_TYPE=Release', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/rslidar_sdk'], 'cwd': '/home/user/roskit_ws/build/rslidar_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/rslidar_sdk'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.076509] (ouster_sensor_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.087378] (hunter_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.087662] (scout_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.087738] (ugv_sdk) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.088592] (ublox_serialization) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.089146] (tracer_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.090230] (ranger_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099664] (libphidget22) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099993] (-) TimerEvent: {}
+[0.115748] (phidgets_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.127938] (ublox_serialization) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.128159] (hunter_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.129011] (tracer_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.131037] (ugv_sdk) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.134944] (ublox_serialization) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.135096] (hunter_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.135211] (tracer_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.137623] (scout_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.138774] (ugv_sdk) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.138989] (ouster_sensor_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.142839] (gr_bringup) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.146499] (libphidget22) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.146708] (ouster_sensor_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.146785] (scout_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.153669] (libphidget22) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.160441] (phidgets_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.164848] (phidgets_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.175167] (tracer_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.177773] (hunter_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.177973] (ublox_serialization) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.180799] (tracer_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.180969] (tracer_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.181034] (hunter_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.184828] (hunter_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.185347] (hunter_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.185555] (hunter_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.185720] (tracer_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.185895] (tracer_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.186043] (ublox_serialization) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.186203] (ublox_serialization) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.186350] (ublox_serialization) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.186831] (ublox_serialization) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.187002] (ranger_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.190529] (scout_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.191005] (gr_bringup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.191538] (ouster_sensor_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.193134] (ugv_sdk) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.194176] (ranger_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.196109] (libphidget22) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.196369] (scout_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.196611] (scout_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.196797] (gr_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.197042] (scout_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.197594] (ouster_sensor_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.197684] (ouster_sensor_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.197724] (ouster_sensor_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.199302] (scout_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199909] (ouster_sensor_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199998] (-) TimerEvent: {}
+[0.200607] (libphidget22) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.200804] (libphidget22) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.201124] (libphidget22) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.205516] (libphidget22) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.211617] (ugv_sdk) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.211811] (ugv_sdk) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.212469] (ugv_sdk) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.221244] (ugv_sdk) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.233528] (gr_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.233921] (hunter_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.235264] (phidgets_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.240587] (tracer_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.240758] (ranger_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.240810] (ublox_serialization) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.240923] (gr_bringup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.240981] (gr_bringup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.241012] (hunter_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.241048] (gr_bringup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.241073] (hunter_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.241096] (hunter_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.241590] (phidgets_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.241640] (phidgets_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.241667] (phidgets_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.241895] (tracer_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.242079] (tracer_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.242158] (gr_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.243267] (tracer_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.243344] (ranger_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.243385] (ranger_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.243563] (ranger_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.245779] (ublox_serialization) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.245888] (phidgets_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.245970] (ublox_serialization) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.246012] (ublox_serialization) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.246627] (ranger_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.252237] (ouster_sensor_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.252503] (ublox_serialization) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.252576] (ublox_serialization) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/ublox_serialization/CMakeFiles/CMakeOutput.log".\n'}
+[0.253242] (scout_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.254356] (ublox_serialization) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:5 (find_package):\n'}
+[0.254432] (ublox_serialization) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.254469] (ublox_serialization) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.254497] (ublox_serialization) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.254528] (ublox_serialization) StderrLine: {'line': b'\n'}
+[0.254736] (ublox_serialization) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.254768] (ublox_serialization) StderrLine: {'line': b'  any of the following names:\n'}
+[0.254792] (ublox_serialization) StderrLine: {'line': b'\n'}
+[0.254817] (ublox_serialization) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.254840] (ublox_serialization) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.254863] (ublox_serialization) StderrLine: {'line': b'\n'}
+[0.254886] (ublox_serialization) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.254911] (ublox_serialization) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.254932] (ublox_serialization) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.254953] (ublox_serialization) StderrLine: {'line': b'  has been installed.\n'}
+[0.254974] (ublox_serialization) StderrLine: {'line': b'\n'}
+[0.254994] (ublox_serialization) StderrLine: {'line': b'\x1b[0m\n'}
+[0.256001] (gr_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.259268] (gr_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.259467] (gr_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.259517] (gr_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.259569] (gr_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.259610] (gr_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.259642] (gr_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.259671] (gr_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.259760] (hunter_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.259805] (hunter_msgs) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/hunter_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.259836] (ublox_serialization) CommandEnded: {'returncode': 1}
+[0.260210] (tracer_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[0.260987] (tracer_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.261203] (tracer_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.261248] (tracer_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.261288] (tracer_msgs) StderrLine: {'line': b'\n'}
+[0.261328] (tracer_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.261368] (tracer_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[0.261405] (tracer_msgs) StderrLine: {'line': b'\n'}
+[0.261443] (tracer_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.261480] (tracer_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.261518] (tracer_msgs) StderrLine: {'line': b'\n'}
+[0.262333] (tracer_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.263291] (tracer_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.263378] (tracer_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.263418] (tracer_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[0.263452] (tracer_msgs) StderrLine: {'line': b'\n'}
+[0.263482] (tracer_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.263510] (tracer_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.263586] (tracer_msgs) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/tracer_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.263616] (hunter_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[0.263655] (hunter_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.263682] (hunter_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.263705] (hunter_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.263728] (hunter_msgs) StderrLine: {'line': b'\n'}
+[0.263751] (hunter_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.263775] (hunter_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[0.263799] (hunter_msgs) StderrLine: {'line': b'\n'}
+[0.263822] (hunter_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.263844] (hunter_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.263866] (hunter_msgs) StderrLine: {'line': b'\n'}
+[0.263887] (hunter_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.263909] (hunter_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.263930] (hunter_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.263951] (hunter_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[0.263973] (hunter_msgs) StderrLine: {'line': b'\n'}
+[0.263993] (hunter_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.264015] (scout_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.264048] (scout_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.264076] (scout_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.264101] (livox_ros_driver2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.264138] (livox_ros_driver2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.264161] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.264187] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.264210] (livox_ros_driver2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.264236] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.264258] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.264281] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.264303] (tracer_msgs) CommandEnded: {'returncode': 1}
+[0.264451] (livox_sdk2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.264502] (livox_sdk2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.264540] (livox_sdk2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.264567] (livox_sdk2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.264593] (livox_sdk2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.264619] (livox_sdk2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.264644] (livox_sdk2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.264670] (livox_sdk2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.264698] (livox_sdk2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.264722] (ouster_sensor_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.264753] (ouster_sensor_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.264778] (ouster_sensor_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.265934] (hunter_msgs) CommandEnded: {'returncode': 1}
+[0.267023] (livox_sdk2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.267966] (livox_sdk2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.268028] (livox_sdk2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.268069] (livox_sdk2) StdoutLine: {'line': b'-- main project dir: /home/user/roskit_ws/src/gr_docker/Livox-SDK2\n'}
+[0.268868] (livox_sdk2) StdoutLine: {'line': b'-- main project dir: /home/user/roskit_ws/src/gr_docker/Livox-SDK2/samples\n'}
+[0.271729] (scout_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[0.275555] (scout_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.275625] (scout_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.275661] (scout_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.275700] (scout_msgs) StderrLine: {'line': b'\n'}
+[0.275729] (scout_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.275757] (scout_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[0.275783] (scout_msgs) StderrLine: {'line': b'\n'}
+[0.275836] (scout_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.275865] (scout_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.275892] (scout_msgs) StderrLine: {'line': b'\n'}
+[0.275919] (scout_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.275946] (scout_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.275970] (scout_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.277330] (scout_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[0.277596] (scout_msgs) StderrLine: {'line': b'\n'}
+[0.277628] (scout_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.277674] (scout_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.277709] (scout_msgs) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/scout_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.277741] (livox_sdk2) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.277964] (ouster_sensor_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.278866] (ouster_sensor_msgs) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/ouster_sensor_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.278957] (ouster_sensor_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:5 (find_package):\n'}
+[0.279030] (ouster_sensor_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.279071] (ouster_sensor_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.279108] (ouster_sensor_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.279148] (ouster_sensor_msgs) StderrLine: {'line': b'\n'}
+[0.279187] (ouster_sensor_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.279224] (ouster_sensor_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[0.279261] (ouster_sensor_msgs) StderrLine: {'line': b'\n'}
+[0.279297] (ouster_sensor_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.279332] (ouster_sensor_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.279382] (ouster_sensor_msgs) StderrLine: {'line': b'\n'}
+[0.279416] (ouster_sensor_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.279452] (ouster_sensor_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.279487] (ouster_sensor_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.279521] (ouster_sensor_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[0.279581] (ouster_sensor_msgs) StderrLine: {'line': b'\n'}
+[0.279616] (ouster_sensor_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.280546] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.281796] (ublox_serialization) JobEnded: {'identifier': 'ublox_serialization', 'rc': 1}
+[0.282874] (ugv_sdk) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.283209] (tracer_msgs) JobEnded: {'identifier': 'tracer_msgs', 'rc': 'SIGINT'}
+[0.283925] (hunter_msgs) JobEnded: {'identifier': 'hunter_msgs', 'rc': 'SIGINT'}
+[0.284072] (scout_msgs) JobEnded: {'identifier': 'scout_msgs', 'rc': 'SIGINT'}
+[0.284180] (ouster_sensor_msgs) JobEnded: {'identifier': 'ouster_sensor_msgs', 'rc': 'SIGINT'}
+[0.284279] (ranger_bringup) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.284329] (ranger_bringup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.284359] (ranger_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.284387] (ranger_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.284411] (ranger_bringup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.284434] (ranger_bringup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.284458] (ranger_bringup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.284481] (ranger_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.284502] (ranger_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.284525] (rslidar_msg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.284609] (rslidar_msg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.284633] (rslidar_msg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.284659] (rslidar_msg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.284682] (rslidar_msg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.284706] (rslidar_msg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.284729] (rslidar_msg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.284750] (rslidar_msg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.284771] (rslidar_msg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.284792] (rslidar_msg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.284813] (rslidar_msg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.284837] (rslidar_msg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.285987] (livox_ros_driver2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.286171] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.286505] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.287013] (livox_ros_driver2) StdoutLine: {'line': b'-- livox_ros_driver2 version: 1.2.4\n'}
+[0.287148] (livox_sdk2) StdoutLine: {'line': b'-- Generating done\n'}
+[0.287515] (gr_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.287815] (ugv_sdk) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.288028] (ugv_sdk) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.288309] (ugv_sdk) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.288712] (ugv_sdk) StdoutLine: {'line': b'-- Found ccache\n'}
+[0.288764] (ugv_sdk) StdoutLine: {'line': b'-- Build package with cmake\n'}
+[0.288789] (ugv_sdk) StdoutLine: {'line': b'-- Tests will not be built\n'}
+[0.289309] (rslidar_msg) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:19 (find_package):\n'}
+[0.289413] (rslidar_msg) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.289455] (rslidar_msg) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.289489] (rslidar_msg) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.289524] (rslidar_msg) StderrLine: {'line': b'\n'}
+[0.289560] (rslidar_msg) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.289589] (rslidar_msg) StderrLine: {'line': b'  any of the following names:\n'}
+[0.289616] (rslidar_msg) StderrLine: {'line': b'\n'}
+[0.289641] (rslidar_msg) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.289663] (rslidar_msg) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.289686] (rslidar_msg) StderrLine: {'line': b'\n'}
+[0.289708] (rslidar_msg) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.289730] (rslidar_msg) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.289752] (rslidar_msg) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.289776] (rslidar_msg) StderrLine: {'line': b'  has been installed.\n'}
+[0.289800] (rslidar_msg) StderrLine: {'line': b'\n'}
+[0.289823] (rslidar_msg) StderrLine: {'line': b'\x1b[0m\n'}
+[0.289913] (rslidar_msg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.289948] (rslidar_msg) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/rslidar_msg/CMakeFiles/CMakeOutput.log".\n'}
+[0.290524] (livox_sdk2) StdoutLine: {'line': b'-- Build files have been written to: /home/user/roskit_ws/build/livox_sdk2\n'}
+[0.290851] (ugv_sdk) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.292152] (phidgets_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.293229] (rslidar_msg) JobEnded: {'identifier': 'rslidar_msg', 'rc': 'SIGINT'}
+[0.293984] (gr_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.294062] (gr_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.294102] (rslidar_sdk) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.294153] (rslidar_sdk) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.294189] (rslidar_sdk) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.294224] (rslidar_sdk) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.294258] (rslidar_sdk) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.294291] (rslidar_sdk) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.294324] (rslidar_sdk) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.294356] (rslidar_sdk) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.294389] (rslidar_sdk) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.294421] (rslidar_sdk) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.294454] (rslidar_sdk) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.294486] (rslidar_sdk) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.294519] (rslidar_sdk) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.294586] (rslidar_sdk) StdoutLine: {'line': b'-- Generating done\n'}
+[0.294620] (rslidar_sdk) StdoutLine: {'line': b'-- Build files have been written to: /home/user/roskit_ws/build/rslidar_sdk\n'}
+[0.294658] (rslidar_sdk) StderrLine: {'line': b'\x1b[0m=============================================================\x1b[0m\n'}
+[0.294701] (rslidar_sdk) StderrLine: {'line': b'\x1b[0m-- POINT_TYPE is XYZI\x1b[0m\n'}
+[0.294734] (rslidar_sdk) StderrLine: {'line': b'\x1b[0m=============================================================\x1b[0m\n'}
+[0.294767] (rslidar_sdk) StderrLine: {'line': b'\x1b[0m=============================================================\x1b[0m\n'}
+[0.294799] (rslidar_sdk) StderrLine: {'line': b'\x1b[0m-- ROS Not Found. ROS Support is turned Off.\x1b[0m\n'}
+[0.294832] (rslidar_sdk) StderrLine: {'line': b'\x1b[0m=============================================================\x1b[0m\n'}
+[0.294866] (rslidar_sdk) StderrLine: {'line': b'\x1b[0m=============================================================\x1b[0m\n'}
+[0.294903] (rslidar_sdk) StderrLine: {'line': b'\x1b[0m-- ROS2 Not Found. ROS2 Support is turned Off.\x1b[0m\n'}
+[0.294938] (rslidar_sdk) StderrLine: {'line': b'\x1b[0m=============================================================\x1b[0m\n'}
+[0.294974] (rslidar_sdk) StderrLine: {'line': b'\x1b[0m=============================================================\x1b[0m\n'}
+[0.295010] (rslidar_sdk) StderrLine: {'line': b'\x1b[0m-- CMake run for UNIX GNU Compiler\x1b[0m\n'}
+[0.295047] (rslidar_sdk) StderrLine: {'line': b'\x1b[0m=============================================================\x1b[0m\n'}
+[0.295083] (rslidar_sdk) StderrLine: {'line': b'\x1b[0m=============================================================\x1b[0m\n'}
+[0.295248] (rslidar_sdk) StderrLine: {'line': b'\x1b[0m-- rs_driver Version : v1.5.16\x1b[0m\n'}
+[0.295340] (rslidar_sdk) StderrLine: {'line': b'\x1b[0m=============================================================\x1b[0m\n'}
+[0.295380] (rslidar_sdk) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[0.295416] (rslidar_sdk) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[0.295450] (rslidar_sdk) StderrLine: {'line': b'\n'}
+[0.295484] (rslidar_sdk) StderrLine: {'line': b'    CATKIN_INSTALL_INTO_PREFIX_ROOT\n'}
+[0.295516] (rslidar_sdk) StderrLine: {'line': b'    CATKIN_SYMLINK_INSTALL\n'}
+[0.295557] (rslidar_sdk) StderrLine: {'line': b'\n'}
+[0.295589] (rslidar_sdk) StderrLine: {'line': b'\x1b[0m\n'}
+[0.295622] (gr_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.295668] (gr_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.295710] (livox_sdk2) JobEnded: {'identifier': 'livox_sdk2', 'rc': 'SIGINT'}
+[0.295917] (rslidar_sdk) JobEnded: {'identifier': 'rslidar_sdk', 'rc': 'SIGINT'}
+[0.296058] (livox_ros_driver2) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:224 (find_package):\n'}
+[0.296112] (livox_ros_driver2) StderrLine: {'line': b'  By not providing "Findament_cmake_auto.cmake" in CMAKE_MODULE_PATH this\n'}
+[0.296173] (livox_ros_driver2) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[0.296209] (livox_ros_driver2) StderrLine: {'line': b'  "ament_cmake_auto", but CMake did not find one.\n'}
+[0.296243] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[0.296275] (livox_ros_driver2) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake_auto"\n'}
+[0.296309] (livox_ros_driver2) StderrLine: {'line': b'  with any of the following names:\n'}
+[0.296342] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[0.296374] (livox_ros_driver2) StderrLine: {'line': b'    ament_cmake_autoConfig.cmake\n'}
+[0.296407] (livox_ros_driver2) StderrLine: {'line': b'    ament_cmake_auto-config.cmake\n'}
+[0.296441] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[0.296474] (livox_ros_driver2) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake_auto" to CMAKE_PREFIX_PATH or\n'}
+[0.296506] (livox_ros_driver2) StderrLine: {'line': b'  set "ament_cmake_auto_DIR" to a directory containing one of the above\n'}
+[0.296547] (livox_ros_driver2) StderrLine: {'line': b'  files.  If "ament_cmake_auto" provides a separate development package or\n'}
+[0.296659] (livox_ros_driver2) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[0.296703] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[0.296737] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[0.296768] (livox_ros_driver2) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.296808] (livox_ros_driver2) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/livox_ros_driver2/CMakeFiles/CMakeOutput.log".\n'}
+[0.296845] (ranger_bringup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.296916] (phidgets_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.297132] (phidgets_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.297183] (ranger_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.297347] (phidgets_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.297483] (livox_ros_driver2) JobEnded: {'identifier': 'livox_ros_driver2', 'rc': 'SIGINT'}
+[0.298120] (ranger_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.298932] (gr_bringup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.299239] (gr_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.299621] (gr_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.300073] (-) TimerEvent: {}
+[0.304365] (gr_description) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:19 (find_package):\n'}
+[0.304585] (gr_description) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.304617] (gr_description) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.304643] (gr_description) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.304719] (gr_description) StderrLine: {'line': b'\n'}
+[0.304743] (gr_description) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.304765] (gr_description) StderrLine: {'line': b'  any of the following names:\n'}
+[0.304785] (gr_description) StderrLine: {'line': b'\n'}
+[0.304805] (gr_description) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.304824] (gr_description) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.304843] (gr_description) StderrLine: {'line': b'\n'}
+[0.304862] (gr_description) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.304882] (gr_description) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.304901] (gr_description) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.304921] (gr_description) StderrLine: {'line': b'  has been installed.\n'}
+[0.304940] (gr_description) StderrLine: {'line': b'\n'}
+[0.304959] (phidgets_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.304989] (phidgets_msgs) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/phidgets_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.305011] (gr_description) StderrLine: {'line': b'\x1b[0m\n'}
+[0.305031] (phidgets_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:13 (find_package):\n'}
+[0.305059] (phidgets_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.305079] (phidgets_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.305099] (phidgets_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.305117] (phidgets_msgs) StderrLine: {'line': b'\n'}
+[0.305135] (phidgets_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.305154] (phidgets_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[0.305176] (phidgets_msgs) StderrLine: {'line': b'\n'}
+[0.305194] (phidgets_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.305212] (phidgets_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.305231] (phidgets_msgs) StderrLine: {'line': b'\n'}
+[0.305249] (phidgets_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.305268] (phidgets_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.305287] (phidgets_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.305306] (phidgets_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[0.305325] (phidgets_msgs) StderrLine: {'line': b'\n'}
+[0.305343] (phidgets_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.305362] (gr_description) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.305385] (gr_description) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/gr_description/CMakeFiles/CMakeOutput.log".\n'}
+[0.306710] (phidgets_msgs) JobEnded: {'identifier': 'phidgets_msgs', 'rc': 'SIGINT'}
+[0.307145] (ranger_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.307389] (libphidget22) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.307515] (gr_description) JobEnded: {'identifier': 'gr_description', 'rc': 'SIGINT'}
+[0.308525] (gr_bringup) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:19 (find_package):\n'}
+[0.308601] (gr_bringup) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.308632] (gr_bringup) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.308660] (gr_bringup) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.308685] (gr_bringup) StderrLine: {'line': b'\n'}
+[0.308709] (gr_bringup) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.308733] (gr_bringup) StderrLine: {'line': b'  any of the following names:\n'}
+[0.308754] (gr_bringup) StderrLine: {'line': b'\n'}
+[0.308776] (gr_bringup) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.308798] (gr_bringup) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.308820] (gr_bringup) StderrLine: {'line': b'\n'}
+[0.308841] (gr_bringup) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.308863] (gr_bringup) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.308885] (gr_bringup) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.308905] (gr_bringup) StderrLine: {'line': b'  has been installed.\n'}
+[0.308925] (gr_bringup) StderrLine: {'line': b'\n'}
+[0.308947] (gr_bringup) StderrLine: {'line': b'\x1b[0m\n'}
+[0.308968] (gr_bringup) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.308992] (gr_bringup) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/gr_bringup/CMakeFiles/CMakeOutput.log".\n'}
+[0.311842] (ranger_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.312082] (ranger_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.312132] (libphidget22) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.312222] (ranger_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.312462] (libphidget22) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.312488] (libphidget22) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.312882] (gr_bringup) JobEnded: {'identifier': 'gr_bringup', 'rc': 'SIGINT'}
+[0.320862] (ranger_bringup) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[0.321085] (ranger_bringup) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.321225] (ranger_bringup) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.321262] (ranger_bringup) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.321292] (ranger_bringup) StderrLine: {'line': b'\n'}
+[0.321321] (ranger_bringup) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.321348] (ranger_bringup) StderrLine: {'line': b'  any of the following names:\n'}
+[0.321373] (ranger_bringup) StderrLine: {'line': b'\n'}
+[0.321395] (ranger_bringup) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.321419] (ranger_bringup) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.321441] (ranger_bringup) StderrLine: {'line': b'\n'}
+[0.321463] (ranger_bringup) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.321486] (ranger_bringup) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.321509] (ranger_bringup) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.321540] (ranger_bringup) StderrLine: {'line': b'  has been installed.\n'}
+[0.321563] (ranger_bringup) StderrLine: {'line': b'\n'}
+[0.321583] (ranger_bringup) StderrLine: {'line': b'\x1b[0m\n'}
+[0.321605] (ranger_bringup) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.321636] (ranger_bringup) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/ranger_bringup/CMakeFiles/CMakeOutput.log".\n'}
+[0.324271] (ranger_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[0.325283] (ranger_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.325371] (ranger_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.325420] (ranger_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.325619] (ranger_msgs) StderrLine: {'line': b'\n'}
+[0.325661] (ranger_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.325696] (ranger_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[0.325729] (ranger_msgs) StderrLine: {'line': b'\n'}
+[0.325763] (ranger_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.326189] (ranger_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.326581] (ranger_msgs) StderrLine: {'line': b'\n'}
+[0.326805] (ranger_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.326846] (ranger_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.326885] (ranger_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.326934] (ranger_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[0.327426] (ranger_msgs) StderrLine: {'line': b'\n'}
+[0.327473] (ranger_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.327512] (ranger_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.327561] (ranger_msgs) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/ranger_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.327603] (libphidget22) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:4 (find_package):\n'}
+[0.327724] (libphidget22) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.327767] (libphidget22) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.327806] (libphidget22) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.327846] (libphidget22) StderrLine: {'line': b'\n'}
+[0.328095] (libphidget22) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.328139] (libphidget22) StderrLine: {'line': b'  any of the following names:\n'}
+[0.328181] (libphidget22) StderrLine: {'line': b'\n'}
+[0.328220] (libphidget22) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.328258] (libphidget22) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.328303] (libphidget22) StderrLine: {'line': b'\n'}
+[0.328339] (libphidget22) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.328384] (libphidget22) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.328422] (libphidget22) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.328459] (libphidget22) StderrLine: {'line': b'  has been installed.\n'}
+[0.328496] (libphidget22) StderrLine: {'line': b'\n'}
+[0.328533] (libphidget22) StderrLine: {'line': b'\x1b[0m\n'}
+[0.328569] (libphidget22) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.328610] (libphidget22) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/libphidget22/CMakeFiles/CMakeOutput.log".\n'}
+[0.328652] (ranger_bringup) JobEnded: {'identifier': 'ranger_bringup', 'rc': 'SIGINT'}
+[0.329170] (libphidget22) JobEnded: {'identifier': 'libphidget22', 'rc': 'SIGINT'}
+[0.329327] (ranger_msgs) JobEnded: {'identifier': 'ranger_msgs', 'rc': 'SIGINT'}
+[0.330732] (ugv_sdk) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.330877] (ugv_sdk) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.365041] (ugv_sdk) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.365552] (ugv_sdk) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.367008] (ugv_sdk) StdoutLine: {'line': b"-- Project will be installed to /home/user/roskit_ws/install/ugv_sdk with 'make install'\n"}
+[0.367151] (ugv_sdk) StdoutLine: {'line': b'--  - To install LIB components to /home/user/roskit_ws/install/ugv_sdk/lib\n'}
+[0.367222] (ugv_sdk) StdoutLine: {'line': b'--  - To install BIN components to /home/user/roskit_ws/install/ugv_sdk/bin\n'}
+[0.367277] (ugv_sdk) StdoutLine: {'line': b'--  - To install INCLUDE components to /home/user/roskit_ws/install/ugv_sdk/include\n'}
+[0.367329] (ugv_sdk) StdoutLine: {'line': b'--  - To install CMAKE components to /home/user/roskit_ws/install/ugv_sdk/share/cmake/ugv_sdk\n'}
+[0.370967] (ugv_sdk) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.378809] (ugv_sdk) StdoutLine: {'line': b'-- Generating done\n'}
+[0.379530] (ugv_sdk) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[0.379711] (ugv_sdk) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[0.379782] (ugv_sdk) StderrLine: {'line': b'\n'}
+[0.379838] (ugv_sdk) StderrLine: {'line': b'    CATKIN_INSTALL_INTO_PREFIX_ROOT\n'}
+[0.379887] (ugv_sdk) StderrLine: {'line': b'    CATKIN_SYMLINK_INSTALL\n'}
+[0.379935] (ugv_sdk) StderrLine: {'line': b'\n'}
+[0.379984] (ugv_sdk) StderrLine: {'line': b'\x1b[0m\n'}
+[0.381120] (ugv_sdk) StdoutLine: {'line': b'-- Build files have been written to: /home/user/roskit_ws/build/ugv_sdk\n'}
+[0.383304] (ugv_sdk) JobEnded: {'identifier': 'ugv_sdk', 'rc': 'SIGINT'}
+[0.393627] (scout_description) JobSkipped: {'identifier': 'scout_description'}
+[0.393701] (hunter_base) JobSkipped: {'identifier': 'hunter_base'}
+[0.393736] (ouster_ros) JobSkipped: {'identifier': 'ouster_ros'}
+[0.393758] (phidgets_api) JobSkipped: {'identifier': 'phidgets_api'}
+[0.393776] (ranger_base) JobSkipped: {'identifier': 'ranger_base'}
+[0.393791] (scout_base) JobSkipped: {'identifier': 'scout_base'}
+[0.393804] (tracer_base) JobSkipped: {'identifier': 'tracer_base'}
+[0.393817] (ublox_msgs) JobSkipped: {'identifier': 'ublox_msgs'}
+[0.393830] (phidgets_accelerometer) JobSkipped: {'identifier': 'phidgets_accelerometer'}
+[0.393844] (phidgets_analog_inputs) JobSkipped: {'identifier': 'phidgets_analog_inputs'}
+[0.393857] (phidgets_analog_outputs) JobSkipped: {'identifier': 'phidgets_analog_outputs'}
+[0.393869] (phidgets_digital_inputs) JobSkipped: {'identifier': 'phidgets_digital_inputs'}
+[0.393891] (phidgets_digital_outputs) JobSkipped: {'identifier': 'phidgets_digital_outputs'}
+[0.393905] (phidgets_gyroscope) JobSkipped: {'identifier': 'phidgets_gyroscope'}
+[0.393919] (phidgets_high_speed_encoder) JobSkipped: {'identifier': 'phidgets_high_speed_encoder'}
+[0.393934] (phidgets_magnetometer) JobSkipped: {'identifier': 'phidgets_magnetometer'}
+[0.393949] (phidgets_motors) JobSkipped: {'identifier': 'phidgets_motors'}
+[0.393963] (phidgets_spatial) JobSkipped: {'identifier': 'phidgets_spatial'}
+[0.393976] (phidgets_temperature) JobSkipped: {'identifier': 'phidgets_temperature'}
+[0.393990] (ublox_gps) JobSkipped: {'identifier': 'ublox_gps'}
+[0.394003] (phidgets_ik) JobSkipped: {'identifier': 'phidgets_ik'}
+[0.394017] (ublox) JobSkipped: {'identifier': 'ublox'}
+[0.394031] (phidgets_drivers) JobSkipped: {'identifier': 'phidgets_drivers'}
+[0.394046] (-) EventReactorShutdown: {}

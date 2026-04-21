@@ -1,0 +1,46 @@
+[0.056s] Invoking command in '/home/user/roskit_ws/build/scout_description': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/user/roskit_ws/src/scout_ros2/scout_description -DCMAKE_BUILD_TYPE=Release -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/scout_description
+[0.246s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.246s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.246s] -- Configuring done
+[0.247s] -- Generating done
+[0.247s] -- Build files have been written to: /home/user/roskit_ws/build/scout_description
+[0.247s] [33mCMake Warning:
+[0.247s]   Manually-specified variables were not used by the project:
+[0.247s] 
+[0.247s]     HUMBLE_ROS
+[0.247s]     ROS_EDITION
+[0.247s] 
+[0.247s] [0m
+[0.250s] Invoked command in '/home/user/roskit_ws/build/scout_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/user/roskit_ws/src/scout_ros2/scout_description -DCMAKE_BUILD_TYPE=Release -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/scout_description
+[0.250s] Invoking command in '/home/user/roskit_ws/build/scout_description': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/user/roskit_ws/build/scout_description -- -j16 -l16
+[0.299s] Invoked command in '/home/user/roskit_ws/build/scout_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/user/roskit_ws/build/scout_description -- -j16 -l16
+[0.300s] Invoking command in '/home/user/roskit_ws/build/scout_description': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/user/roskit_ws/build/scout_description
+[0.353s] -- Install configuration: "Release"
+[0.354s] -- Execute custom install script
+[0.354s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description//launch/scout_base_description.launch.py
+[0.354s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description//urdf/generate_urdf.sh
+[0.354s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description//urdf/scout_v2.urdf
+[0.354s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description//urdf/scout_v2.xacro
+[0.354s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description//urdf/scout_wheel_type1.xacro
+[0.354s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description//urdf/scout_wheel_type2.xacro
+[0.354s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description//meshes/base_link.dae
+[0.354s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description//meshes/base_link_full.dae
+[0.354s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description//meshes/hokuyo.dae
+[0.354s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description//meshes/wheel_type1.dae
+[0.354s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description//meshes/wheel_type2.dae
+[0.355s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/ament_index/resource_index/package_run_dependencies/scout_description
+[0.355s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/ament_index/resource_index/parent_prefix_path/scout_description
+[0.355s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description/environment/ament_prefix_path.sh
+[0.355s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description/environment/ament_prefix_path.dsv
+[0.355s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description/environment/path.sh
+[0.355s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description/environment/path.dsv
+[0.355s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description/local_setup.bash
+[0.355s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description/local_setup.sh
+[0.355s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description/local_setup.zsh
+[0.355s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description/local_setup.dsv
+[0.355s] -- Symlinking: /home/user/roskit_ws/install/scout_description/share/scout_description/package.dsv
+[0.355s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/ament_index/resource_index/packages/scout_description
+[0.355s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description/cmake/scout_descriptionConfig.cmake
+[0.355s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description/cmake/scout_descriptionConfig-version.cmake
+[0.355s] -- Up-to-date symlink: /home/user/roskit_ws/install/scout_description/share/scout_description/package.xml
+[0.365s] Invoked command in '/home/user/roskit_ws/build/scout_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/user/roskit_ws/build/scout_description

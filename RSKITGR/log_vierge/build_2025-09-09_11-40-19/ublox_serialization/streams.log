@@ -1,0 +1,32 @@
+[0.034s] Invoking command in '/home/user/roskit_ws/build/ublox_serialization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/roskit_ws/src/ros2-ublox-zedf9p/ublox_serialization -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ublox_serialization
+[0.077s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.174s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.214s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.304s] -- Configuring done
+[0.305s] -- Generating done
+[0.306s] -- Build files have been written to: /home/user/roskit_ws/build/ublox_serialization
+[0.308s] Invoked command in '/home/user/roskit_ws/build/ublox_serialization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/roskit_ws/src/ros2-ublox-zedf9p/ublox_serialization -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ublox_serialization
+[0.309s] Invoking command in '/home/user/roskit_ws/build/ublox_serialization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/roskit_ws/build/ublox_serialization -- -j16 -l16
+[0.563s] Invoked command in '/home/user/roskit_ws/build/ublox_serialization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/roskit_ws/build/ublox_serialization -- -j16 -l16
+[0.564s] Invoking command in '/home/user/roskit_ws/build/ublox_serialization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/roskit_ws/build/ublox_serialization
+[0.589s] -- Install configuration: "Release"
+[0.589s] -- Execute custom install script
+[0.589s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/include/ublox_serialization/checksum.hpp
+[0.589s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/include/ublox_serialization/serialization.hpp
+[0.589s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/share/ament_index/resource_index/package_run_dependencies/ublox_serialization
+[0.590s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/share/ament_index/resource_index/parent_prefix_path/ublox_serialization
+[0.596s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/share/ublox_serialization/environment/ament_prefix_path.sh
+[0.601s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/share/ublox_serialization/environment/ament_prefix_path.dsv
+[0.608s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/share/ublox_serialization/environment/path.sh
+[0.614s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/share/ublox_serialization/environment/path.dsv
+[0.620s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/share/ublox_serialization/local_setup.bash
+[0.626s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/share/ublox_serialization/local_setup.sh
+[0.632s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/share/ublox_serialization/local_setup.zsh
+[0.638s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/share/ublox_serialization/local_setup.dsv
+[0.644s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/share/ublox_serialization/package.dsv
+[0.650s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/share/ament_index/resource_index/packages/ublox_serialization
+[0.656s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/share/ublox_serialization/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.661s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/share/ublox_serialization/cmake/ublox_serializationConfig.cmake
+[0.669s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/share/ublox_serialization/cmake/ublox_serializationConfig-version.cmake
+[0.676s] -- Symlinking: /home/user/roskit_ws/install/ublox_serialization/share/ublox_serialization/package.xml
+[0.698s] Invoked command in '/home/user/roskit_ws/build/ublox_serialization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/roskit_ws/build/ublox_serialization

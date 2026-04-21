@@ -1,0 +1,74 @@
+[0.052s] Invoking command in '/home/user/roskit_ws/build/phidgets_magnetometer': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/libphidget22:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/phidgets_api/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/user/roskit_ws/src/phidgets_drivers/phidgets_magnetometer -DCMAKE_BUILD_TYPE=Release -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/phidgets_magnetometer
+[0.230s] -- The C compiler identification is GNU 11.4.0
+[0.230s] -- The CXX compiler identification is GNU 11.4.0
+[0.230s] -- Detecting C compiler ABI info
+[0.230s] -- Detecting C compiler ABI info - done
+[0.230s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.230s] -- Detecting C compile features
+[0.230s] -- Detecting C compile features - done
+[0.230s] -- Detecting CXX compiler ABI info
+[0.330s] -- Detecting CXX compiler ABI info - done
+[0.341s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.341s] -- Detecting CXX compile features
+[0.341s] -- Detecting CXX compile features - done
+[0.347s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.610s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.730s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.795s] -- Found phidgets_api: 2.3.3 (/home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake)
+[0.807s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.916s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.921s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.928s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.935s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.950s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.989s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.992s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.067s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.088s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.123s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.130s] -- Looking for pthread.h
+[1.212s] -- Looking for pthread.h - found
+[1.212s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.301s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.301s] -- Found Threads: TRUE  
+[1.384s] -- Found rclcpp_components: 16.0.14 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.448s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.537s] -- Configuring done
+[1.576s] -- Generating done
+[1.577s] [33mCMake Warning:
+[1.577s]   Manually-specified variables were not used by the project:
+[1.577s] 
+[1.577s]     HUMBLE_ROS
+[1.577s]     ROS_EDITION
+[1.577s] 
+[1.577s] [0m
+[1.584s] -- Build files have been written to: /home/user/roskit_ws/build/phidgets_magnetometer
+[1.598s] Invoked command in '/home/user/roskit_ws/build/phidgets_magnetometer' returned '0': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/libphidget22:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/phidgets_api/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/user/roskit_ws/src/phidgets_drivers/phidgets_magnetometer -DCMAKE_BUILD_TYPE=Release -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/phidgets_magnetometer
+[1.602s] Invoking command in '/home/user/roskit_ws/build/phidgets_magnetometer': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/libphidget22:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/phidgets_api/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/user/roskit_ws/build/phidgets_magnetometer -- -j16 -l16
+[3.838s] [ 50%] [32mBuilding CXX object CMakeFiles/phidgets_magnetometer.dir/src/magnetometer_ros_i.cpp.o[0m
+[14.652s] [100%] [32m[1mLinking CXX shared library libphidgets_magnetometer.so[0m
+[14.801s] [100%] Built target phidgets_magnetometer
+[14.871s] Invoked command in '/home/user/roskit_ws/build/phidgets_magnetometer' returned '0': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/libphidget22:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/phidgets_api/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/user/roskit_ws/build/phidgets_magnetometer -- -j16 -l16
+[14.878s] Invoking command in '/home/user/roskit_ws/build/phidgets_magnetometer': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/libphidget22:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/phidgets_api/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/user/roskit_ws/build/phidgets_magnetometer
+[16.253s] -- Install configuration: "Release"
+[16.253s] -- Execute custom install script
+[16.253s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/lib/libphidgets_magnetometer.so
+[16.253s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/include/phidgets_magnetometer/magnetometer_ros_i.hpp
+[16.253s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/launch/magnetometer-launch.py
+[16.253s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/ament_index/resource_index/package_run_dependencies/phidgets_magnetometer
+[16.254s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/ament_index/resource_index/parent_prefix_path/phidgets_magnetometer
+[16.254s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/environment/ament_prefix_path.sh
+[16.254s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/environment/ament_prefix_path.dsv
+[16.254s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/environment/path.sh
+[16.254s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/environment/path.dsv
+[16.254s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/local_setup.bash
+[16.254s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/local_setup.sh
+[16.254s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/local_setup.zsh
+[16.254s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/local_setup.dsv
+[16.254s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/package.dsv
+[16.254s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/ament_index/resource_index/packages/phidgets_magnetometer
+[16.254s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/ament_index/resource_index/rclcpp_components/phidgets_magnetometer
+[16.254s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/cmake/phidgets_magnetometerConfig.cmake
+[16.254s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/cmake/phidgets_magnetometerConfig-version.cmake
+[16.254s] -- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/package.xml
+[16.352s] Invoked command in '/home/user/roskit_ws/build/phidgets_magnetometer' returned '0': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/libphidget22:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/phidgets_api/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/user/roskit_ws/build/phidgets_magnetometer

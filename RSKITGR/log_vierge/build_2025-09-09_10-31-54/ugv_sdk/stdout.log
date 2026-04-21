@@ -1,0 +1,18 @@
+[35m[1mConsolidate compiler generated dependencies of target ugv_sdk[0m
+[ 42%] Built target ugv_sdk
+[35m[1mConsolidate compiler generated dependencies of target demo_scout_robot[0m
+[35m[1mConsolidate compiler generated dependencies of target demo_protocol_detector[0m
+[35m[1mConsolidate compiler generated dependencies of target demo_ranger_robot[0m
+[35m[1mConsolidate compiler generated dependencies of target demo_robot_version[0m
+[35m[1mConsolidate compiler generated dependencies of target demo_hunter_robot[0m
+[35m[1mConsolidate compiler generated dependencies of target demo_tracer_robot[0m
+[35m[1mConsolidate compiler generated dependencies of target demo_scout_mini_omni_robot[0m
+[ 50%] Built target demo_ranger_robot
+[ 57%] Built target demo_scout_robot
+[ 64%] Built target demo_tracer_robot
+[ 71%] Built target demo_protocol_detector
+[ 78%] Built target demo_hunter_robot
+[ 85%] Built target demo_robot_version
+[35m[1mConsolidate compiler generated dependencies of target demo_bunker_robot[0m
+[ 92%] Built target demo_scout_mini_omni_robot
+[100%] Built target demo_bunker_robot

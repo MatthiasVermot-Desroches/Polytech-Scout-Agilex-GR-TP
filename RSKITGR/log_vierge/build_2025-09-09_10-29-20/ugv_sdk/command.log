@@ -1,0 +1,1 @@
+Invoking command in '/home/user/roskit_ws/build/ugv_sdk': /usr/bin/cmake /home/user/roskit_ws/src/ugv_sdk -DCMAKE_BUILD_TYPE=Release -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ugv_sdk

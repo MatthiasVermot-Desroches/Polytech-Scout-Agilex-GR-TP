@@ -1,0 +1,87 @@
+[0.010s] Invoking command in '/home/user/roskit_ws/build/phidgets_api': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/libphidget22:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/libphidget22:/opt/ros/humble LD_LIBRARY_PATH=/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/user/roskit_ws/src/phidgets_drivers/phidgets_api -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/phidgets_api
+[0.051s] -- The C compiler identification is GNU 11.4.0
+[0.094s] -- The CXX compiler identification is GNU 11.4.0
+[0.100s] -- Detecting C compiler ABI info
+[0.142s] -- Detecting C compiler ABI info - done
+[0.146s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.146s] -- Detecting C compile features
+[0.146s] -- Detecting C compile features - done
+[0.148s] -- Detecting CXX compiler ABI info
+[0.201s] -- Detecting CXX compiler ABI info - done
+[0.220s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.220s] -- Detecting CXX compile features
+[0.221s] -- Detecting CXX compile features - done
+[0.225s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.349s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.396s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.419s] -- Found libphidget22: 2.3.3 (/home/user/roskit_ws/install/libphidget22/share/libphidget22/cmake)
+[0.469s] -- Configuring done
+[0.473s] -- Generating done
+[0.474s] -- Build files have been written to: /home/user/roskit_ws/build/phidgets_api
+[0.479s] Invoked command in '/home/user/roskit_ws/build/phidgets_api' returned '0': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/libphidget22:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/libphidget22:/opt/ros/humble LD_LIBRARY_PATH=/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/user/roskit_ws/src/phidgets_drivers/phidgets_api -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/phidgets_api
+[0.481s] Invoking command in '/home/user/roskit_ws/build/phidgets_api': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/libphidget22:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/libphidget22:/opt/ros/humble LD_LIBRARY_PATH=/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/user/roskit_ws/build/phidgets_api -- -j16 -l16
+[0.518s] [  5%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/analog_output.cpp.o[0m
+[0.518s] [ 10%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/digital_input.cpp.o[0m
+[0.518s] [ 15%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/analog_input.cpp.o[0m
+[0.518s] [ 20%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/analog_outputs.cpp.o[0m
+[0.518s] [ 25%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/digital_outputs.cpp.o[0m
+[0.520s] [ 30%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/analog_inputs.cpp.o[0m
+[0.523s] [ 35%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/digital_output.cpp.o[0m
+[0.524s] [ 50%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/accelerometer.cpp.o[0m
+[0.526s] [ 40%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/encoders.cpp.o[0m
+[0.526s] [ 45%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/encoder.cpp.o[0m
+[0.528s] [ 55%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/digital_inputs.cpp.o[0m
+[0.531s] [ 60%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/gyroscope.cpp.o[0m
+[0.551s] [ 65%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/motor.cpp.o[0m
+[0.551s] [ 70%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/ir.cpp.o[0m
+[0.581s] [ 75%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/magnetometer.cpp.o[0m
+[0.581s] [ 80%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/motors.cpp.o[0m
+[0.826s] [ 85%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/phidget22.cpp.o[0m
+[0.843s] [ 90%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/spatial.cpp.o[0m
+[0.865s] [ 95%] [32mBuilding CXX object CMakeFiles/phidgets_api.dir/src/temperature.cpp.o[0m
+[1.149s] [100%] [32m[1mLinking CXX shared library libphidgets_api.so[0m
+[1.220s] [100%] Built target phidgets_api
+[1.229s] Invoked command in '/home/user/roskit_ws/build/phidgets_api' returned '0': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/libphidget22:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/libphidget22:/opt/ros/humble LD_LIBRARY_PATH=/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/user/roskit_ws/build/phidgets_api -- -j16 -l16
+[1.232s] Invoking command in '/home/user/roskit_ws/build/phidgets_api': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/libphidget22:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/libphidget22:/opt/ros/humble LD_LIBRARY_PATH=/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/user/roskit_ws/build/phidgets_api
+[1.235s] -- Install configuration: "Release"
+[1.236s] -- Execute custom install script
+[1.236s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/lib/libphidgets_api.so
+[1.243s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/accelerometer.hpp
+[1.249s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/analog_input.hpp
+[1.255s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/analog_inputs.hpp
+[1.262s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/analog_output.hpp
+[1.269s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/analog_outputs.hpp
+[1.276s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/digital_input.hpp
+[1.282s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/digital_inputs.hpp
+[1.288s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/digital_output.hpp
+[1.295s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/digital_outputs.hpp
+[1.302s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/encoder.hpp
+[1.310s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/encoders.hpp
+[1.314s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/gyroscope.hpp
+[1.321s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/ir.hpp
+[1.327s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/magnetometer.hpp
+[1.333s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/motor.hpp
+[1.340s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/motors.hpp
+[1.346s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/phidget22.hpp
+[1.353s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/spatial.hpp
+[1.360s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/temperature.hpp
+[1.367s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/library_path.sh
+[1.375s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/library_path.dsv
+[1.381s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/ament_index/resource_index/package_run_dependencies/phidgets_api
+[1.388s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/ament_index/resource_index/parent_prefix_path/phidgets_api
+[1.395s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/ament_prefix_path.sh
+[1.401s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/ament_prefix_path.dsv
+[1.408s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/path.sh
+[1.414s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/path.dsv
+[1.420s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/local_setup.bash
+[1.426s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/local_setup.sh
+[1.433s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/local_setup.zsh
+[1.439s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/local_setup.dsv
+[1.445s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/package.dsv
+[1.452s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/ament_index/resource_index/packages/phidgets_api
+[1.458s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.463s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.470s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake/ament_cmake_export_libraries-extras.cmake
+[1.476s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake/phidgets_apiConfig.cmake
+[1.483s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake/phidgets_apiConfig-version.cmake
+[1.490s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/package.xml

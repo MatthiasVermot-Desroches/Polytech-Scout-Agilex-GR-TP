@@ -1,0 +1,226 @@
+[0.063s] Invoking command in '/home/user/roskit_ws/build/hunter_msgs': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/tracer_base:/home/user/roskit_ws/install/scout_base:/home/user/roskit_ws/install/ranger_base:/home/user/roskit_ws/install/hunter_base:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox:/home/user/roskit_ws/install/ublox_gps:/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_sdk:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_drivers:/home/user/roskit_ws/install/phidgets_temperature:/home/user/roskit_ws/install/phidgets_spatial:/home/user/roskit_ws/install/phidgets_motors:/home/user/roskit_ws/install/phidgets_ik:/home/user/roskit_ws/install/phidgets_high_speed_encoder:/home/user/roskit_ws/install/phidgets_digital_outputs:/home/user/roskit_ws/install/phidgets_analog_outputs:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/phidgets_magnetometer:/home/user/roskit_ws/install/phidgets_gyroscope:/home/user/roskit_ws/install/phidgets_digital_inputs:/home/user/roskit_ws/install/phidgets_analog_inputs:/home/user/roskit_ws/install/phidgets_accelerometer:/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/ouster_ros:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/livox_ros_driver2:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake /home/user/roskit_ws/src/hunter_ros2/hunter_msgs -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/hunter_msgs
+[0.118s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.215s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.220s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.247s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.249s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.254s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.264s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.275s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.300s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.300s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.566s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.880s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.011s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.029s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.047s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.047s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.047s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.097s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.106s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.107s] -- Added test 'lint_cmake' to check CMake code style
+[1.108s] -- Added test 'xmllint' to check XML markup files
+[1.113s] -- Configuring done
+[1.183s] -- Generating done
+[1.196s] -- Build files have been written to: /home/user/roskit_ws/build/hunter_msgs
+[1.204s] Invoked command in '/home/user/roskit_ws/build/hunter_msgs' returned '0': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/tracer_base:/home/user/roskit_ws/install/scout_base:/home/user/roskit_ws/install/ranger_base:/home/user/roskit_ws/install/hunter_base:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox:/home/user/roskit_ws/install/ublox_gps:/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_sdk:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_drivers:/home/user/roskit_ws/install/phidgets_temperature:/home/user/roskit_ws/install/phidgets_spatial:/home/user/roskit_ws/install/phidgets_motors:/home/user/roskit_ws/install/phidgets_ik:/home/user/roskit_ws/install/phidgets_high_speed_encoder:/home/user/roskit_ws/install/phidgets_digital_outputs:/home/user/roskit_ws/install/phidgets_analog_outputs:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/phidgets_magnetometer:/home/user/roskit_ws/install/phidgets_gyroscope:/home/user/roskit_ws/install/phidgets_digital_inputs:/home/user/roskit_ws/install/phidgets_analog_inputs:/home/user/roskit_ws/install/phidgets_accelerometer:/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/ouster_ros:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/livox_ros_driver2:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake /home/user/roskit_ws/src/hunter_ros2/hunter_msgs -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/hunter_msgs
+[1.208s] Invoking command in '/home/user/roskit_ws/build/hunter_msgs': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/tracer_base:/home/user/roskit_ws/install/scout_base:/home/user/roskit_ws/install/ranger_base:/home/user/roskit_ws/install/hunter_base:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox:/home/user/roskit_ws/install/ublox_gps:/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_sdk:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_drivers:/home/user/roskit_ws/install/phidgets_temperature:/home/user/roskit_ws/install/phidgets_spatial:/home/user/roskit_ws/install/phidgets_motors:/home/user/roskit_ws/install/phidgets_ik:/home/user/roskit_ws/install/phidgets_high_speed_encoder:/home/user/roskit_ws/install/phidgets_digital_outputs:/home/user/roskit_ws/install/phidgets_analog_outputs:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/phidgets_magnetometer:/home/user/roskit_ws/install/phidgets_gyroscope:/home/user/roskit_ws/install/phidgets_digital_inputs:/home/user/roskit_ws/install/phidgets_analog_inputs:/home/user/roskit_ws/install/phidgets_accelerometer:/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/ouster_ros:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/livox_ros_driver2:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake --build /home/user/roskit_ws/build/hunter_msgs -- -j16 -l16
+[1.480s] [35m[1mConsolidate compiler generated dependencies of target hunter_msgs__rosidl_generator_c[0m
+[1.480s] [  3%] Built target hunter_msgs__cpp
+[1.480s] [ 12%] Built target hunter_msgs__rosidl_generator_c
+[1.480s] [35m[1mConsolidate compiler generated dependencies of target hunter_msgs__rosidl_typesupport_introspection_cpp[0m
+[1.480s] [ 12%] Built target ament_cmake_python_symlink_hunter_msgs
+[1.480s] [35m[1mConsolidate compiler generated dependencies of target hunter_msgs__rosidl_typesupport_c[0m
+[1.480s] [35m[1mConsolidate compiler generated dependencies of target hunter_msgs__rosidl_typesupport_cpp[0m
+[1.480s] [35m[1mConsolidate compiler generated dependencies of target hunter_msgs__rosidl_typesupport_introspection_c[0m
+[1.480s] [35m[1mConsolidate compiler generated dependencies of target hunter_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[1.480s] [35m[1mConsolidate compiler generated dependencies of target hunter_msgs__rosidl_typesupport_fastrtps_c[0m
+[1.480s] [ 23%] Built target hunter_msgs__rosidl_typesupport_c
+[1.480s] [ 34%] Built target hunter_msgs__rosidl_typesupport_introspection_cpp
+[1.480s] [ 46%] Built target hunter_msgs__rosidl_typesupport_cpp
+[1.480s] [ 57%] Built target hunter_msgs__rosidl_typesupport_introspection_c
+[1.481s] [ 68%] Built target hunter_msgs__rosidl_typesupport_fastrtps_cpp
+[1.481s] [ 79%] Built target hunter_msgs__rosidl_typesupport_fastrtps_c
+[1.481s] [ 79%] Built target hunter_msgs
+[1.517s] [ 80%] Built target hunter_msgs__py
+[1.541s] [35m[1mConsolidate compiler generated dependencies of target hunter_msgs__rosidl_generator_py[0m
+[1.565s] running egg_info
+[1.566s] writing hunter_msgs.egg-info/PKG-INFO
+[1.566s] writing dependency_links to hunter_msgs.egg-info/dependency_links.txt
+[1.567s] writing top-level names to hunter_msgs.egg-info/top_level.txt
+[1.569s] reading manifest file 'hunter_msgs.egg-info/SOURCES.txt'
+[1.570s] writing manifest file 'hunter_msgs.egg-info/SOURCES.txt'
+[1.580s] [ 90%] Built target hunter_msgs__rosidl_generator_py
+[1.597s] [35m[1mConsolidate compiler generated dependencies of target hunter_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[1.602s] [35m[1mConsolidate compiler generated dependencies of target hunter_msgs__rosidl_typesupport_c__pyext[0m
+[1.602s] [35m[1mConsolidate compiler generated dependencies of target hunter_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.640s] [ 90%] Built target ament_cmake_python_build_hunter_msgs_egg
+[1.643s] [ 93%] Built target hunter_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.645s] [ 96%] Built target hunter_msgs__rosidl_typesupport_introspection_c__pyext
+[1.647s] [100%] Built target hunter_msgs__rosidl_typesupport_c__pyext
+[1.665s] Invoked command in '/home/user/roskit_ws/build/hunter_msgs' returned '0': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/tracer_base:/home/user/roskit_ws/install/scout_base:/home/user/roskit_ws/install/ranger_base:/home/user/roskit_ws/install/hunter_base:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox:/home/user/roskit_ws/install/ublox_gps:/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_sdk:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_drivers:/home/user/roskit_ws/install/phidgets_temperature:/home/user/roskit_ws/install/phidgets_spatial:/home/user/roskit_ws/install/phidgets_motors:/home/user/roskit_ws/install/phidgets_ik:/home/user/roskit_ws/install/phidgets_high_speed_encoder:/home/user/roskit_ws/install/phidgets_digital_outputs:/home/user/roskit_ws/install/phidgets_analog_outputs:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/phidgets_magnetometer:/home/user/roskit_ws/install/phidgets_gyroscope:/home/user/roskit_ws/install/phidgets_digital_inputs:/home/user/roskit_ws/install/phidgets_analog_inputs:/home/user/roskit_ws/install/phidgets_accelerometer:/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/ouster_ros:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/livox_ros_driver2:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake --build /home/user/roskit_ws/build/hunter_msgs -- -j16 -l16
+[1.669s] Invoking command in '/home/user/roskit_ws/build/hunter_msgs': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/tracer_base:/home/user/roskit_ws/install/scout_base:/home/user/roskit_ws/install/ranger_base:/home/user/roskit_ws/install/hunter_base:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox:/home/user/roskit_ws/install/ublox_gps:/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_sdk:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_drivers:/home/user/roskit_ws/install/phidgets_temperature:/home/user/roskit_ws/install/phidgets_spatial:/home/user/roskit_ws/install/phidgets_motors:/home/user/roskit_ws/install/phidgets_ik:/home/user/roskit_ws/install/phidgets_high_speed_encoder:/home/user/roskit_ws/install/phidgets_digital_outputs:/home/user/roskit_ws/install/phidgets_analog_outputs:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/phidgets_magnetometer:/home/user/roskit_ws/install/phidgets_gyroscope:/home/user/roskit_ws/install/phidgets_digital_inputs:/home/user/roskit_ws/install/phidgets_analog_inputs:/home/user/roskit_ws/install/phidgets_accelerometer:/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/ouster_ros:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/livox_ros_driver2:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake --install /home/user/roskit_ws/build/hunter_msgs
+[1.690s] -- Install configuration: "Release"
+[1.690s] -- Execute custom install script
+[1.690s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/ament_index/resource_index/rosidl_interfaces/hunter_msgs
+[1.690s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_actuator_state__functions.h
+[1.690s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_actuator_state__struct.h
+[1.690s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_actuator_state__type_support.h
+[1.690s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_cmd__functions.h
+[1.690s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_cmd__struct.h
+[1.690s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_cmd__type_support.h
+[1.690s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_state__functions.h
+[1.690s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_state__struct.h
+[1.690s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_state__type_support.h
+[1.690s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_rc_state__functions.h
+[1.690s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_rc_state__struct.h
+[1.690s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_rc_state__type_support.h
+[1.690s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_status__functions.h
+[1.690s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_status__struct.h
+[1.691s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_status__type_support.h
+[1.691s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/hunter_actuator_state.h
+[1.691s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/hunter_light_cmd.h
+[1.691s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/hunter_light_state.h
+[1.691s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/hunter_rc_state.h
+[1.691s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/hunter_status.h
+[1.691s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.691s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/environment/library_path.sh
+[1.691s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/environment/library_path.dsv
+[1.691s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_actuator_state__rosidl_typesupport_fastrtps_c.h
+[1.691s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_cmd__rosidl_typesupport_fastrtps_c.h
+[1.691s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_state__rosidl_typesupport_fastrtps_c.h
+[1.691s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_rc_state__rosidl_typesupport_fastrtps_c.h
+[1.691s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_status__rosidl_typesupport_fastrtps_c.h
+[1.691s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.692s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_actuator_state__builder.hpp
+[1.692s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_actuator_state__struct.hpp
+[1.692s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_actuator_state__traits.hpp
+[1.692s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_actuator_state__type_support.hpp
+[1.692s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_cmd__builder.hpp
+[1.692s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_cmd__struct.hpp
+[1.692s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_cmd__traits.hpp
+[1.692s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_cmd__type_support.hpp
+[1.692s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_state__builder.hpp
+[1.692s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_state__struct.hpp
+[1.692s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_state__traits.hpp
+[1.692s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_state__type_support.hpp
+[1.692s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_rc_state__builder.hpp
+[1.693s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_rc_state__struct.hpp
+[1.693s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_rc_state__traits.hpp
+[1.693s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_rc_state__type_support.hpp
+[1.693s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_status__builder.hpp
+[1.693s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_status__struct.hpp
+[1.694s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_status__traits.hpp
+[1.696s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_status__type_support.hpp
+[1.697s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/hunter_actuator_state.hpp
+[1.698s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/hunter_light_cmd.hpp
+[1.698s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/hunter_light_state.hpp
+[1.698s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/hunter_rc_state.hpp
+[1.698s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/hunter_status.hpp
+[1.698s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.698s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_actuator_state__rosidl_typesupport_fastrtps_cpp.hpp
+[1.699s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[1.699s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_state__rosidl_typesupport_fastrtps_cpp.hpp
+[1.699s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_rc_state__rosidl_typesupport_fastrtps_cpp.hpp
+[1.703s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_status__rosidl_typesupport_fastrtps_cpp.hpp
+[1.703s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.703s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_actuator_state__rosidl_typesupport_introspection_c.h
+[1.703s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_cmd__rosidl_typesupport_introspection_c.h
+[1.703s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_state__rosidl_typesupport_introspection_c.h
+[1.705s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_rc_state__rosidl_typesupport_introspection_c.h
+[1.705s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_status__rosidl_typesupport_introspection_c.h
+[1.705s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.705s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_actuator_state__rosidl_typesupport_introspection_cpp.hpp
+[1.705s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_cmd__rosidl_typesupport_introspection_cpp.hpp
+[1.705s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_light_state__rosidl_typesupport_introspection_cpp.hpp
+[1.705s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_rc_state__rosidl_typesupport_introspection_cpp.hpp
+[1.705s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/include/hunter_msgs/hunter_msgs/msg/detail/hunter_status__rosidl_typesupport_introspection_cpp.hpp
+[1.706s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/environment/pythonpath.sh
+[1.706s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/environment/pythonpath.dsv
+[1.706s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs-0.0.1-py3.10.egg-info/PKG-INFO
+[1.706s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs-0.0.1-py3.10.egg-info/SOURCES.txt
+[1.706s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs-0.0.1-py3.10.egg-info/dependency_links.txt
+[1.706s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs-0.0.1-py3.10.egg-info/top_level.txt
+[1.706s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/__init__.py
+[1.707s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/_hunter_msgs_s.ep.rosidl_typesupport_c.c
+[1.708s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/_hunter_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.710s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/_hunter_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.710s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/hunter_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/hunter_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/hunter_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/libhunter_msgs__rosidl_generator_py.so
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/msg/__init__.py
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/msg/_hunter_actuator_state.py
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/msg/_hunter_actuator_state_s.c
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/msg/_hunter_light_cmd.py
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/msg/_hunter_light_cmd_s.c
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/msg/_hunter_light_state.py
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/msg/_hunter_light_state_s.c
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/msg/_hunter_rc_state.py
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/msg/_hunter_rc_state_s.c
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/msg/_hunter_status.py
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/msg/_hunter_status_s.c
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/hunter_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/hunter_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.711s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/hunter_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.715s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/msg/HunterActuatorState.idl
+[1.715s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/msg/HunterLightCmd.idl
+[1.715s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/msg/HunterLightState.idl
+[1.715s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/msg/HunterRCState.idl
+[1.715s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/msg/HunterStatus.idl
+[1.715s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/msg/HunterActuatorState.msg
+[1.715s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/msg/HunterLightCmd.msg
+[1.715s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/msg/HunterLightState.msg
+[1.715s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/msg/HunterRCState.msg
+[1.715s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/msg/HunterStatus.msg
+[1.715s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/ament_index/resource_index/package_run_dependencies/hunter_msgs
+[1.715s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/ament_index/resource_index/parent_prefix_path/hunter_msgs
+[1.715s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/environment/ament_prefix_path.sh
+[1.715s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/environment/ament_prefix_path.dsv
+[1.716s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/environment/path.sh
+[1.716s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/environment/path.dsv
+[1.716s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/local_setup.bash
+[1.716s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/local_setup.sh
+[1.716s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/local_setup.zsh
+[1.716s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/local_setup.dsv
+[1.716s] -- Symlinking: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/package.dsv
+[1.731s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/ament_index/resource_index/packages/hunter_msgs
+[1.731s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/rosidl_cmake-extras.cmake
+[1.731s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.731s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.731s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.731s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.731s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.731s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.731s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/hunter_msgsConfig.cmake
+[1.731s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/hunter_msgsConfig-version.cmake
+[1.731s] -- Up-to-date symlink: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/package.xml
+[1.731s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/lib/libhunter_msgs__rosidl_generator_c.so
+[1.732s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/lib/libhunter_msgs__rosidl_typesupport_fastrtps_c.so
+[1.732s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/lib/libhunter_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.732s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/lib/libhunter_msgs__rosidl_typesupport_introspection_c.so
+[1.732s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/lib/libhunter_msgs__rosidl_typesupport_c.so
+[1.732s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/lib/libhunter_msgs__rosidl_typesupport_introspection_cpp.so
+[1.732s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/lib/libhunter_msgs__rosidl_typesupport_cpp.so
+[1.765s] Listing '/home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs'...
+[1.765s] Compiling '/home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/__init__.py'...
+[1.765s] Listing '/home/user/roskit_ws/install/hunter_msgs/local/lib/python3.10/dist-packages/hunter_msgs/msg'...
+[1.765s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/lib/libhunter_msgs__rosidl_generator_py.so
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/export_hunter_msgs__rosidl_generator_cExport.cmake
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/export_hunter_msgs__rosidl_generator_cExport-release.cmake
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/export_hunter_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/export_hunter_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/export_hunter_msgs__rosidl_generator_cppExport.cmake
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/export_hunter_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/export_hunter_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/hunter_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/hunter_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/hunter_msgs__rosidl_typesupport_cExport.cmake
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/hunter_msgs__rosidl_typesupport_cExport-release.cmake
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/hunter_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/hunter_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/hunter_msgs__rosidl_typesupport_cppExport.cmake
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/hunter_msgs__rosidl_typesupport_cppExport-release.cmake
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/export_hunter_msgs__rosidl_generator_pyExport.cmake
+[1.766s] -- Up-to-date: /home/user/roskit_ws/install/hunter_msgs/share/hunter_msgs/cmake/export_hunter_msgs__rosidl_generator_pyExport-release.cmake
+[1.812s] Invoked command in '/home/user/roskit_ws/build/hunter_msgs' returned '0': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/tracer_base:/home/user/roskit_ws/install/scout_base:/home/user/roskit_ws/install/ranger_base:/home/user/roskit_ws/install/hunter_base:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox:/home/user/roskit_ws/install/ublox_gps:/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_sdk:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_drivers:/home/user/roskit_ws/install/phidgets_temperature:/home/user/roskit_ws/install/phidgets_spatial:/home/user/roskit_ws/install/phidgets_motors:/home/user/roskit_ws/install/phidgets_ik:/home/user/roskit_ws/install/phidgets_high_speed_encoder:/home/user/roskit_ws/install/phidgets_digital_outputs:/home/user/roskit_ws/install/phidgets_analog_outputs:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/phidgets_magnetometer:/home/user/roskit_ws/install/phidgets_gyroscope:/home/user/roskit_ws/install/phidgets_digital_inputs:/home/user/roskit_ws/install/phidgets_analog_inputs:/home/user/roskit_ws/install/phidgets_accelerometer:/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/ouster_ros:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/livox_ros_driver2:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake --install /home/user/roskit_ws/build/hunter_msgs

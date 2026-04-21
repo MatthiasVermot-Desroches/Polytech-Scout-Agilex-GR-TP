@@ -1,0 +1,94 @@
+[0.039s] Invoking command in '/home/user/roskit_ws/build/phidgets_analog_outputs': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/libphidget22:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/phidgets_api/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/user/roskit_ws/src/phidgets_drivers/phidgets_analog_outputs -DCMAKE_BUILD_TYPE=Release -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/phidgets_analog_outputs
+[0.821s] -- The C compiler identification is GNU 11.4.0
+[0.822s] -- The CXX compiler identification is GNU 11.4.0
+[0.824s] -- Detecting C compiler ABI info
+[0.824s] -- Detecting C compiler ABI info - done
+[0.824s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.824s] -- Detecting C compile features
+[0.824s] -- Detecting C compile features - done
+[0.824s] -- Detecting CXX compiler ABI info
+[0.824s] -- Detecting CXX compiler ABI info - done
+[0.824s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.824s] -- Detecting CXX compile features
+[0.824s] -- Detecting CXX compile features - done
+[0.824s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.824s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.824s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.824s] -- Found phidgets_api: 2.3.3 (/home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake)
+[0.824s] -- Found phidgets_msgs: 2.3.3 (/home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake)
+[0.915s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.920s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.927s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.939s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.954s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.989s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[1.024s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.027s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.121s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.151s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.196s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.206s] -- Looking for pthread.h
+[1.294s] -- Looking for pthread.h - found
+[1.295s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.384s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.385s] -- Found Threads: TRUE  
+[1.431s] -- Found rclcpp_components: 16.0.14 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.540s] -- Configuring done
+[1.548s] -- Generating done
+[1.549s] [33mCMake Warning:
+[1.549s]   Manually-specified variables were not used by the project:
+[1.549s] 
+[1.549s]     HUMBLE_ROS
+[1.549s]     ROS_EDITION
+[1.549s] 
+[1.549s] [0m
+[1.551s] -- Build files have been written to: /home/user/roskit_ws/build/phidgets_analog_outputs
+[1.559s] Invoked command in '/home/user/roskit_ws/build/phidgets_analog_outputs' returned '0': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/libphidget22:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/phidgets_api/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/user/roskit_ws/src/phidgets_drivers/phidgets_analog_outputs -DCMAKE_BUILD_TYPE=Release -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/phidgets_analog_outputs
+[1.560s] Invoking command in '/home/user/roskit_ws/build/phidgets_analog_outputs': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/libphidget22:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/phidgets_api/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/user/roskit_ws/build/phidgets_analog_outputs -- -j16 -l16
+[1.755s] [ 50%] [32mBuilding CXX object CMakeFiles/phidgets_analog_outputs.dir/src/analog_outputs_ros_i.cpp.o[0m
+[10.273s] [01m[K/home/user/roskit_ws/src/phidgets_drivers/phidgets_analog_outputs/src/analog_outputs_ros_i.cpp:[m[K In constructor ‘[01m[Kphidgets::AnalogOutputsRosI::AnalogOutputsRosI(const rclcpp::NodeOptions&)[m[K’:
+[10.273s] [01m[K/home/user/roskit_ws/src/phidgets_drivers/phidgets_analog_outputs/src/analog_outputs_ros_i.cpp:98:62:[m[K [01;35m[Kwarning: [m[K‘[01m[K%02d[m[K’ directive output may be truncated writing between 2 and 10 bytes into a region of size 3 [[01;35m[K-Wformat-truncation=[m[K]
+[10.273s]    98 |         snprintf(topicname, sizeof(topicname), "analog_output[01;35m[K%02d[m[K", i);
+[10.273s]       |                                                              [01;35m[K^~~~[m[K
+[10.273s] [01m[K/home/user/roskit_ws/src/phidgets_drivers/phidgets_analog_outputs/src/analog_outputs_ros_i.cpp:98:48:[m[K [01;36m[Knote: [m[Kdirective argument in the range [0, 2147483646]
+[10.273s]    98 |         snprintf(topicname, sizeof(topicname), [01;36m[K"analog_output%02d"[m[K, i);
+[10.274s]       |                                                [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[10.274s] In file included from [01m[K/usr/include/stdio.h:894[m[K,
+[10.274s]                  from [01m[K/usr/include/c++/11/cstdio:42[m[K,
+[10.274s]                  from [01m[K/usr/include/c++/11/ext/string_conversions.h:43[m[K,
+[10.274s]                  from [01m[K/usr/include/c++/11/bits/basic_string.h:6608[m[K,
+[10.274s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[10.274s]                  from [01m[K/home/user/roskit_ws/src/phidgets_drivers/phidgets_analog_outputs/src/analog_outputs_ros_i.cpp:32[m[K:
+[10.274s] [01m[K/usr/include/x86_64-linux-gnu/bits/stdio2.h:71:35:[m[K [01;36m[Knote: [m[K‘[01m[K__builtin___snprintf_chk[m[K’ output between 16 and 24 bytes into a destination of size 16
+[10.274s]    71 |   return [01;36m[K__builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,[m[K
+[10.274s]       |          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.274s]    72 | [01;36m[K                                   __glibc_objsize (__s), __fmt,[m[K
+[10.274s]       |                                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.274s]    73 | [01;36m[K                                   __va_arg_pack ())[m[K;
+[10.274s]       |                                    [01;36m[K~~~~~~~~~~~~~~~~~[m[K
+[10.285s] [100%] [32m[1mLinking CXX shared library libphidgets_analog_outputs.so[0m
+[10.587s] [100%] Built target phidgets_analog_outputs
+[10.647s] Invoked command in '/home/user/roskit_ws/build/phidgets_analog_outputs' returned '0': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/libphidget22:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/phidgets_api/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/user/roskit_ws/build/phidgets_analog_outputs -- -j16 -l16
+[10.650s] Invoking command in '/home/user/roskit_ws/build/phidgets_analog_outputs': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/libphidget22:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/phidgets_api/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/user/roskit_ws/build/phidgets_analog_outputs
+[10.675s] -- Install configuration: "Release"
+[10.675s] -- Execute custom install script
+[10.676s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/lib/libphidgets_analog_outputs.so
+[10.723s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/include/phidgets_analog_outputs/analog_outputs_ros_i.hpp
+[10.739s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/launch/analog_outputs-launch.py
+[10.785s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/ament_index/resource_index/package_run_dependencies/phidgets_analog_outputs
+[10.809s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/ament_index/resource_index/parent_prefix_path/phidgets_analog_outputs
+[10.858s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/environment/ament_prefix_path.sh
+[10.905s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/environment/ament_prefix_path.dsv
+[10.953s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/environment/path.sh
+[11.000s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/environment/path.dsv
+[11.042s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/local_setup.bash
+[11.090s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/local_setup.sh
+[11.140s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/local_setup.zsh
+[11.168s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/local_setup.dsv
+[11.204s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/package.dsv
+[11.251s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/ament_index/resource_index/packages/phidgets_analog_outputs
+[11.288s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/ament_index/resource_index/rclcpp_components/phidgets_analog_outputs
+[11.312s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/cmake/phidgets_analog_outputsConfig.cmake
+[11.357s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/cmake/phidgets_analog_outputsConfig-version.cmake
+[11.390s] -- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/package.xml
+[11.424s] Invoked command in '/home/user/roskit_ws/build/phidgets_analog_outputs' returned '0': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/libphidget22:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/phidgets_api/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/user/roskit_ws/build/phidgets_analog_outputs

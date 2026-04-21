@@ -1,0 +1,125 @@
+[0.017s] Invoking command in '/home/user/roskit_ws/build/ranger_base': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/user/roskit_ws/src/ranger_mini_v2/ranger_base -DCMAKE_BUILD_TYPE=Release -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ranger_base
+[0.338s] -- The C compiler identification is GNU 11.4.0
+[0.338s] -- The CXX compiler identification is GNU 11.4.0
+[0.338s] -- Detecting C compiler ABI info
+[0.338s] -- Detecting C compiler ABI info - done
+[0.338s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.338s] -- Detecting C compile features
+[0.338s] -- Detecting C compile features - done
+[0.338s] -- Detecting CXX compiler ABI info
+[0.387s] -- Detecting CXX compiler ABI info - done
+[0.391s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.391s] -- Detecting CXX compile features
+[0.391s] -- Detecting CXX compile features - done
+[0.419s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.710s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.770s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.827s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.924s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.936s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.950s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.969s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.988s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.027s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.040s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.247s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.334s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.484s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.513s] -- Looking for pthread.h
+[1.621s] -- Looking for pthread.h - found
+[1.624s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.760s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.761s] -- Found Threads: TRUE  
+[1.907s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.956s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.006s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.071s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[2.099s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.305s] -- Found controller_manager: 2.51.0 (/opt/ros/humble/share/controller_manager/cmake)
+[2.457s] -- Found ranger_msgs: 0.0.1 (/home/user/roskit_ws/install/ranger_msgs/share/ranger_msgs/cmake)
+[2.468s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.487s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.489s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.489s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.495s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.766s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.775s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.776s] -- Configured cppcheck include dirs: /home/user/roskit_ws/src/ranger_mini_v2/ranger_base/include
+[2.776s] -- Configured cppcheck exclude dirs and/or files: 
+[2.776s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.776s] -- Configured cpplint exclude dirs and/or files: 
+[2.780s] -- Added test 'lint_cmake' to check CMake code style
+[2.783s] -- Added test 'uncrustify' to check C / C++ code style
+[2.783s] -- Configured uncrustify additional arguments: 
+[2.787s] -- Added test 'xmllint' to check XML markup files
+[2.792s] -- Configuring done
+[2.826s] -- Generating done
+[2.833s] [33mCMake Warning:
+[2.833s]   Manually-specified variables were not used by the project:
+[2.833s] 
+[2.833s]     HUMBLE_ROS
+[2.833s]     ROS_EDITION
+[2.833s] 
+[2.833s] [0m
+[2.847s] -- Build files have been written to: /home/user/roskit_ws/build/ranger_base
+[2.880s] Invoked command in '/home/user/roskit_ws/build/ranger_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/user/roskit_ws/src/ranger_mini_v2/ranger_base -DCMAKE_BUILD_TYPE=Release -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ranger_base
+[2.881s] Invoking command in '/home/user/roskit_ws/build/ranger_base': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/user/roskit_ws/build/ranger_base -- -j16 -l16
+[14.279s] [ 33%] [32mBuilding CXX object CMakeFiles/ranger_base_node.dir/src/ranger_messenger.cpp.o[0m
+[14.280s] [ 66%] [32mBuilding CXX object CMakeFiles/ranger_base_node.dir/src/ranger_base_node.cpp.o[0m
+[14.280s] In file included from [01m[K/home/user/roskit_ws/src/ranger_mini_v2/ranger_base/include/ranger_base/ranger_messenger.hpp:28[m[K,
+[14.280s]                  from [01m[K/home/user/roskit_ws/src/ranger_mini_v2/ranger_base/src/ranger_base_node.cpp:14[m[K:
+[14.280s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K-Wcpp[m[K]
+[14.281s]    35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+[14.281s]       |  [01;35m[K^~~~~~~[m[K
+[26.614s] In file included from [01m[K/home/user/roskit_ws/src/ranger_mini_v2/ranger_base/include/ranger_base/ranger_messenger.hpp:28[m[K,
+[26.614s]                  from [01m[K/home/user/roskit_ws/src/ranger_mini_v2/ranger_base/src/ranger_messenger.cpp:10[m[K:
+[26.614s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K-Wcpp[m[K]
+[26.614s]    35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+[26.614s]       |  [01;35m[K^~~~~~~[m[K
+[26.614s] In file included from [01m[K/home/user/roskit_ws/src/ranger_mini_v2/ranger_base/src/ranger_messenger.cpp:12[m[K:
+[26.614s] [01m[K/home/user/roskit_ws/src/ranger_mini_v2/ranger_base/include/ranger_base/kinematics_model.hpp:[m[K In member function ‘[01m[Kvoid westonrobot::SpinningModel::operator()(const state_type&, westonrobot::SpinningModel::state_type&, double)[m[K’:
+[26.614s] [01m[K/home/user/roskit_ws/src/ranger_mini_v2/ranger_base/include/ranger_base/kinematics_model.hpp:90:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[26.614s]    90 |   void operator()([01;35m[Kconst state_type& x[m[K, state_type& xd, double) {
+[26.614s]       |                   [01;35m[K~~~~~~~~~~~~~~~~~~^[m[K
+[26.614s] [01m[K/home/user/roskit_ws/src/ranger_mini_v2/ranger_base/src/ranger_messenger.cpp:[m[K In member function ‘[01m[Kdouble westonrobot::RangerROSMessenger::CalculateSteeringAngle(geometry_msgs::msg::Twist, double&)[m[K’:
+[26.614s] [01m[K/home/user/roskit_ws/src/ranger_mini_v2/ranger_base/src/ranger_messenger.cpp:454:13:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kw[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[26.614s]   454 |   double l, [01;35m[Kw[m[K, phi_i, x;
+[26.614s]       |             [01;35m[K^[m[K
+[26.614s] [01m[K/home/user/roskit_ws/src/ranger_mini_v2/ranger_base/src/ranger_messenger.cpp:454:23:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kx[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[26.614s]   454 |   double l, w, phi_i, [01;35m[Kx[m[K;
+[26.614s]       |                       [01;35m[K^[m[K
+[26.614s] [01m[K/home/user/roskit_ws/src/ranger_mini_v2/ranger_base/src/ranger_messenger.cpp:[m[K At global scope:
+[26.614s] [01m[K/home/user/roskit_ws/src/ranger_mini_v2/ranger_base/src/ranger_messenger.cpp:19:8:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble westonrobot::{anonymous}::DegreeToRadian(double)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[26.614s]    19 | double [01;35m[KDegreeToRadian[m[K(double x) { return x * M_PI / 180.0; }
+[26.614s]       |        [01;35m[K^~~~~~~~~~~~~~[m[K
+[26.614s] [01m[K/home/user/roskit_ws/src/ranger_mini_v2/ranger_base/src/ranger_messenger.cpp:[m[K In member function ‘[01m[Kvoid westonrobot::RangerROSMessenger::TwistCmdCallback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[26.614s] [01m[K/home/user/roskit_ws/src/ranger_mini_v2/ranger_base/src/ranger_messenger.cpp:390:7:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksteer_cmd[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[26.614s]   390 |       [01;35m[Kif[m[K (steer_cmd > robot_params_.max_steer_angle_central) {
+[26.614s]       |       [01;35m[K^~[m[K
+[26.666s] [100%] [32m[1mLinking CXX executable ranger_base_node[0m
+[27.067s] [100%] Built target ranger_base_node
+[27.101s] Invoked command in '/home/user/roskit_ws/build/ranger_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/user/roskit_ws/build/ranger_base -- -j16 -l16
+[27.103s] Invoking command in '/home/user/roskit_ws/build/ranger_base': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/user/roskit_ws/build/ranger_base
+[27.150s] -- Install configuration: "Release"
+[27.151s] -- Execute custom install script
+[27.156s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/lib/ranger_base/ranger_base_node
+[27.209s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ranger_base//launch/include/ranger_robot_base.launch.xml
+[27.254s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ranger_base//launch/ranger.launch.xml
+[27.272s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ranger_base//launch/ranger_mini_v1.launch.xml
+[27.318s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ranger_base//launch/ranger_mini_v2.launch.xml
+[27.367s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ament_index/resource_index/package_run_dependencies/ranger_base
+[27.412s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ament_index/resource_index/parent_prefix_path/ranger_base
+[27.436s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ranger_base/environment/ament_prefix_path.sh
+[27.483s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ranger_base/environment/ament_prefix_path.dsv
+[27.528s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ranger_base/environment/path.sh
+[27.572s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ranger_base/environment/path.dsv
+[27.590s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ranger_base/local_setup.bash
+[27.606s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ranger_base/local_setup.sh
+[27.654s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ranger_base/local_setup.zsh
+[27.700s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ranger_base/local_setup.dsv
+[27.747s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ranger_base/package.dsv
+[27.769s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ament_index/resource_index/packages/ranger_base
+[27.791s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ranger_base/cmake/ranger_baseConfig.cmake
+[27.842s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ranger_base/cmake/ranger_baseConfig-version.cmake
+[27.889s] -- Symlinking: /home/user/roskit_ws/install/ranger_base/share/ranger_base/package.xml
+[27.936s] Invoked command in '/home/user/roskit_ws/build/ranger_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/user/roskit_ws/build/ranger_base

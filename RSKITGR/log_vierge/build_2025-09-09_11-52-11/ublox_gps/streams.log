@@ -1,0 +1,57 @@
+[0.137s] Invoking command in '/home/user/roskit_ws/build/ublox_gps': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/ublox_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/ublox_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/roskit_ws/install/ublox_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/roskit_ws/build/ublox_gps -- -j16 -l16
+[0.157s] [ 13%] Built target ublox_logger_node
+[0.181s] [ 90%] Built target ublox_gps
+[0.202s] [100%] Built target ublox_gps_node
+[0.210s] Invoked command in '/home/user/roskit_ws/build/ublox_gps' returned '0': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/ublox_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/ublox_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/roskit_ws/install/ublox_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/roskit_ws/build/ublox_gps -- -j16 -l16
+[0.211s] Invoking command in '/home/user/roskit_ws/build/ublox_gps': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/ublox_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/ublox_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/roskit_ws/install/ublox_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/roskit_ws/build/ublox_gps
+[0.216s] -- Install configuration: "Release"
+[0.216s] -- Execute custom install script
+[0.216s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/lib/libublox_gps.so
+[0.216s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/lib/ublox_gps/ublox_gps_node
+[0.216s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/lib/ublox_gps/ublox_logger
+[0.217s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/adr_udr_product.hpp
+[0.217s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/async_worker.hpp
+[0.217s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/callback.hpp
+[0.217s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/component_interface.hpp
+[0.217s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/fix_diagnostic.hpp
+[0.217s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/fts_product.hpp
+[0.217s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/gnss.hpp
+[0.217s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/gps.hpp
+[0.217s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/hp_pos_rec_product.hpp
+[0.217s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/hpg_ref_product.hpp
+[0.217s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/hpg_rov_product.hpp
+[0.217s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/mkgmtime.h
+[0.217s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/node.hpp
+[0.218s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/raw_data_pa.hpp
+[0.218s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/raw_data_product.hpp
+[0.218s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/rtcm.hpp
+[0.218s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/tim_product.hpp
+[0.218s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/ublox_firmware.hpp
+[0.218s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/ublox_firmware6.hpp
+[0.218s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/ublox_firmware7.hpp
+[0.218s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/ublox_firmware7plus.hpp
+[0.218s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/ublox_firmware8.hpp
+[0.218s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/ublox_firmware9.hpp
+[0.218s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/ublox_topic_diagnostic.hpp
+[0.218s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/utils.hpp
+[0.218s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/include/ublox_gps/worker.hpp
+[0.218s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ublox_gps/launch/ublox_gps_node-composed-launch.py
+[0.218s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ublox_gps/launch/ublox_gps_node_zedf9p-launch.py
+[0.218s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ublox_gps/config/zed_f9p.yaml
+[0.220s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ament_index/resource_index/package_run_dependencies/ublox_gps
+[0.220s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ament_index/resource_index/parent_prefix_path/ublox_gps
+[0.220s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ublox_gps/environment/ament_prefix_path.sh
+[0.220s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ublox_gps/environment/ament_prefix_path.dsv
+[0.220s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ublox_gps/environment/path.sh
+[0.220s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ublox_gps/environment/path.dsv
+[0.220s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ublox_gps/local_setup.bash
+[0.221s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ublox_gps/local_setup.sh
+[0.221s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ublox_gps/local_setup.zsh
+[0.221s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ublox_gps/local_setup.dsv
+[0.221s] -- Symlinking: /home/user/roskit_ws/install/ublox_gps/share/ublox_gps/package.dsv
+[0.225s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ament_index/resource_index/packages/ublox_gps
+[0.225s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ament_index/resource_index/rclcpp_components/ublox_gps
+[0.225s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ublox_gps/cmake/ublox_gpsConfig.cmake
+[0.225s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ublox_gps/cmake/ublox_gpsConfig-version.cmake
+[0.225s] -- Up-to-date symlink: /home/user/roskit_ws/install/ublox_gps/share/ublox_gps/package.xml
+[0.226s] Invoked command in '/home/user/roskit_ws/build/ublox_gps' returned '0': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/ublox_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/ublox_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/roskit_ws/install/ublox_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/roskit_ws/build/ublox_gps

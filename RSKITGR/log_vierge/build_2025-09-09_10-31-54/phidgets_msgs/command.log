@@ -1,0 +1,2 @@
+Invoking command in '/home/user/roskit_ws/build/phidgets_msgs': /usr/bin/cmake /home/user/roskit_ws/src/phidgets_drivers/phidgets_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/phidgets_msgs
+Invoked command in '/home/user/roskit_ws/build/phidgets_msgs' returned '1': /usr/bin/cmake /home/user/roskit_ws/src/phidgets_drivers/phidgets_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/phidgets_msgs

@@ -1,0 +1,160 @@
+[0.045s] Invoking command in '/home/user/roskit_ws/build/phidgets_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/user/roskit_ws/build/phidgets_msgs -- -j16 -l16
+[0.099s] [ 10%] Built target phidgets_msgs__rosidl_generator_c
+[0.099s] [ 12%] Built target phidgets_msgs__cpp
+[0.130s] [ 12%] Built target ament_cmake_python_symlink_phidgets_msgs
+[0.135s] [ 23%] Built target phidgets_msgs__rosidl_typesupport_introspection_c
+[0.149s] [ 34%] Built target phidgets_msgs__rosidl_typesupport_c
+[0.160s] [ 44%] Built target phidgets_msgs__rosidl_typesupport_fastrtps_c
+[0.171s] [ 55%] Built target phidgets_msgs__rosidl_typesupport_introspection_cpp
+[0.186s] [ 65%] Built target phidgets_msgs__rosidl_typesupport_fastrtps_cpp
+[0.186s] [ 76%] Built target phidgets_msgs__rosidl_typesupport_cpp
+[0.226s] [ 76%] Built target phidgets_msgs
+[0.270s] [ 78%] Built target phidgets_msgs__py
+[0.290s] [ 87%] Built target phidgets_msgs__rosidl_generator_py
+[0.328s] [ 91%] Built target phidgets_msgs__rosidl_typesupport_introspection_c__pyext
+[0.328s] [ 95%] Built target phidgets_msgs__rosidl_typesupport_c__pyext
+[0.334s] [100%] Built target phidgets_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.349s] running egg_info
+[0.349s] writing phidgets_msgs.egg-info/PKG-INFO
+[0.350s] writing dependency_links to phidgets_msgs.egg-info/dependency_links.txt
+[0.350s] writing top-level names to phidgets_msgs.egg-info/top_level.txt
+[0.350s] reading manifest file 'phidgets_msgs.egg-info/SOURCES.txt'
+[0.352s] writing manifest file 'phidgets_msgs.egg-info/SOURCES.txt'
+[0.374s] [100%] Built target ament_cmake_python_build_phidgets_msgs_egg
+[0.422s] Invoked command in '/home/user/roskit_ws/build/phidgets_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/user/roskit_ws/build/phidgets_msgs -- -j16 -l16
+[0.424s] Invoking command in '/home/user/roskit_ws/build/phidgets_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/user/roskit_ws/build/phidgets_msgs
+[0.430s] -- Install configuration: "Release"
+[0.431s] -- Execute custom install script
+[0.431s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/ament_index/resource_index/rosidl_interfaces/phidgets_msgs
+[0.431s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/detail/encoder_decimated_speed__functions.h
+[0.431s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/detail/encoder_decimated_speed__struct.h
+[0.431s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/detail/encoder_decimated_speed__type_support.h
+[0.432s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/encoder_decimated_speed.h
+[0.432s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.432s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_analog_output__functions.h
+[0.432s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_analog_output__struct.h
+[0.432s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_analog_output__type_support.h
+[0.432s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_digital_output__functions.h
+[0.432s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_digital_output__struct.h
+[0.432s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_digital_output__type_support.h
+[0.432s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/set_analog_output.h
+[0.432s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/set_digital_output.h
+[0.433s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/environment/library_path.sh
+[0.433s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/environment/library_path.dsv
+[0.436s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/detail/encoder_decimated_speed__rosidl_typesupport_fastrtps_c.h
+[0.436s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.436s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_analog_output__rosidl_typesupport_fastrtps_c.h
+[0.437s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_digital_output__rosidl_typesupport_fastrtps_c.h
+[0.438s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/detail/encoder_decimated_speed__rosidl_typesupport_introspection_c.h
+[0.438s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.438s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_analog_output__rosidl_typesupport_introspection_c.h
+[0.438s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_digital_output__rosidl_typesupport_introspection_c.h
+[0.438s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/detail/encoder_decimated_speed__builder.hpp
+[0.438s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/detail/encoder_decimated_speed__struct.hpp
+[0.438s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/detail/encoder_decimated_speed__traits.hpp
+[0.439s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/detail/encoder_decimated_speed__type_support.hpp
+[0.439s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/encoder_decimated_speed.hpp
+[0.439s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.439s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_analog_output__builder.hpp
+[0.441s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_analog_output__struct.hpp
+[0.442s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_analog_output__traits.hpp
+[0.446s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_analog_output__type_support.hpp
+[0.447s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_digital_output__builder.hpp
+[0.447s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_digital_output__struct.hpp
+[0.448s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_digital_output__traits.hpp
+[0.449s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_digital_output__type_support.hpp
+[0.450s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/set_analog_output.hpp
+[0.451s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/set_digital_output.hpp
+[0.454s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/detail/encoder_decimated_speed__rosidl_typesupport_fastrtps_cpp.hpp
+[0.454s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.455s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_analog_output__rosidl_typesupport_fastrtps_cpp.hpp
+[0.455s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_digital_output__rosidl_typesupport_fastrtps_cpp.hpp
+[0.458s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/msg/detail/encoder_decimated_speed__rosidl_typesupport_introspection_cpp.hpp
+[0.459s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_analog_output__rosidl_typesupport_introspection_cpp.hpp
+[0.462s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/include/phidgets_msgs/phidgets_msgs/srv/detail/set_digital_output__rosidl_typesupport_introspection_cpp.hpp
+[0.462s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/environment/pythonpath.sh
+[0.462s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/environment/pythonpath.dsv
+[0.462s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs-2.3.3-py3.10.egg-info/PKG-INFO
+[0.463s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs-2.3.3-py3.10.egg-info/SOURCES.txt
+[0.463s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs-2.3.3-py3.10.egg-info/dependency_links.txt
+[0.464s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs-2.3.3-py3.10.egg-info/top_level.txt
+[0.464s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/__init__.py
+[0.464s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/_phidgets_msgs_s.ep.rosidl_typesupport_c.c
+[0.464s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/_phidgets_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.464s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/_phidgets_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.470s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/libphidgets_msgs__rosidl_generator_py.so
+[0.470s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/msg/__init__.py
+[0.470s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/msg/_encoder_decimated_speed.py
+[0.470s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/msg/_encoder_decimated_speed_s.c
+[0.470s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/phidgets_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.470s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/phidgets_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.470s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/phidgets_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.470s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/srv/__init__.py
+[0.470s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/srv/_set_analog_output.py
+[0.470s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/srv/_set_analog_output_s.c
+[0.470s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/srv/_set_digital_output.py
+[0.471s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/srv/_set_digital_output_s.c
+[0.471s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/phidgets_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.471s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/phidgets_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.471s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/phidgets_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.471s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/srv/SetAnalogOutput.idl
+[0.471s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/srv/SetDigitalOutput.idl
+[0.472s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/msg/EncoderDecimatedSpeed.idl
+[0.472s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/srv/SetAnalogOutput.srv
+[0.472s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/srv/SetAnalogOutput_Request.msg
+[0.472s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/srv/SetAnalogOutput_Response.msg
+[0.472s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/srv/SetDigitalOutput.srv
+[0.472s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/srv/SetDigitalOutput_Request.msg
+[0.472s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/srv/SetDigitalOutput_Response.msg
+[0.472s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/msg/EncoderDecimatedSpeed.msg
+[0.472s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/ament_index/resource_index/package_run_dependencies/phidgets_msgs
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/ament_index/resource_index/parent_prefix_path/phidgets_msgs
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/environment/ament_prefix_path.sh
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/environment/ament_prefix_path.dsv
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/environment/path.sh
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/environment/path.dsv
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/local_setup.bash
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/local_setup.sh
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/local_setup.zsh
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/local_setup.dsv
+[0.475s] -- Symlinking: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/package.dsv
+[0.481s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/ament_index/resource_index/packages/phidgets_msgs
+[0.481s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/rosidl_cmake-extras.cmake
+[0.481s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.481s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.481s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.481s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.481s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.481s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.482s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/phidgets_msgsConfig.cmake
+[0.482s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/phidgets_msgsConfig-version.cmake
+[0.482s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/package.xml
+[0.482s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/lib/libphidgets_msgs__rosidl_generator_c.so
+[0.488s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/lib/libphidgets_msgs__rosidl_typesupport_fastrtps_c.so
+[0.488s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/lib/libphidgets_msgs__rosidl_typesupport_introspection_c.so
+[0.489s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/lib/libphidgets_msgs__rosidl_typesupport_c.so
+[0.489s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/lib/libphidgets_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.495s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/lib/libphidgets_msgs__rosidl_typesupport_introspection_cpp.so
+[0.495s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/lib/libphidgets_msgs__rosidl_typesupport_cpp.so
+[0.508s] Listing '/home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs'...
+[0.508s] Listing '/home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/msg'...
+[0.508s] Listing '/home/user/roskit_ws/install/phidgets_msgs/local/lib/python3.10/dist-packages/phidgets_msgs/srv'...
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/lib/libphidgets_msgs__rosidl_generator_py.so
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/export_phidgets_msgs__rosidl_generator_cExport.cmake
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/export_phidgets_msgs__rosidl_generator_cExport-release.cmake
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/export_phidgets_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/export_phidgets_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/phidgets_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/phidgets_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/phidgets_msgs__rosidl_typesupport_cExport.cmake
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/phidgets_msgs__rosidl_typesupport_cExport-release.cmake
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/export_phidgets_msgs__rosidl_generator_cppExport.cmake
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/export_phidgets_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/export_phidgets_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/phidgets_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/phidgets_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/phidgets_msgs__rosidl_typesupport_cppExport.cmake
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/phidgets_msgs__rosidl_typesupport_cppExport-release.cmake
+[0.509s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/export_phidgets_msgs__rosidl_generator_pyExport.cmake
+[0.510s] -- Up-to-date: /home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake/export_phidgets_msgs__rosidl_generator_pyExport-release.cmake
+[0.612s] Invoked command in '/home/user/roskit_ws/build/phidgets_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/user/roskit_ws/build/phidgets_msgs

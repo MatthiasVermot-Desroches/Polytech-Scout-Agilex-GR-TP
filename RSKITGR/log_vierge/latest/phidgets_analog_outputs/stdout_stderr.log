@@ -1,0 +1,40 @@
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found phidgets_api: 2.3.3 (/home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake)
+-- Found phidgets_msgs: 2.3.3 (/home/user/roskit_ws/install/phidgets_msgs/share/phidgets_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_components: 16.0.14 (/opt/ros/humble/share/rclcpp_components/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/user/roskit_ws/build/phidgets_analog_outputs
+[35m[1mConsolidate compiler generated dependencies of target phidgets_analog_outputs[0m
+[100%] Built target phidgets_analog_outputs
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/lib/libphidgets_analog_outputs.so
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/include/phidgets_analog_outputs/analog_outputs_ros_i.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/launch/analog_outputs-launch.py
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/share/ament_index/resource_index/package_run_dependencies/phidgets_analog_outputs
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/share/ament_index/resource_index/parent_prefix_path/phidgets_analog_outputs
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/environment/path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/environment/path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/local_setup.bash
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/local_setup.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/local_setup.zsh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/local_setup.dsv
+-- Symlinking: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/package.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/share/ament_index/resource_index/packages/phidgets_analog_outputs
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/share/ament_index/resource_index/rclcpp_components/phidgets_analog_outputs
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/cmake/phidgets_analog_outputsConfig.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/cmake/phidgets_analog_outputsConfig-version.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_analog_outputs/share/phidgets_analog_outputs/package.xml

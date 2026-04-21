@@ -1,0 +1,10 @@
+[0.024s] Invoking command in '/home/user/roskit_ws/build/ugv_sdk': /usr/bin/cmake --build /home/user/roskit_ws/build/ugv_sdk -- -j16 -l16
+[0.068s] [ 42%] Built target ugv_sdk
+[0.079s] [ 57%] Built target demo_tracer_robot
+[0.079s] [ 57%] Built target demo_robot_version
+[0.079s] [ 64%] Built target demo_bunker_robot
+[0.079s] [ 71%] Built target demo_scout_robot
+[0.085s] [ 78%] Built target demo_scout_mini_omni_robot
+[0.086s] [ 85%] Built target demo_hunter_robot
+[0.087s] [ 92%] Built target demo_ranger_robot
+[0.089s] [100%] Built target demo_protocol_detector

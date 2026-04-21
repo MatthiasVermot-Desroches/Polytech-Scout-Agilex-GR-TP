@@ -1,0 +1,22 @@
+[100%] Built target phidgets_accelerometer
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/lib/libphidgets_accelerometer.so
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/include/phidgets_accelerometer/accelerometer_ros_i.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/share/phidgets_accelerometer/launch/accelerometer-launch.py
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/share/ament_index/resource_index/package_run_dependencies/phidgets_accelerometer
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/share/ament_index/resource_index/parent_prefix_path/phidgets_accelerometer
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/share/phidgets_accelerometer/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/share/phidgets_accelerometer/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/share/phidgets_accelerometer/environment/path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/share/phidgets_accelerometer/environment/path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/share/phidgets_accelerometer/local_setup.bash
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/share/phidgets_accelerometer/local_setup.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/share/phidgets_accelerometer/local_setup.zsh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/share/phidgets_accelerometer/local_setup.dsv
+-- Symlinking: /home/user/roskit_ws/install/phidgets_accelerometer/share/phidgets_accelerometer/package.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/share/ament_index/resource_index/packages/phidgets_accelerometer
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/share/ament_index/resource_index/rclcpp_components/phidgets_accelerometer
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/share/phidgets_accelerometer/cmake/phidgets_accelerometerConfig.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/share/phidgets_accelerometer/cmake/phidgets_accelerometerConfig-version.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_accelerometer/share/phidgets_accelerometer/package.xml

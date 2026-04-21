@@ -1,0 +1,9 @@
+{
+  "package_name": "ouster_sensor_msgs",
+  "non_idl_tuples": [
+    "/home/user/roskit_ws/src/ouster-ros/ouster-sensor-msgs:msg/PacketMsg.msg",
+    "/home/user/roskit_ws/src/ouster-ros/ouster-sensor-msgs:srv/GetConfig.srv",
+    "/home/user/roskit_ws/src/ouster-ros/ouster-sensor-msgs:srv/SetConfig.srv",
+    "/home/user/roskit_ws/src/ouster-ros/ouster-sensor-msgs:srv/GetMetadata.srv"
+  ]
+}

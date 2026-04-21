@@ -1,0 +1,2 @@
+Invoking command in '/home/user/roskit_ws/build/ranger_bringup': /usr/bin/cmake /home/user/roskit_ws/src/ranger_mini_v2/ranger_bringup -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ranger_bringup
+Invoked command in '/home/user/roskit_ws/build/ranger_bringup' returned '1': /usr/bin/cmake /home/user/roskit_ws/src/ranger_mini_v2/ranger_bringup -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ranger_bringup

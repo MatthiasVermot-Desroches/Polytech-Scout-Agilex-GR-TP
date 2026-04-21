@@ -1,0 +1,209 @@
+[0.045s] Invoking command in '/home/user/roskit_ws/build/livox_ros_driver2': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/tracer_base:/home/user/roskit_ws/install/scout_base:/home/user/roskit_ws/install/ranger_base:/home/user/roskit_ws/install/hunter_base:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox:/home/user/roskit_ws/install/ublox_gps:/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_sdk:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_drivers:/home/user/roskit_ws/install/phidgets_temperature:/home/user/roskit_ws/install/phidgets_spatial:/home/user/roskit_ws/install/phidgets_motors:/home/user/roskit_ws/install/phidgets_ik:/home/user/roskit_ws/install/phidgets_high_speed_encoder:/home/user/roskit_ws/install/phidgets_digital_outputs:/home/user/roskit_ws/install/phidgets_analog_outputs:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/phidgets_magnetometer:/home/user/roskit_ws/install/phidgets_gyroscope:/home/user/roskit_ws/install/phidgets_digital_inputs:/home/user/roskit_ws/install/phidgets_analog_inputs:/home/user/roskit_ws/install/phidgets_accelerometer:/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/ouster_ros:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/livox_ros_driver2:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake --build /home/user/roskit_ws/build/livox_ros_driver2 -- -j16 -l16
+[0.100s] -- livox_ros_driver2 version: 1.2.4
+[0.100s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.311s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.403s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.406s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.446s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.496s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.497s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.612s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.750s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.795s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.088s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.093s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.225s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.230s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.235s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.329s] -- Found Qhull version 8.0.2
+[1.406s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.517s] -- Checking for module 'apr-1'
+[1.522s] --   No package 'apr-1' found
+[1.649s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.772s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.930s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.942s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.953s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.953s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.953s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.001s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.014s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.017s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.018s] -- Configured cppcheck include dirs: /home/user/roskit_ws/src/livox_ros_driver2/3rdparty;/home/user/roskit_ws/src/livox_ros_driver2/src
+[2.018s] -- Configured cppcheck exclude dirs and/or files: 
+[2.020s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.020s] -- Configured cpplint exclude dirs and/or files: 
+[2.020s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.021s] -- Added test 'lint_cmake' to check CMake code style
+[2.022s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.023s] -- Added test 'uncrustify' to check C / C++ code style
+[2.024s] -- Configured uncrustify additional arguments: 
+[2.024s] -- Added test 'xmllint' to check XML markup files
+[2.026s] -- Configuring done
+[2.094s] -- Generating done
+[2.105s] -- Build files have been written to: /home/user/roskit_ws/build/livox_ros_driver2
+[2.131s] [35m[1mConsolidate compiler generated dependencies of target livox_interfaces2__rosidl_generator_c[0m
+[2.131s] [35m[1mConsolidate compiler generated dependencies of target livox_ros_driver2_node[0m
+[2.139s] [  1%] Built target livox_interfaces2__cpp
+[2.139s] [  8%] Built target livox_interfaces2__rosidl_generator_c
+[2.142s] [ 12%] Built target livox_ros_driver2_node
+[2.145s] [ 12%] Built target ament_cmake_python_symlink_livox_ros_driver2
+[2.147s] [35m[1mConsolidate compiler generated dependencies of target livox_interfaces2__rosidl_typesupport_cpp[0m
+[2.147s] [35m[1mConsolidate compiler generated dependencies of target livox_interfaces2__rosidl_typesupport_introspection_c[0m
+[2.148s] [35m[1mConsolidate compiler generated dependencies of target livox_interfaces2__rosidl_typesupport_fastrtps_c[0m
+[2.148s] [35m[1mConsolidate compiler generated dependencies of target livox_interfaces2__rosidl_typesupport_c[0m
+[2.150s] [35m[1mConsolidate compiler generated dependencies of target livox_interfaces2__rosidl_typesupport_fastrtps_cpp[0m
+[2.151s] [35m[1mConsolidate compiler generated dependencies of target livox_interfaces2__rosidl_typesupport_introspection_cpp[0m
+[2.156s] [ 26%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_c
+[2.157s] [ 29%] Built target livox_interfaces2__rosidl_typesupport_introspection_c
+[2.157s] [ 33%] Built target livox_interfaces2__rosidl_typesupport_cpp
+[2.158s] [ 40%] Built target livox_interfaces2__rosidl_typesupport_c
+[2.160s] [ 47%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_cpp
+[2.162s] [ 54%] Built target livox_interfaces2__rosidl_typesupport_introspection_cpp
+[2.171s] [35m[1mConsolidate compiler generated dependencies of target livox_ros_driver2[0m
+[2.178s] [ 54%] Built target livox_interfaces2
+[2.193s] [ 56%] Built target livox_interfaces2__py
+[2.194s] [ 84%] Built target livox_ros_driver2
+[2.202s] [35m[1mConsolidate compiler generated dependencies of target livox_interfaces2__rosidl_generator_py[0m
+[2.211s] [ 89%] Built target livox_interfaces2__rosidl_generator_py
+[2.220s] [35m[1mConsolidate compiler generated dependencies of target livox_ros_driver2__rosidl_typesupport_c__pyext[0m
+[2.220s] [35m[1mConsolidate compiler generated dependencies of target livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext[0m
+[2.220s] [35m[1mConsolidate compiler generated dependencies of target livox_ros_driver2__rosidl_typesupport_introspection_c__pyext[0m
+[2.229s] [ 92%] Built target livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext
+[2.229s] [ 96%] Built target livox_ros_driver2__rosidl_typesupport_c__pyext
+[2.229s] [100%] Built target livox_ros_driver2__rosidl_typesupport_introspection_c__pyext
+[2.260s] running egg_info
+[2.261s] writing livox_ros_driver2.egg-info/PKG-INFO
+[2.261s] writing dependency_links to livox_ros_driver2.egg-info/dependency_links.txt
+[2.261s] writing top-level names to livox_ros_driver2.egg-info/top_level.txt
+[2.262s] reading manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'
+[2.262s] writing manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'
+[2.276s] [100%] Built target ament_cmake_python_build_livox_ros_driver2_egg
+[2.287s] Invoked command in '/home/user/roskit_ws/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/tracer_base:/home/user/roskit_ws/install/scout_base:/home/user/roskit_ws/install/ranger_base:/home/user/roskit_ws/install/hunter_base:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox:/home/user/roskit_ws/install/ublox_gps:/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_sdk:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_drivers:/home/user/roskit_ws/install/phidgets_temperature:/home/user/roskit_ws/install/phidgets_spatial:/home/user/roskit_ws/install/phidgets_motors:/home/user/roskit_ws/install/phidgets_ik:/home/user/roskit_ws/install/phidgets_high_speed_encoder:/home/user/roskit_ws/install/phidgets_digital_outputs:/home/user/roskit_ws/install/phidgets_analog_outputs:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/phidgets_magnetometer:/home/user/roskit_ws/install/phidgets_gyroscope:/home/user/roskit_ws/install/phidgets_digital_inputs:/home/user/roskit_ws/install/phidgets_analog_inputs:/home/user/roskit_ws/install/phidgets_accelerometer:/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/ouster_ros:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/livox_ros_driver2:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake --build /home/user/roskit_ws/build/livox_ros_driver2 -- -j16 -l16
+[2.289s] Invoking command in '/home/user/roskit_ws/build/livox_ros_driver2': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/tracer_base:/home/user/roskit_ws/install/scout_base:/home/user/roskit_ws/install/ranger_base:/home/user/roskit_ws/install/hunter_base:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox:/home/user/roskit_ws/install/ublox_gps:/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_sdk:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_drivers:/home/user/roskit_ws/install/phidgets_temperature:/home/user/roskit_ws/install/phidgets_spatial:/home/user/roskit_ws/install/phidgets_motors:/home/user/roskit_ws/install/phidgets_ik:/home/user/roskit_ws/install/phidgets_high_speed_encoder:/home/user/roskit_ws/install/phidgets_digital_outputs:/home/user/roskit_ws/install/phidgets_analog_outputs:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/phidgets_magnetometer:/home/user/roskit_ws/install/phidgets_gyroscope:/home/user/roskit_ws/install/phidgets_digital_inputs:/home/user/roskit_ws/install/phidgets_analog_inputs:/home/user/roskit_ws/install/phidgets_accelerometer:/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/ouster_ros:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/livox_ros_driver2:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake --install /home/user/roskit_ws/build/livox_ros_driver2
+[2.294s] -- Install configuration: "Release"
+[2.295s] -- Execute custom install script
+[2.295s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/ament_index/resource_index/rosidl_interfaces/livox_ros_driver2
+[2.296s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_msg.h
+[2.296s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_point.h
+[2.296s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__functions.h
+[2.296s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__struct.h
+[2.296s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.h
+[2.297s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__functions.h
+[2.297s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__struct.h
+[2.297s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.h
+[2.297s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_generator_c__visibility_control.h
+[2.297s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/library_path.sh
+[2.297s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/library_path.dsv
+[2.298s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_fastrtps_c.h
+[2.298s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_fastrtps_c.h
+[2.298s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.298s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_introspection_c.h
+[2.298s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_introspection_c.h
+[2.298s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.299s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_msg.hpp
+[2.299s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_point.hpp
+[2.299s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__builder.hpp
+[2.299s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__struct.hpp
+[2.299s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__traits.hpp
+[2.299s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.hpp
+[2.300s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__builder.hpp
+[2.300s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__struct.hpp
+[2.300s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__traits.hpp
+[2.300s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.hpp
+[2.300s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.300s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[2.301s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_fastrtps_cpp.hpp
+[2.301s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.301s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_introspection_cpp.hpp
+[2.301s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_introspection_cpp.hpp
+[2.301s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/pythonpath.sh
+[2.301s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/pythonpath.dsv
+[2.301s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/PKG-INFO
+[2.302s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/SOURCES.txt
+[2.302s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/dependency_links.txt
+[2.302s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/top_level.txt
+[2.302s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/__init__.py
+[2.302s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_c.c
+[2.303s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.303s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_introspection_c.c
+[2.303s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/liblivox_interfaces2__rosidl_generator_py.so
+[2.303s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.303s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.303s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.304s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/__init__.py
+[2.304s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_msg.py
+[2.304s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_msg_s.c
+[2.304s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_point.py
+[2.304s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_point_s.c
+[2.304s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.304s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.304s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.305s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomPoint.idl
+[2.305s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomMsg.idl
+[2.305s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomPoint.msg
+[2.305s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomMsg.msg
+[2.305s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/lib/livox_ros_driver2/livox_ros_driver2_node
+[2.306s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2.so
+[2.306s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/HAP_config.json
+[2.306s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/MID360_config.json
+[2.306s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/display_point_cloud_ROS1.rviz
+[2.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/display_point_cloud_ROS2.rviz
+[2.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/config/mixed_HAP_MID360_config.json
+[2.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/msg_HAP_launch.py
+[2.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/msg_MID360_launch.py
+[2.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_HAP_launch.py
+[2.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_MID360_launch.py
+[2.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_mixed.py
+[2.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/ament_index/resource_index/package_run_dependencies/livox_ros_driver2
+[2.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/ament_index/resource_index/parent_prefix_path/livox_ros_driver2
+[2.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/ament_prefix_path.sh
+[2.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/ament_prefix_path.dsv
+[2.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/path.sh
+[2.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/environment/path.dsv
+[2.309s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.bash
+[2.309s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.sh
+[2.309s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.zsh
+[2.309s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.dsv
+[2.309s] -- Symlinking: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.dsv
+[2.315s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/ament_index/resource_index/packages/livox_ros_driver2
+[2.315s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/ament_index/resource_index/rclcpp_components/livox_ros_driver2
+[2.316s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake-extras.cmake
+[2.316s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.316s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.316s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_libraries-extras.cmake
+[2.316s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_targets-extras.cmake
+[2.316s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.317s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.317s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config.cmake
+[2.317s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config-version.cmake
+[2.317s] -- Up-to-date symlink: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.xml
+[2.318s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_generator_c.so
+[2.318s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so
+[2.319s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_c.so
+[2.319s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_c.so
+[2.319s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so
+[2.319s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so
+[2.319s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_cpp.so
+[2.341s] Listing '/home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2'...
+[2.342s] Compiling '/home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/__init__.py'...
+[2.342s] Listing '/home/user/roskit_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg'...
+[2.345s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/lib/liblivox_interfaces2__rosidl_generator_py.so
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cExport.cmake
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cExport-release.cmake
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cExport.cmake
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cExport-release.cmake
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cExport.cmake
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cExport-release.cmake
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cExport.cmake
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cExport-release.cmake
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cppExport.cmake
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cppExport.cmake
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cppExport-release.cmake
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cppExport.cmake
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cppExport-release.cmake
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_pyExport.cmake
+[2.346s] -- Up-to-date: /home/user/roskit_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_pyExport-release.cmake
+[2.348s] Invoked command in '/home/user/roskit_ws/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/tracer_base:/home/user/roskit_ws/install/scout_base:/home/user/roskit_ws/install/ranger_base:/home/user/roskit_ws/install/hunter_base:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox:/home/user/roskit_ws/install/ublox_gps:/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_sdk:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_drivers:/home/user/roskit_ws/install/phidgets_temperature:/home/user/roskit_ws/install/phidgets_spatial:/home/user/roskit_ws/install/phidgets_motors:/home/user/roskit_ws/install/phidgets_ik:/home/user/roskit_ws/install/phidgets_high_speed_encoder:/home/user/roskit_ws/install/phidgets_digital_outputs:/home/user/roskit_ws/install/phidgets_analog_outputs:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/phidgets_magnetometer:/home/user/roskit_ws/install/phidgets_gyroscope:/home/user/roskit_ws/install/phidgets_digital_inputs:/home/user/roskit_ws/install/phidgets_analog_inputs:/home/user/roskit_ws/install/phidgets_accelerometer:/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/ouster_ros:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/livox_ros_driver2:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake --install /home/user/roskit_ws/build/livox_ros_driver2

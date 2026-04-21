@@ -1,0 +1,895 @@
+[0.000000] (-) TimerEvent: {}
+[0.000718] (gr_bringup) JobQueued: {'identifier': 'gr_bringup', 'dependencies': OrderedDict()}
+[0.000744] (gr_description) JobQueued: {'identifier': 'gr_description', 'dependencies': OrderedDict()}
+[0.000755] (hunter_msgs) JobQueued: {'identifier': 'hunter_msgs', 'dependencies': OrderedDict()}
+[0.000763] (libphidget22) JobQueued: {'identifier': 'libphidget22', 'dependencies': OrderedDict()}
+[0.000772] (livox_ros_driver2) JobQueued: {'identifier': 'livox_ros_driver2', 'dependencies': OrderedDict()}
+[0.000783] (livox_sdk2) JobQueued: {'identifier': 'livox_sdk2', 'dependencies': OrderedDict()}
+[0.000792] (ouster_sensor_msgs) JobQueued: {'identifier': 'ouster_sensor_msgs', 'dependencies': OrderedDict()}
+[0.000800] (phidgets_msgs) JobQueued: {'identifier': 'phidgets_msgs', 'dependencies': OrderedDict()}
+[0.000808] (ranger_bringup) JobQueued: {'identifier': 'ranger_bringup', 'dependencies': OrderedDict()}
+[0.000816] (ranger_msgs) JobQueued: {'identifier': 'ranger_msgs', 'dependencies': OrderedDict()}
+[0.000824] (rslidar_msg) JobQueued: {'identifier': 'rslidar_msg', 'dependencies': OrderedDict()}
+[0.000832] (rslidar_sdk) JobQueued: {'identifier': 'rslidar_sdk', 'dependencies': OrderedDict()}
+[0.000840] (scout_description) JobQueued: {'identifier': 'scout_description', 'dependencies': OrderedDict()}
+[0.000848] (scout_msgs) JobQueued: {'identifier': 'scout_msgs', 'dependencies': OrderedDict()}
+[0.000856] (tracer_msgs) JobQueued: {'identifier': 'tracer_msgs', 'dependencies': OrderedDict()}
+[0.000864] (ublox_serialization) JobQueued: {'identifier': 'ublox_serialization', 'dependencies': OrderedDict()}
+[0.000872] (ugv_sdk) JobQueued: {'identifier': 'ugv_sdk', 'dependencies': OrderedDict()}
+[0.000880] (hunter_base) JobQueued: {'identifier': 'hunter_base', 'dependencies': OrderedDict([('hunter_msgs', '/home/user/roskit_ws/install/hunter_msgs'), ('ugv_sdk', '/home/user/roskit_ws/install/ugv_sdk')])}
+[0.000890] (ouster_ros) JobQueued: {'identifier': 'ouster_ros', 'dependencies': OrderedDict([('ouster_sensor_msgs', '/home/user/roskit_ws/install/ouster_sensor_msgs')])}
+[0.000903] (phidgets_api) JobQueued: {'identifier': 'phidgets_api', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22')])}
+[0.000912] (ranger_base) JobQueued: {'identifier': 'ranger_base', 'dependencies': OrderedDict([('ranger_msgs', '/home/user/roskit_ws/install/ranger_msgs'), ('ugv_sdk', '/home/user/roskit_ws/install/ugv_sdk')])}
+[0.000921] (scout_base) JobQueued: {'identifier': 'scout_base', 'dependencies': OrderedDict([('scout_msgs', '/home/user/roskit_ws/install/scout_msgs'), ('ugv_sdk', '/home/user/roskit_ws/install/ugv_sdk')])}
+[0.000928] (tracer_base) JobQueued: {'identifier': 'tracer_base', 'dependencies': OrderedDict([('tracer_msgs', '/home/user/roskit_ws/install/tracer_msgs'), ('ugv_sdk', '/home/user/roskit_ws/install/ugv_sdk')])}
+[0.000936] (ublox_msgs) JobQueued: {'identifier': 'ublox_msgs', 'dependencies': OrderedDict([('ublox_serialization', '/home/user/roskit_ws/install/ublox_serialization')])}
+[0.000944] (phidgets_accelerometer) JobQueued: {'identifier': 'phidgets_accelerometer', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.000952] (phidgets_analog_inputs) JobQueued: {'identifier': 'phidgets_analog_inputs', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.000959] (phidgets_analog_outputs) JobQueued: {'identifier': 'phidgets_analog_outputs', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_msgs', '/home/user/roskit_ws/install/phidgets_msgs'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.000969] (phidgets_digital_inputs) JobQueued: {'identifier': 'phidgets_digital_inputs', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001121] (phidgets_digital_outputs) JobQueued: {'identifier': 'phidgets_digital_outputs', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_msgs', '/home/user/roskit_ws/install/phidgets_msgs'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001145] (phidgets_gyroscope) JobQueued: {'identifier': 'phidgets_gyroscope', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001156] (phidgets_high_speed_encoder) JobQueued: {'identifier': 'phidgets_high_speed_encoder', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_msgs', '/home/user/roskit_ws/install/phidgets_msgs'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001165] (phidgets_magnetometer) JobQueued: {'identifier': 'phidgets_magnetometer', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001175] (phidgets_motors) JobQueued: {'identifier': 'phidgets_motors', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_msgs', '/home/user/roskit_ws/install/phidgets_msgs'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001184] (phidgets_spatial) JobQueued: {'identifier': 'phidgets_spatial', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001193] (phidgets_temperature) JobQueued: {'identifier': 'phidgets_temperature', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api')])}
+[0.001202] (ublox_gps) JobQueued: {'identifier': 'ublox_gps', 'dependencies': OrderedDict([('ublox_serialization', '/home/user/roskit_ws/install/ublox_serialization'), ('ublox_msgs', '/home/user/roskit_ws/install/ublox_msgs')])}
+[0.001211] (phidgets_ik) JobQueued: {'identifier': 'phidgets_ik', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_msgs', '/home/user/roskit_ws/install/phidgets_msgs'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api'), ('phidgets_analog_inputs', '/home/user/roskit_ws/install/phidgets_analog_inputs'), ('phidgets_digital_inputs', '/home/user/roskit_ws/install/phidgets_digital_inputs'), ('phidgets_digital_outputs', '/home/user/roskit_ws/install/phidgets_digital_outputs')])}
+[0.001224] (ublox) JobQueued: {'identifier': 'ublox', 'dependencies': OrderedDict([('ublox_serialization', '/home/user/roskit_ws/install/ublox_serialization'), ('ublox_msgs', '/home/user/roskit_ws/install/ublox_msgs'), ('ublox_gps', '/home/user/roskit_ws/install/ublox_gps')])}
+[0.001234] (phidgets_drivers) JobQueued: {'identifier': 'phidgets_drivers', 'dependencies': OrderedDict([('libphidget22', '/home/user/roskit_ws/install/libphidget22'), ('phidgets_msgs', '/home/user/roskit_ws/install/phidgets_msgs'), ('phidgets_api', '/home/user/roskit_ws/install/phidgets_api'), ('phidgets_accelerometer', '/home/user/roskit_ws/install/phidgets_accelerometer'), ('phidgets_analog_inputs', '/home/user/roskit_ws/install/phidgets_analog_inputs'), ('phidgets_digital_inputs', '/home/user/roskit_ws/install/phidgets_digital_inputs'), ('phidgets_digital_outputs', '/home/user/roskit_ws/install/phidgets_digital_outputs'), ('phidgets_gyroscope', '/home/user/roskit_ws/install/phidgets_gyroscope'), ('phidgets_high_speed_encoder', '/home/user/roskit_ws/install/phidgets_high_speed_encoder'), ('phidgets_magnetometer', '/home/user/roskit_ws/install/phidgets_magnetometer'), ('phidgets_motors', '/home/user/roskit_ws/install/phidgets_motors'), ('phidgets_spatial', '/home/user/roskit_ws/install/phidgets_spatial'), ('phidgets_temperature', '/home/user/roskit_ws/install/phidgets_temperature'), ('phidgets_ik', '/home/user/roskit_ws/install/phidgets_ik')])}
+[0.002311] (libphidget22) JobStarted: {'identifier': 'libphidget22'}
+[0.007462] (phidgets_msgs) JobStarted: {'identifier': 'phidgets_msgs'}
+[0.008817] (ugv_sdk) JobStarted: {'identifier': 'ugv_sdk'}
+[0.011462] (ublox_serialization) JobStarted: {'identifier': 'ublox_serialization'}
+[0.013204] (hunter_msgs) JobStarted: {'identifier': 'hunter_msgs'}
+[0.015414] (ouster_sensor_msgs) JobStarted: {'identifier': 'ouster_sensor_msgs'}
+[0.017208] (ranger_msgs) JobStarted: {'identifier': 'ranger_msgs'}
+[0.019684] (scout_msgs) JobStarted: {'identifier': 'scout_msgs'}
+[0.021669] (tracer_msgs) JobStarted: {'identifier': 'tracer_msgs'}
+[0.027375] (gr_bringup) JobStarted: {'identifier': 'gr_bringup'}
+[0.028613] (gr_description) JobStarted: {'identifier': 'gr_description'}
+[0.031185] (livox_ros_driver2) JobStarted: {'identifier': 'livox_ros_driver2'}
+[0.032365] (livox_sdk2) JobStarted: {'identifier': 'livox_sdk2'}
+[0.034201] (ranger_bringup) JobStarted: {'identifier': 'ranger_bringup'}
+[0.035840] (rslidar_msg) JobStarted: {'identifier': 'rslidar_msg'}
+[0.037798] (rslidar_sdk) JobStarted: {'identifier': 'rslidar_sdk'}
+[0.043253] (libphidget22) JobProgress: {'identifier': 'libphidget22', 'progress': 'cmake'}
+[0.043907] (libphidget22) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/phidgets_drivers/libphidget22', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/libphidget22'], 'cwd': '/home/user/roskit_ws/build/libphidget22', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/libphidget22'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.046291] (phidgets_msgs) JobProgress: {'identifier': 'phidgets_msgs', 'progress': 'cmake'}
+[0.046855] (phidgets_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/phidgets_drivers/phidgets_msgs', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/phidgets_msgs'], 'cwd': '/home/user/roskit_ws/build/phidgets_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/phidgets_msgs'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.048306] (ugv_sdk) JobProgress: {'identifier': 'ugv_sdk', 'progress': 'cmake'}
+[0.048855] (ugv_sdk) JobProgress: {'identifier': 'ugv_sdk', 'progress': 'build'}
+[0.049460] (ugv_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/roskit_ws/build/ugv_sdk', '--', '-j16', '-l16'], 'cwd': '/home/user/roskit_ws/build/ugv_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/ugv_sdk'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.050662] (ublox_serialization) JobProgress: {'identifier': 'ublox_serialization', 'progress': 'cmake'}
+[0.051027] (ublox_serialization) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/ros2-ublox-zedf9p/ublox_serialization', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ublox_serialization'], 'cwd': '/home/user/roskit_ws/build/ublox_serialization', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/ublox_serialization'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.052261] (hunter_msgs) JobProgress: {'identifier': 'hunter_msgs', 'progress': 'cmake'}
+[0.053355] (hunter_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/hunter_ros2/hunter_msgs', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/hunter_msgs'], 'cwd': '/home/user/roskit_ws/build/hunter_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/hunter_msgs'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.054761] (ouster_sensor_msgs) JobProgress: {'identifier': 'ouster_sensor_msgs', 'progress': 'cmake'}
+[0.054791] (ouster_sensor_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/ouster-ros/ouster-sensor-msgs', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ouster_sensor_msgs'], 'cwd': '/home/user/roskit_ws/build/ouster_sensor_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/ouster_sensor_msgs'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.055529] (ranger_msgs) JobProgress: {'identifier': 'ranger_msgs', 'progress': 'cmake'}
+[0.056341] (ranger_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/ranger_mini_v2/ranger_msgs', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ranger_msgs'], 'cwd': '/home/user/roskit_ws/build/ranger_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/ranger_msgs'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.057415] (scout_msgs) JobProgress: {'identifier': 'scout_msgs', 'progress': 'cmake'}
+[0.058225] (scout_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/scout_ros2/scout_msgs', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/scout_msgs'], 'cwd': '/home/user/roskit_ws/build/scout_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/scout_msgs'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.059146] (tracer_msgs) JobProgress: {'identifier': 'tracer_msgs', 'progress': 'cmake'}
+[0.059465] (tracer_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/tracer_ros2/tracer_msgs', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/tracer_msgs'], 'cwd': '/home/user/roskit_ws/build/tracer_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/tracer_msgs'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.060559] (gr_bringup) JobProgress: {'identifier': 'gr_bringup', 'progress': 'cmake'}
+[0.060929] (gr_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/gr_bringup', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/gr_bringup'], 'cwd': '/home/user/roskit_ws/build/gr_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/gr_bringup'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.062635] (gr_description) JobProgress: {'identifier': 'gr_description', 'progress': 'cmake'}
+[0.063027] (gr_description) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/gr_description', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/gr_description'], 'cwd': '/home/user/roskit_ws/build/gr_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/gr_description'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.064108] (livox_ros_driver2) JobProgress: {'identifier': 'livox_ros_driver2', 'progress': 'cmake'}
+[0.064949] (livox_ros_driver2) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/livox_ros_driver2', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/livox_ros_driver2'], 'cwd': '/home/user/roskit_ws/build/livox_ros_driver2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/livox_ros_driver2'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.068387] (livox_sdk2) JobProgress: {'identifier': 'livox_sdk2', 'progress': 'cmake'}
+[0.068421] (livox_sdk2) JobProgress: {'identifier': 'livox_sdk2', 'progress': 'build'}
+[0.068439] (livox_sdk2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/roskit_ws/build/livox_sdk2', '--', '-j16', '-l16'], 'cwd': '/home/user/roskit_ws/build/livox_sdk2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/livox_sdk2'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.069321] (ranger_bringup) JobProgress: {'identifier': 'ranger_bringup', 'progress': 'cmake'}
+[0.069691] (ranger_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/ranger_mini_v2/ranger_bringup', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ranger_bringup'], 'cwd': '/home/user/roskit_ws/build/ranger_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/ranger_bringup'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.070700] (rslidar_msg) JobProgress: {'identifier': 'rslidar_msg', 'progress': 'cmake'}
+[0.071242] (rslidar_msg) Command: {'cmd': ['/usr/bin/cmake', '/home/user/roskit_ws/src/rslidar_msg', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/rslidar_msg'], 'cwd': '/home/user/roskit_ws/build/rslidar_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/rslidar_msg'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.072188] (rslidar_sdk) JobProgress: {'identifier': 'rslidar_sdk', 'progress': 'cmake'}
+[0.072727] (rslidar_sdk) JobProgress: {'identifier': 'rslidar_sdk', 'progress': 'build'}
+[0.073757] (rslidar_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/roskit_ws/build/rslidar_sdk', '--', '-j16', '-l16'], 'cwd': '/home/user/roskit_ws/build/rslidar_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CAMERA_TYPE', 'D435'), ('HOSTNAME', 'gr-p247-humble-container'), ('RVIZ', '1'), ('SHLVL', '2'), ('HOME', '/home/user'), ('LIDAR_TYPE', 'OUSTER_OS1_32'), ('ABSOLUTE_WORKSPACE', '/home/user/roskit_ws'), ('ROBOT_TYPE', 'SCOUT_MINI'), ('COLCON_PREFIX_PATH', '/home/user/roskit_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('START_CAMERA', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('ROBOT_ID', '4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/roskit_ws/build/rslidar_sdk'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.079928] (libphidget22) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.081138] (libphidget22) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/libphidget22/CMakeFiles/CMakeOutput.log".\n'}
+[0.081432] (libphidget22) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:4 (find_package):\n'}
+[0.081487] (libphidget22) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.081521] (libphidget22) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.081552] (libphidget22) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.081583] (libphidget22) StderrLine: {'line': b'\n'}
+[0.081612] (libphidget22) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.081666] (libphidget22) StderrLine: {'line': b'  any of the following names:\n'}
+[0.081702] (libphidget22) StderrLine: {'line': b'\n'}
+[0.081732] (libphidget22) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.081764] (libphidget22) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.081795] (libphidget22) StderrLine: {'line': b'\n'}
+[0.081826] (libphidget22) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.081857] (libphidget22) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.081890] (libphidget22) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.081921] (libphidget22) StderrLine: {'line': b'  has been installed.\n'}
+[0.081954] (libphidget22) StderrLine: {'line': b'\n'}
+[0.081989] (libphidget22) StderrLine: {'line': b'\x1b[0m\n'}
+[0.083182] (phidgets_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:13 (find_package):\n'}
+[0.083406] (phidgets_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.083525] (phidgets_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.084910] (phidgets_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.085313] (phidgets_msgs) StderrLine: {'line': b'\n'}
+[0.085365] (phidgets_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.085400] (phidgets_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[0.085430] (phidgets_msgs) StderrLine: {'line': b'\n'}
+[0.085459] (phidgets_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.085499] (phidgets_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.085530] (phidgets_msgs) StderrLine: {'line': b'\n'}
+[0.085561] (phidgets_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.085590] (phidgets_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.085620] (phidgets_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.085650] (phidgets_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[0.085678] (phidgets_msgs) StderrLine: {'line': b'\n'}
+[0.086201] (phidgets_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.086257] (phidgets_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.086308] (phidgets_msgs) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/phidgets_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.086343] (ugv_sdk) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/async_port/async_serial.cpp.o\x1b[0m\n'}
+[0.086399] (ugv_sdk) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/utilities/protocol_detector.cpp.o\x1b[0m\n'}
+[0.086440] (ugv_sdk) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/async_port/async_can.cpp.o\x1b[0m\n'}
+[0.086480] (ugv_sdk) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/mobile_robot/bunker_robot.cpp.o\x1b[0m\n'}
+[0.086514] (ugv_sdk) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/mobile_robot/titan_robot.cpp.o\x1b[0m\n'}
+[0.086546] (ugv_sdk) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/mobile_robot/scout_robot.cpp.o\x1b[0m\n'}
+[0.086578] (ugv_sdk) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/mobile_robot/hunter_robot.cpp.o\x1b[0m\n'}
+[0.086609] (ugv_sdk) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/mobile_robot/ranger_robot.cpp.o\x1b[0m\n'}
+[0.086641] (ugv_sdk) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/protocol_v2/protocol_v2_parser.cpp.o\x1b[0m\n'}
+[0.086673] (ugv_sdk) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/ugv_sdk.dir/src/protocol_v1/agilex_msg_parser_v1.c.o\x1b[0m\n'}
+[0.086860] (ublox_serialization) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.087145] (ublox_serialization) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/ublox_serialization/CMakeFiles/CMakeOutput.log".\n'}
+[0.087182] (ublox_serialization) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:5 (find_package):\n'}
+[0.087220] (ublox_serialization) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.087252] (ublox_serialization) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.087283] (ublox_serialization) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.087314] (ublox_serialization) StderrLine: {'line': b'\n'}
+[0.087346] (ublox_serialization) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.087377] (ublox_serialization) StderrLine: {'line': b'  any of the following names:\n'}
+[0.087408] (ublox_serialization) StderrLine: {'line': b'\n'}
+[0.087437] (ublox_serialization) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.087595] (ublox_serialization) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.087632] (ublox_serialization) StderrLine: {'line': b'\n'}
+[0.087662] (ublox_serialization) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.087692] (ublox_serialization) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.087723] (ublox_serialization) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.087753] (ublox_serialization) StderrLine: {'line': b'  has been installed.\n'}
+[0.087783] (ublox_serialization) StderrLine: {'line': b'\n'}
+[0.087813] (ublox_serialization) StderrLine: {'line': b'\x1b[0m\n'}
+[0.088880] (hunter_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.089373] (hunter_msgs) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/hunter_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.091598] (hunter_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[0.091844] (hunter_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.091901] (hunter_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.091941] (hunter_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.091976] (hunter_msgs) StderrLine: {'line': b'\n'}
+[0.092011] (hunter_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.092048] (hunter_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[0.092082] (hunter_msgs) StderrLine: {'line': b'\n'}
+[0.092115] (hunter_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.092148] (hunter_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.092181] (hunter_msgs) StderrLine: {'line': b'\n'}
+[0.092214] (hunter_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.092248] (hunter_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.092281] (hunter_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.092315] (hunter_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[0.092345] (hunter_msgs) StderrLine: {'line': b'\n'}
+[0.092375] (hunter_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.092406] (ouster_sensor_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:5 (find_package):\n'}
+[0.092455] (ouster_sensor_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.092587] (ouster_sensor_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.092622] (ouster_sensor_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.092653] (ouster_sensor_msgs) StderrLine: {'line': b'\n'}
+[0.092683] (ouster_sensor_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.092714] (ouster_sensor_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[0.092981] (ouster_sensor_msgs) StderrLine: {'line': b'\n'}
+[0.093017] (ouster_sensor_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.093183] (ouster_sensor_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.093214] (ouster_sensor_msgs) StderrLine: {'line': b'\n'}
+[0.093246] (ouster_sensor_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.093276] (ouster_sensor_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.093307] (ouster_sensor_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.093340] (ouster_sensor_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[0.093372] (ouster_sensor_msgs) StderrLine: {'line': b'\n'}
+[0.093402] (ouster_sensor_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.093433] (ouster_sensor_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.093483] (ouster_sensor_msgs) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/ouster_sensor_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.093663] (ranger_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.093722] (ranger_msgs) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/ranger_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.093756] (ranger_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[0.093796] (ranger_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.093828] (ranger_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.093858] (ranger_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.093890] (ranger_msgs) StderrLine: {'line': b'\n'}
+[0.093920] (ranger_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.093951] (ranger_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[0.093982] (ranger_msgs) StderrLine: {'line': b'\n'}
+[0.094011] (ranger_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.094041] (ranger_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.094071] (ranger_msgs) StderrLine: {'line': b'\n'}
+[0.094103] (ranger_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.094133] (ranger_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.094164] (ranger_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.094194] (ranger_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[0.094224] (ranger_msgs) StderrLine: {'line': b'\n'}
+[0.094255] (ranger_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.095944] (scout_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.096810] (scout_msgs) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/scout_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.096865] (scout_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[0.096918] (scout_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.096957] (scout_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.096992] (scout_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.097026] (scout_msgs) StderrLine: {'line': b'\n'}
+[0.097720] (scout_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.098053] (scout_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[0.098093] (scout_msgs) StderrLine: {'line': b'\n'}
+[0.098127] (scout_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.098158] (scout_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.098189] (scout_msgs) StderrLine: {'line': b'\n'}
+[0.098222] (scout_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.098286] (scout_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.098330] (scout_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.098361] (scout_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[0.098389] (scout_msgs) StderrLine: {'line': b'\n'}
+[0.098418] (scout_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.098447] (tracer_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.098939] (tracer_msgs) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/tracer_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.098991] (tracer_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[0.099295] (tracer_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.099339] (tracer_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.099372] (tracer_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.099437] (tracer_msgs) StderrLine: {'line': b'\n'}
+[0.099473] (tracer_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.099740] (tracer_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[0.099779] (tracer_msgs) StderrLine: {'line': b'\n'}
+[0.099808] (tracer_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.099837] (tracer_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.099865] (tracer_msgs) StderrLine: {'line': b'\n'}
+[0.099910] (tracer_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.099938] (-) TimerEvent: {}
+[0.100150] (tracer_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.100260] (tracer_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.100323] (tracer_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[0.100367] (tracer_msgs) StderrLine: {'line': b'\n'}
+[0.100410] (tracer_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.104361] (gr_bringup) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:19 (find_package):\n'}
+[0.105009] (gr_bringup) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.105245] (gr_bringup) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.106562] (gr_bringup) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.106813] (gr_bringup) StderrLine: {'line': b'\n'}
+[0.106868] (gr_bringup) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.106908] (gr_bringup) StderrLine: {'line': b'  any of the following names:\n'}
+[0.109556] (gr_bringup) StderrLine: {'line': b'\n'}
+[0.109681] (gr_bringup) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.109724] (gr_bringup) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.109764] (gr_bringup) StderrLine: {'line': b'\n'}
+[0.109801] (gr_bringup) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.109837] (gr_bringup) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.109877] (gr_bringup) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.109910] (gr_bringup) StderrLine: {'line': b'  has been installed.\n'}
+[0.109944] (gr_bringup) StderrLine: {'line': b'\n'}
+[0.109981] (gr_bringup) StderrLine: {'line': b'\x1b[0m\n'}
+[0.110020] (gr_bringup) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.110072] (gr_bringup) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/gr_bringup/CMakeFiles/CMakeOutput.log".\n'}
+[0.110110] (ugv_sdk) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/ugv_sdk.dir/src/protocol_v2/agilex_msg_parser_v2.c.o\x1b[0m\n'}
+[0.110167] (gr_description) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.110216] (gr_description) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/gr_description/CMakeFiles/CMakeOutput.log".\n'}
+[0.110251] (gr_description) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:19 (find_package):\n'}
+[0.110291] (gr_description) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.110328] (gr_description) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.110363] (gr_description) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.110397] (gr_description) StderrLine: {'line': b'\n'}
+[0.110431] (gr_description) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.110465] (gr_description) StderrLine: {'line': b'  any of the following names:\n'}
+[0.110789] (gr_description) StderrLine: {'line': b'\n'}
+[0.118817] (gr_description) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.119009] (gr_description) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.119075] (gr_description) StderrLine: {'line': b'\n'}
+[0.119114] (gr_description) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.119152] (gr_description) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.119187] (gr_description) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.119333] (gr_description) StderrLine: {'line': b'  has been installed.\n'}
+[0.119431] (gr_description) StderrLine: {'line': b'\n'}
+[0.119483] (gr_description) StderrLine: {'line': b'\x1b[0m\n'}
+[0.119524] (livox_ros_driver2) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:224 (find_package):\n'}
+[0.119596] (livox_ros_driver2) StderrLine: {'line': b'  By not providing "Findament_cmake_auto.cmake" in CMAKE_MODULE_PATH this\n'}
+[0.119996] (livox_ros_driver2) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[0.120056] (livox_ros_driver2) StderrLine: {'line': b'  "ament_cmake_auto", but CMake did not find one.\n'}
+[0.120101] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[0.120169] (livox_ros_driver2) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake_auto"\n'}
+[0.120208] (livox_ros_driver2) StderrLine: {'line': b'  with any of the following names:\n'}
+[0.120243] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[0.120277] (livox_ros_driver2) StderrLine: {'line': b'    ament_cmake_autoConfig.cmake\n'}
+[0.120313] (livox_ros_driver2) StderrLine: {'line': b'    ament_cmake_auto-config.cmake\n'}
+[0.120348] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[0.120381] (livox_ros_driver2) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake_auto" to CMAKE_PREFIX_PATH or\n'}
+[0.120415] (livox_ros_driver2) StderrLine: {'line': b'  set "ament_cmake_auto_DIR" to a directory containing one of the above\n'}
+[0.120451] (livox_ros_driver2) StderrLine: {'line': b'  files.  If "ament_cmake_auto" provides a separate development package or\n'}
+[0.120499] (livox_ros_driver2) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[0.120536] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[0.120577] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[0.120613] (livox_ros_driver2) StdoutLine: {'line': b'-- livox_ros_driver2 version: 1.2.4\n'}
+[0.120666] (livox_ros_driver2) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.120703] (livox_ros_driver2) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/livox_ros_driver2/CMakeFiles/CMakeOutput.log".\n'}
+[0.120739] (ranger_bringup) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.120796] (ranger_bringup) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/ranger_bringup/CMakeFiles/CMakeOutput.log".\n'}
+[0.120832] (ranger_bringup) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[0.120873] (ranger_bringup) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.120908] (ranger_bringup) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.120942] (ranger_bringup) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.120975] (ranger_bringup) StderrLine: {'line': b'\n'}
+[0.121009] (ranger_bringup) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.121044] (ranger_bringup) StderrLine: {'line': b'  any of the following names:\n'}
+[0.121077] (ranger_bringup) StderrLine: {'line': b'\n'}
+[0.121110] (ranger_bringup) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.121144] (ranger_bringup) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.121178] (ranger_bringup) StderrLine: {'line': b'\n'}
+[0.121212] (ranger_bringup) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.121246] (ranger_bringup) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.121280] (ranger_bringup) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.121313] (ranger_bringup) StderrLine: {'line': b'  has been installed.\n'}
+[0.121346] (ranger_bringup) StderrLine: {'line': b'\n'}
+[0.121381] (ranger_bringup) StderrLine: {'line': b'\x1b[0m\n'}
+[0.121419] (rslidar_msg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.121474] (rslidar_msg) StdoutLine: {'line': b'See also "/home/user/roskit_ws/build/rslidar_msg/CMakeFiles/CMakeOutput.log".\n'}
+[0.124869] (rslidar_msg) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:19 (find_package):\n'}
+[0.124964] (rslidar_msg) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.125004] (rslidar_msg) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.125043] (rslidar_msg) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.125079] (rslidar_msg) StderrLine: {'line': b'\n'}
+[0.125113] (rslidar_msg) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.125147] (rslidar_msg) StderrLine: {'line': b'  any of the following names:\n'}
+[0.125181] (rslidar_msg) StderrLine: {'line': b'\n'}
+[0.125214] (rslidar_msg) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.125248] (rslidar_msg) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.125282] (rslidar_msg) StderrLine: {'line': b'\n'}
+[0.125315] (rslidar_msg) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.125349] (rslidar_msg) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.125383] (rslidar_msg) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.125417] (rslidar_msg) StderrLine: {'line': b'  has been installed.\n'}
+[0.125449] (rslidar_msg) StderrLine: {'line': b'\n'}
+[0.125503] (rslidar_msg) StderrLine: {'line': b'\x1b[0m\n'}
+[0.125541] (phidgets_msgs) CommandEnded: {'returncode': 1}
+[0.125758] (livox_sdk2) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/device_manager.cpp.o\x1b[0m\n'}
+[0.125825] (livox_sdk2) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/__/3rdparty/FastCRC/FastCRCsw.cpp.o\x1b[0m\n'}
+[0.125867] (livox_sdk2) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/params_check.cpp.o\x1b[0m\n'}
+[0.125904] (livox_sdk2) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/livox_lidar_sdk.cpp.o\x1b[0m\n'}
+[0.125939] (livox_sdk2) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/__/3rdparty/FastCRC/FastCRCsw.cpp.o\x1b[0m\n'}
+[0.125975] (ublox_serialization) CommandEnded: {'returncode': 1}
+[0.126088] (livox_sdk2) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/parse_cfg_file.cpp.o\x1b[0m\n'}
+[0.126127] (livox_sdk2) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/livox_lidar_sdk.cpp.o\x1b[0m\n'}
+[0.126163] (livox_sdk2) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/parse_cfg_file.cpp.o\x1b[0m\n'}
+[0.126198] (livox_sdk2) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/thread_base.cpp.o\x1b[0m\n'}
+[0.126235] (livox_sdk2) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/params_check.cpp.o\x1b[0m\n'}
+[0.129519] (livox_sdk2) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/io_thread.cpp.o\x1b[0m\n'}
+[0.130749] (livox_sdk2) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/upgrade_manager.cpp.o\x1b[0m\n'}
+[0.130819] (libphidget22) CommandEnded: {'returncode': 1}
+[0.130999] (rslidar_sdk) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/rslidar_sdk_node.dir/node/rslidar_sdk_node.cpp.o\x1b[0m\n'}
+[0.131060] (livox_sdk2) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/io_loop.cpp.o\x1b[0m\n'}
+[0.131099] (livox_sdk2) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/device_manager.cpp.o\x1b[0m\n'}
+[0.131134] (ouster_sensor_msgs) CommandEnded: {'returncode': 1}
+[0.132161] (rslidar_sdk) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/rslidar_sdk_node.dir/src/manager/node_manager.cpp.o\x1b[0m\n'}
+[0.133544] (livox_sdk2) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/io_loop.cpp.o\x1b[0m\n'}
+[0.133659] (livox_sdk2) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/upgrade_manager.cpp.o\x1b[0m\n'}
+[0.139456] (scout_msgs) CommandEnded: {'returncode': 1}
+[0.143676] (tracer_msgs) CommandEnded: {'returncode': 1}
+[0.157648] (hunter_msgs) CommandEnded: {'returncode': 1}
+[0.162810] (ranger_msgs) CommandEnded: {'returncode': 1}
+[0.167719] (livox_ros_driver2) CommandEnded: {'returncode': 1}
+[0.176447] (ranger_bringup) CommandEnded: {'returncode': 1}
+[0.192549] (gr_description) CommandEnded: {'returncode': 1}
+[0.200079] (-) TimerEvent: {}
+[0.204271] (gr_bringup) CommandEnded: {'returncode': 1}
+[0.207097] (rslidar_msg) CommandEnded: {'returncode': 1}
+[0.228902] (phidgets_msgs) JobEnded: {'identifier': 'phidgets_msgs', 'rc': 1}
+[0.229569] (libphidget22) JobEnded: {'identifier': 'libphidget22', 'rc': 'SIGINT'}
+[0.229825] (ublox_serialization) JobEnded: {'identifier': 'ublox_serialization', 'rc': 'SIGINT'}
+[0.230060] (hunter_msgs) JobEnded: {'identifier': 'hunter_msgs', 'rc': 'SIGINT'}
+[0.230214] (ouster_sensor_msgs) JobEnded: {'identifier': 'ouster_sensor_msgs', 'rc': 'SIGINT'}
+[0.230418] (ranger_msgs) JobEnded: {'identifier': 'ranger_msgs', 'rc': 'SIGINT'}
+[0.230604] (scout_msgs) JobEnded: {'identifier': 'scout_msgs', 'rc': 'SIGINT'}
+[0.230773] (tracer_msgs) JobEnded: {'identifier': 'tracer_msgs', 'rc': 'SIGINT'}
+[0.230945] (gr_description) JobEnded: {'identifier': 'gr_description', 'rc': 'SIGINT'}
+[0.231124] (livox_ros_driver2) JobEnded: {'identifier': 'livox_ros_driver2', 'rc': 'SIGINT'}
+[0.231295] (ranger_bringup) JobEnded: {'identifier': 'ranger_bringup', 'rc': 'SIGINT'}
+[0.231428] (gr_bringup) JobEnded: {'identifier': 'gr_bringup', 'rc': 'SIGINT'}
+[0.231898] (rslidar_msg) JobEnded: {'identifier': 'rslidar_msg', 'rc': 'SIGINT'}
+[0.300213] (-) TimerEvent: {}
+[0.402602] (-) TimerEvent: {}
+[0.449240] (livox_sdk2) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/logging.cpp.o\x1b[0m\n'}
+[0.449449] (livox_sdk2) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/thread_base.cpp.o\x1b[0m\n'}
+[0.502716] (-) TimerEvent: {}
+[0.603049] (-) TimerEvent: {}
+[0.705568] (-) TimerEvent: {}
+[0.734649] (livox_sdk2) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/network/unix/network_util.cpp.o\x1b[0m\n'}
+[0.749412] (livox_sdk2) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/multiple_io/multiple_io_base.cpp.o\x1b[0m\n'}
+[0.772394] (livox_sdk2) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/io_thread.cpp.o\x1b[0m\n'}
+[0.798525] (livox_sdk2) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/logging.cpp.o\x1b[0m\n'}
+[0.805698] (-) TimerEvent: {}
+[0.909558] (-) TimerEvent: {}
+[1.009918] (-) TimerEvent: {}
+[1.110272] (-) TimerEvent: {}
+[1.160495] (livox_sdk2) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/network/unix/network_util.cpp.o\x1b[0m\n'}
+[1.210408] (-) TimerEvent: {}
+[1.312564] (-) TimerEvent: {}
+[1.414661] (-) TimerEvent: {}
+[1.433923] (livox_sdk2) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/multiple_io/multiple_io_epoll.cpp.o\x1b[0m\n'}
+[1.434568] (livox_sdk2) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/multiple_io/multiple_io_poll.cpp.o\x1b[0m\n'}
+[1.514780] (-) TimerEvent: {}
+[1.523535] (livox_sdk2) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/multiple_io/multiple_io_base.cpp.o\x1b[0m\n'}
+[1.611635] (livox_sdk2) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/multiple_io/multiple_io_select.cpp.o\x1b[0m\n'}
+[1.616546] (-) TimerEvent: {}
+[1.716869] (-) TimerEvent: {}
+[1.735379] (livox_sdk2) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/multiple_io/multiple_io_epoll.cpp.o\x1b[0m\n'}
+[1.819553] (-) TimerEvent: {}
+[1.923561] (-) TimerEvent: {}
+[2.021621] (livox_sdk2) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/multiple_io/multiple_io_poll.cpp.o\x1b[0m\n'}
+[2.023641] (-) TimerEvent: {}
+[2.123997] (-) TimerEvent: {}
+[2.152001] (livox_sdk2) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/multiple_io/multiple_io_kqueue.cpp.o\x1b[0m\n'}
+[2.158176] (livox_sdk2) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/multiple_io/multiple_io_select.cpp.o\x1b[0m\n'}
+[2.224113] (-) TimerEvent: {}
+[2.324533] (-) TimerEvent: {}
+[2.376364] (livox_sdk2) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/multiple_io/multiple_io_kqueue.cpp.o\x1b[0m\n'}
+[2.424651] (-) TimerEvent: {}
+[2.476582] (livox_sdk2) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/wake_up/unix/wake_up_pipe.cpp.o\x1b[0m\n'}
+[2.524778] (-) TimerEvent: {}
+[2.625265] (-) TimerEvent: {}
+[2.629509] (livox_sdk2) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/comm/comm_port.cpp.o\x1b[0m\n'}
+[2.698365] (livox_sdk2) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/comm/sdk_protocol.cpp.o\x1b[0m\n'}
+[2.725403] (-) TimerEvent: {}
+[2.828563] (-) TimerEvent: {}
+[2.849729] (rslidar_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid robosense::lidar::NodeManager::init(const YAML::Node&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.849991] (rslidar_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:89:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSourcePacketRos\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.850042] (rslidar_sdk) StderrLine: {'line': b'   89 |         source = std::make_shared<\x1b[01;31m\x1b[KSourcePacketRos\x1b[m\x1b[K>();\n'}
+[2.850080] (rslidar_sdk) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.850115] (rslidar_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:89:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.850150] (rslidar_sdk) StderrLine: {'line': b'   89 |         source = \x1b[01;31m\x1b[Kstd::make_shared<SourcePacketRos>()\x1b[m\x1b[K;\n'}
+[2.850183] (rslidar_sdk) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.850215] (rslidar_sdk) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.850248] (rslidar_sdk) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/yaml-cpp/parser.h:11\x1b[m\x1b[K,\n'}
+[2.850280] (rslidar_sdk) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/yaml-cpp/yaml.h:10\x1b[m\x1b[K,\n'}
+[2.850311] (rslidar_sdk) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/utility/yaml_reader.hpp:35\x1b[m\x1b[K,\n'}
+[2.850345] (rslidar_sdk) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.hpp:35\x1b[m\x1b[K,\n'}
+[2.850377] (rslidar_sdk) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:33\x1b[m\x1b[K:\n'}
+[2.850408] (rslidar_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.850441] (rslidar_sdk) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[2.850484] (rslidar_sdk) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.850520] (rslidar_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.850553] (rslidar_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:89:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.850585] (rslidar_sdk) StderrLine: {'line': b'   89 |         source = \x1b[01;31m\x1b[Kstd::make_shared<SourcePacketRos>()\x1b[m\x1b[K;\n'}
+[2.850622] (rslidar_sdk) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.850653] (rslidar_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:117:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDestinationPacketRos\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KDestinationPacket\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.850687] (rslidar_sdk) StderrLine: {'line': b'  117 |       std::shared_ptr<DestinationPacket> dst = std::make_shared<\x1b[01;31m\x1b[KDestinationPacketRos\x1b[m\x1b[K>();\n'}
+[2.850719] (rslidar_sdk) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.850751] (rslidar_sdk) StderrLine: {'line': b'      |                                                                 \x1b[32m\x1b[KDestinationPacket\x1b[m\x1b[K\n'}
+[2.850782] (rslidar_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:117:86:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.850815] (rslidar_sdk) StderrLine: {'line': b'  117 |       std::shared_ptr<DestinationPacket> dst = \x1b[01;31m\x1b[Kstd::make_shared<DestinationPacketRos>()\x1b[m\x1b[K;\n'}
+[2.850846] (rslidar_sdk) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.850877] (rslidar_sdk) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.850909] (rslidar_sdk) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/yaml-cpp/parser.h:11\x1b[m\x1b[K,\n'}
+[2.850941] (rslidar_sdk) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/yaml-cpp/yaml.h:10\x1b[m\x1b[K,\n'}
+[2.850971] (rslidar_sdk) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/utility/yaml_reader.hpp:35\x1b[m\x1b[K,\n'}
+[2.851002] (rslidar_sdk) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.hpp:35\x1b[m\x1b[K,\n'}
+[2.851040] (rslidar_sdk) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:33\x1b[m\x1b[K:\n'}
+[2.851071] (rslidar_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.851104] (rslidar_sdk) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[2.851138] (rslidar_sdk) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.851169] (rslidar_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.851201] (rslidar_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:117:86:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.851236] (rslidar_sdk) StderrLine: {'line': b'  117 |       std::shared_ptr<DestinationPacket> dst = \x1b[01;31m\x1b[Kstd::make_shared<DestinationPacketRos>()\x1b[m\x1b[K;\n'}
+[2.851267] (rslidar_sdk) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.851299] (rslidar_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:130:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDestinationPointCloudRos\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KDestinationPointCloud\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.851335] (rslidar_sdk) StderrLine: {'line': b'  130 |       std::shared_ptr<DestinationPointCloud> dst = std::make_shared<\x1b[01;31m\x1b[KDestinationPointCloudRos\x1b[m\x1b[K>();\n'}
+[2.851366] (rslidar_sdk) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.851398] (rslidar_sdk) StderrLine: {'line': b'      |                                                                     \x1b[32m\x1b[KDestinationPointCloud\x1b[m\x1b[K\n'}
+[2.851428] (rslidar_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:130:94:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.851459] (rslidar_sdk) StderrLine: {'line': b'  130 |       std::shared_ptr<DestinationPointCloud> dst = \x1b[01;31m\x1b[Kstd::make_shared<DestinationPointCloudRos>()\x1b[m\x1b[K;\n'}
+[2.851502] (rslidar_sdk) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.851535] (rslidar_sdk) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.851565] (rslidar_sdk) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/yaml-cpp/parser.h:11\x1b[m\x1b[K,\n'}
+[2.851596] (rslidar_sdk) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/yaml-cpp/yaml.h:10\x1b[m\x1b[K,\n'}
+[2.851626] (rslidar_sdk) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/utility/yaml_reader.hpp:35\x1b[m\x1b[K,\n'}
+[2.851658] (rslidar_sdk) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.hpp:35\x1b[m\x1b[K,\n'}
+[2.851688] (rslidar_sdk) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:33\x1b[m\x1b[K:\n'}
+[2.851719] (rslidar_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.851750] (rslidar_sdk) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[2.851781] (rslidar_sdk) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.851812] (rslidar_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.851843] (rslidar_sdk) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:130:94:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.851874] (rslidar_sdk) StderrLine: {'line': b'  130 |       std::shared_ptr<DestinationPointCloud> dst = \x1b[01;31m\x1b[Kstd::make_shared<DestinationPointCloudRos>()\x1b[m\x1b[K;\n'}
+[2.851905] (rslidar_sdk) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.853589] (rslidar_sdk) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/rslidar_sdk_node.dir/build.make:90: CMakeFiles/rslidar_sdk_node.dir/src/manager/node_manager.cpp.o] Error 1\n'}
+[2.853727] (rslidar_sdk) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[2.928683] (-) TimerEvent: {}
+[3.002855] (livox_sdk2) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/wake_up/unix/wake_up_pipe.cpp.o\x1b[0m\n'}
+[3.028785] (-) TimerEvent: {}
+[3.042429] (livox_sdk2) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/comm/generate_seq.cpp.o\x1b[0m\n'}
+[3.044520] (livox_sdk2) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/upgrade/firmware.cpp.o\x1b[0m\n'}
+[3.092656] (livox_sdk2) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/upgrade/livox_lidar_upgrader.cpp.o\x1b[0m\n'}
+[3.127627] (livox_sdk2) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/comm/comm_port.cpp.o\x1b[0m\n'}
+[3.128868] (-) TimerEvent: {}
+[3.184881] (rslidar_sdk) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:100: CMakeFiles/rslidar_sdk_node.dir/all] Error 2\n'}
+[3.185133] (rslidar_sdk) StderrLine: {'line': b'gmake: *** [Makefile:91: all] Error 2\n'}
+[3.199053] (rslidar_sdk) JobEnded: {'identifier': 'rslidar_sdk', 'rc': 'SIGINT'}
+[3.228989] (-) TimerEvent: {}
+[3.329305] (-) TimerEvent: {}
+[3.409159] (livox_sdk2) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/logger_handler/logger_manager.cpp.o\x1b[0m\n'}
+[3.429417] (-) TimerEvent: {}
+[3.529723] (-) TimerEvent: {}
+[3.608942] (livox_sdk2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/comm/sdk_protocol.cpp.o\x1b[0m\n'}
+[3.629832] (-) TimerEvent: {}
+[3.714031] (livox_sdk2) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/comm/generate_seq.cpp.o\x1b[0m\n'}
+[3.729942] (-) TimerEvent: {}
+[3.830261] (-) TimerEvent: {}
+[3.930544] (-) TimerEvent: {}
+[4.031208] (-) TimerEvent: {}
+[4.041155] (livox_sdk2) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/logger_handler/logger_handler.cpp.o\x1b[0m\n'}
+[4.052039] (livox_sdk2) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/logger_handler/file_manager.cpp.o\x1b[0m\n'}
+[4.058919] (ugv_sdk) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX static library lib/libugv_sdk.a\x1b[0m\n'}
+[4.089356] (livox_sdk2) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/upgrade/firmware.cpp.o\x1b[0m\n'}
+[4.131323] (-) TimerEvent: {}
+[4.173554] (ugv_sdk) StdoutLine: {'line': b'[ 42%] Built target ugv_sdk\n'}
+[4.203031] (ugv_sdk) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object sample/scout_demo/CMakeFiles/demo_scout_robot.dir/scout_robot_demo.cpp.o\x1b[0m\n'}
+[4.206624] (ugv_sdk) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object sample/scout_demo/CMakeFiles/demo_scout_mini_omni_robot.dir/scout_mini_omni_demo.cpp.o\x1b[0m\n'}
+[4.211915] (ugv_sdk) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object sample/bunker_demo/CMakeFiles/demo_bunker_robot.dir/bunker_robot_demo.cpp.o\x1b[0m\n'}
+[4.223783] (ugv_sdk) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object sample/hunter_demo/CMakeFiles/demo_hunter_robot.dir/hunter_robot_demo.cpp.o\x1b[0m\n'}
+[4.224848] (ugv_sdk) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object sample/ranger_demo/CMakeFiles/demo_ranger_robot.dir/ranger_robot_demo.cpp.o\x1b[0m\n'}
+[4.224963] (ugv_sdk) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object sample/tracer_demo/CMakeFiles/demo_tracer_robot.dir/tracer_robot_demo.cpp.o\x1b[0m\n'}
+[4.225002] (ugv_sdk) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object sample/utils_demo/CMakeFiles/demo_protocol_detector.dir/demo_protocol_detector.cpp.o\x1b[0m\n'}
+[4.232622] (-) TimerEvent: {}
+[4.232919] (ugv_sdk) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object sample/utils_demo/CMakeFiles/demo_robot_version.dir/demo_robot_version.cpp.o\x1b[0m\n'}
+[4.332727] (-) TimerEvent: {}
+[4.429609] (livox_sdk2) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/data_handler/data_handler.cpp.o\x1b[0m\n'}
+[4.432821] (-) TimerEvent: {}
+[4.461555] (livox_sdk2) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/command_handler/command_impl.cpp.o\x1b[0m\n'}
+[4.532936] (-) TimerEvent: {}
+[4.636575] (-) TimerEvent: {}
+[4.688603] (ugv_sdk) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/demo_bunker_robot\x1b[0m\n'}
+[4.736681] (-) TimerEvent: {}
+[4.748889] (ugv_sdk) StdoutLine: {'line': b'[ 75%] Built target demo_bunker_robot\n'}
+[4.836791] (-) TimerEvent: {}
+[4.851864] (livox_sdk2) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/command_handler/general_command_handler.cpp.o\x1b[0m\n'}
+[4.936904] (-) TimerEvent: {}
+[4.942949] (livox_sdk2) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/command_handler/hap_command_handler.cpp.o\x1b[0m\n'}
+[5.037030] (-) TimerEvent: {}
+[5.137504] (-) TimerEvent: {}
+[5.237961] (-) TimerEvent: {}
+[5.291163] (livox_sdk2) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/command_handler/mid360_command_handler.cpp.o\x1b[0m\n'}
+[5.291426] (livox_sdk2) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/upgrade/livox_lidar_upgrader.cpp.o\x1b[0m\n'}
+[5.338089] (-) TimerEvent: {}
+[5.438464] (-) TimerEvent: {}
+[5.498395] (livox_sdk2) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/logger_handler/logger_manager.cpp.o\x1b[0m\n'}
+[5.538564] (-) TimerEvent: {}
+[5.638950] (-) TimerEvent: {}
+[5.739315] (-) TimerEvent: {}
+[5.843555] (-) TimerEvent: {}
+[5.943923] (-) TimerEvent: {}
+[6.044293] (-) TimerEvent: {}
+[6.144685] (-) TimerEvent: {}
+[6.158700] (livox_sdk2) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/command_handler/build_request.cpp.o\x1b[0m\n'}
+[6.244811] (-) TimerEvent: {}
+[6.276578] (livox_sdk2) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/logger_handler/logger_handler.cpp.o\x1b[0m\n'}
+[6.344937] (-) TimerEvent: {}
+[6.382340] (ugv_sdk) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/demo_hunter_robot\x1b[0m\n'}
+[6.445063] (-) TimerEvent: {}
+[6.450748] (ugv_sdk) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/demo_scout_robot\x1b[0m\n'}
+[6.497549] (ugv_sdk) StdoutLine: {'line': b'[ 82%] Built target demo_hunter_robot\n'}
+[6.505477] (ugv_sdk) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/demo_tracer_robot\x1b[0m\n'}
+[6.519555] (ugv_sdk) StdoutLine: {'line': b'[ 85%] Built target demo_scout_robot\n'}
+[6.545192] (-) TimerEvent: {}
+[6.581963] (ugv_sdk) StdoutLine: {'line': b'[ 85%] Built target demo_tracer_robot\n'}
+[6.592716] (livox_sdk2) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/logger_handler/file_manager.cpp.o\x1b[0m\n'}
+[6.645315] (-) TimerEvent: {}
+[6.708712] (livox_sdk2) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/command_handler/parse_lidar_state_info.cpp.o\x1b[0m\n'}
+[6.745448] (-) TimerEvent: {}
+[6.753858] (ugv_sdk) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/demo_scout_mini_omni_robot\x1b[0m\n'}
+[6.845567] (-) TimerEvent: {}
+[6.866590] (ugv_sdk) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/demo_ranger_robot\x1b[0m\n'}
+[6.910488] (livox_sdk2) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/debug_point_cloud_handler/debug_point_cloud_manager.cpp.o\x1b[0m\n'}
+[6.944524] (ugv_sdk) StdoutLine: {'line': b'[ 92%] Built target demo_scout_mini_omni_robot\n'}
+[6.948548] (-) TimerEvent: {}
+[7.025278] (ugv_sdk) StdoutLine: {'line': b'[ 92%] Built target demo_ranger_robot\n'}
+[7.048688] (-) TimerEvent: {}
+[7.066047] (livox_sdk2) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/data_handler/data_handler.cpp.o\x1b[0m\n'}
+[7.148823] (-) TimerEvent: {}
+[7.165113] (livox_sdk2) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/debug_point_cloud_handler/debug_point_cloud_handler.cpp.o\x1b[0m\n'}
+[7.248961] (-) TimerEvent: {}
+[7.346551] (ugv_sdk) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/demo_robot_version\x1b[0m\n'}
+[7.349062] (-) TimerEvent: {}
+[7.449396] (-) TimerEvent: {}
+[7.497384] (ugv_sdk) StdoutLine: {'line': b'[ 96%] Built target demo_robot_version\n'}
+[7.549558] (-) TimerEvent: {}
+[7.650574] (-) TimerEvent: {}
+[7.750944] (-) TimerEvent: {}
+[7.851560] (-) TimerEvent: {}
+[7.952561] (-) TimerEvent: {}
+[8.052937] (-) TimerEvent: {}
+[8.153298] (-) TimerEvent: {}
+[8.254553] (-) TimerEvent: {}
+[8.353569] (livox_sdk2) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/command_handler/command_impl.cpp.o\x1b[0m\n'}
+[8.354636] (-) TimerEvent: {}
+[8.454962] (-) TimerEvent: {}
+[8.491540] (livox_sdk2) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/command_handler/general_command_handler.cpp.o\x1b[0m\n'}
+[8.555088] (-) TimerEvent: {}
+[8.655449] (-) TimerEvent: {}
+[8.756558] (-) TimerEvent: {}
+[8.827868] (ugv_sdk) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ../../bin/demo_protocol_detector\x1b[0m\n'}
+[8.856671] (-) TimerEvent: {}
+[8.917626] (livox_sdk2) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/command_handler/hap_command_handler.cpp.o\x1b[0m\n'}
+[8.956783] (-) TimerEvent: {}
+[9.057087] (-) TimerEvent: {}
+[9.067530] (livox_sdk2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19\x1b[m\x1b[K,\n'}
+[9.067706] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22\x1b[m\x1b[K,\n'}
+[9.067748] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22\x1b[m\x1b[K,\n'}
+[9.067775] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26\x1b[m\x1b[K,\n'}
+[9.067801] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38\x1b[m\x1b[K,\n'}
+[9.067826] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/command_handler/hap_command_handler.cpp:37\x1b[m\x1b[K:\n'}
+[9.067849] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunknown option after \xe2\x80\x98\x1b[01m\x1b[K#pragma GCC diagnostic\x1b[m\x1b[K\xe2\x80\x99 kind [\x1b[01;35m\x1b[K-Wpragmas\x1b[m\x1b[K]\n'}
+[9.067882] (livox_sdk2) StderrLine: {'line': b'  542 | #define RAPIDJSON_PRAGMA(x) \x1b[01;35m\x1b[K_Pragma\x1b[m\x1b[K(RAPIDJSON_STRINGIFY(x))\n'}
+[9.067905] (livox_sdk2) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[9.067928] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.067952] (livox_sdk2) StderrLine: {'line': b'  543 | #define RAPIDJSON_DIAG_PRAGMA(x) \x1b[01;36m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K(GCC diagnostic x)\n'}
+[9.067975] (livox_sdk2) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.067997] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.068020] (livox_sdk2) StderrLine: {'line': b'  545 |   \x1b[01;36m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))\n'}
+[9.068042] (livox_sdk2) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.068063] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.068084] (livox_sdk2) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K(array - bounds)  // some gcc versions generate wrong warnings\n'}
+[9.068106] (livox_sdk2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.068127] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdid you mean \xe2\x80\x98\x1b[01m\x1b[K-Warray-bounds\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.068151] (livox_sdk2) StderrLine: {'line': b'  542 | #define RAPIDJSON_PRAGMA(x) \x1b[01;36m\x1b[K_Pragma\x1b[m\x1b[K(RAPIDJSON_STRINGIFY(x))\n'}
+[9.068174] (livox_sdk2) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[9.068195] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.068218] (livox_sdk2) StderrLine: {'line': b'  543 | #define RAPIDJSON_DIAG_PRAGMA(x) \x1b[01;36m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K(GCC diagnostic x)\n'}
+[9.068240] (livox_sdk2) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.068262] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.068282] (livox_sdk2) StderrLine: {'line': b'  545 |   \x1b[01;36m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))\n'}
+[9.068305] (livox_sdk2) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.068328] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.068350] (livox_sdk2) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K(array - bounds)  // some gcc versions generate wrong warnings\n'}
+[9.068373] (livox_sdk2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.082600] (livox_sdk2) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/command_handler/mid360_command_handler.cpp.o\x1b[0m\n'}
+[9.113448] (ugv_sdk) StdoutLine: {'line': b'[100%] Built target demo_protocol_detector\n'}
+[9.132184] (ugv_sdk) JobEnded: {'identifier': 'ugv_sdk', 'rc': 'SIGINT'}
+[9.157196] (-) TimerEvent: {}
+[9.257513] (-) TimerEvent: {}
+[9.357827] (-) TimerEvent: {}
+[9.458141] (-) TimerEvent: {}
+[9.535609] (livox_sdk2) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/command_handler/build_request.cpp.o\x1b[0m\n'}
+[9.558248] (-) TimerEvent: {}
+[9.602590] (livox_sdk2) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/command_handler/parse_lidar_state_info.cpp.o\x1b[0m\n'}
+[9.658362] (-) TimerEvent: {}
+[9.758665] (-) TimerEvent: {}
+[9.858982] (-) TimerEvent: {}
+[9.864659] (livox_sdk2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19\x1b[m\x1b[K,\n'}
+[9.864880] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22\x1b[m\x1b[K,\n'}
+[9.864928] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22\x1b[m\x1b[K,\n'}
+[9.864965] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26\x1b[m\x1b[K,\n'}
+[9.865004] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38\x1b[m\x1b[K,\n'}
+[9.865037] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/command_handler/mid360_command_handler.cpp:37\x1b[m\x1b[K:\n'}
+[9.865070] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunknown option after \xe2\x80\x98\x1b[01m\x1b[K#pragma GCC diagnostic\x1b[m\x1b[K\xe2\x80\x99 kind [\x1b[01;35m\x1b[K-Wpragmas\x1b[m\x1b[K]\n'}
+[9.865107] (livox_sdk2) StderrLine: {'line': b'  542 | #define RAPIDJSON_PRAGMA(x) \x1b[01;35m\x1b[K_Pragma\x1b[m\x1b[K(RAPIDJSON_STRINGIFY(x))\n'}
+[9.865143] (livox_sdk2) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[9.865177] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.865211] (livox_sdk2) StderrLine: {'line': b'  543 | #define RAPIDJSON_DIAG_PRAGMA(x) \x1b[01;36m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K(GCC diagnostic x)\n'}
+[9.865244] (livox_sdk2) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.865277] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.865310] (livox_sdk2) StderrLine: {'line': b'  545 |   \x1b[01;36m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))\n'}
+[9.865343] (livox_sdk2) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.865375] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.865408] (livox_sdk2) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K(array - bounds)  // some gcc versions generate wrong warnings\n'}
+[9.865441] (livox_sdk2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.865494] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdid you mean \xe2\x80\x98\x1b[01m\x1b[K-Warray-bounds\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[9.865532] (livox_sdk2) StderrLine: {'line': b'  542 | #define RAPIDJSON_PRAGMA(x) \x1b[01;36m\x1b[K_Pragma\x1b[m\x1b[K(RAPIDJSON_STRINGIFY(x))\n'}
+[9.865564] (livox_sdk2) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[9.865597] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.865630] (livox_sdk2) StderrLine: {'line': b'  543 | #define RAPIDJSON_DIAG_PRAGMA(x) \x1b[01;36m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K(GCC diagnostic x)\n'}
+[9.865664] (livox_sdk2) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.865695] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.865728] (livox_sdk2) StderrLine: {'line': b'  545 |   \x1b[01;36m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))\n'}
+[9.865760] (livox_sdk2) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.865793] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.865826] (livox_sdk2) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K(array - bounds)  // some gcc versions generate wrong warnings\n'}
+[9.865860] (livox_sdk2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.873312] (livox_sdk2) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/debug_point_cloud_handler/debug_point_cloud_manager.cpp.o\x1b[0m\n'}
+[9.959097] (-) TimerEvent: {}
+[10.059410] (-) TimerEvent: {}
+[10.094356] (livox_sdk2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19\x1b[m\x1b[K,\n'}
+[10.094566] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22\x1b[m\x1b[K,\n'}
+[10.094649] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22\x1b[m\x1b[K,\n'}
+[10.094711] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26\x1b[m\x1b[K,\n'}
+[10.094774] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38\x1b[m\x1b[K,\n'}
+[10.094832] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.cpp:2\x1b[m\x1b[K:\n'}
+[10.094890] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunknown option after \xe2\x80\x98\x1b[01m\x1b[K#pragma GCC diagnostic\x1b[m\x1b[K\xe2\x80\x99 kind [\x1b[01;35m\x1b[K-Wpragmas\x1b[m\x1b[K]\n'}
+[10.094946] (livox_sdk2) StderrLine: {'line': b'  542 | #define RAPIDJSON_PRAGMA(x) \x1b[01;35m\x1b[K_Pragma\x1b[m\x1b[K(RAPIDJSON_STRINGIFY(x))\n'}
+[10.094993] (livox_sdk2) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[10.095043] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.095091] (livox_sdk2) StderrLine: {'line': b'  543 | #define RAPIDJSON_DIAG_PRAGMA(x) \x1b[01;36m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K(GCC diagnostic x)\n'}
+[10.095140] (livox_sdk2) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.095189] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.095237] (livox_sdk2) StderrLine: {'line': b'  545 |   \x1b[01;36m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))\n'}
+[10.095282] (livox_sdk2) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.095335] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.095394] (livox_sdk2) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K(array - bounds)  // some gcc versions generate wrong warnings\n'}
+[10.095473] (livox_sdk2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.095506] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdid you mean \xe2\x80\x98\x1b[01m\x1b[K-Warray-bounds\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[10.095531] (livox_sdk2) StderrLine: {'line': b'  542 | #define RAPIDJSON_PRAGMA(x) \x1b[01;36m\x1b[K_Pragma\x1b[m\x1b[K(RAPIDJSON_STRINGIFY(x))\n'}
+[10.095554] (livox_sdk2) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[10.097294] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.097398] (livox_sdk2) StderrLine: {'line': b'  543 | #define RAPIDJSON_DIAG_PRAGMA(x) \x1b[01;36m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K(GCC diagnostic x)\n'}
+[10.097426] (livox_sdk2) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.097450] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.097481] (livox_sdk2) StderrLine: {'line': b'  545 |   \x1b[01;36m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))\n'}
+[10.097504] (livox_sdk2) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.097526] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.097552] (livox_sdk2) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K(array - bounds)  // some gcc versions generate wrong warnings\n'}
+[10.097574] (livox_sdk2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.114663] (livox_sdk2) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/debug_point_cloud_handler/debug_point_cloud_handler.cpp.o\x1b[0m\n'}
+[10.159532] (-) TimerEvent: {}
+[10.261861] (-) TimerEvent: {}
+[10.362412] (-) TimerEvent: {}
+[10.462739] (-) TimerEvent: {}
+[10.563081] (-) TimerEvent: {}
+[10.663401] (-) TimerEvent: {}
+[10.763740] (-) TimerEvent: {}
+[10.864043] (-) TimerEvent: {}
+[10.964587] (-) TimerEvent: {}
+[11.065407] (-) TimerEvent: {}
+[11.165754] (-) TimerEvent: {}
+[11.171920] (livox_sdk2) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX static library liblivox_lidar_sdk_static.a\x1b[0m\n'}
+[11.225743] (livox_sdk2) StdoutLine: {'line': b'[ 83%] Built target livox_lidar_sdk_static\n'}
+[11.245660] (livox_sdk2) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object samples/debug_point_cloud/CMakeFiles/debug_point_cloud.dir/main.cpp.o\x1b[0m\n'}
+[11.245859] (livox_sdk2) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object samples/multi_lidars_upgrade/CMakeFiles/multi_lidars_upgrade.dir/main.cpp.o\x1b[0m\n'}
+[11.245914] (livox_sdk2) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/main.cpp.o\x1b[0m\n'}
+[11.245953] (livox_sdk2) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/main.cpp.o\x1b[0m\n'}
+[11.247209] (livox_sdk2) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding CXX object samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/linux/synchro.cpp.o\x1b[0m\n'}
+[11.260616] (livox_sdk2) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object samples/logger/CMakeFiles/logger.dir/main.cpp.o\x1b[0m\n'}
+[11.262542] (livox_sdk2) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object samples/lidar_cmd_observer/CMakeFiles/lidar_cmd_observer.dir/main.cpp.o\x1b[0m\n'}
+[11.265848] (-) TimerEvent: {}
+[11.366187] (-) TimerEvent: {}
+[11.466931] (-) TimerEvent: {}
+[11.567695] (-) TimerEvent: {}
+[11.591770] (livox_sdk2) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable livox_lidar_quick_start\x1b[0m\n'}
+[11.621647] (livox_sdk2) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable debug_point_cloud\x1b[0m\n'}
+[11.634108] (livox_sdk2) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable multi_lidars_upgrade\x1b[0m\n'}
+[11.667866] (-) TimerEvent: {}
+[11.671738] (livox_sdk2) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX executable livox_lidar_rmc_time_sync\x1b[0m\n'}
+[11.695067] (livox_sdk2) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking CXX executable logger\x1b[0m\n'}
+[11.695290] (livox_sdk2) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking CXX executable lidar_cmd_observer\x1b[0m\n'}
+[11.764395] (livox_sdk2) StdoutLine: {'line': b'[ 98%] Built target debug_point_cloud\n'}
+[11.768036] (-) TimerEvent: {}
+[11.779846] (livox_sdk2) StdoutLine: {'line': b'[ 98%] Built target multi_lidars_upgrade\n'}
+[11.797123] (livox_sdk2) StdoutLine: {'line': b'[ 98%] Built target livox_lidar_quick_start\n'}
+[11.805984] (livox_sdk2) StdoutLine: {'line': b'[ 98%] Built target livox_lidar_rmc_time_sync\n'}
+[11.826456] (livox_sdk2) StdoutLine: {'line': b'[ 98%] Built target logger\n'}
+[11.835896] (livox_sdk2) StdoutLine: {'line': b'[ 98%] Built target lidar_cmd_observer\n'}
+[11.868145] (-) TimerEvent: {}
+[11.969057] (-) TimerEvent: {}
+[12.070752] (-) TimerEvent: {}
+[12.171490] (-) TimerEvent: {}
+[12.271871] (-) TimerEvent: {}
+[12.372671] (-) TimerEvent: {}
+[12.472949] (-) TimerEvent: {}
+[12.573562] (-) TimerEvent: {}
+[12.614634] (livox_sdk2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19\x1b[m\x1b[K,\n'}
+[12.614797] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22\x1b[m\x1b[K,\n'}
+[12.614833] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22\x1b[m\x1b[K,\n'}
+[12.614861] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26\x1b[m\x1b[K,\n'}
+[12.614888] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38\x1b[m\x1b[K,\n'}
+[12.614915] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/command_handler/hap_command_handler.cpp:37\x1b[m\x1b[K:\n'}
+[12.614941] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunknown option after \xe2\x80\x98\x1b[01m\x1b[K#pragma GCC diagnostic\x1b[m\x1b[K\xe2\x80\x99 kind [\x1b[01;35m\x1b[K-Wpragmas\x1b[m\x1b[K]\n'}
+[12.614970] (livox_sdk2) StderrLine: {'line': b'  542 | #define RAPIDJSON_PRAGMA(x) \x1b[01;35m\x1b[K_Pragma\x1b[m\x1b[K(RAPIDJSON_STRINGIFY(x))\n'}
+[12.614996] (livox_sdk2) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.615022] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.615049] (livox_sdk2) StderrLine: {'line': b'  543 | #define RAPIDJSON_DIAG_PRAGMA(x) \x1b[01;36m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K(GCC diagnostic x)\n'}
+[12.615077] (livox_sdk2) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.615102] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.615128] (livox_sdk2) StderrLine: {'line': b'  545 |   \x1b[01;36m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))\n'}
+[12.615153] (livox_sdk2) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.615178] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.615203] (livox_sdk2) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K(array - bounds)  // some gcc versions generate wrong warnings\n'}
+[12.615229] (livox_sdk2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.615254] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdid you mean \xe2\x80\x98\x1b[01m\x1b[K-Warray-bounds\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[12.615283] (livox_sdk2) StderrLine: {'line': b'  542 | #define RAPIDJSON_PRAGMA(x) \x1b[01;36m\x1b[K_Pragma\x1b[m\x1b[K(RAPIDJSON_STRINGIFY(x))\n'}
+[12.615308] (livox_sdk2) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.615333] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.615360] (livox_sdk2) StderrLine: {'line': b'  543 | #define RAPIDJSON_DIAG_PRAGMA(x) \x1b[01;36m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K(GCC diagnostic x)\n'}
+[12.615385] (livox_sdk2) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.615410] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.615435] (livox_sdk2) StderrLine: {'line': b'  545 |   \x1b[01;36m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))\n'}
+[12.615460] (livox_sdk2) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.615498] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.615524] (livox_sdk2) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K(array - bounds)  // some gcc versions generate wrong warnings\n'}
+[12.615549] (livox_sdk2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.672756] (livox_sdk2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19\x1b[m\x1b[K,\n'}
+[12.672900] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22\x1b[m\x1b[K,\n'}
+[12.672932] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22\x1b[m\x1b[K,\n'}
+[12.672963] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26\x1b[m\x1b[K,\n'}
+[12.672995] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38\x1b[m\x1b[K,\n'}
+[12.673025] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/command_handler/mid360_command_handler.cpp:37\x1b[m\x1b[K:\n'}
+[12.673061] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunknown option after \xe2\x80\x98\x1b[01m\x1b[K#pragma GCC diagnostic\x1b[m\x1b[K\xe2\x80\x99 kind [\x1b[01;35m\x1b[K-Wpragmas\x1b[m\x1b[K]\n'}
+[12.673093] (livox_sdk2) StderrLine: {'line': b'  542 | #define RAPIDJSON_PRAGMA(x) \x1b[01;35m\x1b[K_Pragma\x1b[m\x1b[K(RAPIDJSON_STRINGIFY(x))\n'}
+[12.673123] (livox_sdk2) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.673155] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.673184] (livox_sdk2) StderrLine: {'line': b'  543 | #define RAPIDJSON_DIAG_PRAGMA(x) \x1b[01;36m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K(GCC diagnostic x)\n'}
+[12.673213] (livox_sdk2) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.673241] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.673272] (livox_sdk2) StderrLine: {'line': b'  545 |   \x1b[01;36m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))\n'}
+[12.673301] (livox_sdk2) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.673328] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.673355] (livox_sdk2) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K(array - bounds)  // some gcc versions generate wrong warnings\n'}
+[12.673380] (livox_sdk2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.673404] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdid you mean \xe2\x80\x98\x1b[01m\x1b[K-Warray-bounds\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[12.673429] (livox_sdk2) StderrLine: {'line': b'  542 | #define RAPIDJSON_PRAGMA(x) \x1b[01;36m\x1b[K_Pragma\x1b[m\x1b[K(RAPIDJSON_STRINGIFY(x))\n'}
+[12.673453] (livox_sdk2) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.673488] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.673512] (livox_sdk2) StderrLine: {'line': b'  543 | #define RAPIDJSON_DIAG_PRAGMA(x) \x1b[01;36m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K(GCC diagnostic x)\n'}
+[12.673537] (livox_sdk2) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.673560] (-) TimerEvent: {}
+[12.673634] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.673662] (livox_sdk2) StderrLine: {'line': b'  545 |   \x1b[01;36m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))\n'}
+[12.673687] (livox_sdk2) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.673712] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.673736] (livox_sdk2) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K(array - bounds)  // some gcc versions generate wrong warnings\n'}
+[12.673761] (livox_sdk2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.773756] (-) TimerEvent: {}
+[12.874082] (-) TimerEvent: {}
+[12.938787] (livox_sdk2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19\x1b[m\x1b[K,\n'}
+[12.938919] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22\x1b[m\x1b[K,\n'}
+[12.938951] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22\x1b[m\x1b[K,\n'}
+[12.938983] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26\x1b[m\x1b[K,\n'}
+[12.939008] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38\x1b[m\x1b[K,\n'}
+[12.939033] (livox_sdk2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.cpp:2\x1b[m\x1b[K:\n'}
+[12.939058] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunknown option after \xe2\x80\x98\x1b[01m\x1b[K#pragma GCC diagnostic\x1b[m\x1b[K\xe2\x80\x99 kind [\x1b[01;35m\x1b[K-Wpragmas\x1b[m\x1b[K]\n'}
+[12.939085] (livox_sdk2) StderrLine: {'line': b'  542 | #define RAPIDJSON_PRAGMA(x) \x1b[01;35m\x1b[K_Pragma\x1b[m\x1b[K(RAPIDJSON_STRINGIFY(x))\n'}
+[12.939110] (livox_sdk2) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.939135] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.939163] (livox_sdk2) StderrLine: {'line': b'  543 | #define RAPIDJSON_DIAG_PRAGMA(x) \x1b[01;36m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K(GCC diagnostic x)\n'}
+[12.939188] (livox_sdk2) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.939212] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.939237] (livox_sdk2) StderrLine: {'line': b'  545 |   \x1b[01;36m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))\n'}
+[12.939261] (livox_sdk2) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.939285] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.939310] (livox_sdk2) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K(array - bounds)  // some gcc versions generate wrong warnings\n'}
+[12.939337] (livox_sdk2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.939362] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdid you mean \xe2\x80\x98\x1b[01m\x1b[K-Warray-bounds\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[12.939387] (livox_sdk2) StderrLine: {'line': b'  542 | #define RAPIDJSON_PRAGMA(x) \x1b[01;36m\x1b[K_Pragma\x1b[m\x1b[K(RAPIDJSON_STRINGIFY(x))\n'}
+[12.939414] (livox_sdk2) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.939441] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.939475] (livox_sdk2) StderrLine: {'line': b'  543 | #define RAPIDJSON_DIAG_PRAGMA(x) \x1b[01;36m\x1b[KRAPIDJSON_PRAGMA\x1b[m\x1b[K(GCC diagnostic x)\n'}
+[12.939504] (livox_sdk2) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.939531] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.939556] (livox_sdk2) StderrLine: {'line': b'  545 |   \x1b[01;36m\x1b[KRAPIDJSON_DIAG_PRAGMA\x1b[m\x1b[K(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))\n'}
+[12.939580] (livox_sdk2) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.939604] (livox_sdk2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/roskit_ws/src/gr_docker/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.939628] (livox_sdk2) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KRAPIDJSON_DIAG_OFF\x1b[m\x1b[K(array - bounds)  // some gcc versions generate wrong warnings\n'}
+[12.939652] (livox_sdk2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.945371] (livox_sdk2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library liblivox_lidar_sdk_shared.so\x1b[0m\n'}
+[12.974249] (-) TimerEvent: {}
+[13.025150] (livox_sdk2) StdoutLine: {'line': b'[100%] Built target livox_lidar_sdk_shared\n'}
+[13.033123] (livox_sdk2) JobEnded: {'identifier': 'livox_sdk2', 'rc': 'SIGINT'}
+[13.043528] (scout_description) JobSkipped: {'identifier': 'scout_description'}
+[13.043555] (hunter_base) JobSkipped: {'identifier': 'hunter_base'}
+[13.043566] (ouster_ros) JobSkipped: {'identifier': 'ouster_ros'}
+[13.043573] (phidgets_api) JobSkipped: {'identifier': 'phidgets_api'}
+[13.043581] (ranger_base) JobSkipped: {'identifier': 'ranger_base'}
+[13.043589] (scout_base) JobSkipped: {'identifier': 'scout_base'}
+[13.043596] (tracer_base) JobSkipped: {'identifier': 'tracer_base'}
+[13.043607] (ublox_msgs) JobSkipped: {'identifier': 'ublox_msgs'}
+[13.043615] (phidgets_accelerometer) JobSkipped: {'identifier': 'phidgets_accelerometer'}
+[13.044035] (phidgets_analog_inputs) JobSkipped: {'identifier': 'phidgets_analog_inputs'}
+[13.044055] (phidgets_analog_outputs) JobSkipped: {'identifier': 'phidgets_analog_outputs'}
+[13.044065] (phidgets_digital_inputs) JobSkipped: {'identifier': 'phidgets_digital_inputs'}
+[13.044074] (phidgets_digital_outputs) JobSkipped: {'identifier': 'phidgets_digital_outputs'}
+[13.044082] (phidgets_gyroscope) JobSkipped: {'identifier': 'phidgets_gyroscope'}
+[13.044156] (phidgets_high_speed_encoder) JobSkipped: {'identifier': 'phidgets_high_speed_encoder'}
+[13.044181] (phidgets_magnetometer) JobSkipped: {'identifier': 'phidgets_magnetometer'}
+[13.044188] (phidgets_motors) JobSkipped: {'identifier': 'phidgets_motors'}
+[13.044201] (phidgets_spatial) JobSkipped: {'identifier': 'phidgets_spatial'}
+[13.044209] (phidgets_temperature) JobSkipped: {'identifier': 'phidgets_temperature'}
+[13.044217] (ublox_gps) JobSkipped: {'identifier': 'ublox_gps'}
+[13.044225] (phidgets_ik) JobSkipped: {'identifier': 'phidgets_ik'}
+[13.044233] (ublox) JobSkipped: {'identifier': 'ublox'}
+[13.044241] (phidgets_drivers) JobSkipped: {'identifier': 'phidgets_drivers'}
+[13.044250] (-) EventReactorShutdown: {}

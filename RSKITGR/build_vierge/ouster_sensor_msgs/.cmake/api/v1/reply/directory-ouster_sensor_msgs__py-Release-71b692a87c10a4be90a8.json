@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ouster_sensor_msgs__py",
+		"source" : "/home/user/roskit_ws/build/ouster_sensor_msgs/ouster_sensor_msgs__py"
+	}
+}

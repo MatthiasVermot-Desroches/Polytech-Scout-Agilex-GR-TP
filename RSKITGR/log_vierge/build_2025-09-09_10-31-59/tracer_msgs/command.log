@@ -1,0 +1,2 @@
+Invoking command in '/home/user/roskit_ws/build/tracer_msgs': /usr/bin/cmake /home/user/roskit_ws/src/tracer_ros2/tracer_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/tracer_msgs
+Invoked command in '/home/user/roskit_ws/build/tracer_msgs' returned '1': /usr/bin/cmake /home/user/roskit_ws/src/tracer_ros2/tracer_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/tracer_msgs

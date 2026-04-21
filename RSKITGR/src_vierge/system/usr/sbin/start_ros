@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#setup can
+modprobe gs_usb
+ip link set can0 up type can bitrate 500000
+
+bash -c 'docker start gr-p247-humble-container  && source /etc/profile && docker exec gr-p247-humble-container /bin/bash -c "source install/setup.bash && ros2 launch gr_bringup main.launch.py"' &
+
+PID=$!
+
+wait "$PID"

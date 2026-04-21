@@ -1,0 +1,3 @@
+/home/user/roskit_ws/build/phidgets_msgs/rosidl_adapter/phidgets_msgs:srv/SetAnalogOutput.idl
+/home/user/roskit_ws/build/phidgets_msgs/rosidl_adapter/phidgets_msgs:srv/SetDigitalOutput.idl
+/home/user/roskit_ws/build/phidgets_msgs/rosidl_adapter/phidgets_msgs:msg/EncoderDecimatedSpeed.idl

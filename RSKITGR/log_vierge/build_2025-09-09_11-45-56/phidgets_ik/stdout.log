@@ -1,0 +1,36 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/lib/ccache/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/user/roskit_ws/build/phidgets_ik
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/launch/ik-launch.py
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/ament_index/resource_index/package_run_dependencies/phidgets_ik
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/ament_index/resource_index/parent_prefix_path/phidgets_ik
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/environment/ament_prefix_path.sh
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/environment/ament_prefix_path.dsv
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/environment/path.sh
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/environment/path.dsv
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/local_setup.bash
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/local_setup.sh
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/local_setup.zsh
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/local_setup.dsv
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/package.dsv
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/ament_index/resource_index/packages/phidgets_ik
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/cmake/phidgets_ikConfig.cmake
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/cmake/phidgets_ikConfig-version.cmake
+-- Symlinking: /home/user/roskit_ws/install/phidgets_ik/share/phidgets_ik/package.xml

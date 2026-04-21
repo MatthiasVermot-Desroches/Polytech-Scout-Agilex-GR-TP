@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+aed1ef1c3d92e292ed12b15a29dc314e CMakeFiles/phidgets_magnetometer_uninstall

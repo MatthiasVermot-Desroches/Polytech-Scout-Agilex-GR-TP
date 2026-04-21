@@ -1,0 +1,11 @@
+{
+  "package_name": "ranger_msgs",
+  "non_idl_tuples": [
+    "/home/user/roskit_ws/src/ranger_mini_v2/ranger_msgs:msg/ActuatorState.msg",
+    "/home/user/roskit_ws/src/ranger_mini_v2/ranger_msgs:msg/ActuatorStateArray.msg",
+    "/home/user/roskit_ws/src/ranger_mini_v2/ranger_msgs:msg/DriverState.msg",
+    "/home/user/roskit_ws/src/ranger_mini_v2/ranger_msgs:msg/MotionState.msg",
+    "/home/user/roskit_ws/src/ranger_mini_v2/ranger_msgs:msg/MotorState.msg",
+    "/home/user/roskit_ws/src/ranger_mini_v2/ranger_msgs:msg/SystemState.msg"
+  ]
+}

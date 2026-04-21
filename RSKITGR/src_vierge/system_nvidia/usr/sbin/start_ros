@@ -1,0 +1,7 @@
+#!/bin/bash
+
+su gr_nano bash -c 'source /etc/profile && source /opt/ros/humble/setup.bash && ros2 realsense2_camera rs_camera.launch initial_reset:=true' &
+
+PID=$!
+
+wait "$PID"

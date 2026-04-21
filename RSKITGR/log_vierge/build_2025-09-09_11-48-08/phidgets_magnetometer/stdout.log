@@ -1,0 +1,23 @@
+[35m[1mConsolidate compiler generated dependencies of target phidgets_magnetometer[0m
+[100%] Built target phidgets_magnetometer
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/lib/libphidgets_magnetometer.so
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/include/phidgets_magnetometer/magnetometer_ros_i.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/launch/magnetometer-launch.py
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/share/ament_index/resource_index/package_run_dependencies/phidgets_magnetometer
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/share/ament_index/resource_index/parent_prefix_path/phidgets_magnetometer
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/environment/path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/environment/path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/local_setup.bash
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/local_setup.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/local_setup.zsh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/local_setup.dsv
+-- Symlinking: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/package.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/share/ament_index/resource_index/packages/phidgets_magnetometer
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/share/ament_index/resource_index/rclcpp_components/phidgets_magnetometer
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/cmake/phidgets_magnetometerConfig.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/cmake/phidgets_magnetometerConfig-version.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_magnetometer/share/phidgets_magnetometer/package.xml

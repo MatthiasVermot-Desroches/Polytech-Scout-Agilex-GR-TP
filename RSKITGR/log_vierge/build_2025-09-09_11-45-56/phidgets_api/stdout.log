@@ -1,0 +1,50 @@
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found libphidget22: 2.3.3 (/home/user/roskit_ws/install/libphidget22/share/libphidget22/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/user/roskit_ws/build/phidgets_api
+[35m[1mConsolidate compiler generated dependencies of target phidgets_api[0m
+[100%] Built target phidgets_api
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/lib/libphidgets_api.so
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/accelerometer.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/analog_input.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/analog_inputs.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/analog_output.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/analog_outputs.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/digital_input.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/digital_inputs.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/digital_output.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/digital_outputs.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/encoder.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/encoders.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/gyroscope.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/ir.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/magnetometer.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/motor.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/motors.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/phidget22.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/spatial.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/temperature.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/library_path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/library_path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/ament_index/resource_index/package_run_dependencies/phidgets_api
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/ament_index/resource_index/parent_prefix_path/phidgets_api
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/local_setup.bash
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/local_setup.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/local_setup.zsh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/local_setup.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/package.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/ament_index/resource_index/packages/phidgets_api
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake/phidgets_apiConfig.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake/phidgets_apiConfig-version.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/package.xml

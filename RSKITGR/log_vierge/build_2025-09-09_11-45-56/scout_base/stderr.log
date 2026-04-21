@@ -1,0 +1,18 @@
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    HUMBLE_ROS
+    ROS_EDITION
+
+[0m
+In file included from [01m[K/home/user/roskit_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:12[m[K:
+[01m[K/home/user/roskit_ws/src/scout_ros2/scout_base/include/scout_base/scout_messenger.hpp:[m[K In member function ‘[01m[Kvoid westonrobot::ScoutMessenger<ScoutType>::LightCmdCallback(scout_msgs::msg::ScoutLightCmd_<std::allocator<void> >::SharedPtr) [with ScoutType = westonrobot::ScoutMiniOmniRobot][m[K’:
+[01m[K/home/user/roskit_ws/src/scout_ros2/scout_base/include/scout_base/scout_messenger.hpp:214:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kf_value[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+  214 |         [01;35m[Kscout_->SetLightCommand(f_mode, f_value, AgxLightMode::CONST_ON, 0)[m[K;
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/roskit_ws/src/scout_ros2/scout_base/include/scout_base/scout_messenger.hpp:214:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kf_mode[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[01m[K/home/user/roskit_ws/src/scout_ros2/scout_base/include/scout_base/scout_messenger.hpp:[m[K In member function ‘[01m[Kvoid westonrobot::ScoutMessenger<ScoutType>::LightCmdCallback(scout_msgs::msg::ScoutLightCmd_<std::allocator<void> >::SharedPtr) [with ScoutType = westonrobot::ScoutRobot][m[K’:
+[01m[K/home/user/roskit_ws/src/scout_ros2/scout_base/include/scout_base/scout_messenger.hpp:214:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kf_value[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+  214 |         [01;35m[Kscout_->SetLightCommand(f_mode, f_value, AgxLightMode::CONST_ON, 0)[m[K;
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/roskit_ws/src/scout_ros2/scout_base/include/scout_base/scout_messenger.hpp:214:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kf_mode[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]

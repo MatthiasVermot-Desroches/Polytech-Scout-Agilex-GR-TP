@@ -1,0 +1,66 @@
+[0.036s] Invoking command in '/home/user/roskit_ws/build/rslidar_sdk': /usr/bin/cmake --build /home/user/roskit_ws/build/rslidar_sdk -- -j16 -l16
+[0.059s] [35m[1mConsolidate compiler generated dependencies of target rslidar_sdk_node[0m
+[0.067s] [ 33%] [32mBuilding CXX object CMakeFiles/rslidar_sdk_node.dir/src/manager/node_manager.cpp.o[0m
+[1.024s] [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:[m[K In member function ‘[01m[Kvoid robosense::lidar::NodeManager::init(const YAML::Node&)[m[K’:
+[1.024s] [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:89:35:[m[K [01;31m[Kerror: [m[K‘[01m[KSourcePacketRos[m[K’ was not declared in this scope
+[1.024s]    89 |         source = std::make_shared<[01;31m[KSourcePacketRos[m[K>();
+[1.024s]       |                                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.024s] [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:89:51:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+[1.024s]    89 |         source = [01;31m[Kstd::make_shared<SourcePacketRos>()[m[K;
+[1.024s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.024s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[1.024s]                  from [01m[K/usr/include/yaml-cpp/parser.h:11[m[K,
+[1.025s]                  from [01m[K/usr/include/yaml-cpp/yaml.h:10[m[K,
+[1.025s]                  from [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/utility/yaml_reader.hpp:35[m[K,
+[1.025s]                  from [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.hpp:35[m[K,
+[1.025s]                  from [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:33[m[K:
+[1.025s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[1.025s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[1.025s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[1.025s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.025s] [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:89:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.025s]    89 |         source = [01;31m[Kstd::make_shared<SourcePacketRos>()[m[K;
+[1.025s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.025s] [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:117:65:[m[K [01;31m[Kerror: [m[K‘[01m[KDestinationPacketRos[m[K’ was not declared in this scope; did you mean ‘[01m[KDestinationPacket[m[K’?
+[1.025s]   117 |       std::shared_ptr<DestinationPacket> dst = std::make_shared<[01;31m[KDestinationPacketRos[m[K>();
+[1.025s]       |                                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[1.025s]       |                                                                 [32m[KDestinationPacket[m[K
+[1.025s] [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:117:86:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+[1.025s]   117 |       std::shared_ptr<DestinationPacket> dst = [01;31m[Kstd::make_shared<DestinationPacketRos>()[m[K;
+[1.025s]       |                                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.026s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[1.026s]                  from [01m[K/usr/include/yaml-cpp/parser.h:11[m[K,
+[1.026s]                  from [01m[K/usr/include/yaml-cpp/yaml.h:10[m[K,
+[1.026s]                  from [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/utility/yaml_reader.hpp:35[m[K,
+[1.026s]                  from [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.hpp:35[m[K,
+[1.026s]                  from [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:33[m[K:
+[1.026s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[1.026s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[1.026s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[1.026s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.026s] [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:117:86:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.026s]   117 |       std::shared_ptr<DestinationPacket> dst = [01;31m[Kstd::make_shared<DestinationPacketRos>()[m[K;
+[1.026s]       |                                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.026s] [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:130:69:[m[K [01;31m[Kerror: [m[K‘[01m[KDestinationPointCloudRos[m[K’ was not declared in this scope; did you mean ‘[01m[KDestinationPointCloud[m[K’?
+[1.026s]   130 |       std::shared_ptr<DestinationPointCloud> dst = std::make_shared<[01;31m[KDestinationPointCloudRos[m[K>();
+[1.026s]       |                                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.026s]       |                                                                     [32m[KDestinationPointCloud[m[K
+[1.026s] [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:130:94:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+[1.026s]   130 |       std::shared_ptr<DestinationPointCloud> dst = [01;31m[Kstd::make_shared<DestinationPointCloudRos>()[m[K;
+[1.026s]       |                                                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.026s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[1.026s]                  from [01m[K/usr/include/yaml-cpp/parser.h:11[m[K,
+[1.026s]                  from [01m[K/usr/include/yaml-cpp/yaml.h:10[m[K,
+[1.026s]                  from [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/utility/yaml_reader.hpp:35[m[K,
+[1.027s]                  from [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.hpp:35[m[K,
+[1.027s]                  from [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:33[m[K:
+[1.027s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[1.027s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[1.027s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[1.027s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.027s] [01m[K/home/user/roskit_ws/src/rslidar_sdk/src/manager/node_manager.cpp:130:94:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.027s]   130 |       std::shared_ptr<DestinationPointCloud> dst = [01;31m[Kstd::make_shared<DestinationPointCloudRos>()[m[K;
+[1.027s]       |                                                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.027s] gmake[2]: *** [CMakeFiles/rslidar_sdk_node.dir/build.make:90: CMakeFiles/rslidar_sdk_node.dir/src/manager/node_manager.cpp.o] Error 1
+[1.027s] gmake[1]: *** [CMakeFiles/Makefile2:100: CMakeFiles/rslidar_sdk_node.dir/all] Error 2
+[1.027s] gmake: *** [Makefile:91: all] Error 2

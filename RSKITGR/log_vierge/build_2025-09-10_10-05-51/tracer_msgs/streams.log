@@ -1,0 +1,188 @@
+[0.041s] Invoking command in '/home/user/roskit_ws/build/tracer_msgs': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/tracer_base:/home/user/roskit_ws/install/scout_base:/home/user/roskit_ws/install/ranger_base:/home/user/roskit_ws/install/hunter_base:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox:/home/user/roskit_ws/install/ublox_gps:/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_sdk:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_drivers:/home/user/roskit_ws/install/phidgets_temperature:/home/user/roskit_ws/install/phidgets_spatial:/home/user/roskit_ws/install/phidgets_motors:/home/user/roskit_ws/install/phidgets_ik:/home/user/roskit_ws/install/phidgets_high_speed_encoder:/home/user/roskit_ws/install/phidgets_digital_outputs:/home/user/roskit_ws/install/phidgets_analog_outputs:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/phidgets_magnetometer:/home/user/roskit_ws/install/phidgets_gyroscope:/home/user/roskit_ws/install/phidgets_digital_inputs:/home/user/roskit_ws/install/phidgets_analog_inputs:/home/user/roskit_ws/install/phidgets_accelerometer:/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/ouster_ros:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/livox_ros_driver2:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake --build /home/user/roskit_ws/build/tracer_msgs -- -j16 -l16
+[0.110s] [  1%] Built target tracer_msgs__cpp
+[0.137s] [  1%] Built target ament_cmake_python_symlink_tracer_msgs
+[0.137s] [ 12%] Built target tracer_msgs__rosidl_generator_c
+[0.171s] [ 23%] Built target tracer_msgs__rosidl_typesupport_cpp
+[0.184s] [ 34%] Built target tracer_msgs__rosidl_typesupport_fastrtps_cpp
+[0.185s] [ 46%] Built target tracer_msgs__rosidl_typesupport_introspection_cpp
+[0.213s] [ 57%] Built target tracer_msgs__rosidl_typesupport_c
+[0.217s] [ 68%] Built target tracer_msgs__rosidl_typesupport_fastrtps_c
+[0.217s] [ 79%] Built target tracer_msgs__rosidl_typesupport_introspection_c
+[0.253s] [ 79%] Built target tracer_msgs
+[0.268s] [ 80%] Built target tracer_msgs__py
+[0.301s] [ 90%] Built target tracer_msgs__rosidl_generator_py
+[0.352s] running egg_info
+[0.359s] writing tracer_msgs.egg-info/PKG-INFO
+[0.359s] writing dependency_links to tracer_msgs.egg-info/dependency_links.txt
+[0.359s] writing top-level names to tracer_msgs.egg-info/top_level.txt
+[0.359s] reading manifest file 'tracer_msgs.egg-info/SOURCES.txt'
+[0.359s] writing manifest file 'tracer_msgs.egg-info/SOURCES.txt'
+[0.359s] [ 96%] Built target tracer_msgs__rosidl_typesupport_c__pyext
+[0.359s] [ 96%] Built target tracer_msgs__rosidl_typesupport_introspection_c__pyext
+[0.359s] [100%] Built target tracer_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.370s] [100%] Built target ament_cmake_python_build_tracer_msgs_egg
+[0.417s] Invoked command in '/home/user/roskit_ws/build/tracer_msgs' returned '0': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/tracer_base:/home/user/roskit_ws/install/scout_base:/home/user/roskit_ws/install/ranger_base:/home/user/roskit_ws/install/hunter_base:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox:/home/user/roskit_ws/install/ublox_gps:/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_sdk:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_drivers:/home/user/roskit_ws/install/phidgets_temperature:/home/user/roskit_ws/install/phidgets_spatial:/home/user/roskit_ws/install/phidgets_motors:/home/user/roskit_ws/install/phidgets_ik:/home/user/roskit_ws/install/phidgets_high_speed_encoder:/home/user/roskit_ws/install/phidgets_digital_outputs:/home/user/roskit_ws/install/phidgets_analog_outputs:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/phidgets_magnetometer:/home/user/roskit_ws/install/phidgets_gyroscope:/home/user/roskit_ws/install/phidgets_digital_inputs:/home/user/roskit_ws/install/phidgets_analog_inputs:/home/user/roskit_ws/install/phidgets_accelerometer:/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/ouster_ros:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/livox_ros_driver2:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake --build /home/user/roskit_ws/build/tracer_msgs -- -j16 -l16
+[0.419s] Invoking command in '/home/user/roskit_ws/build/tracer_msgs': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/tracer_base:/home/user/roskit_ws/install/scout_base:/home/user/roskit_ws/install/ranger_base:/home/user/roskit_ws/install/hunter_base:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox:/home/user/roskit_ws/install/ublox_gps:/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_sdk:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_drivers:/home/user/roskit_ws/install/phidgets_temperature:/home/user/roskit_ws/install/phidgets_spatial:/home/user/roskit_ws/install/phidgets_motors:/home/user/roskit_ws/install/phidgets_ik:/home/user/roskit_ws/install/phidgets_high_speed_encoder:/home/user/roskit_ws/install/phidgets_digital_outputs:/home/user/roskit_ws/install/phidgets_analog_outputs:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/phidgets_magnetometer:/home/user/roskit_ws/install/phidgets_gyroscope:/home/user/roskit_ws/install/phidgets_digital_inputs:/home/user/roskit_ws/install/phidgets_analog_inputs:/home/user/roskit_ws/install/phidgets_accelerometer:/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/ouster_ros:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/livox_ros_driver2:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake --install /home/user/roskit_ws/build/tracer_msgs
+[0.430s] -- Install configuration: "Release"
+[0.430s] -- Execute custom install script
+[0.430s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/ament_index/resource_index/rosidl_interfaces/tracer_msgs
+[0.431s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_actuator_state__functions.h
+[0.433s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_actuator_state__struct.h
+[0.433s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_actuator_state__type_support.h
+[0.433s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_cmd__functions.h
+[0.433s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_cmd__struct.h
+[0.433s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_cmd__type_support.h
+[0.433s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_state__functions.h
+[0.433s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_state__struct.h
+[0.434s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_state__type_support.h
+[0.439s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_rc_state__functions.h
+[0.439s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_rc_state__struct.h
+[0.439s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_rc_state__type_support.h
+[0.440s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_status__functions.h
+[0.440s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_status__struct.h
+[0.440s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_status__type_support.h
+[0.440s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.441s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/tracer_actuator_state.h
+[0.441s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/tracer_light_cmd.h
+[0.442s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/tracer_light_state.h
+[0.442s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/tracer_rc_state.h
+[0.443s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/tracer_status.h
+[0.446s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/environment/library_path.sh
+[0.446s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/environment/library_path.dsv
+[0.446s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_actuator_state__rosidl_typesupport_fastrtps_c.h
+[0.446s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_cmd__rosidl_typesupport_fastrtps_c.h
+[0.446s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_state__rosidl_typesupport_fastrtps_c.h
+[0.447s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_rc_state__rosidl_typesupport_fastrtps_c.h
+[0.447s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_status__rosidl_typesupport_fastrtps_c.h
+[0.447s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.448s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_actuator_state__builder.hpp
+[0.448s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_actuator_state__struct.hpp
+[0.448s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_actuator_state__traits.hpp
+[0.448s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_actuator_state__type_support.hpp
+[0.448s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_cmd__builder.hpp
+[0.448s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_cmd__struct.hpp
+[0.448s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_cmd__traits.hpp
+[0.449s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_cmd__type_support.hpp
+[0.449s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_state__builder.hpp
+[0.449s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_state__struct.hpp
+[0.449s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_state__traits.hpp
+[0.450s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_state__type_support.hpp
+[0.451s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_rc_state__builder.hpp
+[0.451s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_rc_state__struct.hpp
+[0.451s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_rc_state__traits.hpp
+[0.451s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_rc_state__type_support.hpp
+[0.452s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_status__builder.hpp
+[0.453s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_status__struct.hpp
+[0.453s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_status__traits.hpp
+[0.453s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_status__type_support.hpp
+[0.453s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.454s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/tracer_actuator_state.hpp
+[0.454s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/tracer_light_cmd.hpp
+[0.455s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/tracer_light_state.hpp
+[0.456s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/tracer_rc_state.hpp
+[0.456s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/tracer_status.hpp
+[0.456s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_actuator_state__rosidl_typesupport_fastrtps_cpp.hpp
+[0.456s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[0.456s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_state__rosidl_typesupport_fastrtps_cpp.hpp
+[0.456s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_rc_state__rosidl_typesupport_fastrtps_cpp.hpp
+[0.456s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_status__rosidl_typesupport_fastrtps_cpp.hpp
+[0.456s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.456s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_actuator_state__rosidl_typesupport_introspection_c.h
+[0.456s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_cmd__rosidl_typesupport_introspection_c.h
+[0.456s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_state__rosidl_typesupport_introspection_c.h
+[0.456s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_rc_state__rosidl_typesupport_introspection_c.h
+[0.456s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_status__rosidl_typesupport_introspection_c.h
+[0.456s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.468s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_actuator_state__rosidl_typesupport_introspection_cpp.hpp
+[0.468s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_cmd__rosidl_typesupport_introspection_cpp.hpp
+[0.468s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_light_state__rosidl_typesupport_introspection_cpp.hpp
+[0.468s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_rc_state__rosidl_typesupport_introspection_cpp.hpp
+[0.469s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/include/tracer_msgs/tracer_msgs/msg/detail/tracer_status__rosidl_typesupport_introspection_cpp.hpp
+[0.469s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/environment/pythonpath.sh
+[0.470s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/environment/pythonpath.dsv
+[0.470s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[0.473s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[0.473s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[0.473s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/__init__.py
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/_tracer_msgs_s.ep.rosidl_typesupport_c.c
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/_tracer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/_tracer_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/libtracer_msgs__rosidl_generator_py.so
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/msg/__init__.py
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/msg/_tracer_actuator_state.py
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/msg/_tracer_actuator_state_s.c
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/msg/_tracer_light_cmd.py
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/msg/_tracer_light_cmd_s.c
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/msg/_tracer_light_state.py
+[0.474s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/msg/_tracer_light_state_s.c
+[0.475s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/msg/_tracer_rc_state.py
+[0.475s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/msg/_tracer_rc_state_s.c
+[0.475s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/msg/_tracer_status.py
+[0.475s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/msg/_tracer_status_s.c
+[0.475s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/tracer_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.475s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/tracer_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.476s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/tracer_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.476s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/tracer_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.476s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/tracer_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.476s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/tracer_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.478s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/msg/TracerActuatorState.idl
+[0.479s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/msg/TracerLightCmd.idl
+[0.479s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/msg/TracerLightState.idl
+[0.479s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/msg/TracerRCState.idl
+[0.479s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/msg/TracerStatus.idl
+[0.480s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/msg/TracerActuatorState.msg
+[0.481s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/msg/TracerLightCmd.msg
+[0.481s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/msg/TracerLightState.msg
+[0.481s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/msg/TracerRCState.msg
+[0.481s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/msg/TracerStatus.msg
+[0.481s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/ament_index/resource_index/package_run_dependencies/tracer_msgs
+[0.482s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/ament_index/resource_index/parent_prefix_path/tracer_msgs
+[0.482s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/environment/ament_prefix_path.sh
+[0.482s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/environment/ament_prefix_path.dsv
+[0.482s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/environment/path.sh
+[0.482s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/environment/path.dsv
+[0.482s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/local_setup.bash
+[0.483s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/local_setup.sh
+[0.483s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/local_setup.zsh
+[0.483s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/local_setup.dsv
+[0.483s] -- Symlinking: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/package.dsv
+[0.488s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/ament_index/resource_index/packages/tracer_msgs
+[0.488s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/rosidl_cmake-extras.cmake
+[0.489s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.489s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.489s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.489s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.489s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.489s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.490s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/tracer_msgsConfig.cmake
+[0.490s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/tracer_msgsConfig-version.cmake
+[0.490s] -- Up-to-date symlink: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/package.xml
+[0.490s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/lib/libtracer_msgs__rosidl_generator_c.so
+[0.491s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/lib/libtracer_msgs__rosidl_typesupport_fastrtps_c.so
+[0.491s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/lib/libtracer_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.491s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/lib/libtracer_msgs__rosidl_typesupport_introspection_c.so
+[0.491s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/lib/libtracer_msgs__rosidl_typesupport_c.so
+[0.491s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/lib/libtracer_msgs__rosidl_typesupport_introspection_cpp.so
+[0.491s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/lib/libtracer_msgs__rosidl_typesupport_cpp.so
+[0.503s] Listing '/home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs'...
+[0.503s] Listing '/home/user/roskit_ws/install/tracer_msgs/local/lib/python3.10/dist-packages/tracer_msgs/msg'...
+[0.504s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/lib/libtracer_msgs__rosidl_generator_py.so
+[0.504s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/export_tracer_msgs__rosidl_generator_cExport.cmake
+[0.504s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/export_tracer_msgs__rosidl_generator_cExport-release.cmake
+[0.504s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/export_tracer_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.504s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/export_tracer_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[0.504s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/export_tracer_msgs__rosidl_generator_cppExport.cmake
+[0.504s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/export_tracer_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.504s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/export_tracer_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[0.504s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/tracer_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.504s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/tracer_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[0.504s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/tracer_msgs__rosidl_typesupport_cExport.cmake
+[0.504s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/tracer_msgs__rosidl_typesupport_cExport-release.cmake
+[0.504s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/tracer_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.505s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/tracer_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[0.505s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/tracer_msgs__rosidl_typesupport_cppExport.cmake
+[0.505s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/tracer_msgs__rosidl_typesupport_cppExport-release.cmake
+[0.505s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/export_tracer_msgs__rosidl_generator_pyExport.cmake
+[0.505s] -- Up-to-date: /home/user/roskit_ws/install/tracer_msgs/share/tracer_msgs/cmake/export_tracer_msgs__rosidl_generator_pyExport-release.cmake
+[0.572s] Invoked command in '/home/user/roskit_ws/build/tracer_msgs' returned '0': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/tracer_base:/home/user/roskit_ws/install/scout_base:/home/user/roskit_ws/install/ranger_base:/home/user/roskit_ws/install/hunter_base:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox:/home/user/roskit_ws/install/ublox_gps:/home/user/roskit_ws/install/ublox_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_sdk:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_drivers:/home/user/roskit_ws/install/phidgets_temperature:/home/user/roskit_ws/install/phidgets_spatial:/home/user/roskit_ws/install/phidgets_motors:/home/user/roskit_ws/install/phidgets_ik:/home/user/roskit_ws/install/phidgets_high_speed_encoder:/home/user/roskit_ws/install/phidgets_digital_outputs:/home/user/roskit_ws/install/phidgets_analog_outputs:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/phidgets_magnetometer:/home/user/roskit_ws/install/phidgets_gyroscope:/home/user/roskit_ws/install/phidgets_digital_inputs:/home/user/roskit_ws/install/phidgets_analog_inputs:/home/user/roskit_ws/install/phidgets_accelerometer:/home/user/roskit_ws/install/phidgets_api:/home/user/roskit_ws/install/ouster_ros:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/livox_ros_driver2:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake --install /home/user/roskit_ws/build/tracer_msgs

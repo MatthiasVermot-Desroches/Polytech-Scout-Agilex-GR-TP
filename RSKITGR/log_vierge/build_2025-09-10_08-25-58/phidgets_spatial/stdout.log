@@ -1,0 +1,22 @@
+[100%] Built target phidgets_spatial
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/lib/libphidgets_spatial.so
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/include/phidgets_spatial/spatial_ros_i.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/share/phidgets_spatial/launch/spatial-launch.py
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/share/ament_index/resource_index/package_run_dependencies/phidgets_spatial
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/share/ament_index/resource_index/parent_prefix_path/phidgets_spatial
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/share/phidgets_spatial/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/share/phidgets_spatial/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/share/phidgets_spatial/environment/path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/share/phidgets_spatial/environment/path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/share/phidgets_spatial/local_setup.bash
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/share/phidgets_spatial/local_setup.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/share/phidgets_spatial/local_setup.zsh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/share/phidgets_spatial/local_setup.dsv
+-- Symlinking: /home/user/roskit_ws/install/phidgets_spatial/share/phidgets_spatial/package.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/share/ament_index/resource_index/packages/phidgets_spatial
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/share/ament_index/resource_index/rclcpp_components/phidgets_spatial
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/share/phidgets_spatial/cmake/phidgets_spatialConfig.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/share/phidgets_spatial/cmake/phidgets_spatialConfig-version.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_spatial/share/phidgets_spatial/package.xml

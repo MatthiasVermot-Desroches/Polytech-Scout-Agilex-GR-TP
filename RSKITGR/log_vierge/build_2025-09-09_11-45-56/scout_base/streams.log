@@ -1,0 +1,106 @@
+[0.047s] Invoking command in '/home/user/roskit_ws/build/scout_base': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/user/roskit_ws/src/scout_ros2/scout_base -DCMAKE_BUILD_TYPE=Release -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/scout_base
+[0.181s] -- The C compiler identification is GNU 11.4.0
+[0.261s] -- The CXX compiler identification is GNU 11.4.0
+[0.280s] -- Detecting C compiler ABI info
+[0.351s] -- Detecting C compiler ABI info - done
+[0.369s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.370s] -- Detecting C compile features
+[0.371s] -- Detecting C compile features - done
+[0.380s] -- Detecting CXX compiler ABI info
+[0.463s] -- Detecting CXX compiler ABI info - done
+[0.471s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.472s] -- Detecting CXX compile features
+[0.472s] -- Detecting CXX compile features - done
+[0.475s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.613s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.672s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.701s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.748s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.756s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.766s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.780s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.799s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.848s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.850s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.956s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.988s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.035s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.045s] -- Looking for pthread.h
+[1.186s] -- Looking for pthread.h - found
+[1.186s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.258s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.262s] -- Found Threads: TRUE  
+[1.413s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.456s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.508s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.530s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[1.543s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.616s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.634s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.635s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.635s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.642s] -- Found scout_msgs: 0.1.0 (/home/user/roskit_ws/install/scout_msgs/share/scout_msgs/cmake)
+[1.666s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.740s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.741s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.741s] -- Configured cppcheck include dirs: /home/user/roskit_ws/src/scout_ros2/scout_base/include
+[1.741s] -- Configured cppcheck exclude dirs and/or files: 
+[1.741s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.741s] -- Configured cpplint exclude dirs and/or files: 
+[1.742s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.742s] -- Added test 'lint_cmake' to check CMake code style
+[1.742s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.743s] -- Added test 'uncrustify' to check C / C++ code style
+[1.743s] -- Configured uncrustify additional arguments: 
+[1.744s] -- Added test 'xmllint' to check XML markup files
+[1.745s] -- Configuring done
+[1.756s] -- Generating done
+[1.758s] [33mCMake Warning:
+[1.758s]   Manually-specified variables were not used by the project:
+[1.758s] 
+[1.758s]     HUMBLE_ROS
+[1.758s]     ROS_EDITION
+[1.758s] 
+[1.758s] [0m
+[1.761s] -- Build files have been written to: /home/user/roskit_ws/build/scout_base
+[1.771s] Invoked command in '/home/user/roskit_ws/build/scout_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/user/roskit_ws/src/scout_ros2/scout_base -DCMAKE_BUILD_TYPE=Release -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/scout_base
+[1.773s] Invoking command in '/home/user/roskit_ws/build/scout_base': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/user/roskit_ws/build/scout_base -- -j16 -l16
+[2.649s] [ 33%] [32mBuilding CXX object CMakeFiles/scout_base_node.dir/src/scout_base_ros.cpp.o[0m
+[2.649s] [ 66%] [32mBuilding CXX object CMakeFiles/scout_base_node.dir/src/scout_base_node.cpp.o[0m
+[15.087s] In file included from [01m[K/home/user/roskit_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:12[m[K:
+[15.087s] [01m[K/home/user/roskit_ws/src/scout_ros2/scout_base/include/scout_base/scout_messenger.hpp:[m[K In member function ‘[01m[Kvoid westonrobot::ScoutMessenger<ScoutType>::LightCmdCallback(scout_msgs::msg::ScoutLightCmd_<std::allocator<void> >::SharedPtr) [with ScoutType = westonrobot::ScoutMiniOmniRobot][m[K’:
+[15.087s] [01m[K/home/user/roskit_ws/src/scout_ros2/scout_base/include/scout_base/scout_messenger.hpp:214:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kf_value[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[15.087s]   214 |         [01;35m[Kscout_->SetLightCommand(f_mode, f_value, AgxLightMode::CONST_ON, 0)[m[K;
+[15.087s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.087s] [01m[K/home/user/roskit_ws/src/scout_ros2/scout_base/include/scout_base/scout_messenger.hpp:214:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kf_mode[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[15.087s] [01m[K/home/user/roskit_ws/src/scout_ros2/scout_base/include/scout_base/scout_messenger.hpp:[m[K In member function ‘[01m[Kvoid westonrobot::ScoutMessenger<ScoutType>::LightCmdCallback(scout_msgs::msg::ScoutLightCmd_<std::allocator<void> >::SharedPtr) [with ScoutType = westonrobot::ScoutRobot][m[K’:
+[15.087s] [01m[K/home/user/roskit_ws/src/scout_ros2/scout_base/include/scout_base/scout_messenger.hpp:214:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kf_value[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[15.087s]   214 |         [01;35m[Kscout_->SetLightCommand(f_mode, f_value, AgxLightMode::CONST_ON, 0)[m[K;
+[15.087s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.087s] [01m[K/home/user/roskit_ws/src/scout_ros2/scout_base/include/scout_base/scout_messenger.hpp:214:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kf_mode[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[15.109s] [100%] [32m[1mLinking CXX executable scout_base_node[0m
+[15.540s] [100%] Built target scout_base_node
+[15.571s] Invoked command in '/home/user/roskit_ws/build/scout_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/user/roskit_ws/build/scout_base -- -j16 -l16
+[15.572s] Invoking command in '/home/user/roskit_ws/build/scout_base': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/user/roskit_ws/build/scout_base
+[15.589s] -- Install configuration: "Release"
+[15.589s] -- Execute custom install script
+[15.589s] -- Symlinking: /home/user/roskit_ws/install/scout_base/lib/scout_base/scout_base_node
+[15.604s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/scout_base//launch/scout_base.launch.py
+[15.618s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/scout_base//launch/scout_mini_base.launch.py
+[15.632s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/scout_base//launch/scout_mini_omni_base.launch.py
+[15.647s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/ament_index/resource_index/package_run_dependencies/scout_base
+[15.662s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/ament_index/resource_index/parent_prefix_path/scout_base
+[15.679s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/scout_base/environment/ament_prefix_path.sh
+[15.690s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/scout_base/environment/ament_prefix_path.dsv
+[15.705s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/scout_base/environment/path.sh
+[15.719s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/scout_base/environment/path.dsv
+[15.735s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/scout_base/local_setup.bash
+[15.749s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/scout_base/local_setup.sh
+[15.763s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/scout_base/local_setup.zsh
+[15.777s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/scout_base/local_setup.dsv
+[15.792s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/scout_base/package.dsv
+[15.809s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/ament_index/resource_index/packages/scout_base
+[15.823s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/scout_base/cmake/scout_baseConfig.cmake
+[15.838s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/scout_base/cmake/scout_baseConfig-version.cmake
+[15.853s] -- Symlinking: /home/user/roskit_ws/install/scout_base/share/scout_base/package.xml
+[15.869s] Invoked command in '/home/user/roskit_ws/build/scout_base' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/libphidget22:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup LD_LIBRARY_PATH=/home/user/roskit_ws/install/scout_msgs/lib:/home/user/roskit_ws/install/tracer_msgs/lib:/home/user/roskit_ws/install/rslidar_msg/lib:/home/user/roskit_ws/install/ranger_msgs/lib:/home/user/roskit_ws/install/phidgets_msgs/lib:/home/user/roskit_ws/install/ouster_sensor_msgs/lib:/home/user/roskit_ws/install/livox_sdk2/lib:/home/user/roskit_ws/install/libphidget22/opt/libphidget22/lib:/home/user/roskit_ws/install/hunter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/user/roskit_ws/build/scout_base

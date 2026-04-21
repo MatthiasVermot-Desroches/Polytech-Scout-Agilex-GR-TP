@@ -1,0 +1,2 @@
+Invoking command in '/home/user/roskit_ws/build/gr_description': /usr/bin/cmake /home/user/roskit_ws/src/gr_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/gr_description
+Invoked command in '/home/user/roskit_ws/build/gr_description' returned '1': /usr/bin/cmake /home/user/roskit_ws/src/gr_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/gr_description

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="livox_360">
+  <xacro:macro name="livox_mid_360" params="*origin parent:=base_link visualize:=True name:=livox_frame">
+    <joint name="${name}_mount_joint" type="fixed">
+        <xacro:insert_block name="origin" />
+        <parent link="${parent}"/>
+        <child link="${name}_base"/>
+    </joint>
+    <link name="${name}_base">
+      <inertial>
+        <mass value="0.1"/>
+        <inertia ixx="0.01" ixy="0" ixz="0"
+          iyy="0.01" iyz="0" izz="0.01"/>
+      </inertial>
+      <visual> 
+        <origin xyz="0.0 0 -0.0168" rpy="0 0 3.14"/>
+        <geometry>
+          <mesh filename="file://$(find gr_description)/meshes/accessories/livox_mid-360.dae">
+          </mesh>
+        </geometry>
+      </visual>
+
+      <collision>
+          <origin xyz="0 0 0" rpy="0 0 0" /> 
+          <geometry> 
+            <mesh filename="file://$(find gr_description)/meshes/accessories/livox_mid-360.dae"> </mesh>
+          </geometry>
+      </collision>
+    </link>
+    <link name="${name}">
+      <inertial>
+        <mass value="0.1"/>
+        <inertia ixx="0.01" ixy="0" ixz="0"
+          iyy="0.01" iyz="0" izz="0.01"/>
+      </inertial>
+    </link>
+
+    <joint name="${name}_to_${name}_base_joint" type="fixed">
+      <parent link="${name}_base"/>
+      <child link="${name}"/>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0075"/>
+    </joint>
+  </xacro:macro>
+</robot>

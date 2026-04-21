@@ -1,0 +1,4 @@
+Invoking command in '/home/user/roskit_ws/build/gr_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/roskit_ws/build/gr_bringup -- -j16 -l16
+Invoked command in '/home/user/roskit_ws/build/gr_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/roskit_ws/build/gr_bringup -- -j16 -l16
+Invoking command in '/home/user/roskit_ws/build/gr_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/roskit_ws/build/gr_bringup
+Invoked command in '/home/user/roskit_ws/build/gr_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/roskit_ws/build/gr_bringup

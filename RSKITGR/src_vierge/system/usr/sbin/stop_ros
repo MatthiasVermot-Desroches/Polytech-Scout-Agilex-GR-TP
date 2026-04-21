@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# stop CAN
+ip link set down can0
+
+bash -c 'docker stop gr-p247-humble-container'

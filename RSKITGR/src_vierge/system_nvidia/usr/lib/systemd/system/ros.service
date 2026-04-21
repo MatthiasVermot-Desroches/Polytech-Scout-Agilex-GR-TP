@@ -1,0 +1,18 @@
+[Unit]
+Description=robot
+After=network-online.target
+ 
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStartPre=/usr/sbin/wait_master
+ExecStart=/usr/sbin/start_ros
+ExecStop=/usr/sbin/stop_ros
+#Restart=on-failure
+ 
+# Configures the time to wait before service is stopped forcefully.
+TimeoutStopSec=60
+ 
+[Install]
+WantedBy=multi-user.target

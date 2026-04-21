@@ -1,0 +1,18 @@
+[0.046s] Invoking command in '/home/user/roskit_ws/build/livox_sdk2': /usr/bin/cmake --build /home/user/roskit_ws/build/livox_sdk2 -- -j16 -l16
+[0.162s] [ 42%] Built target livox_lidar_sdk_shared
+[0.170s] [ 84%] Built target livox_lidar_sdk_static
+[0.222s] [ 86%] Built target livox_lidar_quick_start
+[0.222s] [ 90%] Built target livox_lidar_rmc_time_sync
+[0.225s] [ 92%] Built target lidar_cmd_observer
+[0.228s] [ 95%] Built target logger
+[0.241s] [ 97%] Built target debug_point_cloud
+[0.241s] [100%] Built target multi_lidars_upgrade
+[0.360s] Invoked command in '/home/user/roskit_ws/build/livox_sdk2' returned '0': /usr/bin/cmake --build /home/user/roskit_ws/build/livox_sdk2 -- -j16 -l16
+[0.361s] Invoking command in '/home/user/roskit_ws/build/livox_sdk2': /usr/bin/cmake --install /home/user/roskit_ws/build/livox_sdk2
+[0.393s] -- Install configuration: "Release"
+[0.393s] -- Up-to-date: /home/user/roskit_ws/install/livox_sdk2/lib/liblivox_lidar_sdk_static.a
+[0.393s] -- Up-to-date: /home/user/roskit_ws/install/livox_sdk2/include/livox_lidar_def.h
+[0.393s] -- Up-to-date: /home/user/roskit_ws/install/livox_sdk2/include/livox_lidar_api.h
+[0.393s] -- Up-to-date: /home/user/roskit_ws/install/livox_sdk2/include/livox_lidar_cfg.h
+[0.393s] -- Up-to-date: /home/user/roskit_ws/install/livox_sdk2/lib/liblivox_lidar_sdk_shared.so
+[0.415s] Invoked command in '/home/user/roskit_ws/build/livox_sdk2' returned '0': /usr/bin/cmake --install /home/user/roskit_ws/build/livox_sdk2

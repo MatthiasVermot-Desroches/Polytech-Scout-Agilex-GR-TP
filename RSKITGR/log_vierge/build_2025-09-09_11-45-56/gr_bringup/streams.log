@@ -1,0 +1,58 @@
+[0.038s] Invoking command in '/home/user/roskit_ws/build/gr_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/user/roskit_ws/src/gr_bringup -DCMAKE_BUILD_TYPE=Release -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/gr_bringup
+[0.068s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.133s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.138s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.200s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.201s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.201s] -- Added test 'lint_cmake' to check CMake code style
+[0.201s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.203s] -- Added test 'xmllint' to check XML markup files
+[0.203s] -- Configuring done
+[0.210s] -- Generating done
+[0.210s] -- Build files have been written to: /home/user/roskit_ws/build/gr_bringup
+[0.210s] [33mCMake Warning:
+[0.210s]   Manually-specified variables were not used by the project:
+[0.210s] 
+[0.210s]     HUMBLE_ROS
+[0.210s]     ROS_EDITION
+[0.210s] 
+[0.210s] [0m
+[0.212s] Invoked command in '/home/user/roskit_ws/build/gr_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/user/roskit_ws/src/gr_bringup -DCMAKE_BUILD_TYPE=Release -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/gr_bringup
+[0.213s] Invoking command in '/home/user/roskit_ws/build/gr_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/user/roskit_ws/build/gr_bringup -- -j16 -l16
+[0.281s] Invoked command in '/home/user/roskit_ws/build/gr_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/user/roskit_ws/build/gr_bringup -- -j16 -l16
+[0.281s] Invoking command in '/home/user/roskit_ws/build/gr_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/user/roskit_ws/build/gr_bringup
+[0.306s] -- Install configuration: "Release"
+[0.306s] -- Execute custom install script
+[0.306s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/config/livox_mid_360.json
+[0.306s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/config/ouster.yaml
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/config/rs_lidar/RSHELIOS_16P_config.yaml
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/config/rs_lidar/RSHELIOS_config.yaml
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/config/zed_f9p.yaml
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/launch/component_gps.launch.py
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/launch/component_imu.launch.py
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/launch/component_livox.launch.py
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/launch/component_ouster.launch.py
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/launch/component_realsense.launch.py
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/launch/component_rs_lidar.launch.py
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/launch/main.launch.py
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/rviz/rviz_livox_realsense.rviz
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/rviz/rviz_ouster_realsense.rviz
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/rviz/rviz_ouster_zed2i.rviz
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/rviz/rviz_rslidar_realsense.rviz
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/rviz/rviz_rslidar_zed2i.rviz
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/ament_index/resource_index/package_run_dependencies/gr_bringup
+[0.307s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/ament_index/resource_index/parent_prefix_path/gr_bringup
+[0.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/environment/ament_prefix_path.sh
+[0.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/environment/ament_prefix_path.dsv
+[0.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/environment/path.sh
+[0.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/environment/path.dsv
+[0.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/local_setup.bash
+[0.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/local_setup.sh
+[0.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/local_setup.zsh
+[0.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/local_setup.dsv
+[0.308s] -- Symlinking: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/package.dsv
+[0.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/ament_index/resource_index/packages/gr_bringup
+[0.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/cmake/gr_bringupConfig.cmake
+[0.308s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/cmake/gr_bringupConfig-version.cmake
+[0.309s] -- Up-to-date symlink: /home/user/roskit_ws/install/gr_bringup/share/gr_bringup/package.xml
+[0.358s] Invoked command in '/home/user/roskit_ws/build/gr_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/user/roskit_ws/build/gr_bringup

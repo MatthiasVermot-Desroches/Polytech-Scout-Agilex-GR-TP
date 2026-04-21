@@ -1,0 +1,50 @@
+[0.029s] Invoking command in '/home/user/roskit_ws/build/livox_ros_driver2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/roskit_ws/src/livox_ros_driver2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/livox_ros_driver2
+[0.084s] -- livox_ros_driver2 version: 1.2.4
+[0.084s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.183s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.258s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.258s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.293s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.339s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.339s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.432s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.510s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.532s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.720s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.724s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.815s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.822s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.826s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.907s] -- Found Qhull version 8.0.2
+[0.992s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.118s] -- Checking for module 'apr-1'
+[1.121s] --   No package 'apr-1' found
+[1.322s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.581s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.781s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.794s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.817s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.817s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.817s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.878s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.887s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.888s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.889s] -- Configured cppcheck include dirs: /home/user/roskit_ws/src/livox_ros_driver2/3rdparty;/home/user/roskit_ws/src/livox_ros_driver2/src
+[1.889s] -- Configured cppcheck exclude dirs and/or files: 
+[1.890s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.891s] -- Configured cpplint exclude dirs and/or files: 
+[1.891s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.891s] -- Added test 'lint_cmake' to check CMake code style
+[1.892s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.893s] -- Added test 'uncrustify' to check C / C++ code style
+[1.893s] -- Configured uncrustify additional arguments: 
+[1.894s] -- Added test 'xmllint' to check XML markup files
+[1.895s] -- Configuring done
+[1.899s] [0mCMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+[1.899s] Please set them or make sure they are set and tested correctly in the CMake files:
+[1.899s] /home/user/roskit_ws/src/livox_ros_driver2/LIVOX_INTERFACES_INCLUDE_DIRECTORIES
+[1.899s]    used as include directory in directory /home/user/roskit_ws/src/livox_ros_driver2
+[1.899s] [0m
+[1.932s] -- Generating done
+[1.934s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[1.949s] Invoked command in '/home/user/roskit_ws/build/livox_ros_driver2' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/roskit_ws/src/livox_ros_driver2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/livox_ros_driver2

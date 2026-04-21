@@ -1,0 +1,47 @@
+[0.008s] Invoking command in '/home/user/roskit_ws/build/rslidar_sdk': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/rslidar_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/rslidar_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/user/roskit_ws/install/rslidar_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/roskit_ws/install/rslidar_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/user/roskit_ws/src/rslidar_sdk -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/rslidar_sdk
+[0.013s] [0m=============================================================[0m
+[0.013s] [0m-- POINT_TYPE is XYZI[0m
+[0.013s] [0m=============================================================[0m
+[0.024s] [0m=============================================================[0m
+[0.024s] [0m-- ROS Not Found. ROS Support is turned Off.[0m
+[0.024s] [0m=============================================================[0m
+[0.118s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.165s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.225s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.229s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.235s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.244s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.254s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.279s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.281s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.343s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.361s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.392s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.399s] -- Looking for pthread.h
+[0.463s] -- Looking for pthread.h - found
+[0.463s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.531s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.533s] -- Found Threads: TRUE  
+[0.567s] [0m=============================================================[0m
+[0.567s] [0m-- ROS2 Found. ROS2 Support is turned On.[0m
+[0.567s] [0m=============================================================[0m
+[0.570s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.586s] -- Found rslidar_msg: 0.0.0 (/home/user/roskit_ws/install/rslidar_msg/share/rslidar_msg/cmake)
+[0.594s] [0m=============================================================[0m
+[0.594s] [0m-- CMake run for UNIX GNU Compiler[0m
+[0.594s] [0m=============================================================[0m
+[0.594s] [0m=============================================================[0m
+[0.594s] [0m-- rs_driver Version : v1.5.16[0m
+[0.594s] [0m=============================================================[0m
+[0.668s] -- Configuring done
+[0.678s] -- Generating done
+[0.683s] -- Build files have been written to: /home/user/roskit_ws/build/rslidar_sdk
+[0.738s] Invoked command in '/home/user/roskit_ws/build/rslidar_sdk' returned '0': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/rslidar_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/rslidar_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/user/roskit_ws/install/rslidar_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/roskit_ws/install/rslidar_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/user/roskit_ws/src/rslidar_sdk -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/rslidar_sdk
+[0.739s] Invoking command in '/home/user/roskit_ws/build/rslidar_sdk': AMENT_PREFIX_PATH=/home/user/roskit_ws/install/rslidar_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/rslidar_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/user/roskit_ws/install/rslidar_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/roskit_ws/install/rslidar_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/roskit_ws/build/rslidar_sdk -- -j16 -l16
+[0.811s] [35m[1mConsolidate compiler generated dependencies of target rslidar_sdk_node[0m
+[0.857s] [ 33%] [32mBuilding CXX object CMakeFiles/rslidar_sdk_node.dir/src/manager/node_manager.cpp.o[0m
+[0.885s] [ 66%] [32mBuilding CXX object CMakeFiles/rslidar_sdk_node.dir/node/rslidar_sdk_node.cpp.o[0m
+[2.178s] gmake[2]: *** [CMakeFiles/rslidar_sdk_node.dir/build.make:76: CMakeFiles/rslidar_sdk_node.dir/node/rslidar_sdk_node.cpp.o] Interrupt
+[2.179s] gmake[2]: *** [CMakeFiles/rslidar_sdk_node.dir/build.make:90: CMakeFiles/rslidar_sdk_node.dir/src/manager/node_manager.cpp.o] Interrupt
+[2.179s] gmake[1]: *** [CMakeFiles/Makefile2:154: CMakeFiles/rslidar_sdk_node.dir/all] Interrupt
+[2.180s] gmake: *** [Makefile:146: all] Interrupt

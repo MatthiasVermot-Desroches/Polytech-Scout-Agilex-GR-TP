@@ -1,0 +1,5 @@
+/home/user/roskit_ws/build/hunter_msgs/rosidl_adapter/hunter_msgs:msg/HunterActuatorState.idl
+/home/user/roskit_ws/build/hunter_msgs/rosidl_adapter/hunter_msgs:msg/HunterLightCmd.idl
+/home/user/roskit_ws/build/hunter_msgs/rosidl_adapter/hunter_msgs:msg/HunterLightState.idl
+/home/user/roskit_ws/build/hunter_msgs/rosidl_adapter/hunter_msgs:msg/HunterRCState.idl
+/home/user/roskit_ws/build/hunter_msgs/rosidl_adapter/hunter_msgs:msg/HunterStatus.idl

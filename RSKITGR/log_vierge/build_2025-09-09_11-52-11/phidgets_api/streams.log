@@ -1,0 +1,47 @@
+[0.077s] Invoking command in '/home/user/roskit_ws/build/phidgets_api': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/libphidget22:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake --build /home/user/roskit_ws/build/phidgets_api -- -j16 -l16
+[0.117s] [100%] Built target phidgets_api
+[0.151s] Invoked command in '/home/user/roskit_ws/build/phidgets_api' returned '0': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/libphidget22:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake --build /home/user/roskit_ws/build/phidgets_api -- -j16 -l16
+[0.155s] Invoking command in '/home/user/roskit_ws/build/phidgets_api': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/libphidget22:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake --install /home/user/roskit_ws/build/phidgets_api
+[0.167s] -- Install configuration: "Release"
+[0.168s] -- Execute custom install script
+[0.169s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/lib/libphidgets_api.so
+[0.170s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/accelerometer.hpp
+[0.170s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/analog_input.hpp
+[0.170s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/analog_inputs.hpp
+[0.170s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/analog_output.hpp
+[0.171s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/analog_outputs.hpp
+[0.171s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/digital_input.hpp
+[0.171s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/digital_inputs.hpp
+[0.171s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/digital_output.hpp
+[0.171s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/digital_outputs.hpp
+[0.171s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/encoder.hpp
+[0.171s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/encoders.hpp
+[0.171s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/gyroscope.hpp
+[0.172s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/ir.hpp
+[0.172s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/magnetometer.hpp
+[0.172s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/motor.hpp
+[0.172s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/motors.hpp
+[0.172s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/phidget22.hpp
+[0.172s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/spatial.hpp
+[0.172s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/include/phidgets_api/temperature.hpp
+[0.172s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/library_path.sh
+[0.173s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/library_path.dsv
+[0.173s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/ament_index/resource_index/package_run_dependencies/phidgets_api
+[0.173s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/ament_index/resource_index/parent_prefix_path/phidgets_api
+[0.173s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/ament_prefix_path.sh
+[0.173s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/ament_prefix_path.dsv
+[0.173s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/path.sh
+[0.173s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/environment/path.dsv
+[0.173s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/local_setup.bash
+[0.173s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/local_setup.sh
+[0.173s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/local_setup.zsh
+[0.173s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/local_setup.dsv
+[0.173s] -- Symlinking: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/package.dsv
+[0.173s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/ament_index/resource_index/packages/phidgets_api
+[0.174s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.174s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.174s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake/ament_cmake_export_libraries-extras.cmake
+[0.174s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake/phidgets_apiConfig.cmake
+[0.174s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/cmake/phidgets_apiConfig-version.cmake
+[0.174s] -- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_api/share/phidgets_api/package.xml
+[0.208s] Invoked command in '/home/user/roskit_ws/build/phidgets_api' returned '0': CMAKE_PREFIX_PATH=/home/user/roskit_ws/install/libphidget22:/opt/ros/humble:/home/user/roskit_ws/install/ugv_sdk:/home/user/roskit_ws/install/ublox_serialization:/home/user/roskit_ws/install/tracer_msgs:/home/user/roskit_ws/install/scout_msgs:/home/user/roskit_ws/install/scout_description:/home/user/roskit_ws/install/rslidar_msg:/home/user/roskit_ws/install/ranger_msgs:/home/user/roskit_ws/install/ranger_bringup:/home/user/roskit_ws/install/phidgets_msgs:/home/user/roskit_ws/install/ouster_sensor_msgs:/home/user/roskit_ws/install/hunter_msgs:/home/user/roskit_ws/install/gr_description:/home/user/roskit_ws/install/gr_bringup /usr/bin/cmake --install /home/user/roskit_ws/build/phidgets_api

@@ -1,0 +1,9 @@
+[0.031s] Invoking command in '/home/user/roskit_ws/build/livox_sdk2': /usr/bin/cmake --build /home/user/roskit_ws/build/livox_sdk2 -- -j16 -l16
+[0.074s] [ 42%] Built target livox_lidar_sdk_static
+[0.075s] [ 84%] Built target livox_lidar_sdk_shared
+[0.088s] [ 86%] Built target logger
+[0.088s] [ 89%] Built target livox_lidar_quick_start
+[0.088s] [ 91%] Built target debug_point_cloud
+[0.088s] [ 93%] Built target multi_lidars_upgrade
+[0.091s] [ 96%] Built target lidar_cmd_observer
+[0.091s] [100%] Built target livox_lidar_rmc_time_sync

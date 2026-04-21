@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="phidget_spatial" xmlns:xacro="http://www.ros.org/wiki/xacro">
+ 
+  <xacro:macro name="phidget_spatial" params="prefix parent *origin">
+
+    <link name="${prefix}imu_link">
+      <visual>
+        <origin xyz="0 0 0.002" rpy="0 0 0" />
+        <geometry>
+          <box size="0.01 0.01 0.004" />
+        </geometry>
+        <material name="plastic">
+          <color rgba="0 0 0 1" />
+        </material>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0.002" rpy="0 0 0" />
+        <geometry>
+          <box size="0.01 0.01 0.004" />
+        </geometry>
+      </collision>
+
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.01" />
+        <inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1" />
+      </inertial>
+
+      <gazebo reference="${prefix}imu_link">
+        <gravity>true</gravity>
+      </gazebo>
+
+    </link>
+      
+    <joint name="${prefix}_imu_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}" />
+      <child link="${prefix}imu_link" />
+    </joint>
+
+
+    <gazebo reference="$(arg prefix)base_link">
+      <sensor name="$(arg prefix)imu_sensor" type="imu">
+        <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <ros>
+            <namespace>$(arg prefix)</namespace>
+            <remapping>~/out:=imu/data</remapping>
+        </ros>
+        <initial_orientation_as_reference>false</initial_orientation_as_reference>
+        <updateRateHZ>20.0</updateRateHZ>
+        </plugin>
+        <always_on>true</always_on>
+        <update_rate>20</update_rate>
+        <visualize>true</visualize>
+      </sensor>
+    </gazebo>
+
+  </xacro:macro>
+</robot>

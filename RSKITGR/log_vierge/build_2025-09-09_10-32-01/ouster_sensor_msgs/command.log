@@ -1,0 +1,2 @@
+Invoking command in '/home/user/roskit_ws/build/ouster_sensor_msgs': /usr/bin/cmake /home/user/roskit_ws/src/ouster-ros/ouster-sensor-msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ouster_sensor_msgs
+Invoked command in '/home/user/roskit_ws/build/ouster_sensor_msgs' returned '1': /usr/bin/cmake /home/user/roskit_ws/src/ouster-ros/ouster-sensor-msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/ouster_sensor_msgs

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="gr_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:property name="M_PI" value="3.1415926535897931" />
+  <xacro:arg name="prefix" default="" />
+
+  <!-- Robot Configuration -->
+  <xacro:arg name="lidar_type" default="$(optenv LIDAR_TYPE)" />
+  <xacro:property name="lidar_type_check" value="$(arg lidar_type)"/>
+
+  <xacro:arg name="camera_type" default="$(optenv CAMERA_TYPE)" />
+  <xacro:property name="camera_type_check" value="$(arg camera_type)"/>
+
+  <xacro:arg name="robot_type" default="$(optenv ROBOT_TYPE)" />
+  <xacro:property name="robot_type_check" value="$(arg robot_type)"/>
+  <xacro:arg name="has_linear_planar" default="true"/>
+
+  <!-- Top Box -->
+  <xacro:include filename="$(find gr_description)/urdf/accessories/gr_ros_kit.urdf.xacro"/>
+
+  <!-- Mobile base type -->
+  <xacro:if value="${robot_type_check == 'SCOUT'}">
+    <xacro:property name="dist_grbox_robotcenter" default="0.16"/>
+    <xacro:include filename="$(find gr_description)/urdf/agilex/scout/scout.urdf.xacro" />     
+    <xacro:scout prefix="$(arg prefix)"/>
+    <link name="top_robot_link"/>
+    <joint name="top_link_joint" type="fixed">
+      <origin xyz="0 0 0.114" rpy="0 0 0" />
+      <parent link="base_link" />
+      <child link="top_robot_link" />
+    </joint>
+  </xacro:if>
+
+  <xacro:if value="${robot_type_check == 'SCOUT_MINI'}">
+    <xacro:property name="dist_grbox_robotcenter" default="0.0"/>
+    <xacro:include filename="$(find gr_description)/urdf/agilex/scout/scout_mini.urdf.xacro" />     
+    <xacro:scout_mini prefix="$(arg prefix)" />
+    <link name="top_robot_link"/>
+    <joint name="top_link_joint" type="fixed">
+      <origin xyz="0 0 0.069" rpy="0 0 0" />
+      <parent link="base_link" />
+      <child link="top_robot_link" />
+    </joint>
+  </xacro:if>
+
+  <xacro:if value="${robot_type_check == 'RANGER_MINI'}">
+    <xacro:property name="dist_grbox_robotcenter" default="0.10"/>
+    <xacro:include filename="$(find gr_description)/urdf/agilex/ranger_mini_v2/ranger_mini.xacro" />     
+    <xacro:ranger_mini/>
+    <link name="top_robot_link"/>
+    <joint name="top_link_joint" type="fixed">
+    <origin xyz="0 0 0.02" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="top_robot_link" />
+    </joint>
+  </xacro:if>
+
+  <xacro:if value="${robot_type_check == 'HUNTER'}">
+    <xacro:property name="dist_grbox_robotcenter" default="0.26"/>
+    <xacro:include filename="$(find gr_description)/urdf/agilex/hunter_base.urdf.xacro" />     
+    <xacro:hunter2_base prefix="$(arg prefix)" />
+    <link name="top_robot_link"/>
+    <joint name="top_link_joint" type="fixed">
+      <origin xyz="0 0 0.139" rpy="0 0 0" />
+      <parent link="base_link" />
+      <child link="top_robot_link" />
+    </joint>
+  </xacro:if>
+
+  <!-- GR BOX position based on camera -->
+  <xacro:if value="${camera_type_check == 'D435'}">
+    <xacro:gr_box prefix="$(arg prefix)" parent="top_robot_link" >
+      <origin xyz="${dist_grbox_robotcenter} 0 0.0" rpy="0 0 0"/>
+    </xacro:gr_box>
+  </xacro:if>
+  <xacro:if value="${camera_type_check == 'ZED2I'}">
+    <xacro:gr_box prefix="$(arg prefix)" parent="top_robot_link" >
+      <origin xyz="${dist_grbox_robotcenter-0.025} 0 0.0" rpy="0 0 0"/>
+    </xacro:gr_box>
+  </xacro:if>
+  <xacro:if value="${camera_type_check == 'D456'}">
+    <xacro:gr_box prefix="$(arg prefix)" parent="top_robot_link" >
+      <origin xyz="${dist_grbox_robotcenter-0.01} 0 0.0" rpy="0 0 0"/>
+    </xacro:gr_box>
+  </xacro:if>
+  
+  <!-- LIDAR -->
+  <xacro:if value="${lidar_type_check == 'RSHELIOS'}">
+    <xacro:include filename="$(find gr_description)/urdf/accessories/helios_16.urdf.xacro" />
+    <xacro:helios_16 prefix="$(arg prefix)" parent="$(arg prefix)top_box_lidar_support_link" >
+      <origin xyz="0 0 0.0173" rpy="0 0 0"/>
+    </xacro:helios_16>
+  </xacro:if>
+
+  <xacro:if value="${lidar_type_check == 'OUSTER_OS0_32'}">
+    <xacro:include filename="$(find gr_description)/urdf/accessories/OS0-rev7.urdf.xacro" />
+    <xacro:OS0-32 parent="$(arg prefix)top_box_lidar_support_link" >
+      <origin xyz="0 0 -0.0039" rpy="0 0 0"/>
+    </xacro:OS0-32>
+  </xacro:if>
+
+  <xacro:if value="${lidar_type_check == 'OUSTER_OS1_32'}">
+    <xacro:include filename="$(find gr_description)/urdf/accessories/OS1-32.urdf.xacro" />
+    <xacro:OS1-32 parent="$(arg prefix)top_box_lidar_support_link" >
+      <origin xyz="-0.003 0 -0.003" rpy="0 0 0"/>
+    </xacro:OS1-32>
+  </xacro:if>
+
+  <xacro:if value="${lidar_type_check == 'LIVOX_MID_360'}">
+    <xacro:include filename="$(find gr_description)/urdf/accessories/livox_mid360.xacro" />
+    <xacro:livox_mid_360 parent="$(arg prefix)top_box_lidar_support_link" >
+      <origin xyz="0.02 0 0.0395" rpy="0 0 0"/>
+    </xacro:livox_mid_360>
+  </xacro:if>
+
+  <!-- CAMERA -->
+  <xacro:if value="${camera_type_check == 'ZED2I'}">
+    <xacro:include filename="$(find gr_description)/urdf/accessories/zed2i_macro.urdf.xacro" />
+    <xacro:zed2i_camera name="sensor_d456" parent="$(arg prefix)camera_box_link">
+      <origin xyz="0.012 0 0.0" rpy="0 0 0"/>
+    </xacro:zed2i_camera>
+  </xacro:if>
+
+  <xacro:if value="${camera_type_check == 'D456'}">
+    <xacro:include filename="$(find gr_description)/urdf/accessories/_d455.urdf.xacro" />
+    <xacro:sensor_d455 name="sensor_d456" parent="$(arg prefix)camera_box_link">
+      <origin xyz="0.0 0 0.0" rpy="0 0 0"/>
+    </xacro:sensor_d455>
+  </xacro:if>
+
+  <xacro:if value="${camera_type_check == 'D435'}">
+    <xacro:include filename="$(find gr_description)/urdf/accessories/_d435.urdf.xacro" />
+    <xacro:sensor_d435 name="camera" topics_ns="camera" parent="camera_box_link">
+      <origin xyz="-0.03 0 0.0" rpy="0 0 0"/>
+    </xacro:sensor_d435>
+  </xacro:if>
+
+  <!-- IMU -->
+  <xacro:include filename="$(find gr_description)/urdf/accessories/phidget_spatial.urdf.xacro" />
+  <xacro:phidget_spatial prefix="$(arg prefix)" parent="$(arg prefix)bottom_box_link" >
+    <origin xyz="0.0 0.0 0.050" rpy="0 0 0"/>
+  </xacro:phidget_spatial>
+  
+  <!-- GPS -->
+  <xacro:include filename="$(find gr_description)/urdf/accessories/gps.urdf.xacro" />
+  <xacro:gps_antenna  prefix="$(arg prefix)" parent="$(arg prefix)top_box_link">
+    <origin xyz="0.164 0.0 0.0" rpy="0 0 0"/>
+  </xacro:gps_antenna>
+
+  <xacro:unless value="$(arg has_linear_planar)">
+    <xacro:arg name="gazebo_controllers" default="$(find gr_gazebo)/config/control_sim.yaml" />
+    <gazebo>
+      <plugin filename="libgazebo_ros2_control.so" name="$(arg prefix)gazebo_ros2_control">
+        <parameters>$(arg gazebo_controllers)</parameters>
+      </plugin>
+    </gazebo>
+  </xacro:unless>
+</robot>

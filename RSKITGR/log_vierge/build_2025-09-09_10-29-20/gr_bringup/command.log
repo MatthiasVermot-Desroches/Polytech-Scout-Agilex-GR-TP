@@ -1,0 +1,1 @@
+Invoking command in '/home/user/roskit_ws/build/gr_bringup': /usr/bin/cmake /home/user/roskit_ws/src/gr_bringup -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/gr_bringup

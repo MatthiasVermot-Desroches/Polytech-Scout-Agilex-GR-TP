@@ -1,0 +1,22 @@
+[100%] Built target phidgets_digital_inputs
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/lib/libphidgets_digital_inputs.so
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/include/phidgets_digital_inputs/digital_inputs_ros_i.hpp
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/share/phidgets_digital_inputs/launch/digital_inputs-launch.py
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/share/ament_index/resource_index/package_run_dependencies/phidgets_digital_inputs
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/share/ament_index/resource_index/parent_prefix_path/phidgets_digital_inputs
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/share/phidgets_digital_inputs/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/share/phidgets_digital_inputs/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/share/phidgets_digital_inputs/environment/path.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/share/phidgets_digital_inputs/environment/path.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/share/phidgets_digital_inputs/local_setup.bash
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/share/phidgets_digital_inputs/local_setup.sh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/share/phidgets_digital_inputs/local_setup.zsh
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/share/phidgets_digital_inputs/local_setup.dsv
+-- Symlinking: /home/user/roskit_ws/install/phidgets_digital_inputs/share/phidgets_digital_inputs/package.dsv
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/share/ament_index/resource_index/packages/phidgets_digital_inputs
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/share/ament_index/resource_index/rclcpp_components/phidgets_digital_inputs
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/share/phidgets_digital_inputs/cmake/phidgets_digital_inputsConfig.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/share/phidgets_digital_inputs/cmake/phidgets_digital_inputsConfig-version.cmake
+-- Up-to-date symlink: /home/user/roskit_ws/install/phidgets_digital_inputs/share/phidgets_digital_inputs/package.xml

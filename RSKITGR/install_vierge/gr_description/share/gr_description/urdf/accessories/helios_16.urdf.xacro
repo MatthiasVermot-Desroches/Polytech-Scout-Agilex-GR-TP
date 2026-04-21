@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="helios_16">
+  <xacro:property name="M_PI" value="3.1415926535897931" />
+  <xacro:macro name="helios_16" params="prefix parent:=base_link *origin topic_points:=/rslidar_points hz:=10 lasers:=16 samples:=512 min_range:=0.2 max_range:=200.0 noise:=0.008 min_angle:=-${M_PI} max_angle:=${M_PI} lidar_link:=rslidar vfov_min:=-.15 vfov_max:=.15">
+
+    <joint name="${prefix}helios_mount_joint" type="fixed">
+      <xacro:insert_block name="origin" /> 
+      <parent link="${parent}"/>
+      <child link="${prefix}helios"/>
+    </joint>
+
+    <link name="${prefix}helios">
+      <inertial>
+         <mass value="0.33"/>
+         <origin xyz="0 0 0.0365" rpy="0 0 0" />
+         <inertia ixx="0.000241148" ixy="0" ixz="0"
+          iyy="0.000241148" iyz="0" izz="0.000264"/>
+      </inertial>
+      <collision name="base_collision">
+         <origin xyz="0 0 0.04" rpy="0 0 0" />
+         <geometry>
+ 	        <cylinder radius="0.04" length="0.08"/>
+         </geometry>
+      </collision>
+      <visual name="base_visual">
+         <origin xyz="0 0 -0.022" rpy="${M_PI/2} 0 ${M_PI/2}" />
+         <geometry>
+	         <mesh filename="file://$(find gr_description)/meshes/accessories/helios_16.stl" scale="0.001 0.001 0.001" />
+           <!-- <cylinder radius="0.04" length="0.073"/> -->
+         </geometry>
+      </visual>
+    </link>
+
+    <link name="${prefix}${lidar_link}" />
+
+    <joint name="${prefix}helios_lidar_link_joint" type="fixed">
+      <parent link="helios" />
+      <child link="${prefix}${lidar_link}" />
+      <origin xyz="0.0 0.0 0.03618" rpy="0 0 0" />
+    </joint>
+
+  </xacro:macro>
+</robot>

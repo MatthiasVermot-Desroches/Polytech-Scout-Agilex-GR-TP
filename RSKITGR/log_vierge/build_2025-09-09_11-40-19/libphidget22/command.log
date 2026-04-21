@@ -1,0 +1,3 @@
+Invoking command in '/home/user/roskit_ws/build/libphidget22': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/roskit_ws/src/phidgets_drivers/libphidget22 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/libphidget22
+Invoked command in '/home/user/roskit_ws/build/libphidget22' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/roskit_ws/src/phidgets_drivers/libphidget22 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/libphidget22
+Invoking command in '/home/user/roskit_ws/build/libphidget22': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/roskit_ws/build/libphidget22 -- -j16 -l16

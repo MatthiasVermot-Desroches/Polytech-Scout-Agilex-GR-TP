@@ -1,0 +1,9 @@
+[ 42%] Built target ugv_sdk
+[ 57%] Built target demo_tracer_robot
+[ 57%] Built target demo_robot_version
+[ 64%] Built target demo_bunker_robot
+[ 71%] Built target demo_scout_robot
+[ 78%] Built target demo_scout_mini_omni_robot
+[ 85%] Built target demo_hunter_robot
+[ 92%] Built target demo_ranger_robot
+[100%] Built target demo_protocol_detector

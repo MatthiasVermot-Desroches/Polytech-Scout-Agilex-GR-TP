@@ -1,0 +1,33 @@
+[0.027s] Invoking command in '/home/user/roskit_ws/build/tracer_msgs': /usr/bin/cmake /home/user/roskit_ws/src/tracer_ros2/tracer_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/tracer_msgs
+[0.072s] -- The C compiler identification is GNU 11.4.0
+[0.112s] -- The CXX compiler identification is GNU 11.4.0
+[0.118s] -- Detecting C compiler ABI info
+[0.158s] -- Detecting C compiler ABI info - done
+[0.163s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.164s] -- Detecting C compile features
+[0.168s] -- Detecting C compile features - done
+[0.169s] -- Detecting CXX compiler ABI info
+[0.223s] -- Detecting CXX compiler ABI info - done
+[0.225s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.225s] -- Detecting CXX compile features
+[0.226s] -- Detecting CXX compile features - done
+[0.243s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[0.244s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.244s]   has asked CMake to find a package configuration file provided by
+[0.244s]   "ament_cmake", but CMake did not find one.
+[0.244s] 
+[0.244s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.244s]   any of the following names:
+[0.244s] 
+[0.244s]     ament_cmakeConfig.cmake
+[0.244s]     ament_cmake-config.cmake
+[0.245s] 
+[0.246s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.246s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.246s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.246s]   has been installed.
+[0.246s] 
+[0.246s] [0m
+[0.246s] -- Configuring incomplete, errors occurred!
+[0.246s] See also "/home/user/roskit_ws/build/tracer_msgs/CMakeFiles/CMakeOutput.log".
+[0.247s] Invoked command in '/home/user/roskit_ws/build/tracer_msgs' returned '1': /usr/bin/cmake /home/user/roskit_ws/src/tracer_ros2/tracer_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/roskit_ws/install/tracer_msgs
