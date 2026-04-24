@@ -1,5 +1,6 @@
 La ligne de commande à taper pour récuperer le nuage de point 3D et garder uniquement un plan à la hauteur 0.3m.
 
+source /opt/ros/humble/setup.bash
 ros2 run pointcloud_to_laserscan pointcloud_to_laserscan_node \
   --ros-args \
   -r cloud_in:=/rslidar_points \
