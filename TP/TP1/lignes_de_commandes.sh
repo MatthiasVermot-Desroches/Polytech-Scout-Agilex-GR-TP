@@ -5,8 +5,8 @@ ros2 run pointcloud_to_laserscan pointcloud_to_laserscan_node \
   --ros-args \
   -r cloud_in:=/rslidar_points \
   -p target_frame:=base_link \
-  -p min_height:=-0.3 \
-  -p max_height:=0.3 \
+  -p min_height:=-0.1 \
+  -p max_height:=0.5 \
   -p range_min:=0.1 \
   -p range_max:=30.0 
 
