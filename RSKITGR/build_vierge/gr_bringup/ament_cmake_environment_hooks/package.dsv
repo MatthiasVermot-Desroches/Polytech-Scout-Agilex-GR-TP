@@ -1,4 +1,0 @@
-source;share/gr_bringup/local_setup.bash
-source;share/gr_bringup/local_setup.dsv
-source;share/gr_bringup/local_setup.sh
-source;share/gr_bringup/local_setup.zsh
