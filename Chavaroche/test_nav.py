@@ -115,6 +115,21 @@ class RobotSimple(Node):
             diff += 2 * math.pi
         return diff
 
+    # Méthodes pour démarrer un mouvement ou une rotation vers une cible donnée
+    def avancer(self, distance):
+        # Enregistre la position de départ et la direction du mouvement, puis active le flag de mouvement
+        self.start_x = self.x
+        self.start_y = self.y
+        self.avance  = distance >= 0
+        self.distance_cible = distance
+        self.en_mouvement   = True
+
+    def tourner(self, angle_deg):
+        # Enregistre l'orientation de départ et la cible de rotation, puis active le flag de rotation
+        self.start_yaw      = self.yaw
+        self.rotation_cible = math.radians(angle_deg)
+        self.en_rotation    = True
+
     def meilleure_direction(self):
         # Choisit la direction avec la plus grande distance libre
         distances = {
@@ -123,7 +138,7 @@ class RobotSimple(Node):
         }
         return max(distances, key=distances.get)
 
-    # Boucle principale appelée à 10Hz par le timer, qui gère les mouvements et les rotations en fonction des obstacles et des cibles
+     # Boucle principale appelée à 10Hz par le timer, qui gère les mouvements et les rotations en fonction des obstacles et des cibles
     def boucle(self):
         # Crée un message de commande de vitesse
         msg = Twist()
@@ -158,21 +173,6 @@ class RobotSimple(Node):
                 self.get_logger().info('Rotation terminée !')
 
         self.pub.publish(msg)
-
-    # Méthodes pour démarrer un mouvement ou une rotation vers une cible donnée
-    def avancer(self, distance):
-        # Enregistre la position de départ et la direction du mouvement, puis active le flag de mouvement
-        self.start_x = self.x
-        self.start_y = self.y
-        self.avance  = distance >= 0
-        self.distance_cible = distance
-        self.en_mouvement   = True
-
-    def tourner(self, angle_deg):
-        # Enregistre l'orientation de départ et la cible de rotation, puis active le flag de rotation
-        self.start_yaw      = self.yaw
-        self.rotation_cible = math.radians(angle_deg)
-        self.en_rotation    = True
 
 def main():
     # Initialisation du noeud ROS et création de l'instance du robot
@@ -214,6 +214,7 @@ def main():
             # Attendre la fin du mouvement ou l'apparition d'un obstacle
             while robot.en_mouvement:
                 rclpy.spin_once(robot, timeout_sec=0.1)
+                # Condition de sortie du while
                 if robot.obstacle_devant:
                     robot.en_mouvement = False
 
