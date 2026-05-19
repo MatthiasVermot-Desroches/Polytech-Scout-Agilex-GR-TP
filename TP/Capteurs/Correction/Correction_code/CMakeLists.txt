@@ -23,15 +23,8 @@ add_executable(imu_fusion_node src/get_imu_data_for_robot_localization.cpp)
 add_executable(odom_reconstruction src/odom_robot_localization.cpp)
 add_executable(imu_trajectory src/imu_traj.cpp)
 add_executable(odom_no_inte src/odom_no_integration.cpp)
-add_executable(ekf_initializer src/set_pose.cpp)
 add_executable(odom_fixed src/odom_fixed.cpp)
 
-
-ament_target_dependencies(ekf_initializer
-    rclcpp
-    nav_msgs
-    geometry_msgs
-)
 
 
 ament_target_dependencies(imu_fusion_node
@@ -58,12 +51,6 @@ ament_target_dependencies(odom_fixed
   geometry_msgs
 )
 
-ament_target_dependencies(odom_no_inte
-  rclcpp
-  nav_msgs
-  geometry_msgs
-)
-
 ament_target_dependencies(imu_trajectory
   rclcpp
   sensor_msgs
@@ -79,16 +66,6 @@ install(TARGETS
 
 install(TARGETS
   odom_fixed
-  DESTINATION lib/${PROJECT_NAME}
-)
-
-install(TARGETS ekf_initializer
-    DESTINATION lib/${PROJECT_NAME}
-)
-
-
-install(TARGETS
-  odom_no_inte
   DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -113,8 +90,6 @@ install(DIRECTORY launch
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
-  
-
 
   # the following line skips the linter which checks for copyrights
   # comment the line when a copyright and license is added to all source files
