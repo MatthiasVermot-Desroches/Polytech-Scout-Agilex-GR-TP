@@ -19,7 +19,6 @@ find_package(nav_msgs REQUIRED)
 
 add_executable(imu_attitude_node src/get_data.cpp)
 add_executable(imu_fusion_node src/get_imu_data_for_robot_localization.cpp)
-#add_executable(odom_reconstruction src/test_odom_traj.cpp)
 add_executable(odom_reconstruction src/odom_robot_localization.cpp)
 add_executable(imu_trajectory src/imu_traj.cpp)
 add_executable(odom_no_inte src/odom_no_integration.cpp)
