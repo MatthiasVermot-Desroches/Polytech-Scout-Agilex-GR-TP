@@ -1,10 +1,10 @@
-
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from std_msgs.msg import Bool, Header, Float32, Float32MultiArray, Int32MultiArray
 from cv_bridge import CvBridge, CvBridgeError
+from collections import deque
 import cv2
 import numpy as np
 
@@ -40,6 +40,10 @@ class VisionLineNode(Node):
         self.debug_img_pub = self.create_publisher(Image, '/camera/debug_image', 10)
         
         self.derniere_ligne_perdue = "AUCUNE"
+
+        self.nb_frames_accumulation = 5  # Nombre d'images en mémoire
+        self.seuil_persistance = 3       # Un pixel doit être là au moins 3 fois sur 5
+        self.historique_masques = deque(maxlen=self.nb_frames_accumulation)
         
         # ✅ MÉMOIRE : Largeur réelle de la route observée en mode nominal (2 lignes)
         self.largeur_route_memoire = 360  # Valeur par défaut, sera calibrée
@@ -112,7 +116,7 @@ class VisionLineNode(Node):
         if len(indices_blancs) == 0:
             return lignes_x
 
-        # Algorithme de clustering (Groupement)
+        # ──── 1. ALGORITHME DE CLUSTERING (On rassemble les pixels proches) ────
         groupes = []
         groupe_courant = [indices_blancs[0]]
 
@@ -124,8 +128,18 @@ class VisionLineNode(Node):
                 groupe_courant.append(x)
         groupes.append(groupe_courant)
 
-        # Extraction des centres valides
+        # ──── 2. FILTRAGE ET EXTRACTION DES CENTRES ────
         for g in groupes:
+            # Comme le groupe est trié, le début est à l'index 0 et la fin à l'index -1
+            x_debut = g[0]
+            x_fin = g[-1]
+            # largeur_paquet = x_fin - x_debut
+
+            # SÉCURITÉ TAILLE : On vire les bruits (<5px) et la caisse orange (>60px)
+            # if largeur_paquet < 4 or largeur_paquet > 50:
+            #     continue # On ignore ce paquet et on passe au suivant
+
+            # SÉCURITÉ DENSITÉ : Est-ce qu'il y a assez de pixels blancs dedans ?
             if len(g) >= seuil_bruit:
                 lignes_x.append(int(np.mean(g)))
                 
@@ -161,25 +175,29 @@ class VisionLineNode(Node):
         debug_frame = cv_image.copy()
 
         # Configuration des seuils HSV
-        lower_yellow = np.array([10,  50,  60])
-        upper_yellow = np.array([30, 255, 255])
+        lower_yellow = np.array([18,  35,  70])
+        upper_yellow = np.array([32, 255, 255])
 
         # Conversion HSV 
         hsv  = cv2.cvtColor(cv_image, cv2.COLOR_BGR2HSV)
         mask = cv2.inRange(hsv, lower_yellow, upper_yellow)
 
-        # Filtre temporel si activé
-        if hasattr(self, 'historique_masques'):
-            self.historique_masques.append(mask.copy())
-            if len(self.historique_masques) > self.nb_frames_accumulation:
-                self.historique_masques.pop(0)
-            if len(self.historique_masques) == self.nb_frames_accumulation:
-                accumulation = np.zeros_like(mask, dtype=np.uint8)
-                for m in self.historique_masques:
-                    accumulation += (m > 0).astype(np.uint8)
-                mask = np.where(
-                    accumulation >= self.seuil_persistance, 255, 0
-                ).astype(np.uint8)
+        # ---- FILTRE TEMPOREL DE PERSISTANCE ----
+        # 1. On ajoute la copie du masque actuel dans notre rolling-buffer
+        self.historique_masques.append(mask.copy())
+
+        # 2. On calcule le seuil de persistance dynamique (pour le démarrage)
+        # Si on n'a que 2 images en mémoire, on adapte le seuil pour ne pas bloquer le robot
+        ratio_seuil = self.seuil_persistance / self.nb_frames_accumulation
+        seuil_actuel = max(1, int(len(self.historique_masques) * ratio_seuil))
+
+        # 3. Somme vectorisée (Ultra rapide)
+        # On empile les images et on compte combien de fois chaque pixel est à 255
+        bloc_images = np.array(self.historique_masques)
+        accumulation = np.sum(bloc_images == 255, axis=0)
+
+        # 4. On ne garde que les pixels stables (qui dépassent le seuil)
+        mask = np.where(accumulation >= seuil_actuel, 255, 0).astype(np.uint8)
 
 
         # Superposer le masque en vert sur l'image debug
@@ -208,6 +226,7 @@ class VisionLineNode(Node):
         # Extraction des segments principaux L1 et L2
         segment_L1 = mask[Y_L1, X_C[0]:X_C[1]]
         segment_L2 = mask[Y_L2, X_C[0]:X_C[1]]
+        segment_L3 = mask[Y_L3, X_C[0]:X_C[1]]
 
         SEUIL_PRESENCE = 30  # Seuil de pixels blancs
 
@@ -223,21 +242,27 @@ class VisionLineNode(Node):
             cv2.line(debug_frame, (x_start, y), (x_end, y), couleur, 2)
 
         # ──── 3. RECHERCHE ET TRI DES LIGNES PAR LA DROITE ────
-        lignes_x_L1 = self.trouver_centres_ligne(segment_L1, seuil_bruit=5, ecart_max=40, step=X_C[0])
-        lignes_x_L2 = self.trouver_centres_ligne(segment_L2, seuil_bruit=5, ecart_max=40, step=X_C[0])
+        lignes_x_L1 = self.trouver_centres_ligne(segment_L1, seuil_bruit=5, ecart_max=30, step=X_C[0])
+        lignes_x_L2 = self.trouver_centres_ligne(segment_L2, seuil_bruit=5, ecart_max=30, step=X_C[0])
+        lignes_x_L3 = self.trouver_centres_ligne(segment_L3, seuil_bruit=5, ecart_max=30, step=X_C[0])
 
         # LE SECRET : On trie par ordre décroissant (Du plus grand X au plus petit X -> de Droite à Gauche)
         lignes_L1_droite = sorted(lignes_x_L1, reverse=True)
         lignes_L2_droite = sorted(lignes_x_L2, reverse=True)
+        lignes_L3_droite = sorted(lignes_x_L3, reverse=True)
+
 
         nb_lignes_L1 = len(lignes_L1_droite)
         nb_lignes_L2 = len(lignes_L2_droite)
+        nb_lignes_L3 = len(lignes_L3_droite)
 
         # Dessins des lignes détectées (Points Jaunes pour L1, Points Cyan pour L2)
         for x in lignes_L1_droite:
             cv2.circle(debug_frame, (int(x), int(Y_L1)), 8, (0, 255, 255), -1)
         for x in lignes_L2_droite:
             cv2.circle(debug_frame, (int(x), int(Y_L2)), 8, (255, 255, 0), -1)
+        for x in lignes_L3_droite:
+            cv2.circle(debug_frame, (int(x), int(Y_L3)), 8, (255, 0, 255), -1)
 
         # ──── 4. GESTION DES PUBLICATIONS ROS 2 STANDARD ────
         ordre_fixe = ['L1', 'L2', 'L2G', 'L2D', 'L3', 'L3G', 'L3D']
@@ -246,7 +271,7 @@ class VisionLineNode(Node):
         self.route_pub.publish(Int32MultiArray(data=[route_detectee[z] for z in ordre_fixe]))
 
         # Sécurité : Si aucune ligne n'est visible nulle part sur L1 et L2 -> Arrêt d'urgence
-        route_vitale_visible = (nb_lignes_L1 > 0 or nb_lignes_L2 > 0)
+        route_vitale_visible = (nb_lignes_L1 > 0 or nb_lignes_L2 > 0 or nb_lignes_L3 > 0)
         self.lost_pub.publish(Bool(data=not route_vitale_visible))
 
         if not route_vitale_visible:
@@ -261,6 +286,7 @@ class VisionLineNode(Node):
         erreur_calculer = 0.0
         route_L1_complete = (nb_lignes_L1 >= 2)
         route_L2_complete = (nb_lignes_L2 >= 2)
+        route_L3_complete = (nb_lignes_L3 >= 2)
 
         # CONDITION A : Route détectée sur L1 ET L2
         if route_L1_complete and route_L2_complete:
@@ -300,7 +326,14 @@ class VisionLineNode(Node):
             
             cv2.circle(debug_frame, (int(centre_L2), int(Y_L2)), 5, (255, 0, 0), -1)
 
-        # CONDITION D : Mode dégradé (Moins de 2 lignes partout -> Simulation de la ligne perdue)
+        # CONDITION D : Route détectée sur L3 uniquement (Cas très dégradé, on se fie à la ligne la plus à droite de L3)
+        elif route_L3_complete and not route_L1_complete and not route_L2_complete:
+            centre_L3 = (lignes_L3_droite[0] + lignes_L3_droite[1]) // 2
+            erreur_calculer = float(centre_L3 - CENTRE_IMAGE)
+            
+            cv2.circle(debug_frame, (int(centre_L3), int(Y_L3)), 5, (255, 0, 0), -1)
+
+        # CONDITION E : Mode dégradé (Moins de 2 lignes partout -> Simulation de la ligne perdue)
         else:
             demi_largeur = self.largeur_route_memoire / 2
 
