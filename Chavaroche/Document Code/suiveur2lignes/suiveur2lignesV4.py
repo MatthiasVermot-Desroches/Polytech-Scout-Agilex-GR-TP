@@ -9,6 +9,9 @@ import math
 
 class RobotSimple(Node):
     def __init__(self):
+
+        time.sleep(2.0)  # Attente pour s'assurer que tous les nœuds sont prêts (notamment la caméra)
+
         super().__init__('control_line_node')
 
         self.pub        = self.create_publisher(Twist, '/cmd_vel', 10)
@@ -51,7 +54,7 @@ class RobotSimple(Node):
         # Timer unique pour initialiser l'exposition après démarrage
         self.timer_init = self.create_timer(2.0, self.init_exposition)
 
-        self.test_mode = False  # Mettre à True pour forcer les vitesses à 0
+        self.test_mode = True  # Mettre à True pour forcer les vitesses à 0
         self.timer = self.create_timer(1 if self.test_mode else 0.1, self.boucle)
 
         self.get_logger().info("Mode test :" + ("Activé, la boucle est ralentie" if self.test_mode else "Désactivé"))
