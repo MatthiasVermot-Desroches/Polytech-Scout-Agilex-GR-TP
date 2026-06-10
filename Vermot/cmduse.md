@@ -10,3 +10,6 @@ sol : modif gr_p247.urdf.xacro dans le pkg gr_description :
   <xacro:phidget_spatial prefix="$(arg prefix)" parent="$(arg prefix)bottom_box_link" >
     <origin xyz="0.0 0.0 0.050" rpy="${pi} 0 0"/>
   </xacro:phidget_spatial>
+
+ros2 run tf2_ros static_transform_publisher \
+0.164 0 0 0 0 0 base_link gps_antenna_link
