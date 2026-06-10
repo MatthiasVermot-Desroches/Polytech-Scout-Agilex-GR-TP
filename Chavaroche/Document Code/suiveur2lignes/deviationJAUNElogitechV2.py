@@ -35,8 +35,6 @@ class VisionLineNode(Node):
         self.route_pub = self.create_publisher(Int32MultiArray, '/camera/zones_route', 10)
         self.lost_pub = self.create_publisher(Bool, '/line_tracking/route_perdue', 10)
         self.single_line_pub = self.create_publisher(Bool, '/line_tracking/ligne_unique', 10)
-        
-        # NOUVEAU PUBLISHER : Rendu visuel en temps réel pour Foxglove ou Rviz
         self.debug_img_pub = self.create_publisher(Image, '/camera/debug_image', 10)
         
         self.derniere_ligne_perdue = "AUCUNE"
@@ -45,78 +43,20 @@ class VisionLineNode(Node):
         self.seuil_persistance = 3       # Un pixel doit être là au moins 3 fois sur 5
         self.historique_masques = deque(maxlen=self.nb_frames_accumulation)
         
-        # ✅ MÉMOIRE : Largeur réelle de la route observée en mode nominal (2 lignes)
-        self.largeur_route_memoire = 360  # Valeur par défaut, sera calibrée
+        # ✅ AJUSTEMENT À TON ÉCHELLE (Proportionnel à tes 360px d'origine)
+        self.largeurs_memoire = {
+            'L1': 540,  # Palier bas (Ta valeur nominale)
+            'L2': 450,  # Palier milieu (Éléments plus éloignés donc plus étroits)
+            'L3': 310   # Palier haut
+        }
 
-    def filtrer_jaune_pur(self, cv_image):
-        hsv = cv2.cvtColor(cv_image, cv2.COLOR_BGR2HSV)
-        h, s, v = cv2.split(hsv)
-
-        # Masque de base
-        mask_base = cv2.inRange(hsv,
-            np.array([10, 50, 60]),
-            np.array([30, 255, 255]))
-
-        # Saturation dynamique
-        pixels_jaunes = s[mask_base == 255]
-        if len(pixels_jaunes) == 0:
-            return mask_base
-
-        saturation_mediane = np.median(pixels_jaunes)
-        seuil_s = max(80, saturation_mediane * 0.6)
-
-        mask_strict = cv2.inRange(hsv,
-            np.array([10, int(seuil_s), 80]),
-            np.array([30, 255, 255]))
-
-        # Morphologie légère
-        kernel = np.ones((3, 3), np.uint8)
-        mask_strict = cv2.morphologyEx(mask_strict, cv2.MORPH_OPEN,  kernel)
-        mask_strict = cv2.morphologyEx(mask_strict, cv2.MORPH_CLOSE, kernel)
-
-        # ── NOUVEAU : filtre par taille de contour ──────────────────────────
-        # Une ligne de scotch fait ~10-25px de large max
-        # Un reflet fait 100-300px de large → on l'élimine
-        contours, _ = cv2.findContours(
-            mask_strict, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-
-        mask_filtre = np.zeros_like(mask_strict)
-
-        for cnt in contours:
-            x, y, w, h_box = cv2.boundingRect(cnt)
-            aire = cv2.contourArea(cnt)
-
-            # Filtres :
-            # 1. Largeur max 40px — une ligne de scotch ne fait pas plus
-            # 2. Hauteur min 20px — une vraie ligne est longue
-            # 3. Ratio longueur/largeur > 3 — une ligne est élancée, un reflet est rond/carré
-            if w == 0 or h_box == 0:
-                continue
-
-            ratio = max(w, h_box) / min(w, h_box)
-
-            self.get_logger().info(
-                f"Contour w={w} h={h_box} ratio={ratio:.1f} aire={aire:.0f}",
-                throttle_duration_sec=0.1)
-
-            # w       # ← largeur max du scotch en pixels, augmente si trop strict
-            # h_box   # ← longueur min, baisse si lignes courtes
-            # ratio   # ← forme élancée, baisse à 2 si virages serrés coupent les lignes
-            # aire    # ← surface min, baisse si lignes très fines
-
-            if w <= 60 and h_box >= 4 and ratio >= 3 and aire >= 20:
-                cv2.drawContours(mask_filtre, [cnt], -1, 255, -1)
-
-        return mask_filtre
-
-    def trouver_centres_ligne(self, masque_ligne, seuil_bruit=5, ecart_max=40, step=0):
+    def trouver_centres_ligne(self, masque_ligne, seuil_bruit=5, ecart_max=30, step=0):
         indices_blancs = np.where(masque_ligne == 255)[0] + step
         lignes_x = []
 
         if len(indices_blancs) == 0:
             return lignes_x
 
-        # ──── 1. ALGORITHME DE CLUSTERING (On rassemble les pixels proches) ────
         groupes = []
         groupe_courant = [indices_blancs[0]]
 
@@ -128,25 +68,52 @@ class VisionLineNode(Node):
                 groupe_courant.append(x)
         groupes.append(groupe_courant)
 
-        # ──── 2. FILTRAGE ET EXTRACTION DES CENTRES ────
         for g in groupes:
-            # Comme le groupe est trié, le début est à l'index 0 et la fin à l'index -1
             x_debut = g[0]
             x_fin = g[-1]
-            # largeur_paquet = x_fin - x_debut
+            largeur_paquet = x_fin - x_debut
 
-            # SÉCURITÉ TAILLE : On vire les bruits (<5px) et la caisse orange (>60px)
-            # if largeur_paquet < 4 or largeur_paquet > 50:
-            #     continue # On ignore ce paquet et on passe au suivant
+            # ✅ CORRECTION : On vire uniquement les bruits minuscules (< 3px). 
+            # On ne plafonne plus ici, la perspective s'en chargera plus tard.
+            if largeur_paquet < 3:
+                continue 
 
-            # SÉCURITÉ DENSITÉ : Est-ce qu'il y a assez de pixels blancs dedans ?
             if len(g) >= seuil_bruit:
                 lignes_x.append(int(np.mean(g)))
                 
         return lignes_x
+
+    # ──── NOUVEAU : FONCTION DE FILTRAGE ANTI-REFLET ET VÉRIFICATION GÉOMÉTRIQUE ────
+    def filtrer_paire_par_largeur(self, liste_lignes, nom_palier, tolerance=0.35):
+        """
+        Explore toutes les combinaisons de lignes détectées et retourne le premier couple
+        (droite, gauche) dont la largeur correspond à la mémoire de ce palier.
+        """
+        nb_lignes = len(liste_lignes)
+        if nb_lignes < 2:
+            return None, None, False
+
+        largeur_cible = self.largeurs_memoire[nom_palier]
+        largeur_min = largeur_cible * (1.0 - tolerance)
+        largeur_max = largeur_cible * (1.0 + tolerance)
+
+        # Double boucle pour tester toutes les paires possibles
+        for i in range(nb_lignes):
+            for j in range(i + 1, nb_lignes):
+                cand_droite = liste_lignes[i]
+                cand_gauche = liste_lignes[j]
+                largeur_calculee = cand_droite - cand_gauche
+
+                # Si la largeur calculée entre dans nos critères géométriques
+                if largeur_min <= largeur_calculee <= largeur_max:
+                    # Mise à jour douce de la mémoire (Filtre passe-bas)
+                    self.largeurs_memoire[nom_palier] = int(0.9 * largeur_cible + 0.1 * largeur_calculee)
+                    return cand_droite, cand_gauche, True
+
+        # Aucune paire ne correspond à la structure d'une route
+        return None, None, False
     
     def image_callback(self, msg):
-
         POIDS_L1 = 0.3
         POIDS_L2 = 0.7
 
@@ -160,118 +127,114 @@ class VisionLineNode(Node):
             self.get_logger().error(f"Erreur de conversion CvBridge: {e}")
             return
 
-        # cv_image = cv_image[280:, :].copy()
-
         height, width, _ = cv_image.shape  
-
         CENTRE_IMAGE = width / 2  
-        int_CENTRE_IMAGE = int(CENTRE_IMAGE)
 
         Y_L3 = 170 
         Y_L2 = 320 
         Y_L1 = 450 
 
-        # --- NOUVEAU : On crée une copie de l'image d'origine pour dessiner nos repères ---
         debug_frame = cv_image.copy()
 
-        # Configuration des seuils HSV
         lower_yellow = np.array([18,  35,  70])
         upper_yellow = np.array([32, 255, 255])
 
-        # Conversion HSV 
         hsv  = cv2.cvtColor(cv_image, cv2.COLOR_BGR2HSV)
         mask = cv2.inRange(hsv, lower_yellow, upper_yellow)
 
         # ---- FILTRE TEMPOREL DE PERSISTANCE ----
-        # 1. On ajoute la copie du masque actuel dans notre rolling-buffer
         self.historique_masques.append(mask.copy())
-
-        # 2. On calcule le seuil de persistance dynamique (pour le démarrage)
-        # Si on n'a que 2 images en mémoire, on adapte le seuil pour ne pas bloquer le robot
         ratio_seuil = self.seuil_persistance / self.nb_frames_accumulation
         seuil_actuel = max(1, int(len(self.historique_masques) * ratio_seuil))
 
-        # 3. Somme vectorisée (Ultra rapide)
-        # On empile les images et on compte combien de fois chaque pixel est à 255
         bloc_images = np.array(self.historique_masques)
         accumulation = np.sum(bloc_images == 255, axis=0)
-
-        # 4. On ne garde que les pixels stables (qui dépassent le seuil)
         mask = np.where(accumulation >= seuil_actuel, 255, 0).astype(np.uint8)
-
 
         # Superposer le masque en vert sur l'image debug
         mask_rgb = cv2.cvtColor(mask, cv2.COLOR_GRAY2BGR)
-        mask_rgb[:,:,0] = 0   # enlever rouge
-        mask_rgb[:,:,2] = 0   # enlever bleu
+        mask_rgb[:,:,0] = 0   
+        mask_rgb[:,:,2] = 0   
         debug_frame = cv2.addWeighted(debug_frame, 1.0, mask_rgb, 0.5, 0)
 
-
-        # ──── 1. DEFINITION GÉOMÉTRIQUE DES ZONES ────
-        w_step = width // 10
+        # ──── DEFINITION GÉOMÉTRIQUE DES ZONES ────
         step = width - 1
-        X_G, X_C, X_D, X_Full = (0, 1), (1, step), (step, width), (0, width)
+        X_G, X_C, X_D = (0, 1), (1, step), (step, width)
 
         masses = {}
         route_detectee = {}
-        centres_x = {}
 
-        # Les partitions pour les topics d'état (on conserve ta structure de dictionnaire)
         partitions = {
             'L3G': (Y_L3, X_G), 'L3': (Y_L3, X_C), 'L3D': (Y_L3, X_D),
             'L2G': (Y_L2, X_G), 'L2': (Y_L2, X_C), 'L2D': (Y_L2, X_D),
-            'L1':  (Y_L1, X_C)  # Harmonisé sur X_C pour éviter le bruit des bords de l'image
+            'L1':  (Y_L1, X_C)  
         }
 
-        # Extraction des segments principaux L1 et L2
         segment_L1 = mask[Y_L1, X_C[0]:X_C[1]]
         segment_L2 = mask[Y_L2, X_C[0]:X_C[1]]
         segment_L3 = mask[Y_L3, X_C[0]:X_C[1]]
 
-        SEUIL_PRESENCE = 30  # Seuil de pixels blancs
+        SEUIL_PRESENCE = 30  
 
-        # ──── 2. BOUCLE DE DIAGNOSTIC DES ZONES (MASSES & ETATS) ────
         for nom, (y, (x_start, x_end)) in partitions.items():
             segment = mask[y, x_start:x_end].copy()
             masse = int(np.sum(segment == 255))
             masses[nom] = float(masse)
             route_detectee[nom] = 1 if masse > SEUIL_PRESENCE else 0
 
-            # Rendu visuel des rectangles de partition (Vert si détecté, Rouge sinon)
             couleur = (0, 255, 0) if route_detectee[nom] == 1 else (0, 0, 255)
             cv2.line(debug_frame, (x_start, y), (x_end, y), couleur, 2)
 
-        # ──── 3. RECHERCHE ET TRI DES LIGNES PAR LA DROITE ────
+        # ──── RECHERCHE ET TRI DES LIGNES PAR LA DROITE ────
         lignes_x_L1 = self.trouver_centres_ligne(segment_L1, seuil_bruit=5, ecart_max=30, step=X_C[0])
         lignes_x_L2 = self.trouver_centres_ligne(segment_L2, seuil_bruit=5, ecart_max=30, step=X_C[0])
         lignes_x_L3 = self.trouver_centres_ligne(segment_L3, seuil_bruit=5, ecart_max=30, step=X_C[0])
 
-        # LE SECRET : On trie par ordre décroissant (Du plus grand X au plus petit X -> de Droite à Gauche)
         lignes_L1_droite = sorted(lignes_x_L1, reverse=True)
         lignes_L2_droite = sorted(lignes_x_L2, reverse=True)
         lignes_L3_droite = sorted(lignes_x_L3, reverse=True)
 
+        # ✅ FILTRAGE GEOMETRIQUE : Extraction des vraies routes immunisées contre les reflets
+        droite_L1, gauche_L1, route_L1_complete = self.filtrer_paire_par_largeur(lignes_L1_droite, 'L1')
+        droite_L2, gauche_L2, route_L2_complete = self.filtrer_paire_par_largeur(lignes_L2_droite, 'L2')
+        droite_L3, gauche_L3, route_L3_complete = self.filtrer_paire_par_largeur(lignes_L3_droite, 'L3')
 
+        # Comptages bruts pour l'affichage et la sécurité
         nb_lignes_L1 = len(lignes_L1_droite)
         nb_lignes_L2 = len(lignes_L2_droite)
-        nb_lignes_L3 = len(lignes_L3_droite)
 
-        # Dessins des lignes détectées (Points Jaunes pour L1, Points Cyan pour L2)
+        # Dessins des centres bruts détectés pour le débug (petits cercles transparents)
+        # --- PALIER L1 (Thème Jaune) ---
         for x in lignes_L1_droite:
-            cv2.circle(debug_frame, (int(x), int(Y_L1)), 8, (0, 255, 255), -1)
-        for x in lignes_L2_droite:
-            cv2.circle(debug_frame, (int(x), int(Y_L2)), 8, (255, 255, 0), -1)
-        for x in lignes_L3_droite:
-            cv2.circle(debug_frame, (int(x), int(Y_L3)), 8, (255, 0, 255), -1)
+            # Si la route L1 est complète ET que ce point est l'un des deux retenus
+            if route_L1_complete and (x == droite_L1 or x == gauche_L1):
+                cv2.circle(debug_frame, (int(x), int(Y_L1)), 9, (120, 255, 255), -1)  # Jaune très clair/Brillant
+            else:
+                cv2.circle(debug_frame, (int(x), int(Y_L1)), 4, (0, 100, 100), -1)    # Jaune foncé/Olive (Rejeté)
 
-        # ──── 4. GESTION DES PUBLICATIONS ROS 2 STANDARD ────
+        # --- PALIER L2 (Thème Cyan) ---
+        for x in lignes_L2_droite:
+            # Si la route L2 est complète ET que ce point est l'un des deux retenus
+            if route_L2_complete and (x == droite_L2 or x == gauche_L2):
+                cv2.circle(debug_frame, (int(x), int(Y_L2)), 9, (255, 255, 130), -1)  # Cyan très clair/Brillant
+            else:
+                cv2.circle(debug_frame, (int(x), int(Y_L2)), 4, (100, 100, 0), -1)    # Cyan foncé/Bleu nuit (Rejeté)
+
+        # --- PALIER L3 (Thème Magenta) ---
+        for x in lignes_L3_droite:
+            # Si la route L3 est complète ET que ce point est l'un des deux retenus
+            if route_L3_complete and (x == droite_L3 or x == gauche_L3):
+                cv2.circle(debug_frame, (int(x), int(Y_L3)), 9, (255, 130, 255), -1)  # Magenta très clair/Brillant
+            else:
+                cv2.circle(debug_frame, (int(x), int(Y_L3)), 4, (100, 0, 100), -1)    # Magenta foncé/Violine (Rejeté)
+
+        # ──── GESTION DES PUBLICATIONS ROS 2 STANDARD ────
         ordre_fixe = ['L1', 'L2', 'L2G', 'L2D', 'L3', 'L3G', 'L3D']
-        
         self.masse_pub.publish(Float32MultiArray(data=[masses[z] for z in ordre_fixe]))
         self.route_pub.publish(Int32MultiArray(data=[route_detectee[z] for z in ordre_fixe]))
 
-        # Sécurité : Si aucune ligne n'est visible nulle part sur L1 et L2 -> Arrêt d'urgence
-        route_vitale_visible = (nb_lignes_L1 > 0 or nb_lignes_L2 > 0 or nb_lignes_L3 > 0)
+        # Sécurité : On est perdu si aucune route complète n'est validée ET aucune ligne unique n'est exploitable
+        route_vitale_visible = (route_L1_complete or route_L2_complete or route_L3_complete or nb_lignes_L1 == 1 or nb_lignes_L2 == 1)
         self.lost_pub.publish(Bool(data=not route_vitale_visible))
 
         if not route_vitale_visible:
@@ -280,66 +243,48 @@ class VisionLineNode(Node):
             self.publier_image_debug(debug_frame)
             return
 
-        self.single_line_pub.publish(Bool(data=(nb_lignes_L1 == 1)))
+        self.single_line_pub.publish(Bool(data=(not route_L1_complete and nb_lignes_L1 == 1)))
 
-        # ──── 5. NOUVEL ARBRE DE DÉCISION (LOGIQUE DEMANDÉE) ────
-        erreur_calculer = 0.0
-        route_L1_complete = (nb_lignes_L1 >= 2)
-        route_L2_complete = (nb_lignes_L2 >= 2)
-        route_L3_complete = (nb_lignes_L3 >= 2)
-
-        # CONDITION A : Route détectée sur L1 ET L2
+        # ──── TREE DE DÉCISION NETTOYÉ ET SÉCURISÉ ────
+        
+        # CONDITION A : Route validée sur L1 ET L2
         if route_L1_complete and route_L2_complete:
-            # On prend les 2 lignes les plus à droite pour chaque niveau
-            centre_L1 = (lignes_L1_droite[0] + lignes_L1_droite[1]) // 2
-            centre_L2 = (lignes_L2_droite[0] + lignes_L2_droite[1]) // 2
+            centre_L1 = (droite_L1 + gauche_L1) // 2
+            centre_L2 = (droite_L2 + gauche_L2) // 2
 
             err_L1 = float(centre_L1 - CENTRE_IMAGE)
             err_L2 = float(centre_L2 - CENTRE_IMAGE)
             erreur_calculer = (POIDS_L1 * err_L1) + (POIDS_L2 * err_L2)
 
-            # Mémorisation de la largeur de la route active (via L1)
-            largeur_L1 = abs(lignes_L1_droite[0] - lignes_L1_droite[1])
-            if 200 < largeur_L1 < 500:
-                self.largeur_route_memoire = (0.7 * self.largeur_route_memoire + 0.3 * largeur_L1)
+            # Dessin du couloir de guidage validé
+            cv2.line(debug_frame, (int(centre_L1), int(Y_L1)), (int(centre_L2), int(Y_L2)), (255, 255, 255), 3)
+            cv2.circle(debug_frame, (int(centre_L1), int(Y_L1)), 8, (255, 0, 0), -1)
+            cv2.circle(debug_frame, (int(centre_L2), int(Y_L2)), 8, (255, 0, 0), -1)
 
-            # Dessin de la ligne de guidage blanche au sol
-            cv2.line(debug_frame, (int(centre_L1), int(Y_L1)), (int(CENTRE_IMAGE), int(Y_L1)), (255, 255, 255), 2)
-            cv2.circle(debug_frame, (int(centre_L1), int(Y_L1)), 5, (255, 0, 0), -1)
-            cv2.circle(debug_frame, (int(centre_L2), int(Y_L2)), 5, (255, 0, 0), -1)
-
-        # CONDITION B : Route détectée sur L1 uniquement
-        elif route_L1_complete and not route_L2_complete:
-            centre_L1 = (lignes_L1_droite[0] + lignes_L1_droite[1]) // 2
+        # CONDITION B : Route validée sur L1 uniquement
+        elif route_L1_complete:
+            centre_L1 = (droite_L1 + gauche_L1) // 2
             erreur_calculer = float(centre_L1 - CENTRE_IMAGE)
+            cv2.circle(debug_frame, (int(centre_L1), int(Y_L1)), 8, (255, 0, 0), -1)
 
-            largeur_L1 = abs(lignes_L1_droite[0] - lignes_L1_droite[1])
-            if 200 < largeur_L1 < 500:
-                self.largeur_route_memoire = (0.7 * self.largeur_route_memoire + 0.3 * largeur_L1)
-            
-            cv2.circle(debug_frame, (int(centre_L1), int(Y_L1)), 5, (255, 0, 0), -1)
-
-        # CONDITION C : Route détectée sur L2 uniquement
-        elif route_L2_complete and not route_L1_complete:
-            centre_L2 = (lignes_L2_droite[0] + lignes_L2_droite[1]) // 2
+        # CONDITION C : Route validée sur L2 uniquement
+        elif route_L2_complete:
+            centre_L2 = (droite_L2 + gauche_L2) // 2
             erreur_calculer = float(centre_L2 - CENTRE_IMAGE)
-            
-            cv2.circle(debug_frame, (int(centre_L2), int(Y_L2)), 5, (255, 0, 0), -1)
+            cv2.circle(debug_frame, (int(centre_L2), int(Y_L2)), 8, (255, 0, 0), -1)
 
-        # CONDITION D : Route détectée sur L3 uniquement (Cas très dégradé, on se fie à la ligne la plus à droite de L3)
-        elif route_L3_complete and not route_L1_complete and not route_L2_complete:
-            centre_L3 = (lignes_L3_droite[0] + lignes_L3_droite[1]) // 2
+        # CONDITION D : Route validée sur L3 uniquement
+        elif route_L3_complete:
+            centre_L3 = (droite_L3 + gauche_L3) // 2
             erreur_calculer = float(centre_L3 - CENTRE_IMAGE)
-            
-            cv2.circle(debug_frame, (int(centre_L3), int(Y_L3)), 5, (255, 0, 0), -1)
+            cv2.circle(debug_frame, (int(centre_L3), int(Y_L3)), 8, (255, 0, 0), -1)
 
-        # CONDITION E : Mode dégradé (Moins de 2 lignes partout -> Simulation de la ligne perdue)
+        # CONDITION E : Mode dégradé (1 seule ligne isolée, pas de paire valide trouvée)
         else:
-            demi_largeur = self.largeur_route_memoire / 2
-
-            # Option 1 : On se rabat sur la ligne unique de L1 si elle existe
+            # On utilise la ligne unique de L1 si disponible
             if nb_lignes_L1 == 1:
                 unique_x = lignes_L1_droite[0]
+                demi_largeur = self.largeurs_memoire['L1'] / 2
                 if unique_x > CENTRE_IMAGE:
                     self.derniere_ligne_perdue = "GAUCHE"
                     erreur_calculer = float((unique_x - demi_largeur) - CENTRE_IMAGE)
@@ -347,9 +292,10 @@ class VisionLineNode(Node):
                     self.derniere_ligne_perdue = "DROITE"
                     erreur_calculer = float((unique_x + demi_largeur) - CENTRE_IMAGE)
 
-            # Option 2 : Sinon, on se rabat sur la ligne unique de L2
+            # Sinon on se rabat sur la ligne unique de L2
             elif nb_lignes_L2 == 1:
                 unique_x = lignes_L2_droite[0]
+                demi_largeur = self.largeurs_memoire['L2'] / 2
                 if unique_x > CENTRE_IMAGE:
                     self.derniere_ligne_perdue = "GAUCHE"
                     erreur_calculer = float((unique_x - demi_largeur) - CENTRE_IMAGE)
@@ -362,11 +308,10 @@ class VisionLineNode(Node):
                 throttle_duration_sec=1.0
             )
 
-        # ──── 6. COUCHE VISUELLE FINALE (REPERES) ────
-        # Correction syntaxique : Remplacement des 'int_CENTRE_IMAGE' défectueux par 'int(CENTRE_IMAGE)'
+        # ──── COUCHE VISUELLE FINALE (REPERES) ────
         cv2.line(debug_frame, (int(CENTRE_IMAGE), 0), (int(CENTRE_IMAGE), height), (255, 0, 255), 1) # Axe central rose
         
-        texte_mode = f"L1: {nb_lignes_L1} L2: {nb_lignes_L2} | Erreur: {erreur_calculer:.1f}"
+        texte_mode = f"Validé -> L1: {route_L1_complete} L2: {route_L2_complete} | Erreur: {erreur_calculer:.1f}"
         cv2.putText(debug_frame, texte_mode, (15, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
 
         # Envoi de l'erreur calculée au nœud de commande
@@ -377,6 +322,8 @@ class VisionLineNode(Node):
         # Envoi final de l'image annotée vers le topic de débug
         self.publier_image_debug(debug_frame)
 
+    def Santize_coordinates(self, value, max_val):
+        return int(max(0, min(value, max_val)))
 
     def publier_image_debug(self, frame):
         """Convertit l'image de débug OpenCV et la publie sur le topic ROS 2."""
