@@ -44,7 +44,7 @@ class RobotSimple(Node):
   
     def angle_parcouru(self):
         # Calcul de l'angle parcouru à partir de la position actuelle et de la position de départ
-        return math.atan2(self.y - self.start_y, self.x - self.start_x)
+        return math.atan2(math.sin(self.yaw - self.start_yaw), math.cos(self.yaw - self.start_yaw)) 
 
     def boucle(self):
         msg = Twist()
@@ -59,10 +59,8 @@ class RobotSimple(Node):
                 self.en_mouvement = False
                 self.get_logger().info('Arrivé !')
       
-        if self.en_rotation:
-            angle_parcouru = self.yaw - self.start_yaw            
-            angle_parcouru = math.atan2(math.sin(angle_parcouru), math.cos(angle_parcouru))            
-            if abs(angle_parcouru) < abs(self.target_angle):
+        if self.en_rotation:                      
+            if abs(self.angle_parcouru()) < abs(self.target_angle):
                 msg.angular.z = 0.4 if self.target_angle > 0 else -0.4
             else:
                 msg.angular.z = 0.0
