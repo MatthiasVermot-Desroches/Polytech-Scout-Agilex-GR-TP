@@ -43,8 +43,12 @@ class RobotSimple(Node):
 
   
     def angle_parcouru(self):
-        # Calcul de l'angle parcouru à partir de la position actuelle et de la position de départ
-        return math.atan2(math.sin(self.yaw - self.start_yaw), math.cos(self.yaw - self.start_yaw)) 
+        diff = self.yaw - self.start_yaw
+        while diff > math.pi:
+            diff -= 2 * math.pi
+        while diff < -math.pi:
+            diff += 2 * math.pi
+        return diff
 
     def boucle(self):
         msg = Twist()
@@ -74,30 +78,30 @@ class RobotSimple(Node):
     def avancer(self, distance):
         self.start_x = self.x
         self.start_y = self.y
-        if distance < 0:
-            self.avance = False
-        else:
-            self.avance = True
+        self.avance = distance >= 0
         self.distance_cible = distance
         self.en_mouvement = True
 
-
     def tourner(self, angle_deg):
-        self.target_angle = math.radians(angle_deg) # Conversion en radians
-        self.start_yaw = self.yaw                   # On mémorise l'angle de départ
+        self.target_angle = math.radians(angle_deg)
+        self.start_yaw = self.yaw                  
         self.en_rotation = True
 
 
 def main():
-
     rclpy.init()
     robot = RobotSimple()
+
     rclpy.spin_once(robot, timeout_sec=1.0)  # attendre odom
 
-
     while rclpy.ok():
-        distance = float(input("Combien de mètres ? "))
-        rotation = float(input("Combien de degrés ? "))
+        # On utilise try/except pour éviter les crashs si l'utilisateur entre une valeur non numérique
+        try:
+            distance = float(input("Combien de mètres ? "))
+            rotation = float(input("Combien de degrés ? "))
+        except ValueError:
+            print('Valeur invalide.')
+            continue
 
         robot.avancer(distance)
         while robot.en_mouvement and rclpy.ok():
