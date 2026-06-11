@@ -74,9 +74,7 @@ class RobotSimple(Node):
         )
 
     def angle_parcouru(self):
-        # Différence entre yaw actuel et yaw de départ
         diff = self.yaw - self.start_yaw
-        # Normaliser entre -pi et pi
         while diff > math.pi:
             diff -= 2 * math.pi
         while diff < -math.pi:
