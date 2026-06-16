@@ -2,107 +2,106 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
-from nav_msgs.msg import Odometry
-from sensor_msgs.msg import PointCloud2
-import sensor_msgs_py.point_cloud2 as pc2
-import math
-from sensor_msgs.msg import Image
 from std_msgs.msg import Float32
-from cv_bridge import CvBridge, CvBridgeError
-import cv2
-import numpy as np
+import time  # Correction du bug d'import
 
-class RobotSimple(Node):
+class RobotSimpleFSM(Node):
     def __init__(self):
         super().__init__('control_line_node')
+        
         # Publisher pour les commandes de vitesse
         self.pub = self.create_publisher(Twist, '/cmd_vel', 10)
-        # Subscriptions pour l'odométrie et le LiDAR
-        #self.sub = self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
-        #self.sub_lidar = self.create_subscription(PointCloud2, '/rslidar_points', self.lidar_callback, 10)
-        # Dans le subscriber, on retrouve le type de donnée (ici PointCloud2) et le nom du topic (ici /rslidar_points) ainsi que la fonction de callback (ici lidar_callback) et la taille de la file d'attente (ici 10)
-        # La file d'attente est utilisée pour stocker les messages reçus lorsque le robot ne peut pas les traiter immédiatement. Si la file d'attente est pleine, les messages les plus anciens seront supprimés pour faire de la place aux nouveaux.
-
-        # Abonnement au flux RGB de la RealSense D435
+        
+        # Abonnement à l'erreur du noeud de vision simple
         self.image_sub = self.create_subscription(Float32, '/line_tracking/error', self.error_callback, 10)
-        # Ajuste le topic si ton driver utilise un autre nom
 
-        # Timer pour la boucle principale, appelée à 10Hz
+        # Timer pour la boucle principale à 10Hz
         self.timer = self.create_timer(0.1, self.boucle)
 
+        # Variables de contrôle
         self.error = 0.0
-        self.current_error = 0.0
         self.last_error = 0.0
-
-        gain_kp = 0.002
-        gain_kd = 0.001
-
-        self.new_time = 0.0
         self.last_time = time.time()
 
+        # Gains du correcteur PD (Correction du bug de portée avec self.)
+        self.gain_kp = 0.0025
+        self.gain_kd = 0.0012
+
+        # Variable d'état pour la FSM : "LIGNE_DROITE", "VIRAGE_BRUSQUE", "DEMI_TOUR"
+        self.etat_actuel = "LIGNE_DROITE"
+        self.get_logger().info("Noeud de commande FSM prêt.")
+
     def error_callback(self, msg):
-        # Met à jour l'erreur de suivi de ligne à partir du message reçu
         self.error = msg.data
-        return
 
-    # Boucle principale appelée à 10Hz par le timer, qui gère les mouvements et les rotations en fonction des obstacles et des cibles
     def boucle(self):
-        # Crée un message de commande de vitesse
         msg = Twist()
-
-        # calcul de dérivé de l'erreur : erreur actuelle - erreur précédente, divisé par le temps écoulé entre les deux mesures
-
-        # ce dt représente le temps écoulé entre deux appels de la boucle
-        self.new_time = time.time()
-        dt = self.new_time - self.last_time
+        
+        # Calcul du pas de temps (dt)
+        new_time = time.time()
+        dt = new_time - self.last_time
         self.last_time = new_time
+        if dt <= 0.0: dt = 0.1
 
-        # Parce que j'ai peur que le refresh time du callback soit différent du refresh time de la boucle
-        self.current_error = self.error
-        delta_error = self.current_error - self.last_error
+        # Calcul du PID (Termes Proportionnel et Dérivé)
+        delta_error = self.error - self.last_error
         self.last_error = self.error
 
-        # Calcule de mes correcteures P et D
-                    
-        P_Correcteur = gain_kp * self.error 
-        D_Correcteur = gain_kd * (delta_error)  / dt
+        P_Correcteur = self.gain_kp * self.error
+        D_Correcteur = self.gain_kd * (delta_error / dt)
+        
+        # Commande angulaire de base
+        commande_angulaire = - (P_Correcteur + D_Correcteur)
 
-        Correction_totale = P_Correcteur + D_Correcteur
-
-        # En ros pour tourner à gauche, on met une valeur positive sur angular.z, 
-        # et pour tourner à droite, on met une valeur négative. 
-        # Comme l'erreur est positive quand la ligne est à droite du robot, 
-        # on doit inverser le signe pour que le robot tourne dans la bonne direction.
-        msg.angular.z = - (Correction_totale) 
-
-        # On ne le met pas dans le else parce que si l'erreur est faible la commmande sera faible.
-
-        # Si on n'a pas d'erreur, on avance
-        if -10 <= self.error <= 10:
-            msg.linear.x = 0.2
-            print("Suivi de ligne correct, avance à 0.2 m/s")
-        # Si l'erreur est trop grande, on tourne pour corriger la trajectoire
+        # ---------------------------------------------------------------------
+        # ZONE À COMPLÉTER PAR LES ÉTUDIANTS : MACHINE À ÉTATS (FSM)
+        # ---------------------------------------------------------------------
+        
+        # 1. Logique de transition des états
+        if abs(self.error) <= 30.0:
+            self.etat_actuel = "LIGNE_DROITE"
+        elif 30.0 < abs(self.error) <= 250.0:
+            # ------ À COMPLÉTER : Quel état si l'erreur devient modérée/forte ? ------
+            self.etat_actuel = "VIRAGE_BRUSQUE"
         else:
-            # On ralentit la vitesse linéaire dans les virages pour ne pas rater la piste
-            msg.linear.x = 0.1
-            print(f"Erreur de suivi de ligne: {self.error:.2f}, correction appliquée: {Correction_totale:.4f}, avance à 0.1 m/s")
-    
+            # ------ À COMPLÉTER : Quel état si l'erreur devient extrême (> 250 pixels) ? ------
+            self.etat_actuel = "DEMI_TOUR"
+
+        # 2. Logique cinématique selon l'état actif
+        if self.etat_actuel == "LIGNE_DROITE":
+            msg.linear.x = 0.25
+            msg.angular.z = commande_angulaire
+            
+        elif self.etat_actuel == "VIRAGE_BRUSQUE":
+            # En virage brusque, on réduit la vitesse linéaire pour ne pas glisser/rater la ligne
+            # ------ À COMPLÉTER : Proposer des vitesses adaptées ------
+            msg.linear.x = 0.12
+            msg.angular.z = commande_angulaire
+
+        elif self.etat_actuel == "DEMI_TOUR":
+            # La ligne est presque perdue sur le côté, on pivote fortement sur place
+            msg.linear.x = 0.0  # Arrêt de la translation
+            # ------ À COMPLÉTER : Asservir le sens de rotation au signe de l'erreur ------
+            if self.error > 0:
+                msg.angular.z = -0.5  # Tourner à droite toute
+            else:
+                msg.angular.z = 0.5   # Tourner à gauche toute
+                
+        # ---------------------------------------------------------------------
+        # FIN DE LA ZONE À COMPLÉTER
+        # ---------------------------------------------------------------------
+
+        # Publication de la commande de vitesse
         self.pub.publish(msg)
 
 def main():
-    # Initialisation du noeud ROS et création de l'instance du robot
     rclpy.init()
-    robot = RobotSimple()
-
-    print("Le robot suit le chemin — Ctrl+C pour arrêter")
-
+    robot = RobotSimpleFSM()
     try:
-        # rclpy.spin gère nativement et proprement les timers et les publishers en tâche de fond
         rclpy.spin(robot)
     except KeyboardInterrupt:
-        print("Arrêt demandé par l'utilisateur.")
+        pass
     finally:
-        # Par sécurité, on publie un message d'arrêt complet avant de fermer le nœud
         stop_msg = Twist()
         robot.pub.publish(stop_msg)
         robot.destroy_node()
