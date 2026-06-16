@@ -1,1 +1,4 @@
+Dans ce dossier se trouve tous les codes relatifs au suivi de lignes. Les nodes dans le dossier deviation renvoient des erreurs en position. Et les nodes dans controleurs sont celles qui corrigent cette erreure.
+Enfin le launch file permet de lancer les 2 nodes simultanéments. Supprimer la partie logitech si vous n'en avez pas.
 
+Les TP traiterons les premiers et derniers codes de chaque partie, les autres sont juste des étapes entre eux, ils ne sont pas forcéments pertinnts.
