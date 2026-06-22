@@ -26,6 +26,9 @@ class BehaviorManager(Node):
         self.state = RobotState.FOLLOW_LANE
         self.coeff_vitesse = 1.0
         self.distance_Z = 10.0  # Initialisé grand par sécurité
+        self.previous_state = None
+        self.pieton_on_psg = False
+        self.dist_pieton = None
 
         # Gestion du temps pour le STOP (sans bloquer ROS)
         self.stop_start_time = None
@@ -55,14 +58,20 @@ class BehaviorManager(Node):
         # Vérification de la présence de détections
         if len(msg.detections) == 0:
             if self.state == RobotState.WAIT_PEDESTRIAN:
+                self.dist_pieton = None
+                self.pieton_on_psg = False
                 self.get_logger().info("Le piéton est parti -> Reprise de la ligne.")
                 self.state = RobotState.FOLLOW_LANE
             else:
                 self.get_logger().info("Pas de détection")
+                self.state = RobotState.FOLLOW_LANE
+
             return
 
         detection_prioritaire = None
         distance_min = float('inf')
+
+        closest_pieton_Z = None
 
         for det in msg.detections:
             if len(det.results) == 0:
@@ -82,6 +91,12 @@ class BehaviorManager(Node):
                 distance_min = z_actuel
                 detection_prioritaire = det
                 self.distance_Z = z_actuel
+            if det.results[0].hypothesis.class_id == "Présence piéton" : #Nom temporaire, demander nom choisi
+                if closest_pieton_Z is None or z_actuel < closest_pieton_Z:
+                    self.pieton_on_psg = True
+                    closest_pieton_Z = z_actuel
+
+        self.dist_pieton = closest_pieton_Z
 
         if detection_prioritaire is not None:
             self.score = detection_prioritaire.results[0].hypothesis.score
@@ -95,7 +110,7 @@ class BehaviorManager(Node):
             # Machine à état : Transition basées sur les détections
             match self.detected_sign:
                 case "stop":
-                    if self.state != RobotState.STOP_SIGN:
+                    if self.state != RobotState.STOP_SIGN and self.previous_state != RobotState.STOP_SIGN:
                         self.get_logger().warn(f"STOP détecté à {self.distance_Z:.2f}m -> Approche en cours")
                         self.state = RobotState.STOP_SIGN
                         self.stop_start_time = None
@@ -117,10 +132,16 @@ class BehaviorManager(Node):
                         self.get_logger().warn("Piéton détecté !")
                         self.state = RobotState.WAIT_PEDESTRIAN
 
+                case "Présence piéton": #Nom temporaire, demander nom choisi
+                    if self.state != RobotState.WAIT_PEDESTRIAN:
+                        self.get_logger().warn("Piéton détecté !")
+                        self.state = RobotState.WAIT_PEDESTRIAN
+
+
                 case "tournez":
                     self.get_logger().info("Tournez WIP")
                     if self.state != RobotState.TURN:
-                        self.state = RobotState.WAIT_PEDESTRIAN
+                        self.state = RobotState.TURN
 
 
                 case "cedez":
@@ -153,11 +174,13 @@ class BehaviorManager(Node):
         # -------------------------------------------------
         if self.state == RobotState.FOLLOW_LANE:
             cmd_out = self.last_lane_cmd
+            self.previous_state = RobotState.FOLLOW_LANE
 
         elif self.state == RobotState.STOP_RED_LIGHT:
             # On suit la ligne mais en appliquant le coefficient de freinage
             cmd_out.linear.x = self.coeff_vitesse * self.last_lane_cmd.linear.x
             cmd_out.angular.z = self.coeff_vitesse * self.last_lane_cmd.angular.z
+            self.previous_state = RobotState.STOP_RED_LIGHT
 
         elif self.state == RobotState.STOP_SIGN:
             if self.coeff_vitesse > 0.0:
@@ -180,16 +203,31 @@ class BehaviorManager(Node):
                         self.get_logger().info("STOP effectué -> Reprise de la route.")
                         self.state = RobotState.FOLLOW_LANE
                         self.distance_Z = 10.0 # Reset virtuel de la distance
+                        self.previous_state = RobotState.STOP_SIGN
 
         elif self.state == RobotState.WAIT_PEDESTRIAN:
-            # Arrêt d'urgence immédiat pour le piéton
-            cmd_out.linear.x = 0.0
-            cmd_out.angular.z = 0.0
+            if self.dist_pieton is not None:
+                if self.dist_pieton > 3 :
+                    cmd_out.linear.x = 0.6*self.last_lane_cmd.linear.x
+                    cmd_out.angular.z = 0.6*self.last_lane_cmd.angular.z
+                elif self.dist_pieton > 1.5 : 
+                    cmd_out.linear.x = 0.3*self.last_lane_cmd.linear.x
+                    cmd_out.angular.z = 0.3*self.last_lane_cmd.angular.z
+                else :
+                # Arrêt d'urgence immédiat pour le piéton
+                    cmd_out.linear.x = 0.0
+                    cmd_out.angular.z = 0.0
+            else :
+                cmd_out = self.last_lane_cmd
             # Note : Tu pourrais ajouter une logique pour repasser en FOLLOW_LANE 
             # si l'IA ne détecte plus de piéton pendant X secondes.
+            self.previous_state = RobotState.WAIT_PEDESTRIAN
 
         elif self.state == RobotState.TURN:
             self.turn_pub.publish(True)
+            cmd_out = self.last_lane_cmd
+        else :
+            self.turn_pub.publish(False)
             cmd_out = self.last_lane_cmd
 
         # Publication de la commande finale
