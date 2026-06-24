@@ -3,6 +3,7 @@ from rclpy.node import Node
 from rclpy.qos import QoSProfile, ReliabilityPolicy
 from sensor_msgs.msg import Image, CameraInfo
 from geometry_msgs.msg import PointStamped
+from vision_msgs.msg import Detection2DArray, Detection2D, ObjectHypothesisWithPose
 from cv_bridge import CvBridge
 from message_filters import ApproximateTimeSynchronizer, Subscriber
 import cv2
@@ -37,7 +38,7 @@ class detector_3d(Node):
         self.input_w, self.input_h = 640, 640
 
         # Liste des classes YOLO utiles
-        self.class_names = ['person', 'chair', 'backpack', 'laptop', 'book', 'bottle', 'cell phone']
+        self.class_names = [#liste des classes de votre modèle]
 
         # Profil de Qualité de Service (QoS) pour le flux vidéo
         qos = QoSProfile(depth=10)
@@ -65,7 +66,8 @@ class detector_3d(Node):
         # pub_image doit publier l'image annotée, pub_points doit publier les coordonnées 3D
         self.pub_image = self.create_publisher(# À COMPLÉTER, '/detection/image_3d', 10)
         self.pub_points = self.create_publisher(# À COMPLÉTER, '/detection/position_3d', 10)
-
+        self.pub_meta = self.create_publisher(Detection2DArray, '/detection/metadata', 10) # topic que vous creez et qui renvoie les valeurs
+        
         self.get_logger().info('Nœud initialisé. En attente des flux de la caméra...')
 
     def callback_camera_info(self, msg):
@@ -78,6 +80,42 @@ class detector_3d(Node):
         self.cx = # À COMPLÉTER
         self.cy = # À COMPLÉTER
 
+    def detecter_couleur_feu(self, roi_bgr):
+        """ Analyse la zone du feu pour déterminer si c'est ROUGE, VERT ou INCONNU """
+        if roi_bgr.size == 0:
+            return "inconnu"
+
+        # Passage en HSV
+        hsv = cv2.cvtColor(roi_bgr, cv2.COLOR_BGR2HSV)
+
+        # Seuils pour le Rouge (début et fin du spectre H)
+        lower_red1 = np.array([0, 70, 50])
+        upper_red1 = np.array([10, 255, 255])
+        lower_red2 = np.array([170, 70, 50])
+        upper_red2 = np.array([180, 255, 255])
+        
+        mask_red1 = cv2.inRange(hsv, lower_red1, upper_red1)
+        mask_red2 = cv2.inRange(hsv, lower_red2, upper_red2)
+        mask_red = mask_red1 + mask_red2
+
+        # Seuils pour le Vert
+        lower_green = np.array([40, 40, 40])
+        upper_green = np.array([90, 255, 255])
+        mask_green = cv2.inRange(hsv, lower_green, upper_green)
+
+        # Compter les pixels correspondants
+        nb_red = cv2.countNonZero(mask_red)
+        nb_green = cv2.countNonZero(mask_green)
+
+        seuil_pixels = 5
+
+        if nb_red > nb_green and nb_red > seuil_pixels:
+            return "rouge"
+        elif nb_green > nb_red and nb_green > seuil_pixels:
+            return "vert"
+        
+        return "inconnu"
+    
     def pixel_to_3d(self, u, v, depth_image):
         if self.fx is None:
             return None
@@ -86,13 +124,10 @@ class detector_3d(Node):
         half = 5
         u, v = int(u), int(v)
         h, w = depth_image.shape
-        
-        u1 = max(0, u - half)
-        u2 = min(w, u + half)
-        v1 = max(0, v - half)
-        v2 = min(h, v + half)
-
+        u1, u2 = max(0, u - half), min(w, u + half)
+        v1, v2 = max(0, v - half), min(h, v + half)
         patch = depth_image[v1:v2, u1:u2]
+        valid = patch[patch > 0]
 
         # Suppression des pixels aberrants (trous de mesure de la RealSense)
         valid = patch[patch > 0]
@@ -145,6 +180,9 @@ class detector_3d(Node):
         output = self.compiled([inp])[self.output]
         detections = self.postprocess(output, orig_w, orig_h)
 
+        meta_array = Detection2DArray()
+        meta_array.header = rgb_msg.header
+
         # Boucle sur les objets détectés par l'IA
         for x1, y1, x2, y2, conf, cls in detections:
             cx_box = (x1 + x2) / 2.0
@@ -168,12 +206,47 @@ class detector_3d(Node):
                 pt.point.z = # À COMPLÉTER
                 self.pub_points.publish(pt)
 
-                # Dessin de la boîte englobante et affichage des mesures textuelles
-                label = self.class_names[cls] if cls < len(self.class_names) else "object"
-                cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
-                cv2.putText(frame, f"{label} Z:{Z:.2f}m W:{largeur:.2f}m", (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+                nom_classe = self.class_names[cls]
 
-        # Envoi de la vidéo finale modifiée vers le réseau ROS 2
+                # --------------------------------------------------------------
+                # ANALYSE COULEUR SI LE MODÈLE DÉTECTE UN FEU (PEU IMPORTE SA CLASSE DE BASE)
+                # --------------------------------------------------------------
+                couleur_box = (0, 255, 0) # Vert par défaut
+                
+                if nom_classe in ["feu_orange", "feu_rouge", "feu_vert"]:
+                    h_img, w_img = frame.shape[:2]
+                    roi = frame[max(0, y1):min(h_img, y2), max(0, x1):min(w_img, x2)]
+                    
+                    couleur = self.detecter_couleur_feu(roi)
+                    nom_classe = f"feu_{couleur}" # Devient feu_rouge, feu_vert ou feu_inconnu
+                    
+                    if couleur == "rouge":
+                        couleur_box = (0, 0, 255)
+                    elif couleur == "vert":
+                        couleur_box = (0, 255, 0)
+                    else:
+                        couleur_box = (0, 255, 255) # Jaune pour inconnu/orange
+                # --------------------------------------------------------------
+
+                det = Detection2D()
+                hyp = ObjectHypothesisWithPose()
+                hyp.hypothesis.class_id = nom_classe
+                hyp.hypothesis.score = conf
+                det.results = [hyp]
+                
+                det.bbox.center.position.x = cx_box
+                det.bbox.center.position.y = cy_box
+                det.bbox.size_x = float(x2 - x1)
+                det.bbox.size_y = float(y2 - y1)
+                
+                det.id = f"Z:{Z:.2f};W:{largeur:.2f};H:{hauteur:.2f};X:{X:.2f};Y:{Y:.2f}"
+                meta_array.detections.append(det)
+
+                cv2.rectangle(frame, (x1, y1), (x2, y2), couleur_box, 2)
+                cv2.putText(frame, f"{nom_classe} Z:{Z:.2f}m", (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, couleur_box, 2)
+
+        self.pub_meta.publish(meta_array)
+
         out_msg = self.bridge.cv2_to_imgmsg(frame, encoding='bgr8')
         out_msg.header = rgb_msg.header
         self.pub_image.publish(out_msg)
@@ -191,17 +264,30 @@ class detector_3d(Node):
         scores = preds[:, 4:]
         class_ids = np.argmax(scores, axis=1)
         confidences = scores[np.arange(len(scores)), class_ids]
-        mask = confidences > self.confidence
         
         scale_x, scale_y = orig_w / self.input_w, orig_h / self.input_h
         results = []
-        for box, conf, cls in zip(boxes[mask], confidences[mask], class_ids[mask]):
+        
+        for box, conf, cls in zip(boxes, confidences, class_ids):
+            if np.isnan(box).any() or np.isnan(conf):
+                continue
+            
+            # Index 1, 2, 3 correspondent à feu_orange, feu_rouge, feu_vert dans self.class_names
+            if cls in [1, 2, 3]:
+                seuil_actuel = 0.3 # Confiance abaissée à 30% pour attraper tous les feux loin ou sombres
+            else:
+                seuil_actuel = self.confidence
+                
+            if conf < seuil_actuel:
+                continue
+                
             cx, cy, w, h = box
             x1 = int((cx - w / 2) * scale_x)
             y1 = int((cy - h / 2) * scale_y)
             x2 = int((cx + w / 2) * scale_x)
             y2 = int((cy + h / 2) * scale_y)
             results.append((x1, y1, x2, y2, float(conf), int(cls)))
+            
         return results
 
 def main(args=None):
