@@ -1,3 +1,6 @@
+# a noter : il faut quand même mettre le bon modele (xml et parametres)
+
+
 import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile, ReliabilityPolicy
