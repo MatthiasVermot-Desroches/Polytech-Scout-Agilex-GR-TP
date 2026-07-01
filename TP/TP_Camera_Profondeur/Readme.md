@@ -1,2 +1,3 @@
-TP caméra profondeur 
-Pour l'instant il y a les solutions dans le sujet mais elles seront enlevées.
+TP caméra profondeur. 
+Utilisation du modèle IA fait avec Roboflow.
+Il ne manque plus qu'a ajouter le modele best.pt.
