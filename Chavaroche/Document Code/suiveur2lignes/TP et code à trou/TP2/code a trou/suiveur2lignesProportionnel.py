@@ -17,12 +17,6 @@ class RobotSimple(Node):
         super().__init__('control_line_node')
         # Publisher pour les commandes de vitesse
         self.pub = self.create_publisher(Twist, '/cmd_vel', 10)
-        # Subscriptions pour l'odométrie et le LiDAR
-        #self.sub = self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
-        #self.sub_lidar = self.create_subscription(PointCloud2, '/rslidar_points', self.lidar_callback, 10)
-        # Dans le subscriber, on retrouve le type de donnée (ici PointCloud2) et le nom du topic (ici /rslidar_points) ainsi que la fonction de callback (ici lidar_callback) et la taille de la file d'attente (ici 10)
-        # La file d'attente est utilisée pour stocker les messages reçus lorsque le robot ne peut pas les traiter immédiatement. Si la file d'attente est pleine, les messages les plus anciens seront supprimés pour faire de la place aux nouveaux.
-
         # Abonnement au flux RGB de la RealSense D435
         self.image_sub = self.create_subscription(Float32, '/line_tracking/error', self.error_callback, 10)
         # Ajuste le topic si ton driver utilise un autre nom
