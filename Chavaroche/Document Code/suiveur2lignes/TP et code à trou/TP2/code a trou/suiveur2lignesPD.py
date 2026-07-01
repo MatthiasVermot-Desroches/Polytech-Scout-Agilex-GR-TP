@@ -41,7 +41,7 @@ class RobotSuiveur(Node):
         self.last_time = current_time
         
         current_error = self.error
-        delta_error = current_error - self.last_error
+        delta_error = 
         
        
         erreur_absolue = abs(current_error)
@@ -56,14 +56,14 @@ class RobotSuiveur(Node):
             
         else:
             self.state = 'DEMI_TOUR'
-            msg.linear.x = 0.0  
+            msg.linear.x =   
 
-        P_correction = self.kp * current_error
-        D_correction = self.kd * (delta_error / dt)
+        P_correction = 
+        D_correction =
         
         correction_totale = P_correction + D_correction
         if self.state == 'DEMI_TOUR':
-            msg.angular.z = -0.5 if self.last_error >= 0 else 0.5
+            msg.angular.z =  if self.last_error >= 0 else 
         else:
             msg.angular.z = -correction_totale
         
