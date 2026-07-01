@@ -36,10 +36,10 @@ class RobotSimple(Node):
 
         if self.en_mouvement:
             if self.distance_parcourue() < self.distance_cible:
-                msg.linear.x = 0.2  # avance
+                
             else:
-                msg.linear.x = 0.0  # stop
-                self.en_mouvement = False
+                
+                self.en_mouvement = 
                 self.get_logger().info('Arrivé !')
 
         self.pub.publish(msg)
