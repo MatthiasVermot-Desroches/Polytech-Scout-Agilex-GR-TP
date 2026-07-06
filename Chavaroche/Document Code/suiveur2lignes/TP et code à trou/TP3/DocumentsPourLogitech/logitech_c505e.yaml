@@ -1,0 +1,35 @@
+/**:
+  ros__parameters:
+    # --- Les paramètres matériels lus par ton script Python ---
+    device: "/dev/video6"
+    width: 1280
+    height: 720
+    framerate: 30
+    camera_name: "logitech_c505e"
+    frame_id: "camera_frame"
+
+    # --- Les paramètres de calibration (ceux que tu as fournis) ---
+    image_width: 1280
+    image_height: 720
+    camera_matrix:
+      rows: 3
+      cols: 3
+      data: [800.0, 0.0, 640.0, 0.0, 800.0, 360.0, 0.0, 0.0, 1.0]
+    distortion_model: plumb_bob
+    distortion_coefficients:
+      rows: 1
+      cols: 5
+      data: [0.0, 0.0, 0.0, 0.0, 0.0]
+    rectification_matrix:
+      rows: 3
+      cols: 3
+      data: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+    projection_matrix:
+      rows: 3
+      cols: 4
+      data: [800.0, 0.0, 640.0, 0.0, 0.0, 800.0, 360.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+    
+    # --- CONTROLE DE L'IMAGE ---
+    white_balance_automatic: false   # Nom exact requis par v4l2_camera
+    exposure_auto: 1                 # 1 = Mode Manuel (Bloque l'adaptation à la caisse)
+    exposure_absolute: 50           # Ajuste cette valeur (ex: entre 50 et 300) pour que ta ligne soit bien visible et ne change plus jamais !
