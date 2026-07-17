@@ -52,7 +52,7 @@ class BehaviorManager(Node):
 
         # Main timer (20 Hz)
         self.timer = self.create_timer(0.05, self.control_loop)
-        self.get_logger().info("Behavior manager started et optimisé.")
+        self.get_logger().info("machine à état démarrée")
 
     def detection_callback(self, msg):
         # Vérification de la présence de détections
@@ -91,7 +91,7 @@ class BehaviorManager(Node):
                 distance_min = z_actuel
                 detection_prioritaire = det
                 self.distance_Z = z_actuel
-            if det.results[0].hypothesis.class_id == "Présence piéton" : #Nom temporaire, demander nom choisi
+            if det.results[0].hypothesis.class_id == "person" : #Nom temporaire, demander nom choisi
                 if closest_pieton_Z is None or z_actuel < closest_pieton_Z:
                     self.pieton_on_psg = True
                     closest_pieton_Z = z_actuel
@@ -129,10 +129,10 @@ class BehaviorManager(Node):
 
                 case "pieton":
                     if self.state != RobotState.WAIT_PEDESTRIAN:
-                        self.get_logger().warn("Piéton détecté !")
+                        self.get_logger().warn("Passage Piéton détecté !")
                         self.state = RobotState.WAIT_PEDESTRIAN
 
-                case "Présence piéton": #Nom temporaire, demander nom choisi
+                case "person": #Nom temporaire, demander nom choisi
                     if self.state != RobotState.WAIT_PEDESTRIAN:
                         self.get_logger().warn("Piéton détecté !")
                         self.state = RobotState.WAIT_PEDESTRIAN
@@ -224,10 +224,10 @@ class BehaviorManager(Node):
             self.previous_state = RobotState.WAIT_PEDESTRIAN
 
         elif self.state == RobotState.TURN:
-            self.turn_pub.publish(True)
+            self.turn_pub.publish(Bool(data=True))
             cmd_out = self.last_lane_cmd
         else :
-            self.turn_pub.publish(False)
+            self.turn_pub.publish(Bool(data=False))
             cmd_out = self.last_lane_cmd
 
         # Publication de la commande finale
