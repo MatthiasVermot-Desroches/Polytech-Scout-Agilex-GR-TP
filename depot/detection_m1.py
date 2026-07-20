@@ -18,7 +18,7 @@ class detector_3d(Node):
         # Initialisation des paramètres du nœud
         self.declare_parameter('device', 'CPU')
         self.declare_parameter('confidence', 0.5)
-        self.declare_parameter('model_path', os.path.join(os.path.dirname(__file__), '..', 'models', 'best_roboflow1_openvino_model'))
+        self.declare_parameter('model_path', os.path.join(os.path.dirname(__file__), '..', 'models', 'pietons_corrigee3_openvino_model'))
 
         device = self.get_parameter('device').value
         self.confidence = self.get_parameter('confidence').value
@@ -31,14 +31,14 @@ class detector_3d(Node):
 
         # Configuration et chargement du modèle OpenVINO
         core = ov.Core()
-        model_xml = os.path.join(model_path, 'best_roboflow1.xml')
+        model_xml = os.path.join(model_path, 'pietons_corrigee3.xml')
         model = core.read_model(model_xml)
         self.compiled = core.compile_model(model, device)
         self.output = self.compiled.output(0)
         self.input_w, self.input_h = 640, 640
 
-        # Liste des classes de base
-        self.class_names = ['cedez', 'feu', 'pieton', 'stop', 'tournez']
+        # Liste des classes de ton modèle entraîné
+        self.class_names = ['cedez', 'feu_orange', 'feu_rouge', 'feu_vert', 'person', 'pieton', 'stop', 'tournez']
 
         # Profil de Qualité de Service (QoS) pour le flux vidéo
         qos = QoSProfile(depth=10)
@@ -72,7 +72,7 @@ class detector_3d(Node):
         # Passage en HSV
         hsv = cv2.cvtColor(roi_bgr, cv2.COLOR_BGR2HSV)
 
-        # Seuils pour le Rouge (le rouge a la particularité d'être au début et à la fin du spectre H)
+        # Seuils pour le Rouge (début et fin du spectre H)
         lower_red1 = np.array([0, 70, 50])
         upper_red1 = np.array([10, 255, 255])
         lower_red2 = np.array([170, 70, 50])
@@ -91,8 +91,7 @@ class detector_3d(Node):
         nb_red = cv2.countNonZero(mask_red)
         nb_green = cv2.countNonZero(mask_green)
 
-        # On fixe un mini seuil de pixels pour éviter les faux positifs du décor
-        seuil_pixels = 5 
+        seuil_pixels = 5
 
         if nb_red > nb_green and nb_red > seuil_pixels:
             return "rouge"
@@ -158,40 +157,32 @@ class detector_3d(Node):
                 pt.point.z = Z
                 self.pub_points.publish(pt)
 
-                # Nom de classe par défaut
                 nom_classe = self.class_names[cls]
 
                 # --------------------------------------------------------------
-                # TRAITEMENT SPÉCIFIQUE DU FEU
+                # ANALYSE COULEUR SI LE MODÈLE DÉTECTE UN FEU (PEU IMPORTE SA CLASSE DE BASE)
                 # --------------------------------------------------------------
-                couleur_box = (0, 255, 0) # Vert par défaut pour l'affichage des boîtes
+                couleur_box = (0, 255, 0) # Vert par défaut
                 
-                if nom_classe == "feu":
-                    # Découpage de la zone du feu de manière sécurisée
+                if nom_classe in ["feu_orange", "feu_rouge", "feu_vert"]:
                     h_img, w_img = frame.shape[:2]
                     roi = frame[max(0, y1):min(h_img, y2), max(0, x1):min(w_img, x2)]
                     
-                    # Détection de la couleur
                     couleur = self.detecter_couleur_feu(roi)
-                    nom_classe = f"feu_{couleur}" # Deviendra "feu_rouge", "feu_vert" ou "feu_inconnu"
+                    nom_classe = f"feu_{couleur}" # Devient feu_rouge, feu_vert ou feu_inconnu
                     
-                    # Changement cosmétique de la boîte pour l'affichage visuel
                     if couleur == "rouge":
                         couleur_box = (0, 0, 255)
                     elif couleur == "vert":
                         couleur_box = (0, 255, 0)
                     else:
-                        couleur_box = (0, 255, 255) # Jaune si inconnu
+                        couleur_box = (0, 255, 255) # Jaune pour inconnu/orange
                 # --------------------------------------------------------------
 
                 det = Detection2D()
-
-                # En Python, on crée l'objet d'hypothèse de résultat...
                 hyp = ObjectHypothesisWithPose()
                 hyp.hypothesis.class_id = nom_classe
                 hyp.hypothesis.score = conf
-
-                # ...et on l'affecte directement dans la liste 'results'
                 det.results = [hyp]
                 
                 det.bbox.center.position.x = cx_box
@@ -202,7 +193,6 @@ class detector_3d(Node):
                 det.id = f"Z:{Z:.2f};W:{largeur:.2f};H:{hauteur:.2f};X:{X:.2f};Y:{Y:.2f}"
                 meta_array.detections.append(det)
 
-                # Dessin
                 cv2.rectangle(frame, (x1, y1), (x2, y2), couleur_box, 2)
                 cv2.putText(frame, f"{nom_classe} Z:{Z:.2f}m", (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, couleur_box, 2)
 
@@ -233,8 +223,8 @@ class detector_3d(Node):
             if np.isnan(box).any() or np.isnan(conf):
                 continue
             
-            if cls == 1: 
-                seuil_actuel = 0.15 # Seuil bas pour le feu
+            if cls in [4]:
+                seuil_actuel = 0.3
             else:
                 seuil_actuel = self.confidence
                 
