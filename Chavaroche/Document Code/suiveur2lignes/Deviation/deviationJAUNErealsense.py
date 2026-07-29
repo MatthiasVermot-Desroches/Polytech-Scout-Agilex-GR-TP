@@ -24,7 +24,7 @@ class VisionLineNode(Node):
         # Abonnement au flux RGB
         self.image_sub = self.create_subscription(
             Image,
-            '/logitech_c505e/image_raw', 
+            '/camera/camera/color/image_raw', 
             self.image_callback,
             10
         )
