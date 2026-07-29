@@ -7,6 +7,8 @@ from cv_bridge import CvBridge, CvBridgeError
 from collections import deque
 import cv2
 import numpy as np
+import math
+from sensor_msgs.msg import Imu
 
 try:
     from robot_msgs.msg import LineData
@@ -29,6 +31,16 @@ class VisionLineNode(Node):
             10
         )
         
+        # Abonnement au topic du panneau de virage
+        self.turn_sub = self.create_subscription(
+            Bool,
+            '/turn_sign',
+            self.turn_sign_callback,
+            10
+        )
+
+        self.turn_pub = self.create_publisher(Bool, '/turn_sign', 10)
+        
         # Publishers standards
         self.error_pub = self.create_publisher(Float32, '/line_tracking/error_raw', 10)
         self.masse_pub = self.create_publisher(Float32MultiArray, '/camera/zones_masses', 10)
@@ -36,19 +48,55 @@ class VisionLineNode(Node):
         self.lost_pub = self.create_publisher(Bool, '/line_tracking/route_perdue', 10)
         self.single_line_pub = self.create_publisher(Bool, '/line_tracking/ligne_unique', 10)
         self.debug_img_pub = self.create_publisher(Image, '/camera/debug_image', 10)
-        
+        self.imu_sub = self.create_subscription(Imu, '/imu/data_raw', self.imu_callback, 10)
+
+
+        self.vitesse_z_gyro = 0.0
+        self.angle_parcouru_virage = 0.0
+        self.last_time_imu = None
+                
         self.derniere_ligne_perdue = "AUCUNE"
 
         self.nb_frames_accumulation = 5  # Nombre d'images en mémoire
         self.seuil_persistance = 3       # Un pixel doit être là au moins 3 fois sur 5
         self.historique_masques = deque(maxlen=self.nb_frames_accumulation)
         
-        # ✅ AJUSTEMENT À TON ÉCHELLE (Proportionnel à tes 360px d'origine)
         self.largeurs_memoire = {
-            'L1': 540,  # Palier bas (Ta valeur nominale)
-            'L2': 450,  # Palier milieu (Éléments plus éloignés donc plus étroits)
+            'L1': 540,  # Palier bas
+            'L2': 450,  # Palier milieu
             'L3': 310   # Palier haut
         }
+
+        # Variables d'état pour la gestion du panneau
+        # États possibles : "VEILLE", "ATTENTE_VIRAGE", "FORCAGE_DROITE"
+        self.statut_virage = "VEILLE"
+        self.frames_confirmation_sortie = 0
+    
+    def imu_callback(self, msg):
+        current_time = self.get_clock().now()
+        self.vitesse_z_gyro = msg.angular_velocity.z # en rad/s
+        
+        # Si on est en train de tourner, on intègre la vitesse pour calculer l'angle
+        if self.statut_virage == "FORCAGE_DROITE":
+            if self.last_time_imu is not None:
+                # Calcul du dt (intervalle de temps en secondes)
+                dt = (current_time - self.last_time_imu).nanoseconds / 1e9
+                # Intégration : Angle = Vitesse * Temps
+                # On prend la valeur absolue car on veut mesurer l'amplitude de la rotation
+                self.angle_parcouru_virage += abs(self.vitesse_z_gyro * dt)
+                
+        self.last_time_imu = current_time
+
+    def calcul_delta_angle(self, angle1, angle2):
+        # Calcule l'écart minimal entre deux angles en radians [-pi, pi]
+        diff = angle1 - angle2
+        return abs((diff + math.pi) % (2 * math.pi) - math.pi)
+
+    # Callback pour intercepter le panneau
+    def turn_sign_callback(self, msg):
+        if msg.data and self.statut_virage == "VEILLE":
+            self.statut_virage = "ATTENTE_VIRAGE"
+            self.get_logger().info("🛑 Panneau détecté ! FSM en attente de l'amorce du virage serré.")
 
     def trouver_centres_ligne(self, masque_ligne, seuil_bruit=5, ecart_max=30, step=0):
         indices_blancs = np.where(masque_ligne == 255)[0] + step
@@ -73,8 +121,6 @@ class VisionLineNode(Node):
             x_fin = g[-1]
             largeur_paquet = x_fin - x_debut
 
-            # ✅ CORRECTION : On vire uniquement les bruits minuscules (< 3px). 
-            # On ne plafonne plus ici, la perspective s'en chargera plus tard.
             if largeur_paquet < 3:
                 continue 
 
@@ -83,12 +129,7 @@ class VisionLineNode(Node):
                 
         return lignes_x
 
-    # ──── NOUVEAU : FONCTION DE FILTRAGE ANTI-REFLET ET VÉRIFICATION GÉOMÉTRIQUE ────
     def filtrer_paire_par_largeur(self, liste_lignes, nom_palier, tolerance=0.35):
-        """
-        Explore toutes les combinaisons de lignes détectées et retourne le premier couple
-        (droite, gauche) dont la largeur correspond à la mémoire de ce palier.
-        """
         nb_lignes = len(liste_lignes)
         if nb_lignes < 2:
             return None, None, False
@@ -97,20 +138,16 @@ class VisionLineNode(Node):
         largeur_min = largeur_cible * (1.0 - tolerance)
         largeur_max = largeur_cible * (1.0 + tolerance)
 
-        # Double boucle pour tester toutes les paires possibles
         for i in range(nb_lignes):
             for j in range(i + 1, nb_lignes):
                 cand_droite = liste_lignes[i]
                 cand_gauche = liste_lignes[j]
                 largeur_calculee = cand_droite - cand_gauche
 
-                # Si la largeur calculée entre dans nos critères géométriques
                 if largeur_min <= largeur_calculee <= largeur_max:
-                    # Mise à jour douce de la mémoire (Filtre passe-bas)
                     self.largeurs_memoire[nom_palier] = int(0.9 * largeur_cible + 0.1 * largeur_calculee)
                     return cand_droite, cand_gauche, True
 
-        # Aucune paire ne correspond à la structure d'une route
         return None, None, False
     
     def image_callback(self, msg):
@@ -142,7 +179,6 @@ class VisionLineNode(Node):
         hsv  = cv2.cvtColor(cv_image, cv2.COLOR_BGR2HSV)
         mask = cv2.inRange(hsv, lower_yellow, upper_yellow)
 
-        # ---- FILTRE TEMPOREL DE PERSISTANCE ----
         self.historique_masques.append(mask.copy())
         ratio_seuil = self.seuil_persistance / self.nb_frames_accumulation
         seuil_actuel = max(1, int(len(self.historique_masques) * ratio_seuil))
@@ -151,13 +187,11 @@ class VisionLineNode(Node):
         accumulation = np.sum(bloc_images == 255, axis=0)
         mask = np.where(accumulation >= seuil_actuel, 255, 0).astype(np.uint8)
 
-        # Superposer le masque en vert sur l'image debug
         mask_rgb = cv2.cvtColor(mask, cv2.COLOR_GRAY2BGR)
         mask_rgb[:,:,0] = 0   
         mask_rgb[:,:,2] = 0   
         debug_frame = cv2.addWeighted(debug_frame, 1.0, mask_rgb, 0.5, 0)
 
-        # ──── DEFINITION GÉOMÉTRIQUE DES ZONES ────
         step = width - 1
         X_G, X_C, X_D = (0, 1), (1, step), (step, width)
 
@@ -185,7 +219,7 @@ class VisionLineNode(Node):
             couleur = (0, 255, 0) if route_detectee[nom] == 1 else (0, 0, 255)
             cv2.line(debug_frame, (x_start, y), (x_end, y), couleur, 2)
 
-        # ──── RECHERCHE ET TRI DES LIGNES PAR LA DROITE ────
+        # 1. Extraction des centres et tris
         lignes_x_L1 = self.trouver_centres_ligne(segment_L1, seuil_bruit=5, ecart_max=30, step=X_C[0])
         lignes_x_L2 = self.trouver_centres_ligne(segment_L2, seuil_bruit=5, ecart_max=30, step=X_C[0])
         lignes_x_L3 = self.trouver_centres_ligne(segment_L3, seuil_bruit=5, ecart_max=30, step=X_C[0])
@@ -194,95 +228,95 @@ class VisionLineNode(Node):
         lignes_L2_droite = sorted(lignes_x_L2, reverse=True)
         lignes_L3_droite = sorted(lignes_x_L3, reverse=True)
 
-        # ✅ FILTRAGE GEOMETRIQUE : Extraction des vraies routes immunisées contre les reflets
         droite_L1, gauche_L1, route_L1_complete = self.filtrer_paire_par_largeur(lignes_L1_droite, 'L1')
         droite_L2, gauche_L2, route_L2_complete = self.filtrer_paire_par_largeur(lignes_L2_droite, 'L2')
         droite_L3, gauche_L3, route_L3_complete = self.filtrer_paire_par_largeur(lignes_L3_droite, 'L3')
 
-        # Comptages bruts pour l'affichage et la sécurité
-        nb_lignes_L1 = len(lignes_L1_droite)
-        nb_lignes_L2 = len(lignes_L2_droite)
+        # 🔄 REPETITION 1 CORRIGÉE : On regroupe la configuration du dessin de debug dans une liste
+        # Structure : (liste_des_lignes, route_complete, x_droite, x_gauche, position_Y, couleur_si_complet, couleur_si_incomplet)
+        config_affichage = [
+            (lignes_L1_droite, route_L1_complete, droite_L1, gauche_L1, Y_L1, (120, 255, 255), (0, 100, 100)),
+            (lignes_L2_droite, route_L2_complete, droite_L2, gauche_L2, Y_L2, (255, 255, 130), (100, 100, 0)),
+            (lignes_L3_droite, route_L3_complete, droite_L3, gauche_L3, Y_L3, (255, 130, 255), (100, 0, 100))
+        ]
 
-        # Dessins des centres bruts détectés pour le débug (petits cercles transparents)
-        # --- PALIER L1 (Thème Jaune) ---
-        for x in lignes_L1_droite:
-            # Si la route L1 est complète ET que ce point est l'un des deux retenus
-            if route_L1_complete and (x == droite_L1 or x == gauche_L1):
-                cv2.circle(debug_frame, (int(x), int(Y_L1)), 9, (120, 255, 255), -1)  # Jaune très clair/Brillant
-            else:
-                cv2.circle(debug_frame, (int(x), int(Y_L1)), 4, (0, 100, 100), -1)    # Jaune foncé/Olive (Rejeté)
+        # Une seule double boucle trace l'intégralité des cercles pour les 3 horizons
+        for lignes, complete, d, g, y_val, col_complete, col_incomplete in config_affichage:
+            for x in lignes:
+                if complete and (x == d or x == g):
+                    cv2.circle(debug_frame, (int(x), int(y_val)), 9, col_complete, -1)
+                else:
+                    cv2.circle(debug_frame, (int(x), int(y_val)), 4, col_incomplete, -1)
 
-        # --- PALIER L2 (Thème Cyan) ---
-        for x in lignes_L2_droite:
-            # Si la route L2 est complète ET que ce point est l'un des deux retenus
-            if route_L2_complete and (x == droite_L2 or x == gauche_L2):
-                cv2.circle(debug_frame, (int(x), int(Y_L2)), 9, (255, 255, 130), -1)  # Cyan très clair/Brillant
-            else:
-                cv2.circle(debug_frame, (int(x), int(Y_L2)), 4, (100, 100, 0), -1)    # Cyan foncé/Bleu nuit (Rejeté)
-
-        # --- PALIER L3 (Thème Magenta) ---
-        for x in lignes_L3_droite:
-            # Si la route L3 est complète ET que ce point est l'un des deux retenus
-            if route_L3_complete and (x == droite_L3 or x == gauche_L3):
-                cv2.circle(debug_frame, (int(x), int(Y_L3)), 9, (255, 130, 255), -1)  # Magenta très clair/Brillant
-            else:
-                cv2.circle(debug_frame, (int(x), int(Y_L3)), 4, (100, 0, 100), -1)    # Magenta foncé/Violine (Rejeté)
-
-        # ──── GESTION DES PUBLICATIONS ROS 2 STANDARD ────
+        # Publication ROS 2
         ordre_fixe = ['L1', 'L2', 'L2G', 'L2D', 'L3', 'L3G', 'L3D']
         self.masse_pub.publish(Float32MultiArray(data=[masses[z] for z in ordre_fixe]))
         self.route_pub.publish(Int32MultiArray(data=[route_detectee[z] for z in ordre_fixe]))
 
-        # Sécurité : On est perdu si aucune route complète n'est validée ET aucune ligne unique n'est exploitable
-        route_vitale_visible = (route_L1_complete or route_L2_complete or route_L3_complete or nb_lignes_L1 == 1 or nb_lignes_L2 == 1)
+        # =====================================================================
+        # 🔄 LOGIQUE DE VOTE NETTOYÉE
+        # =====================================================================
+        
+        # Détermination de la visibilité (on remplace directement nb_lignes_LX par len())
+        l1_droite_visible = route_L1_complete or (len(lignes_L1_droite) == 1 and lignes_L1_droite[0] > CENTRE_IMAGE)
+        l2_droite_visible = route_L2_complete or (len(lignes_L2_droite) == 1 and lignes_L2_droite[0] > CENTRE_IMAGE)
+        l3_droite_visible = route_L3_complete or (len(lignes_L3_droite) == 1 and lignes_L3_droite[0] > CENTRE_IMAGE)
+
+        # 🔄 REPETITION 2 CORRIGÉE : En Python, True vaut 1 et False vaut 0. 
+        nb_niveaux_droite = sum([l1_droite_visible, l2_droite_visible, l3_droite_visible])
+
+        deux_lignes_visibles = (route_L1_complete or route_L2_complete or route_L3_complete)
+        route_vitale_visible = (deux_lignes_visibles or len(lignes_L1_droite) == 1 or len(lignes_L2_droite) == 1 or len(lignes_L3_droite) == 1)
+        
         self.lost_pub.publish(Bool(data=not route_vitale_visible))
 
+        # OPTIMISATION SÉCURITÉ : Si on est en train de forcer le virage, on ignore le "route perdue" 
+        # car le robot tourne sur place très vite et peut perdre momentanément le visuel complet.
         if not route_vitale_visible:
-            self.error_pub.publish(Float32(data=0.0))
-            self.single_line_pub.publish(Bool(data=False))
-            self.publier_image_debug(debug_frame)
-            return
+            if self.statut_virage == "FORCAGE_DROITE":
+                erreur_calculer = 380.0  # Assure la continuité du pivot à droite toute
+                msg_error = Float32(data=erreur_calculer)
+                self.error_pub.publish(msg_error)
+                
+                cv2.putText(debug_frame, "FSM: PIVOT AVEUGLE SÉCURISÉ", (15, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
+                self.publier_image_debug(debug_frame)
+                return
+            else:
+                self.error_pub.publish(Float32(data=0.0))
+                self.single_line_pub.publish(Bool(data=False))
+                self.publier_image_debug(debug_frame)
+                return
 
-        self.single_line_pub.publish(Bool(data=(not route_L1_complete and nb_lignes_L1 == 1)))
+        self.single_line_pub.publish(Bool(data=(not route_L1_complete and len(lignes_L1_droite) == 1)))
 
-        # ──── TREE DE DÉCISION NETTOYÉ ET SÉCURISÉ ────
-        
-        # CONDITION A : Route validée sur L1 ET L2
+        # ──── ARBRE DE DÉCISION DU SUIVEUR NOMINAL ────
         if route_L1_complete and route_L2_complete:
             centre_L1 = (droite_L1 + gauche_L1) // 2
             centre_L2 = (droite_L2 + gauche_L2) // 2
-
             err_L1 = float(centre_L1 - CENTRE_IMAGE)
             err_L2 = float(centre_L2 - CENTRE_IMAGE)
             erreur_calculer = (POIDS_L1 * err_L1) + (POIDS_L2 * err_L2)
-
-            # Dessin du couloir de guidage validé
             cv2.line(debug_frame, (int(centre_L1), int(Y_L1)), (int(centre_L2), int(Y_L2)), (255, 255, 255), 3)
             cv2.circle(debug_frame, (int(centre_L1), int(Y_L1)), 8, (255, 0, 0), -1)
             cv2.circle(debug_frame, (int(centre_L2), int(Y_L2)), 8, (255, 0, 0), -1)
 
-        # CONDITION B : Route validée sur L1 uniquement
         elif route_L1_complete:
             centre_L1 = (droite_L1 + gauche_L1) // 2
             erreur_calculer = float(centre_L1 - CENTRE_IMAGE)
             cv2.circle(debug_frame, (int(centre_L1), int(Y_L1)), 8, (255, 0, 0), -1)
 
-        # CONDITION C : Route validée sur L2 uniquement
         elif route_L2_complete:
             centre_L2 = (droite_L2 + gauche_L2) // 2
             erreur_calculer = float(centre_L2 - CENTRE_IMAGE)
             cv2.circle(debug_frame, (int(centre_L2), int(Y_L2)), 8, (255, 0, 0), -1)
 
-        # CONDITION D : Route validée sur L3 uniquement
         elif route_L3_complete:
             centre_L3 = (droite_L3 + gauche_L3) // 2
             erreur_calculer = float(centre_L3 - CENTRE_IMAGE)
             cv2.circle(debug_frame, (int(centre_L3), int(Y_L3)), 8, (255, 0, 0), -1)
 
-        # CONDITION E : Mode dégradé (1 seule ligne isolée, pas de paire valide trouvée)
         else:
-            # On utilise la ligne unique de L1 si disponible
-            if nb_lignes_L1 == 1:
+            if len(lignes_L1_droite) == 1:
                 unique_x = lignes_L1_droite[0]
                 demi_largeur = self.largeurs_memoire['L1'] / 2
                 if unique_x > CENTRE_IMAGE:
@@ -292,8 +326,7 @@ class VisionLineNode(Node):
                     self.derniere_ligne_perdue = "DROITE"
                     erreur_calculer = float((unique_x + demi_largeur) - CENTRE_IMAGE)
 
-            # Sinon on se rabat sur la ligne unique de L2
-            elif nb_lignes_L2 == 1:
+            elif len(lignes_L2_droite) == 1:
                 unique_x = lignes_L2_droite[0]
                 demi_largeur = self.largeurs_memoire['L2'] / 2
                 if unique_x > CENTRE_IMAGE:
@@ -308,25 +341,75 @@ class VisionLineNode(Node):
                 throttle_duration_sec=1.0
             )
 
-        # ──── COUCHE VISUELLE FINALE (REPERES) ────
-        cv2.line(debug_frame, (int(CENTRE_IMAGE), 0), (int(CENTRE_IMAGE), height), (255, 0, 255), 1) # Axe central rose
+        # ---------------------------------------------------------------------
+        # MACHINE À ÉTATS MISE À JOUR (AVEC PHASE D'APPROCHE + GYRO)
+        # ---------------------------------------------------------------------
         
-        texte_mode = f"Validé -> L1: {route_L1_complete} L2: {route_L2_complete} | Erreur: {erreur_calculer:.1f}"
+        SEUIL_ANGLE_SECURITE = math.radians(45.0)
+
+        if self.statut_virage == "ATTENTE_VIRAGE":
+            # Étape 1 : Détection de l'intersection (perte de la ligne droite sur L1 et L2)
+            if not l1_droite_visible and not l2_droite_visible:
+                self.statut_virage = "APPROCHE_VIRAGE"
+                self.get_logger().info("Ligne droite perdue. Phase d'approche : on attend que L1 recroise la piste.")
+
+        elif self.statut_virage == "APPROCHE_VIRAGE":
+            # Pendant cet état, on ne modifie PAS 'erreur_calculer'.
+            # Le robot continue sur sa lancée avec le PID nominal pour bien se placer.
+            
+            # Étape 2 : Condition de déclenchement du vrai virage
+            # On attend que le regard bas (L1) revoie les deux lignes
+            if route_L1_complete:
+                self.statut_virage = "FORCAGE_DROITE"
+                self.frames_confirmation_sortie = 0
+                
+                # IMPORTANT : On reset l'intégrateur du Gyro pile au moment où on commence à tourner !
+                self.angle_parcouru_virage = 0.0 
+                self.last_time_imu = self.get_clock().now()
+                
+                self.get_logger().warn("L1 est alignée ! Lancement du virage forcé à droite au Gyroscope.")
+
+        elif self.statut_virage == "FORCAGE_DROITE":
+            # Étape 3 : Le virage est en cours
+            erreur_calculer = 180.0 
+
+            # Condition de sortie (comme validé précédemment) : 
+            # Il faut avoir tourné d'au moins 75° ET que la caméra revoie la nouvelle route de manière stable
+            if deux_lignes_visibles and (self.angle_parcouru_virage >= SEUIL_ANGLE_SECURITE):
+                self.frames_confirmation_sortie += 1
+                if self.frames_confirmation_sortie >= 5:
+                    self.statut_virage = "VEILLE"
+                    self.frames_confirmation_sortie = 0
+                    self.get_logger().info(f"Virage terminé avec succès ! Angle Gyro : {math.degrees(self.angle_parcouru_virage):.1f}°")
+                    
+                    # Reset du topic /turn_sign
+                    msg_reset = Bool()
+                    msg_reset.data = False
+                    self.turn_pub.publish(msg_reset)
+            else:
+                self.frames_confirmation_sortie = 0
+
+        # ──── COUCHE VISUELLE FINALE (REPERES) ────
+        cv2.line(debug_frame, (int(CENTRE_IMAGE), 0), (int(CENTRE_IMAGE), height), (255, 0, 255), 1)
+        
+        texte_mode = f"L1: {route_L1_complete} L2: {route_L2_complete} | Erreur: {erreur_calculer:.1f}"
         cv2.putText(debug_frame, texte_mode, (15, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
 
-        # Envoi de l'erreur calculée au nœud de commande
+        # Affichage visuel de l'état du panneau sur l'image de debug
+        couleur_fsm = (0, 0, 255) if self.statut_virage == "FORCAGE_DROITE" else (255, 255, 0)
+        cv2.putText(debug_frame, f"PANNEAU FSM: {self.statut_virage} (Scans Droite Ok: {nb_niveaux_droite}/3)", (15, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.6, couleur_fsm, 2)
+
+        # Envoi de l'erreur finale (potentiellement écrasée par la FSM) au nœud de commande
         msg_error = Float32()
         msg_error.data = erreur_calculer
         self.error_pub.publish(msg_error)
 
-        # Envoi final de l'image annotée vers le topic de débug
         self.publier_image_debug(debug_frame)
 
     def Santize_coordinates(self, value, max_val):
         return int(max(0, min(value, max_val)))
 
     def publier_image_debug(self, frame):
-        """Convertit l'image de débug OpenCV et la publie sur le topic ROS 2."""
         try:
             img_msg = self.bridge.cv2_to_imgmsg(frame, encoding="bgr8")
             self.debug_img_pub.publish(img_msg)
