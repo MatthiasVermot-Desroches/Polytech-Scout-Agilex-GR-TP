@@ -62,9 +62,9 @@ class VisionLineNode(Node):
         self.historique_masques = deque(maxlen=self.nb_frames_accumulation)
         
         self.largeurs_memoire = {
-            'L1': 540,  # Palier bas
-            'L2': 450,  # Palier milieu
-            'L3': 310   # Palier haut
+            'L1': 400,  # Palier bas
+            'L2': 320,  # Palier milieu
+            'L3': 270   # Palier haut
         }
 
         # Variables d'état pour la gestion du panneau
@@ -167,9 +167,9 @@ class VisionLineNode(Node):
         height, width, _ = cv_image.shape  
         CENTRE_IMAGE = width / 2  
 
-        Y_L3 = 170 
-        Y_L2 = 320 
-        Y_L1 = 450 
+        Y_L3 = 360
+        Y_L2 = 420 
+        Y_L1 = 479 
 
         debug_frame = cv_image.copy()
 
